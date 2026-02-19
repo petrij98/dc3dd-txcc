@@ -1,0 +1,7 @@
+asnprintf.o: asnprintf.c config.h vasnprintf.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stdarg.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stddef.h
+config.h:
+vasnprintf.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stdarg.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stddef.h:

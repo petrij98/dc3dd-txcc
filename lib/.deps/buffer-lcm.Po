@@ -1,0 +1,4 @@
+buffer-lcm.o: buffer-lcm.c buffer-lcm.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stddef.h
+buffer-lcm.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stddef.h:

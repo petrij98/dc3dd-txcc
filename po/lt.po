@@ -1,0 +1,714 @@
+# translation of coreutils-6.10 to Lithuanian
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the coreutils package.
+#
+# Gintautas Miliauskas <gintas@akl.lt>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: coreutils-6.11\n"
+"Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
+"POT-Creation-Date: 2009-04-07 16:11-0400\n"
+"PO-Revision-Date: 2008-05-14 03:13+0300\n"
+"Last-Translator: Gintautas Miliauskas <gintas@akl.lt>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%"
+"100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:59
+msgid "Paul Rubin"
+msgstr ""
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:60
+msgid "David MacKenzie"
+msgstr ""
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:61
+msgid "Stuart Kemp"
+msgstr ""
+
+#: src/dc3dd.c:523
+msgid "Could not allocate space for thread"
+msgstr ""
+
+#: src/dc3dd.c:538 src/dc3dd.c:546
+msgid "Unable to allocate space for thread buffer"
+msgstr ""
+
+#: src/dc3dd.c:556
+msgid "Unable to allocate space for lock/signals"
+msgstr ""
+
+#: src/dc3dd.c:714
+#, c-format
+msgid "Unknown hash algorithm %s"
+msgstr ""
+
+#: src/dc3dd.c:730
+msgid "Unable to allocate space for hashes"
+msgstr ""
+
+#: src/dc3dd.c:771 src/dc3dd.c:777 src/dc3dd.c:781
+msgid "Unable to allocate space for threads"
+msgstr ""
+
+#: src/dc3dd.c:1090
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr ""
+
+#: src/dc3dd.c:1094
+#, c-format
+msgid ""
+"Usage: %s [OPERAND]...\n"
+"  or:  %s OPTION\n"
+msgstr ""
+
+#: src/dc3dd.c:1099
+msgid ""
+"Copy a file, converting and formatting according to the operands.\n"
+"\n"
+"  bs=BYTES          force ibs=BYTES and obs=BYTES\n"
+"  conv=CONVS        convert the file as per the comma separated symbol list\n"
+"  count=SECTORS     copy only SECTORS input sectors\n"
+"  ibs=BYTES         read BYTES bytes at a time (must be a multiple of input "
+"sector size)\n"
+msgstr ""
+
+#: src/dc3dd.c:1107
+msgid ""
+"  if=FILE           read from FILE instead of stdin\n"
+"  ifjoin=BASE.FMT   read from split files with name BASE and splitformat "
+"FMT\n"
+"  iflag=FLAGS       read as per the comma separated symbol list\n"
+"  pattern=HEX       write HEX to every byte of the output\n"
+"  textpattern=TEXT  write the string TEXT repeatedly to the output\n"
+"  obs=BYTES         write BYTES bytes at a time\n"
+"  of=FILE           write to FILE instead of stdout\n"
+"  of:=COMMAND       pipe output to the given command\n"
+"  oflag=FLAGS       write as per the comma separated symbol list\n"
+"  wipe=FILE         wipe device FILE with zeros (or specify pattern/"
+"textpattern)\n"
+"  seek=SECTORS      skip SECTORS input sectors at start of output\n"
+"  skip=SECTORS      skip SECTORS input sectors at start of input\n"
+"  status=noxfer     suppress transfer statistics\n"
+msgstr ""
+
+#: src/dc3dd.c:1122
+msgid ""
+"  split=BYTES       split the output into pieces of size BYTES\n"
+"  splitformat=FMT   create extensions for split pieces using FMT\n"
+"                    Extensions can be numerical starting at zero,\n"
+"                    numerical starting at one, or alphabetical.\n"
+"                    These options are selected by using a series of\n"
+"                    zeros, ones, or a's, respectively. The number\n"
+"                    of characters used indicates the desired length of\n"
+"                    the extensions. For example, splitformat=1111\n"
+"                    indicates four character numerical extensions\n"
+"                    starting with 0001.\n"
+"  progress=on       displays a progress meter\n"
+"  progresscount=NUM  number of blocks processed between each progress "
+"update\n"
+"  sizeprobe=on      estimates size of input file for use with status\n"
+"  hash=ALGORITHM    computes ALGORITHM hashes of the input data\n"
+msgstr ""
+
+#: src/dc3dd.c:1142
+msgid ""
+"  hashwindow=BYTES  number of bytes for piecewise hashing\n"
+"  hashlog=FILE      appends piecewise hashes to the log file\n"
+"  errlog=FILE       appends errors to the log file\n"
+"  log=FILE          appends hashes and errors to the same file\n"
+"  errors=group      group read errors together\n"
+msgstr ""
+
+#: src/dc3dd.c:1149
+msgid ""
+"  vf=FILE           verify the input against FILE\n"
+"  vfjoin=BASE.FMT   verify the input against split files with name BASE and "
+"splitformat FMT\n"
+"  verifylog=FILE    write the results of the verify to the given file\n"
+msgstr ""
+
+#: src/dc3dd.c:1155
+msgid ""
+"\n"
+"ALGORITHM can be a comma separated list of md5, sha1, sha256, and sha512\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1160
+msgid ""
+"\n"
+"BLOCKS and BYTES may be followed by the following multiplicative suffixes:\n"
+"xM M, c 1, w 2, b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+"GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+"\n"
+"Each CONV symbol may be:\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1169
+msgid ""
+"  nocreat   do not create the output file\n"
+"  excl      fail if the output file already exists\n"
+"  notrunc   do not truncate the output file\n"
+msgstr ""
+
+#: src/dc3dd.c:1174
+msgid ""
+"  noerror   continue after read errors\n"
+"  sync      pad every input block with NULs to ibs-size; when used\n"
+"            with block or unblock, pad with spaces rather than NULs\n"
+"  fdatasync  physically write output file data before finishing\n"
+"  fsync     likewise, but also write metadata\n"
+msgstr ""
+
+#: src/dc3dd.c:1181
+msgid ""
+"\n"
+"Each FLAG symbol may be:\n"
+"\n"
+"  append    append mode (makes sense only for output; conv=notrunc "
+"suggested)\n"
+msgstr ""
+
+#: src/dc3dd.c:1188
+msgid "  direct    use direct I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1190
+msgid "  directory fail unless a directory\n"
+msgstr ""
+
+#: src/dc3dd.c:1192
+msgid "  dsync     use synchronized I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1194
+msgid "  sync      likewise, but also for metadata\n"
+msgstr ""
+
+#: src/dc3dd.c:1196
+msgid "  nonblock  use non-blocking I/O\n"
+msgstr ""
+
+#: src/dc3dd.c:1198
+msgid "  noatime   do not update access time\n"
+msgstr ""
+
+#: src/dc3dd.c:1200
+msgid "  noctty    do not assign controlling terminal from file\n"
+msgstr ""
+
+#: src/dc3dd.c:1203
+msgid "  nofollow  do not follow symlinks\n"
+msgstr ""
+
+#: src/dc3dd.c:1205
+msgid "  nolinks   fail if multiply-linked\n"
+msgstr ""
+
+#: src/dc3dd.c:1207
+msgid "  binary    use binary I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1209
+msgid "  text      use text I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1213
+#, c-format
+msgid ""
+"\n"
+"Sending a %s signal to a running `dd' process makes it\n"
+"print I/O statistics to standard error and then resume copying.\n"
+"\n"
+"  $ dd if=/dev/zero of=/dev/null& pid=$!\n"
+"  $ kill -%s $pid; sleep 1; kill $pid\n"
+"  18335302+0 sectors in\n"
+"  18335302+0 sectors out\n"
+"  9387674624 bytes (9.4 GB) copied, 34.6279 seconds, 271 MB/s\n"
+"\n"
+"Options are:\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1266
+msgid "Unknown system error"
+msgstr "Nežinoma sistemos klaida"
+
+#: src/dc3dd.c:1953 src/dc3dd.c:1960
+#, c-format
+msgid ""
+"%<PRIuMAX>+%<PRIuMAX> sectors in\n"
+"%<PRIuMAX>+%<PRIuMAX> sectors out\n"
+msgstr ""
+
+#: src/dc3dd.c:1971
+#, c-format
+msgid "\n"
+msgstr ""
+
+#: src/dc3dd.c:1999 src/dc3dd.c:2007
+#, c-format
+msgid "%<PRIuMAX> byte (%s) %s"
+msgid_plural "%<PRIuMAX> bytes (%s) %s"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: src/dc3dd.c:2041
+msgid "Infinity B"
+msgstr ""
+
+#. TRANSLATORS: The two instances of "s" in this string are the SI
+#. symbol "s" (meaning second), and should not be translated.
+#.
+#. This format used to be:
+#.
+#. ngettext (", %g second, %s/s\n", ", %g seconds, %s/s\n", delta_s == 1)
+#.
+#. but that was incorrect for languages like Polish.  To fix this
+#. bug we now use SI symbols even though they're a bit more
+#. confusing in English.
+#: src/dc3dd.c:2054
+#, c-format
+msgid ", %g s, %s/s        "
+msgstr ""
+
+#: src/dc3dd.c:2057
+#, c-format
+msgid ", %g s, %s/s\n"
+msgstr ""
+
+#: src/dc3dd.c:2139
+#, c-format
+msgid "closing input file %s"
+msgstr ""
+
+#: src/dc3dd.c:2146
+#, c-format
+msgid "closing output file %s"
+msgstr ""
+
+#: src/dc3dd.c:2399
+msgid "Unable to allocate filename"
+msgstr ""
+
+#: src/dc3dd.c:2428
+msgid "Split extensions exhausted"
+msgstr ""
+
+#: src/dc3dd.c:2449 src/dc3dd.c:2698 src/dc3dd.c:2705 src/dc3dd.c:2713
+#: src/dc3dd.c:2809 src/dc3dd.c:3919 src/dc3dd.c:3970 src/dc3dd.c:3985
+#: src/dc3dd.c:3996
+#, c-format
+msgid "opening %s"
+msgstr ""
+
+#: src/dc3dd.c:2462
+msgid "Unable to allocate memory"
+msgstr ""
+
+#: src/dc3dd.c:2478 src/dc3dd.c:2484
+msgid "Verify FAILED"
+msgstr ""
+
+#: src/dc3dd.c:2672 src/dc3dd.c:2908
+#, c-format
+msgid "unrecognized operand %s"
+msgstr ""
+
+#: src/dc3dd.c:2682 src/dc3dd.c:2689 src/dc3dd.c:2829 src/dc3dd.c:2962
+#, fuzzy, c-format
+msgid "illegal pattern %s"
+msgstr "%s: neleistinas parametras -- %c\n"
+
+#: src/dc3dd.c:2748
+msgid "It is pitch dark here. You are likely to be eaten by a grue."
+msgstr ""
+
+#: src/dc3dd.c:2753
+#, c-format
+msgid "Illegal split format %s"
+msgstr ""
+
+#: src/dc3dd.c:2768
+#, c-format
+msgid "Illegal ifjoin format %s - missing extension"
+msgstr ""
+
+#: src/dc3dd.c:2773
+#, c-format
+msgid "Illegal ifjoin format %s"
+msgstr ""
+
+#: src/dc3dd.c:2793
+#, c-format
+msgid "Illegal vfjoin format %s - missing extension"
+msgstr ""
+
+#: src/dc3dd.c:2798
+#, c-format
+msgid "Illegal vfjoin format %s"
+msgstr ""
+
+#: src/dc3dd.c:2813
+#, c-format
+msgid "%s not implemented yet"
+msgstr ""
+
+#: src/dc3dd.c:2847
+#, fuzzy
+msgid "invalid conversion"
+msgstr "netaisyklingas naudotojas"
+
+#: src/dc3dd.c:2850
+#, fuzzy
+msgid "invalid input flag"
+msgstr "netaisyklingas naudotojas"
+
+#: src/dc3dd.c:2853
+#, fuzzy
+msgid "invalid output flag"
+msgstr "netaisyklinga grupė"
+
+#: src/dc3dd.c:2856
+#, fuzzy
+msgid "invalid status flag"
+msgstr "netaisyklingas naudotojas"
+
+#: src/dc3dd.c:2913
+#, c-format
+msgid "invalid number %s"
+msgstr ""
+
+#: src/dc3dd.c:2938
+msgid "cannot combine excl and nocreat"
+msgstr ""
+
+#: src/dc3dd.c:2941
+msgid "cannot combine if= and ifjoin="
+msgstr ""
+
+#: src/dc3dd.c:2944
+msgid "cannot combine vf= and vfjoin="
+msgstr ""
+
+#: src/dc3dd.c:2947
+#, c-format
+msgid "error: split size must be a multiple of block size (currently %zd)"
+msgstr ""
+
+#: src/dc3dd.c:2950
+#, fuzzy
+msgid "cannot combine if= and wipe="
+msgstr "negalima palyginti failų vardų %s ir %s"
+
+#: src/dc3dd.c:2953
+msgid "cannot combine wipe= and ifjoin="
+msgstr ""
+
+#: src/dc3dd.c:2955
+msgid "cannot combine wipe= and vfjoin="
+msgstr ""
+
+#: src/dc3dd.c:3116
+#, c-format
+msgid ""
+"warning: working around lseek kernel bug for file (%s)\n"
+"  of mt_type=0x%0lx -- see <sys/mtio.h> for the list of types"
+msgstr ""
+
+#: src/dc3dd.c:3165
+#, fuzzy, c-format
+msgid "skip: reading %s"
+msgstr "skaitomas %s"
+
+#: src/dc3dd.c:3173 src/dc3dd.c:3237
+#, c-format
+msgid "%s: cannot seek"
+msgstr ""
+
+#: src/dc3dd.c:3210
+#, c-format
+msgid "offset overflow while reading file %s"
+msgstr ""
+
+#: src/dc3dd.c:3228
+msgid "advance: warning: invalid file offset after failed read"
+msgstr ""
+
+#: src/dc3dd.c:3233
+msgid "cannot work around kernel bug after all"
+msgstr ""
+
+#: src/dc3dd.c:3291
+#, c-format
+msgid "setting flags for %s"
+msgstr ""
+
+#: src/dc3dd.c:3303
+#, c-format
+msgid "Recorded %<PRIuMAX> %s from sector %<PRIuMAX> through %<PRIuMAX>"
+msgstr ""
+
+#: src/dc3dd.c:3337 src/dc3dd.c:3814
+#, fuzzy, c-format
+msgid "reading %s at sector %jd"
+msgstr "skaitomas aplankas %s"
+
+#: src/dc3dd.c:3339
+#, fuzzy, c-format
+msgid "reading %s at sectors %jd-%jd"
+msgstr "skaitomas aplankas %s"
+
+#: src/dc3dd.c:3428 src/dc3dd.c:4155
+#, c-format
+msgid "writing to %s"
+msgstr ""
+
+#: src/dc3dd.c:3490
+#, c-format
+msgid "fdatasync failed for %s"
+msgstr ""
+
+#: src/dc3dd.c:3500
+#, c-format
+msgid "fsync failed for %s"
+msgstr ""
+
+#: src/dc3dd.c:3907
+msgid "standard input"
+msgstr ""
+
+#: src/dc3dd.c:3938
+msgid "standard output"
+msgstr "standartinis išvedimas"
+
+#: src/dc3dd.c:4016
+#, c-format
+msgid ""
+"offset too large: cannot truncate to a length of seek=%<PRIuMAX> (%lu-byte) "
+"sectors"
+msgstr ""
+
+#: src/dc3dd.c:4031
+#, c-format
+msgid "cannot fstat %s"
+msgstr ""
+
+#: src/dc3dd.c:4037
+#, c-format
+msgid "truncating at %<PRIuMAX> bytes in output file %s"
+msgstr ""
+
+#: src/dc3dd.c:4131
+msgid "Verify PASSED"
+msgstr ""
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "netaisyklingas argumentas %s %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "dviprasmis argumentas %s %s"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Galimi argumentai:"
+
+#~ msgid "error closing file"
+#~ msgstr "klaida užveriant failą"
+
+#~ msgid "write error"
+#~ msgstr "rašymo klaida"
+
+#~ msgid "regular empty file"
+#~ msgstr "paprastas tuščias failas"
+
+#~ msgid "regular file"
+#~ msgstr "paprastas failas"
+
+#~ msgid "directory"
+#~ msgstr "aplankas"
+
+#~ msgid "block special file"
+#~ msgstr "blokinis specialus failas"
+
+#~ msgid "fifo"
+#~ msgstr "fifo"
+
+#~ msgid "symbolic link"
+#~ msgstr "simbolinė nuoroda"
+
+#~ msgid "socket"
+#~ msgstr "lizdas"
+
+#~ msgid "message queue"
+#~ msgstr "pranešimų eilė"
+
+#~ msgid "semaphore"
+#~ msgstr "semaforas"
+
+#~ msgid "weird file"
+#~ msgstr "keistas failas"
+
+#, fuzzy
+#~ msgid "Temporary failure in name resolution"
+#~ msgstr "Laikinas vardų paieškos sutrikimas"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "Atminties išskyrimo klaida"
+
+#~ msgid "Request canceled"
+#~ msgstr "Užklausa nutraukta"
+
+#~ msgid "Request not canceled"
+#~ msgstr "Užklausa nenutraukta"
+
+#~ msgid "All requests done"
+#~ msgstr "Visos užklausos baigtos"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "Nutraukta signalo"
+
+#~ msgid "Unknown error"
+#~ msgstr "Nežinoma klaida"
+
+#~ msgid "%s: option `%s' is ambiguous\n"
+#~ msgstr "%s: parametras `%s' dviprasmis\n"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s: argumentas „--%s“ neleidžia parametro\n"
+
+#~ msgid "%s: option `%c%s' doesn't allow an argument\n"
+#~ msgstr "%s: argumentas „%c%s“ neleidžia parametro\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s: neatpažintas argumentas „--%s“\n"
+
+#~ msgid "%s: unrecognized option `%c%s'\n"
+#~ msgstr "%s: neatpažintas argumentas „%c%s“\n"
+
+#~ msgid "%s: option requires an argument -- %c\n"
+#~ msgstr "%s: parametrui reikia argumento -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s: parametras „-W %s“ dviprasmis\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: parametras „-W %s“ neleidžia argumento\n"
+
+#~ msgid "memory exhausted"
+#~ msgstr "baigėsi atmintis"
+
+#~ msgid "`"
+#~ msgstr "„"
+
+#~ msgid "'"
+#~ msgstr "“"
+
+#~ msgid "%s: end of file"
+#~ msgstr "%s: failo pabaiga"
+
+#~ msgid "Success"
+#~ msgstr "Sėkmė"
+
+#~ msgid "Invalid regular expression"
+#~ msgstr "Netaisyklinga reguliarioji išraiška"
+
+#~ msgid "Memory exhausted"
+#~ msgstr "Baigėsi atmintis"
+
+#~ msgid "Unmatched ) or \\)"
+#~ msgstr "Nesuderintas ) arba \\)"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[yYtT]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "invalid user"
+#~ msgstr "netaisyklingas naudotojas"
+
+#~ msgid "invalid group"
+#~ msgstr "netaisyklinga grupė"
+
+#~ msgid "(C)"
+#~ msgstr "©"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Parašyta %s.\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Parašyta %s ir %s.\n"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "%s: file too long"
+#~ msgstr "%s: failas per ilgas"
+
+#~ msgid "writing %s"
+#~ msgstr "rašomas %s"
+
+#~ msgid "closing %s"
+#~ msgstr "užveriamas %s"
+
+#~ msgid " (backup: %s)"
+#~ msgstr " (atsarginė kopija: %s)"
+
+#~ msgid "omitting directory %s"
+#~ msgstr "praleidžiamas aplankas %s"
+
+#~ msgid "missing file operand"
+#~ msgstr "trūksta failo operando"
+
+#~ msgid "missing destination file operand after %s"
+#~ msgstr "trūksta paskirties failo operando po %s"
+
+#~ msgid "%s: line number out of range"
+#~ msgstr "%s: eilutės numeris už ribų"
+
+#~ msgid "%s: %s: line number out of range"
+#~ msgstr "%s: %s: eilutės numeris už ribų"
+
+#~ msgid "%s: invalid number"
+#~ msgstr "%s: netaisyklingas skaičius"
+
+#~ msgid "syntax error"
+#~ msgstr "sintaksės klaida"
+
+#~ msgid "%b %e  %Y"
+#~ msgstr "%Y-%m-%d"
+
+#~ msgid "%b %e %H:%M"
+#~ msgstr "%Y-%m-%d %H:%M"
+
+#~ msgid "unrecognized prefix: %s"
+#~ msgstr "neatpažintas priešdėlis: %s"
+
+#~ msgid "cannot open directory %s"
+#~ msgstr "nepavyko atverti aplanko %s"
+
+#~ msgid "closing directory %s"
+#~ msgstr "užveriamas aplankas %s"
+
+#~ msgid "invalid mode"
+#~ msgstr "netaisyklinga veiksena"
+
+#~ msgid "%s: unary operator expected"
+#~ msgstr "%s: tikėtasi unarinio operatoriaus"
+
+#~ msgid "%s: binary operator expected"
+#~ msgstr "%s: tikėtasi binarinio operatoriaus"
+
+#~ msgid "missing `]'"
+#~ msgstr "trūksta „]“"

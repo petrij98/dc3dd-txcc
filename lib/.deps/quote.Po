@@ -1,0 +1,6 @@
+quote.o: quote.c config.h quotearg.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stddef.h quote.h
+config.h:
+quotearg.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stddef.h:
+quote.h:

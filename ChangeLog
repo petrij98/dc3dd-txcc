@@ -1,0 +1,352 @@
+2011-03-02 Richard Cordovano <rcordovano@users.sourceforge.net>
+
+	* Added the ability to specify log= and hlog= more than once.
+	* Added phod= and fhod= options. For an output that is a device, using phod= ("partially hashed output device")
+        causes dc3dd to compute hashes of only the bytes dc3dd wrote to the output device. If fhod= 
+        ("fully hashed output device") is specified instead, dc3dd will compute hashes of both the bytes dc3dd wrote 
+        and of the entire device. 
+
+2009-08-28 Richard Cordovano <rcordovano@users.sourceforge.net>
+
+	* Replaced the byte-by-byte verification capability with a verification capability that
+     hashes imaging outputs and compares the hashes to the input hash. The new verification capability
+     does not require a second read of the device.
+	* Enhanced the ability to generate multiple outputs by adding the capability to combine split and unsplit
+     outputs.
+	* Added the ability for the user to specify a sector size via the command line.
+	* Added display/logging of results of device size probes. Size probes are now always performed, providing
+     run statistics in most use cases (reading from standard input excepted). 
+	* Added display/logging of size statistics for each file in an input or output split.
+	* Simplified the command line options and removed all legacy dd features not needed for imaging. The simplified
+     command line is more rigorously validated to reduce the likelihood of performing a run contrary to user 
+     intent in order to avoid a second read of a device.
+	* Removed the progress=on command line option and the cumbersome INFO signaling protocol for 
+     obtaining a progress report. Instead, a progress bar is always displayed.
+	* Added new DEFAULT_IMAGING_MODE compile flag support (equivalent to command line options:
+     recovererrs=on, grouperrs=on, idirect=on).
+	* Reduced the use of global variables from 71 to 9, reduced function lengths, and
+     removed several instances of code duplication. 
+	* Introduced a program architecture that replaces a single loop with a jobs abstraction, allowing execution
+     of an arbitrary chain of jobs, each composed of one or more tasks that execute in parallel. The new
+     program architecture is designed to allow for the transparent addition of multi-step processing
+     scenarios such as the new verification capability.      
+	         
+
+2009-05-11 Richard Cordovano <rcordovano@users.sourceforge.net>
+
+     * Added ability to generate multiple outputs simultaneously by supporting multiple
+       of, vf, and vfjoin command line arguments.
+
+2009-04-01 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Put hashing and disk I/O into dedicated threads to increase
+	  throughput.
+
+	  As a side effect, removed cbs and conv=ascii/ebcdic/ibm/(un)block/lcase/swab
+	  command-line options since they don't apply to the goal of disk imaging.
+
+	  Also removed hashconv option and set behavior to hashconv=after.
+
+
+2009-03-24 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Added ability to detect HPA / DCO hidden areas on ATA drives (Linux only)
+
+
+2009-03-16 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fix hashwindow - result buffer was too small, causing incorrect
+	  output on OS X
+
+
+2009-03-10 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fix blockbench.pl to automatically work on Mac OS X
+
+
+2009-02-02 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Print hashes to console when log is enabled
+
+
+2008-12-15 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Print version number in startup message
+
+
+2008-12-09 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fix crash when verifying against empty file
+
+
+2008-10-27 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fixed a bug that was causing incorrect hashes to be displayed when
+	  using ifjoin or reading from standard input. Output data file was
+	  not affected.
+
+
+2008-10-15 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Added wipe= to automatically wipe a device with zeros
+
+	* Fix --help formatting so man page gets formatted properly
+
+
+2008-10-06 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fix minor warnings: use correct types and printf formats
+
+
+2008-09-30 Andrew Medico <amedico@users.sourceforge.net>
+
+	*  Add Cygwin support
+
+
+2008-09-29 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fix a crash when invalid ifjoin/vfjoin patterns given 
+
+	* Fix error reporting to account for skip= offset when
+	  conv=sync,noerror not used.
+
+	* Refactor redundant code into functions
+
+	* Remove obsolete code
+
+
+2008-09-25 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fix a crash when seek=X option was used without conv=notrunc
+
+
+2008-09-11 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fix progress display when skip=X option is used
+
+
+2008-09-05 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Removed unused coreutils modules to fix static linking error on Solaris 9
+
+
+2008-09-04 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Updated base package to Coreutils version 6.12.
+
+
+2008-08-19 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Check that split size is a multiple of block size and print an
+	  error message at startup, instead of mysteriously failing during
+	  the run.
+
+	* Added "blockbench" script to easily test many block sizes and find
+	  the fastest option for imaging.
+
+
+2008-07-24 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Added ifjoin= and vfjoin= to input or verify against
+	  split files
+
+
+2008-06-30 Andrew Medico <amedico@users.sourceforge.net>
+
+	* In closing log message, indicate if process was aborted, terminated
+	  normally, or terminated due to errors.
+
+
+2008-06-27 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Print hash values so far when process is interrupted
+
+
+2008-06-26 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Change count, skip, and seek options to take sector counts
+	  instead of bytes
+
+
+2008-06-24 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Report sector address when errors occur in non-grouped mode
+
+
+2008-06-23 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fix compile-flag printer to handle DEFAULT_SIZEPROBE
+
+
+2008-06-19 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Enable dynamic error recovery automatically when conv=sync,noerror
+	  is specified
+
+	* Probe device sector size instead of hard-coding dynamic error
+	  recovery read size
+
+	* Change default block size to 32K
+
+	* Report progress and error positions in sectors (probed from device
+	  size) instead of blocks
+
+	* Fix error counting in dynamic error recovery mode
+
+
+2008-06-17 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Log compile-time flags to the log file
+
+
+2008-06-16 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Add "dynamic" block size mode for better error recovery.
+	  Now when errors are detected, dc3dd rereads the failed block
+	  one sector at a time. This lets users run dc3dd in a faster
+	  large-block mode without losing entire blocks of data when a
+	  bad sector is encountered.
+
+	* When verifying an image, say "X bytes compared" in progress line
+	  instead of "X bytes copied".
+
+
+2008-06-12 Andrew Medico <amedico@users.sourceforge.net>
+
+	* When count is specified, calculate completion percentage
+	  out of count*ibs, instead of total device size.
+
+
+2008-06-11 Andrew Medico <amedico@users.sourceforge.net>
+
+	* When writing a pattern, sizeprobe destination device for
+	  progress reporting.
+
+
+2008-06-10 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Added --flags command line option to display the binary's
+	  configure flags
+
+
+2008-06-05 Andrew Medico <amedico@users.sourceforge.net>
+
+	* Fixed wording of error log when I/O errors are detected
+	  in errors=group mode
+
+	* Save command-line string to log file
+
+	* Log start and end times to log file
+
+	* Flush log file so it gets written to disk even if the process
+	  is interrupted
+
+
+2008-02-29 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Fixed default hashing support when a hash log is not
+	  explicitly defined. For example, if the user configures
+	  the program with CFLAGS="-DDEFAULT_HASH_MD5" but doesn't
+	  specify a hash log, the hashes are now sent to stderr.
+
+
+2008-02-12 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Fixed progresscount default. I had included an extra
+	  underscore yesterday.
+
+	* Added ability to change DEFAULT_BLOCKSIZE as promised
+	  in the documentation.
+	
+
+2008-02-11 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Added DEFAULT_ values for some command line flags. These
+	  values should be passed in the configure CFLAGS options. 
+	  The specific values that can be passed:
+	    - DEFAULT_HASH_MD5, DEFAULT_HASH_SHA1, DEFAULT_HASH_SHA256,
+	      DEFAULT_HASH_SHA512 enable hashing algorithms
+	    - DEFAULT_HASHCONV_BEFORE sets hashconv=before and
+	      DEFAULT_HASHCONV_AFTER sets hashconv=after
+	    - DEFAULT_PROGRESS sets progress=on
+	    - DEFAULT_PROGRESSCOUNT sets progresscount=x
+	      (e.g. -DDEFAULT_PROGRESSCOUNT=1000000)
+	    - DEFAULT_SIZEPROBE sets sizeprobe=on
+
+	  Example:
+	  ./configure CFLAGS="-O2 -DDEFAULT_HASH_MD5 -DDEFAULT_HASH_SHA1"
+
+	  It should be noted that any default hashing algorithms are
+	  ignored if the user specifies a value for hash= on the command
+	  line. Note that when a default hashing algorithm is specified
+	  the program CANNOT be run without hashing enabled.
+
+	  All other values can be overrideen normally on the command line.
+
+	* Moved \r out of translated text in progress meter display.
+	  This should help us avoid ugly errors regarding having \r in there.
+
+	
+2008-02-07 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Updated base package to Coreutils version 6.10.
+	
+
+2008-01-29 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Changed error handling such that on a partial read
+	  the entire block is wiped with zeros. See bug 1881387.
+	
+	* Grouped errors now display the block numbers where
+	  the error occured, not the offset. See bug 1881383.
+
+	* Improved help message for splitformat option.
+
+	
+2008-01-19 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Updated documentation to reflect log appends, legal
+	  values for hashconv
+	
+
+2008-01-12 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Updated contact address to dc3dd@dc3.mil.
+	
+
+2008-01-10 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Changed log files to append messages rather than overwrite.
+	
+
+2008-01-09 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Updated dc3_error_tail to create copies of the args
+	  passed in just in case they need to be written twice
+	  (stderr and log file).
+	
+	* Added check to display grouped errors at end of input
+	
+	
+2007-12-22 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Fixed sizeprobe code for OS X. It will still need work
+	  for BSD and other non-Linux, non-Mac platforms.
+
+	
+2007-12-21 Jesse Kornblum <jessekornblum@users.sourceforge.net>
+
+	* Created new source code tree based on slimmed down version
+	  of GNU Coreutils suite. Replaced existing ChangeLogs with
+	  this one. This file will be for changes to the dc3dd suite.
+
+	* Replaced NEWS file with news for dc3dd only
+
+	* Stripped out unused programs from src and man directories
+
+	* Cleaned top level Makefile.am and configure.ac to exclude
+	  deleted programs.
+
+	* Edited man/Makefile.am to only handle dc3dd.1 
+
+	* Removed old directory and changelogs from coreutils

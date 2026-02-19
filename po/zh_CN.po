@@ -1,0 +1,4385 @@
+# simplified Chinese translation of fileutils.
+# Copyright (C) 1998, 2002 Free Software Foundation, Inc.
+# Yip Chi Lap <clyip@cs.hku.hk>, 1998.
+# Abel Cheung <maddog@linux.org.hk>, 2002.
+# Anthony Fok <anthony@thizlinux.com>, 2002.
+# Funda Wang <fundawang@linux.net.cn>, 2004, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: coreutils 6.1\n"
+"Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
+"POT-Creation-Date: 2009-04-07 16:11-0400\n"
+"PO-Revision-Date: 2006-08-24 23:38+0800\n"
+"Last-Translator: Funda Wang <fundawang@linux.net.cn>\n"
+"Language-Team: Chinese (simplified) <i18n-translation@lists.linux.net.cn>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:59
+msgid "Paul Rubin"
+msgstr ""
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:60
+msgid "David MacKenzie"
+msgstr ""
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:61
+msgid "Stuart Kemp"
+msgstr ""
+
+#: src/dc3dd.c:523
+#, fuzzy
+msgid "Could not allocate space for thread"
+msgstr "无法创建目录 %s"
+
+#: src/dc3dd.c:538 src/dc3dd.c:546
+msgid "Unable to allocate space for thread buffer"
+msgstr ""
+
+#: src/dc3dd.c:556
+msgid "Unable to allocate space for lock/signals"
+msgstr ""
+
+#: src/dc3dd.c:714
+#, c-format
+msgid "Unknown hash algorithm %s"
+msgstr ""
+
+#: src/dc3dd.c:730
+msgid "Unable to allocate space for hashes"
+msgstr ""
+
+#: src/dc3dd.c:771 src/dc3dd.c:777 src/dc3dd.c:781
+msgid "Unable to allocate space for threads"
+msgstr ""
+
+#: src/dc3dd.c:1090
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "请尝试执行“%s --help”来获取更多信息。\n"
+
+#: src/dc3dd.c:1094
+#, c-format
+msgid ""
+"Usage: %s [OPERAND]...\n"
+"  or:  %s OPTION\n"
+msgstr ""
+"用法：%s [操作符]...\n"
+"  或：%s 选项\n"
+
+#: src/dc3dd.c:1099
+#, fuzzy
+msgid ""
+"Copy a file, converting and formatting according to the operands.\n"
+"\n"
+"  bs=BYTES          force ibs=BYTES and obs=BYTES\n"
+"  conv=CONVS        convert the file as per the comma separated symbol list\n"
+"  count=SECTORS     copy only SECTORS input sectors\n"
+"  ibs=BYTES         read BYTES bytes at a time (must be a multiple of input "
+"sector size)\n"
+msgstr ""
+"复制文件，并根据以下的选项将数据转换和格式化。\n"
+"\n"
+"  bs=字节         强迫 ibs=<字节> 及 obs=<字节>\n"
+"  cbs=字节        每次转换指定的<字节>\n"
+"  conv=关键字     根据以逗号分隔的关键字表示的方式来转换文件\n"
+"  count=块数目    只复制指定<块数目>的输入数据\n"
+"  ibs=字节        每次读取指定的<字节>\n"
+
+#: src/dc3dd.c:1107
+#, fuzzy
+msgid ""
+"  if=FILE           read from FILE instead of stdin\n"
+"  ifjoin=BASE.FMT   read from split files with name BASE and splitformat "
+"FMT\n"
+"  iflag=FLAGS       read as per the comma separated symbol list\n"
+"  pattern=HEX       write HEX to every byte of the output\n"
+"  textpattern=TEXT  write the string TEXT repeatedly to the output\n"
+"  obs=BYTES         write BYTES bytes at a time\n"
+"  of=FILE           write to FILE instead of stdout\n"
+"  of:=COMMAND       pipe output to the given command\n"
+"  oflag=FLAGS       write as per the comma separated symbol list\n"
+"  wipe=FILE         wipe device FILE with zeros (or specify pattern/"
+"textpattern)\n"
+"  seek=SECTORS      skip SECTORS input sectors at start of output\n"
+"  skip=SECTORS      skip SECTORS input sectors at start of input\n"
+"  status=noxfer     suppress transfer statistics\n"
+msgstr ""
+"  if=文件         读取<文件>内容而非标准输入的数据\n"
+"  iflag=标志      按照逗号分隔的符号列表读取\n"
+"  obs=字节        每次写入指定的<字节>\n"
+"  of=文件         将数据写入<文件>而不在标准输出显示\n"
+"  oflag=标志      按照逗号分隔的符号列表写入\n"
+"  seek=块数目     先略过以 obs 为单位的指定<块数目>的输出数据\n"
+"  skip=块数目     先略过以 ibs 为单位的指定<块数目>的输入数据\n"
+"  status=noxfer   禁止传送统计\n"
+
+#: src/dc3dd.c:1122
+msgid ""
+"  split=BYTES       split the output into pieces of size BYTES\n"
+"  splitformat=FMT   create extensions for split pieces using FMT\n"
+"                    Extensions can be numerical starting at zero,\n"
+"                    numerical starting at one, or alphabetical.\n"
+"                    These options are selected by using a series of\n"
+"                    zeros, ones, or a's, respectively. The number\n"
+"                    of characters used indicates the desired length of\n"
+"                    the extensions. For example, splitformat=1111\n"
+"                    indicates four character numerical extensions\n"
+"                    starting with 0001.\n"
+"  progress=on       displays a progress meter\n"
+"  progresscount=NUM  number of blocks processed between each progress "
+"update\n"
+"  sizeprobe=on      estimates size of input file for use with status\n"
+"  hash=ALGORITHM    computes ALGORITHM hashes of the input data\n"
+msgstr ""
+
+#: src/dc3dd.c:1142
+msgid ""
+"  hashwindow=BYTES  number of bytes for piecewise hashing\n"
+"  hashlog=FILE      appends piecewise hashes to the log file\n"
+"  errlog=FILE       appends errors to the log file\n"
+"  log=FILE          appends hashes and errors to the same file\n"
+"  errors=group      group read errors together\n"
+msgstr ""
+
+#: src/dc3dd.c:1149
+msgid ""
+"  vf=FILE           verify the input against FILE\n"
+"  vfjoin=BASE.FMT   verify the input against split files with name BASE and "
+"splitformat FMT\n"
+"  verifylog=FILE    write the results of the verify to the given file\n"
+msgstr ""
+
+#: src/dc3dd.c:1155
+msgid ""
+"\n"
+"ALGORITHM can be a comma separated list of md5, sha1, sha256, and sha512\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1160
+#, fuzzy
+msgid ""
+"\n"
+"BLOCKS and BYTES may be followed by the following multiplicative suffixes:\n"
+"xM M, c 1, w 2, b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+"GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+"\n"
+"Each CONV symbol may be:\n"
+"\n"
+msgstr ""
+"\n"
+"<块数目>和<字节>可以加上以下的单位：\n"
+"xM=M，c=1，w=2，b=512，kB=1000，K=1024，MB=1000000，M=1048576，\n"
+"GB=1000000000，G=1073741824，还有 T、P、E、Z、Y 如此类推。\n"
+"每个<关键字>可以是：\n"
+
+#: src/dc3dd.c:1169
+#, fuzzy
+msgid ""
+"  nocreat   do not create the output file\n"
+"  excl      fail if the output file already exists\n"
+"  notrunc   do not truncate the output file\n"
+msgstr ""
+"  notrunc   不截断输出文件\n"
+"  ucase     将小写字符转换为大写\n"
+"  swab      交换每一对输入数据字节\n"
+"  noerror   读取数据发生错误后仍然继续\n"
+"  sync      将每个输入数据块以 NUL 字符填满至 ibs 的大小；当配合 block\n"
+"              或 unblock 时，会以空格代替 NUL 字符填充\n"
+
+#: src/dc3dd.c:1174
+#, fuzzy
+msgid ""
+"  noerror   continue after read errors\n"
+"  sync      pad every input block with NULs to ibs-size; when used\n"
+"            with block or unblock, pad with spaces rather than NULs\n"
+"  fdatasync  physically write output file data before finishing\n"
+"  fsync     likewise, but also write metadata\n"
+msgstr ""
+"  notrunc   不截断输出文件\n"
+"  ucase     将小写字符转换为大写\n"
+"  swab      交换每一对输入数据字节\n"
+"  noerror   读取数据发生错误后仍然继续\n"
+"  sync      将每个输入数据块以 NUL 字符填满至 ibs 的大小；当配合 block\n"
+"              或 unblock 时，会以空格代替 NUL 字符填充\n"
+
+#: src/dc3dd.c:1181
+msgid ""
+"\n"
+"Each FLAG symbol may be:\n"
+"\n"
+"  append    append mode (makes sense only for output; conv=notrunc "
+"suggested)\n"
+msgstr ""
+
+#: src/dc3dd.c:1188
+msgid "  direct    use direct I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1190
+#, fuzzy
+msgid "  directory fail unless a directory\n"
+msgstr "安装目录时不能用 strip 选项"
+
+#: src/dc3dd.c:1192
+msgid "  dsync     use synchronized I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1194
+msgid "  sync      likewise, but also for metadata\n"
+msgstr ""
+
+#: src/dc3dd.c:1196
+msgid "  nonblock  use non-blocking I/O\n"
+msgstr ""
+
+#: src/dc3dd.c:1198
+msgid "  noatime   do not update access time\n"
+msgstr ""
+
+#: src/dc3dd.c:1200
+msgid "  noctty    do not assign controlling terminal from file\n"
+msgstr ""
+
+#: src/dc3dd.c:1203
+msgid "  nofollow  do not follow symlinks\n"
+msgstr ""
+
+#: src/dc3dd.c:1205
+msgid "  nolinks   fail if multiply-linked\n"
+msgstr ""
+
+#: src/dc3dd.c:1207
+msgid "  binary    use binary I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1209
+msgid "  text      use text I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1213
+#, c-format
+msgid ""
+"\n"
+"Sending a %s signal to a running `dd' process makes it\n"
+"print I/O statistics to standard error and then resume copying.\n"
+"\n"
+"  $ dd if=/dev/zero of=/dev/null& pid=$!\n"
+"  $ kill -%s $pid; sleep 1; kill $pid\n"
+"  18335302+0 sectors in\n"
+"  18335302+0 sectors out\n"
+"  9387674624 bytes (9.4 GB) copied, 34.6279 seconds, 271 MB/s\n"
+"\n"
+"Options are:\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1266
+msgid "Unknown system error"
+msgstr "未知的系统错误"
+
+#: src/dc3dd.c:1953 src/dc3dd.c:1960
+#, c-format
+msgid ""
+"%<PRIuMAX>+%<PRIuMAX> sectors in\n"
+"%<PRIuMAX>+%<PRIuMAX> sectors out\n"
+msgstr ""
+
+#: src/dc3dd.c:1971
+#, c-format
+msgid "\n"
+msgstr ""
+
+#: src/dc3dd.c:1999 src/dc3dd.c:2007
+#, c-format
+msgid "%<PRIuMAX> byte (%s) %s"
+msgid_plural "%<PRIuMAX> bytes (%s) %s"
+msgstr[0] ""
+
+#: src/dc3dd.c:2041
+msgid "Infinity B"
+msgstr "无穷 B"
+
+#. TRANSLATORS: The two instances of "s" in this string are the SI
+#. symbol "s" (meaning second), and should not be translated.
+#.
+#. This format used to be:
+#.
+#. ngettext (", %g second, %s/s\n", ", %g seconds, %s/s\n", delta_s == 1)
+#.
+#. but that was incorrect for languages like Polish.  To fix this
+#. bug we now use SI symbols even though they're a bit more
+#. confusing in English.
+#: src/dc3dd.c:2054
+#, fuzzy, c-format
+msgid ", %g s, %s/s        "
+msgstr "，%g 秒，%s/秒\n"
+
+#: src/dc3dd.c:2057
+#, c-format
+msgid ", %g s, %s/s\n"
+msgstr "，%g 秒，%s/秒\n"
+
+#: src/dc3dd.c:2139
+#, c-format
+msgid "closing input file %s"
+msgstr "正在关闭输入文件 %s"
+
+#: src/dc3dd.c:2146
+#, c-format
+msgid "closing output file %s"
+msgstr "正在关闭输出文件 %s"
+
+#: src/dc3dd.c:2399
+msgid "Unable to allocate filename"
+msgstr ""
+
+#: src/dc3dd.c:2428
+msgid "Split extensions exhausted"
+msgstr ""
+
+#: src/dc3dd.c:2449 src/dc3dd.c:2698 src/dc3dd.c:2705 src/dc3dd.c:2713
+#: src/dc3dd.c:2809 src/dc3dd.c:3919 src/dc3dd.c:3970 src/dc3dd.c:3985
+#: src/dc3dd.c:3996
+#, c-format
+msgid "opening %s"
+msgstr "打开 %s"
+
+#: src/dc3dd.c:2462
+msgid "Unable to allocate memory"
+msgstr ""
+
+#: src/dc3dd.c:2478 src/dc3dd.c:2484
+msgid "Verify FAILED"
+msgstr ""
+
+#: src/dc3dd.c:2672 src/dc3dd.c:2908
+#, c-format
+msgid "unrecognized operand %s"
+msgstr "无法识别的操作数 %s"
+
+#: src/dc3dd.c:2682 src/dc3dd.c:2689 src/dc3dd.c:2829 src/dc3dd.c:2962
+#, fuzzy, c-format
+msgid "illegal pattern %s"
+msgstr "无效的日期 %s"
+
+#: src/dc3dd.c:2748
+msgid "It is pitch dark here. You are likely to be eaten by a grue."
+msgstr ""
+
+#: src/dc3dd.c:2753
+#, fuzzy, c-format
+msgid "Illegal split format %s"
+msgstr "日期格式 %s 无效"
+
+#: src/dc3dd.c:2768
+#, c-format
+msgid "Illegal ifjoin format %s - missing extension"
+msgstr ""
+
+#: src/dc3dd.c:2773
+#, fuzzy, c-format
+msgid "Illegal ifjoin format %s"
+msgstr "日期格式 %s 无效"
+
+#: src/dc3dd.c:2793
+#, c-format
+msgid "Illegal vfjoin format %s - missing extension"
+msgstr ""
+
+#: src/dc3dd.c:2798
+#, fuzzy, c-format
+msgid "Illegal vfjoin format %s"
+msgstr "日期格式 %s 无效"
+
+#: src/dc3dd.c:2813
+#, c-format
+msgid "%s not implemented yet"
+msgstr ""
+
+#: src/dc3dd.c:2847
+#, fuzzy
+msgid "invalid conversion"
+msgstr "转换无效：%s"
+
+#: src/dc3dd.c:2850
+#, fuzzy
+msgid "invalid input flag"
+msgstr "无效的输入标志：%s"
+
+#: src/dc3dd.c:2853
+#, fuzzy
+msgid "invalid output flag"
+msgstr "无效的输出标志：%s"
+
+#: src/dc3dd.c:2856
+#, fuzzy
+msgid "invalid status flag"
+msgstr "日期格式 %s 无效"
+
+#: src/dc3dd.c:2913
+#, c-format
+msgid "invalid number %s"
+msgstr "无效的号码 %s"
+
+#: src/dc3dd.c:2938
+#, fuzzy
+msgid "cannot combine excl and nocreat"
+msgstr "无法决定 %s 所在的设备及 inode"
+
+#: src/dc3dd.c:2941
+#, fuzzy
+msgid "cannot combine if= and ifjoin="
+msgstr "无法决定 %s 所在的设备及 inode"
+
+#: src/dc3dd.c:2944
+#, fuzzy
+msgid "cannot combine vf= and vfjoin="
+msgstr "无法决定 %s 所在的设备及 inode"
+
+#: src/dc3dd.c:2947
+#, c-format
+msgid "error: split size must be a multiple of block size (currently %zd)"
+msgstr ""
+
+#: src/dc3dd.c:2950
+#, fuzzy
+msgid "cannot combine if= and wipe="
+msgstr "无法决定 %s 所在的设备及 inode"
+
+#: src/dc3dd.c:2953
+#, fuzzy
+msgid "cannot combine wipe= and ifjoin="
+msgstr "无法决定 %s 所在的设备及 inode"
+
+#: src/dc3dd.c:2955
+#, fuzzy
+msgid "cannot combine wipe= and vfjoin="
+msgstr "无法决定 %s 所在的设备及 inode"
+
+#: src/dc3dd.c:3116
+#, c-format
+msgid ""
+"warning: working around lseek kernel bug for file (%s)\n"
+"  of mt_type=0x%0lx -- see <sys/mtio.h> for the list of types"
+msgstr ""
+"警告：暂时避免有关文件 (%s) 的 lseek 核心错误，文件的 mt_type=0x%0lx --\n"
+"      有关 mt_type 类型的列表请参考 <sys/mtio.h>"
+
+#: src/dc3dd.c:3165
+#, fuzzy, c-format
+msgid "skip: reading %s"
+msgstr "读入 %s"
+
+#: src/dc3dd.c:3173 src/dc3dd.c:3237
+#, c-format
+msgid "%s: cannot seek"
+msgstr "%s：无法搜索"
+
+#: src/dc3dd.c:3210
+#, c-format
+msgid "offset overflow while reading file %s"
+msgstr ""
+
+#: src/dc3dd.c:3228
+#, fuzzy
+msgid "advance: warning: invalid file offset after failed read"
+msgstr "警告：指定来源文件%s多于一次"
+
+#: src/dc3dd.c:3233
+msgid "cannot work around kernel bug after all"
+msgstr ""
+
+#: src/dc3dd.c:3291
+#, fuzzy, c-format
+msgid "setting flags for %s"
+msgstr "设置 %s 的时间"
+
+#: src/dc3dd.c:3303
+#, c-format
+msgid "Recorded %<PRIuMAX> %s from sector %<PRIuMAX> through %<PRIuMAX>"
+msgstr ""
+
+#: src/dc3dd.c:3337 src/dc3dd.c:3814
+#, fuzzy, c-format
+msgid "reading %s at sector %jd"
+msgstr "读取目录 %s"
+
+#: src/dc3dd.c:3339
+#, fuzzy, c-format
+msgid "reading %s at sectors %jd-%jd"
+msgstr "读取目录 %s"
+
+#: src/dc3dd.c:3428 src/dc3dd.c:4155
+#, c-format
+msgid "writing to %s"
+msgstr "正在写入 %s"
+
+#: src/dc3dd.c:3490
+#, c-format
+msgid "fdatasync failed for %s"
+msgstr ""
+
+#: src/dc3dd.c:3500
+#, fuzzy, c-format
+msgid "fsync failed for %s"
+msgstr "无法保留%s的时间"
+
+#: src/dc3dd.c:3907
+msgid "standard input"
+msgstr "标准输入"
+
+#: src/dc3dd.c:3938
+msgid "standard output"
+msgstr "标准输出"
+
+#: src/dc3dd.c:4016
+#, c-format
+msgid ""
+"offset too large: cannot truncate to a length of seek=%<PRIuMAX> (%lu-byte) "
+"sectors"
+msgstr ""
+
+#: src/dc3dd.c:4031
+#, c-format
+msgid "cannot fstat %s"
+msgstr "无法 fstat %s"
+
+#: src/dc3dd.c:4037
+#, fuzzy, c-format
+msgid "truncating at %<PRIuMAX> bytes in output file %s"
+msgstr "略过输出文件 %2$s 的最初 %1$s 个字节"
+
+#: src/dc3dd.c:4131
+msgid "Verify PASSED"
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "  ascii     from EBCDIC to ASCII\n"
+#~ "  ebcdic    from ASCII to EBCDIC\n"
+#~ "  ibm       from ASCII to alternate EBCDIC\n"
+#~ "  block     pad newline-terminated records with spaces to cbs-size\n"
+#~ "  unblock   replace trailing spaces in cbs-size records with newline\n"
+#~ "  lcase     change upper case to lower case\n"
+#~ msgstr ""
+#~ "  ascii     由 EBCDIC 转换至 ASCII\n"
+#~ "  ebcdic    由 ASCII 转换至 EBCDIC\n"
+#~ "  ibm       由 ASCII 转换至 alternated EBCDIC\n"
+#~ "  block     将以 newline 作为结束字符的块的 newline 换成空格，直至空格\n"
+#~ "              填满 cbs 表示的大小\n"
+#~ "  unblock   会将 cbs 大小的块中所有结束的空格删除，并转换为一个 newline 字"
+#~ "符\n"
+#~ "  lcase     将大写字符转换为小写\n"
+
+#~ msgid "%<PRIuMAX> truncated record\n"
+#~ msgid_plural "%<PRIuMAX> truncated records\n"
+#~ msgstr[0] "%<PRIuMAX> 个被截断了的块\n"
+
+#, fuzzy
+#~ msgid "cannot combine block and unblock"
+#~ msgstr "不可同时省略用户和所属组"
+
+#, fuzzy
+#~ msgid "cannot combine lcase and ucase"
+#~ msgstr "无法比较文件名 %s 和 %s"
+
+#, fuzzy
+#~ msgid "rewind: warning: invalid file offset after failed read"
+#~ msgstr "警告：指定来源文件%s多于一次"
+
+#~ msgid "error writing %s"
+#~ msgstr "写入 %s 出错"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "%2$s 的参数 %1$s 无效"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "%2$s 的参数 %1$s 不明确"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "有效的参数为："
+
+#, fuzzy
+#~ msgid "error closing file"
+#~ msgstr "正在关闭输入文件 %s"
+
+#~ msgid "write error"
+#~ msgstr "写入错误"
+
+#~ msgid "preserving permissions for %s"
+#~ msgstr "%s 的保留权限"
+
+#~ msgid "cannot stat %s"
+#~ msgstr "无法 stat %s"
+
+#~ msgid "regular empty file"
+#~ msgstr "普通空文件"
+
+#~ msgid "regular file"
+#~ msgstr "普通文件"
+
+#~ msgid "directory"
+#~ msgstr "目录"
+
+#~ msgid "block special file"
+#~ msgstr "块特殊文件"
+
+#~ msgid "character special file"
+#~ msgstr "字符特殊文件"
+
+#~ msgid "fifo"
+#~ msgstr "先进先出"
+
+#~ msgid "symbolic link"
+#~ msgstr "符号链接"
+
+#~ msgid "socket"
+#~ msgstr "套接字"
+
+#~ msgid "message queue"
+#~ msgstr "消息队列"
+
+#~ msgid "semaphore"
+#~ msgstr "信号量"
+
+#~ msgid "shared memory object"
+#~ msgstr "共享内存对象"
+
+#, fuzzy
+#~ msgid "typed memory object"
+#~ msgstr "共享内存对象"
+
+#~ msgid "weird file"
+#~ msgstr "古怪文件"
+
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "主机名的地址家族不支持"
+
+#~ msgid "Non-recoverable failure in name resolution"
+#~ msgstr "名称解析有不可恢复的失败"
+
+#~ msgid "ai_family not supported"
+#~ msgstr "不支持 ai_family"
+
+#~ msgid "Memory allocation failure"
+#~ msgstr "内存分配失败"
+
+#~ msgid "No address associated with hostname"
+#~ msgstr "没有与主机名关联的地址"
+
+#~ msgid "Name or service not known"
+#~ msgstr "名称或服务未知"
+
+#~ msgid "ai_socktype not supported"
+#~ msgstr "不支持 ai_socktype"
+
+#~ msgid "System error"
+#~ msgstr "系统错误"
+
+#~ msgid "Processing request in progress"
+#~ msgstr "正在处理请求"
+
+#~ msgid "Request canceled"
+#~ msgstr "请求已取消"
+
+#~ msgid "Request not canceled"
+#~ msgstr "请求未取消"
+
+#~ msgid "All requests done"
+#~ msgstr "全部请求已完成"
+
+#~ msgid "Interrupted by a signal"
+#~ msgstr "被信号中断"
+
+#~ msgid "Parameter string not correctly encoded"
+#~ msgstr "参数字符串编码不正确"
+
+#~ msgid "Unknown error"
+#~ msgstr "未知错误"
+
+#~ msgid "%s: option `%s' is ambiguous\n"
+#~ msgstr "%s：选项“%s”不明确\n"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s：选项“--%s”不允许参数\n"
+
+#~ msgid "%s: option `%c%s' doesn't allow an argument\n"
+#~ msgstr "%s：选项“%c%s”不允许参数\n"
+
+#~ msgid "%s: option `%s' requires an argument\n"
+#~ msgstr "%s：选项“%s”需要参数\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s：无法识别的选项“--%s”\n"
+
+#~ msgid "%s: unrecognized option `%c%s'\n"
+#~ msgstr "%s：无法识别的选项“%c%s”\n"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s：非法选项 -- %c\n"
+
+#~ msgid "%s: invalid option -- %c\n"
+#~ msgstr "%s：无效选项 -- %c\n"
+
+#~ msgid "%s: option requires an argument -- %c\n"
+#~ msgstr "%s：选项需要参数 -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s：选项“-W %s”不明确\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s：选项“-W %s”不允许参数\n"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "无法更改 %s 的权限"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "无法创建目录 %s"
+
+#~ msgid "memory exhausted"
+#~ msgstr "内存用尽"
+
+#~ msgid "unable to record current working directory"
+#~ msgstr "无法记录目前的工作目录"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "返回到初始工作目录失败"
+
+#~ msgid "`"
+#~ msgstr "“"
+
+#~ msgid "'"
+#~ msgstr "”"
+
+#~ msgid "%s: end of file"
+#~ msgstr "%s：文件结束"
+
+#, fuzzy
+#~ msgid "Invalid regular expression"
+#~ msgstr "转换无效：%s"
+
+#, fuzzy
+#~ msgid "Invalid collation character"
+#~ msgstr "权限模式字符串 %2$s 中出现无效的字符 %1$s"
+
+#, fuzzy
+#~ msgid "Invalid character class name"
+#~ msgstr "权限模式字符串 %2$s 中出现无效的字符 %1$s"
+
+#, fuzzy
+#~ msgid "Invalid back reference"
+#~ msgstr "权限模式字符串无效：%s "
+
+#, fuzzy
+#~ msgid "Invalid range end"
+#~ msgstr "权限模式字符串无效：%s "
+
+#, fuzzy
+#~ msgid "Memory exhausted"
+#~ msgstr "内存用尽"
+
+#, fuzzy
+#~ msgid "Invalid preceding regular expression"
+#~ msgstr "转换无效：%s"
+
+#, fuzzy
+#~ msgid "Premature end of regular expression"
+#~ msgstr "转换无效：%s"
+
+#, fuzzy
+#~ msgid "Regular expression too big"
+#~ msgstr "转换无效：%s"
+
+#, fuzzy
+#~ msgid "No previous regular expression"
+#~ msgstr "转换无效：%s"
+
+#~ msgid "it is dangerous to operate recursively on %s"
+#~ msgstr "在 %s 进行递归操作十分危险"
+
+#~ msgid "it is dangerous to operate recursively on %s (same as %s)"
+#~ msgstr "在 %s 进行递归操作十分危险(与 %s 相同)"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[yY]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "设定 %s 的权限"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "iconv 函数无法使用"
+
+#~ msgid "iconv function not available"
+#~ msgstr "iconv 函数不存在"
+
+#~ msgid "character out of range"
+#~ msgstr "字符值超出可接受的范围以外"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "无法将 U+%04X 转换至用户的字符集"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "无法将 U+%04X 转换至用户的字符集：%s"
+
+#~ msgid "invalid user"
+#~ msgstr "无效的用户"
+
+#~ msgid "invalid group"
+#~ msgstr "无效的组"
+
+#~ msgid "invalid spec"
+#~ msgstr "无效的 spec"
+
+#~ msgid "(C)"
+#~ msgstr "(C)"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "由 %s 编写。\n"
+
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "由 %s 和 %s 编写。\n"
+
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "由 %s、%s 和 %s 编写。\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "由 %s、%s、%s 和\n"
+#~ "%s 编写。\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "由 %s、%s、%s、\n"
+#~ "%s 和 %s 编写。\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, and %s.\n"
+#~ msgstr ""
+#~ "由 %s、%s、%s、\n"
+#~ "%s、%s 和 %s 编写。\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, and %s.\n"
+#~ msgstr ""
+#~ "由 %s、%s、%s、\n"
+#~ "%s、%s、%s 和 %s 编写。\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr ""
+#~ "由 %s、%s、%s、\n"
+#~ "%s、%s、%s、%s\n"
+#~ "和 %s 编写。\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr ""
+#~ "由 %s、%s、%s、\n"
+#~ "%s、%s、%s、%s、\n"
+#~ "%s、和 %s 编写。\n"
+
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, %s, %s, %s,\n"
+#~ "%s, %s, and others.\n"
+#~ msgstr ""
+#~ "由 %s、%s、%s、\n"
+#~ "%s、%s、%s、%s、\n"
+#~ "%s、%s、和其他人编写。\n"
+
+#~ msgid "invalid argument: %s"
+#~ msgstr "无效的参数：%s"
+
+#~ msgid "string comparison failed"
+#~ msgstr "字符串比较出现错误"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "请设定 LC_ALL='C' 避免问题出现。"
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "要比较的字符串为 %s 和 %s。"
+
+#~ msgid "string transformation failed"
+#~ msgstr "字符串转换失败"
+
+#, fuzzy
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "无效参数 %s"
+
+#, fuzzy
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "无效的浮点参数：%s"
+
+#, fuzzy
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "%s：文件过大"
+
+#~ msgid ""
+#~ "      --help            Display this help and exit.\n"
+#~ "      --version         Output version information and exit.\n"
+#~ msgstr ""
+#~ "      --help            显示此帮助并退出。\n"
+#~ "      --version         输出版本信息并退出\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "如果[文件]缺省，或者[文件]为 - ，则读取标准输入。\n"
+
+#~ msgid "read error"
+#~ msgstr "读取错误"
+
+#~ msgid "invalid input"
+#~ msgstr "无效的输入"
+
+#~ msgid "invalid wrap size: %s"
+#~ msgstr "无效的换行字符数：%s"
+
+#~ msgid "extra operand %s"
+#~ msgstr "额外的操作数 %s"
+
+#~ msgid "closing standard input"
+#~ msgstr "关闭标准输入"
+
+#~ msgid ""
+#~ "Usage: %s NAME [SUFFIX]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 名称 [后缀]\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid ""
+#~ "Print NAME with any leading directory components removed.\n"
+#~ "If specified, also remove a trailing SUFFIX.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "去掉前导的目录部分后打印“名称”。\n"
+#~ "如果指定的话，还会去掉尾随的“后缀”。\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Examples:\n"
+#~ "  %s /usr/bin/sort       Output \"sort\".\n"
+#~ "  %s include/stdio.h .h  Output \"stdio\".\n"
+#~ msgstr ""
+#~ "\n"
+#~ "示例：\n"
+#~ "  %s /usr/bin/sort       输出“sort”。\n"
+#~ "  %s include/stdio.h .h  输出“stdio”。\n"
+
+#~ msgid "missing operand"
+#~ msgstr "缺少操作数"
+
+#~ msgid "Usage: %s [OPTION] [FILE]...\n"
+#~ msgstr "用法：%s [选项] [文件]...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Concatenate FILE(s), or standard input, to standard output.\n"
+#~ "\n"
+#~ "  -A, --show-all           equivalent to -vET\n"
+#~ "  -b, --number-nonblank    number nonempty output lines\n"
+#~ "  -e                       equivalent to -vE\n"
+#~ "  -E, --show-ends          display $ at end of each line\n"
+#~ "  -n, --number             number all output lines\n"
+#~ "  -s, --squeeze-blank      suppress repeated empty output lines\n"
+#~ msgstr ""
+#~ "将[文件]或标准输入组合输出到标准输出。\n"
+#~ "\n"
+#~ "  -A, --show-all           等价于 -vET\n"
+#~ "  -b, --number-nonblank    对非空输出行编号\n"
+#~ "  -e                       等价于 -vE\n"
+#~ "  -E, --show-ends          在每行结束处显示 $\n"
+#~ "  -n, --number             对输出的所有行编号\n"
+#~ "  -s, --squeeze-blank      不输出多行空行\n"
+
+#~ msgid ""
+#~ "  -t                       equivalent to -vT\n"
+#~ "  -T, --show-tabs          display TAB characters as ^I\n"
+#~ "  -u                       (ignored)\n"
+#~ "  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB\n"
+#~ msgstr ""
+#~ "  -t                       与 -vT 等价\n"
+#~ "  -T, --show-tabs          将跳格字符显示为 ^I\n"
+#~ "  -u                       (被忽略)\n"
+#~ "  -v, --show-nonprinting   使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Examples:\n"
+#~ "  %s f - g  Output f's contents, then standard input, then g's contents.\n"
+#~ "  %s        Copy standard input to standard output.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "示例：\n"
+#~ "  %s f - g  先输出 f 的内容，然后输出标准输入的内容，最后输出 g 的内容。\n"
+#~ "  %s        将标准输入的内容复制到标准输出。\n"
+
+#~ msgid "cannot do ioctl on %s"
+#~ msgstr "无法在 %s 上执行 ioctrl"
+
+#~ msgid "%s: input file is output file"
+#~ msgstr "%s：输入文件是输出文件"
+
+#, fuzzy
+#~ msgid "failed to create security context: %s"
+#~ msgstr "更改 %s 的所有者为失败\n"
+
+#, fuzzy
+#~ msgid "failed to get security context of %s"
+#~ msgstr "无法取得 %s 的属性"
+
+#, fuzzy
+#~ msgid "failed to change context of %s to %s"
+#~ msgstr "无法更改 %s 的所有者为 %s\n"
+
+#~ msgid "cannot access %s"
+#~ msgstr "无法访问 %s"
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "cannot read directory %s"
+#~ msgstr "无法读取目录 %s"
+
+#, fuzzy
+#~ msgid "changing security context of %s"
+#~ msgstr "更改 %s 的权限"
+
+#~ msgid "fts_read failed"
+#~ msgstr "fts_read 失败"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... CONTEXT FILE...\n"
+#~ "  or:  %s [OPTION]... [-u USER] [-r ROLE] [-l RANGE] [-t TYPE] FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... 模式[,模式]... 文件...\n"
+#~ "  或：%s [选项]... 八进制模式 文件...\n"
+#~ "  或：%s [选项]... --reference=参考文件 文件...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Change the security context of each FILE to CONTEXT.\n"
+#~ "With --reference, change the security context of each FILE to that of "
+#~ "RFILE.\n"
+#~ "\n"
+#~ "  -c, --changes          like verbose but report only when a change is "
+#~ "made\n"
+#~ "  -h, --no-dereference   affect symbolic links instead of any referenced "
+#~ "file\n"
+#~ msgstr ""
+#~ "将每个[文件]的所属组设定为[组]。\n"
+#~ "如果使用 --reference，则将每个[文件]的所属组设定为与[参考文件]相同。\n"
+#~ "\n"
+#~ "  -c, --changes          像 --verbose，但只在有更改时才显示结果\n"
+#~ "      --dereference      会影响符号链接所指示的对象，而非符号链接本身(默认"
+#~ "值)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --reference=RFILE  use RFILE's security context rather than "
+#~ "specifying\n"
+#~ "                         a CONTEXT value\n"
+#~ "  -R, --recursive        operate on files and directories recursively\n"
+#~ "  -v, --verbose          output a diagnostic for every file processed\n"
+#~ msgstr ""
+#~ "  -f, --silent, --quiet  去除大部份的错误信息\n"
+#~ "      --reference=参考文件   使用<参考文件>的所属组，而非指定的<组>\n"
+#~ "  -R, --recursive        递归处理所有的文件及子目录\n"
+#~ "  -v, --verbose          处理任何文件都会显示信息\n"
+
+#~ msgid "-R --dereference requires either -H or -L"
+#~ msgstr "-R --dereference 需要 -H 或 -L 其中之一"
+
+#~ msgid "-R -h requires -P"
+#~ msgstr "-R -h 需要 -P"
+
+#~ msgid "missing operand after %s"
+#~ msgstr "%s 后缺少操作数"
+
+#, fuzzy
+#~ msgid "invalid context: %s"
+#~ msgstr "无效模式：%s"
+
+#~ msgid "failed to get attributes of %s"
+#~ msgstr "无法取得 %s 的属性"
+
+#, fuzzy
+#~ msgid "invalid group: %s"
+#~ msgstr "无效的组 %s"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... GROUP FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... 组 文件...\n"
+#~ "  或：%s [选项]... --reference=参考文件 文件...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Change the group of each FILE to GROUP.\n"
+#~ "With --reference, change the group of each FILE to that of RFILE.\n"
+#~ "\n"
+#~ "  -c, --changes          like verbose but report only when a change is "
+#~ "made\n"
+#~ "      --dereference      affect the referent of each symbolic link (this "
+#~ "is\n"
+#~ "                         the default), rather than the symbolic link "
+#~ "itself\n"
+#~ msgstr ""
+#~ "将每个[文件]的所属组设定为[组]。\n"
+#~ "如果使用 --reference，则将每个[文件]的所属组设定为与[参考文件]相同。\n"
+#~ "\n"
+#~ "  -c, --changes          像 --verbose，但只在有更改时才显示结果\n"
+#~ "      --dereference      会影响符号链接所指示的对象，而非符号链接本身(默认"
+#~ "值)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -h, --no-dereference   affect each symbolic link instead of any "
+#~ "referenced\n"
+#~ "                         file (useful only on systems that can change "
+#~ "the\n"
+#~ "                         ownership of a symlink)\n"
+#~ msgstr ""
+#~ "  -h, --no-dereference   会影响符号链接本身，而非符号链接所指示的目的地\n"
+#~ "                         (当系统支持更改符号链接的所有者，此选项才有效)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --no-preserve-root  do not treat `/' specially (the default)\n"
+#~ "      --preserve-root    fail to operate recursively on `/'\n"
+#~ msgstr ""
+#~ "      --no-preserve-root 不特殊对待“/”(默认值)\n"
+#~ "      --preserve-root   不允许在“/”上递归操作\n"
+#~ "  -r, -R, --recursive   递归删除目录及其内容\n"
+#~ "  -v, --verbose         详细显示进行的步骤\n"
+
+#~ msgid ""
+#~ "  -f, --silent, --quiet  suppress most error messages\n"
+#~ "      --reference=RFILE  use RFILE's group rather than specifying a\n"
+#~ "                         GROUP value\n"
+#~ "  -R, --recursive        operate on files and directories recursively\n"
+#~ "  -v, --verbose          output a diagnostic for every file processed\n"
+#~ "\n"
+#~ msgstr ""
+#~ "  -f, --silent, --quiet  去除大部份的错误信息\n"
+#~ "      --reference=参考文件   使用<参考文件>的所属组，而非指定的<组>\n"
+#~ "  -R, --recursive        递归处理所有的文件及子目录\n"
+#~ "  -v, --verbose          处理任何文件都会显示信息\n"
+
+#~ msgid "getting new attributes of %s"
+#~ msgstr "检查 %s 的新属性"
+
+#~ msgid "neither symbolic link %s nor referent has been changed\n"
+#~ msgstr "符号链接 %s 和该链接所指示的对象都没有更改\n"
+
+#~ msgid "mode of %s changed to %04lo (%s)\n"
+#~ msgstr "%s 的权限模式已更改为 %04lo (%s)\n"
+
+#~ msgid "failed to change mode of %s to %04lo (%s)\n"
+#~ msgstr "无法将 %s 的权限模式更改为 %04lo (%s)\n"
+
+#~ msgid "mode of %s retained as %04lo (%s)\n"
+#~ msgstr "%s 的权限模式保留为 %04lo (%s)\n"
+
+#, fuzzy
+#~ msgid "cannot operate on dangling symlink %s"
+#~ msgstr "无法创建符号链接 %s"
+
+#~ msgid "changing permissions of %s"
+#~ msgstr "更改 %s 的权限"
+
+#~ msgid "%s: new permissions are %s, not %s"
+#~ msgstr "%s：新的权限为 %s，而非 %s"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... MODE[,MODE]... FILE...\n"
+#~ "  or:  %s [OPTION]... OCTAL-MODE FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... 模式[,模式]... 文件...\n"
+#~ "  或：%s [选项]... 八进制模式 文件...\n"
+#~ "  或：%s [选项]... --reference=参考文件 文件...\n"
+
+#~ msgid ""
+#~ "Change the mode of each FILE to MODE.\n"
+#~ "\n"
+#~ "  -c, --changes           like verbose but report only when a change is "
+#~ "made\n"
+#~ msgstr ""
+#~ "将每个[文件]的模式更改为[模式]。\n"
+#~ "\n"
+#~ "  -c, --changes           类似 --verbose，但只在有更改时才显示结果\n"
+
+#~ msgid ""
+#~ "  -f, --silent, --quiet   suppress most error messages\n"
+#~ "  -v, --verbose           output a diagnostic for every file processed\n"
+#~ "      --reference=RFILE   use RFILE's mode instead of MODE values\n"
+#~ "  -R, --recursive         change files and directories recursively\n"
+#~ msgstr ""
+#~ "  -f, --silent, --quiet   去除大部份的错误信息\n"
+#~ "  -v, --verbose           处理任何文件都会显示信息\n"
+#~ "      --reference=参考文件  使用[参考文件]的模式，而非自行指定权限模式\n"
+#~ "  -R, --recursive         以递归方式更改所有的文件及子目录\n"
+
+#~ msgid "cannot combine mode and --reference options"
+#~ msgstr "无法组合使用 mode 和 --reference 选项"
+
+#~ msgid "invalid mode: %s"
+#~ msgstr "无效模式：%s"
+
+#~ msgid "changed ownership of %s to %s\n"
+#~ msgstr "%s 的所有者已更改为 %s\n"
+
+#~ msgid "changed group of %s to %s\n"
+#~ msgstr "%s 的所属组已更改为 %s\n"
+
+#~ msgid "no change to ownership of %s\n"
+#~ msgstr "%s 的归属关系未更改\n"
+
+#~ msgid "failed to change ownership of %s to %s\n"
+#~ msgstr "无法更改 %s 的所有者为 %s\n"
+
+#~ msgid "failed to change group of %s to %s\n"
+#~ msgstr "无法更改 %s 的所属组为 %s\n"
+
+#~ msgid "failed to change ownership of %s\n"
+#~ msgstr "更改 %s 的所有者为失败\n"
+
+#~ msgid "ownership of %s retained as %s\n"
+#~ msgstr "%s 的所有者已保留为 %s\n"
+
+#~ msgid "group of %s retained as %s\n"
+#~ msgstr "%s 的所属组已保留为 %s\n"
+
+#~ msgid "ownership of %s retained\n"
+#~ msgstr "%s 的所有者已保留\n"
+
+#~ msgid "cannot dereference %s"
+#~ msgstr "无法取消 %s 的引用"
+
+#~ msgid "changing ownership of %s"
+#~ msgstr "正在更改 %s 的所有者"
+
+#~ msgid "changing group of %s"
+#~ msgstr "正在更改 %s 的所属组"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [OWNER][:[GROUP]] FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... [所有者][:[组]] 文件...\n"
+#~ "  或：%s [选项]... --reference=参考文件 文件...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Change the owner and/or group of each FILE to OWNER and/or GROUP.\n"
+#~ "With --reference, change the owner and group of each FILE to those of "
+#~ "RFILE.\n"
+#~ "\n"
+#~ "  -c, --changes          like verbose but report only when a change is "
+#~ "made\n"
+#~ "      --dereference      affect the referent of each symbolic link (this "
+#~ "is\n"
+#~ "                         the default), rather than the symbolic link "
+#~ "itself\n"
+#~ msgstr ""
+#~ "更改每个 <文件> 的 <所有者> 和/或 <所属组>。\n"
+#~ "\n"
+#~ "  -c, --changes          类似 verbose，但只在有更改时才显示结果\n"
+#~ "      --dereference      受影响的是符号链接所指示的对象，而非符号链接本"
+#~ "身\n"
+
+#~ msgid ""
+#~ "      --from=CURRENT_OWNER:CURRENT_GROUP\n"
+#~ "                         change the owner and/or group of each file only "
+#~ "if\n"
+#~ "                         its current owner and/or group match those "
+#~ "specified\n"
+#~ "                         here.  Either may be omitted, in which case a "
+#~ "match\n"
+#~ "                         is not required for the omitted attribute.\n"
+#~ msgstr ""
+#~ "      --from=目前所有者:目前组\n"
+#~ "                         只当每个文件的所有者和组符合选项所指定的，\n"
+#~ "                         才会更改所有者和组。其中一个可以省略，这时\n"
+#~ "                         已省略的属性就不需要符合原有的属性。\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --silent, --quiet  suppress most error messages\n"
+#~ "      --reference=RFILE  use RFILE's owner and group rather than\n"
+#~ "                         specifying OWNER:GROUP values\n"
+#~ "  -R, --recursive        operate on files and directories recursively\n"
+#~ "  -v, --verbose          output a diagnostic for every file processed\n"
+#~ "\n"
+#~ msgstr ""
+#~ "  -f, --silent, --quiet  去除大部份的错误信息\n"
+#~ "      --reference=参考文件   使用<参考文件>的所属组，而非指定的<组>\n"
+#~ "  -R, --recursive        递归处理所有的文件及子目录\n"
+#~ "  -v, --verbose          处理任何文件都会显示信息\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Owner is unchanged if missing.  Group is unchanged if missing, but "
+#~ "changed\n"
+#~ "to login group if implied by a `:' following a symbolic OWNER.\n"
+#~ "OWNER and GROUP may be numeric as well as symbolic.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "如果没有指定<所有者>，则不会更改。<组>若没有指定也不会更改，但当加上\n"
+#~ "“:”时<组>会更改为指定所有者的主要组。<所有者>和<组>可以是数字\n"
+#~ "或名称。\n"
+
+#~ msgid ""
+#~ "Usage: %s NEWROOT [COMMAND...]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 新根用户 [命令...]\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid "cannot change root directory to %s"
+#~ msgstr "无法将根目录切换到 %s"
+
+#~ msgid "cannot chdir to root directory"
+#~ msgstr "无法切换到根目录"
+
+#~ msgid "cannot run command %s"
+#~ msgstr "无法运行命令 %s"
+
+#~ msgid "%s: file too long"
+#~ msgstr "%s：文件太长"
+
+#~ msgid ""
+#~ "Usage: %s [FILE]...\n"
+#~ "  or:  %s [OPTION]\n"
+#~ msgstr ""
+#~ "用法：%s [文件]...\n"
+#~ "  或：%s [选项]\n"
+
+#~ msgid ""
+#~ "Print CRC checksum and byte counts of each FILE.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "打印每个文件的 CRC 校验和及字节统计。\n"
+#~ "\n"
+
+#~ msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
+#~ msgstr "用法：%s [选项]... 文件1 文件2\n"
+
+#~ msgid "Compare sorted files FILE1 and FILE2 line by line.\n"
+#~ msgstr "逐行比较已排序的文件[文件1]和[文件2]。\n"
+
+#, fuzzy
+#~ msgid "clearing permissions for %s"
+#~ msgstr "设定 %s 的权限"
+
+#~ msgid "failed to preserve ownership for %s"
+#~ msgstr "保留 %s 的所有者失败"
+
+#~ msgid "failed to lookup file %s"
+#~ msgstr "查阅文件 %s 失败"
+
+#~ msgid "failed to preserve authorship for %s"
+#~ msgstr "保留 %s 的作者失败"
+
+#~ msgid "cannot open %s for reading"
+#~ msgstr "无法打开 %s 读取数据"
+
+#~ msgid "skipping file %s, as it was replaced while being copied"
+#~ msgstr "跳过文件 %s，因为准备复制时它已被其它文件替代"
+
+#, fuzzy
+#~ msgid "failed to set the security context of %s to %s"
+#~ msgstr "无法更改 %s 的所属组为 %s\n"
+
+#~ msgid "cannot remove %s"
+#~ msgstr "无法删除 %s"
+
+#~ msgid "removed %s\n"
+#~ msgstr "已删除%s\n"
+
+#~ msgid "cannot create regular file %s"
+#~ msgstr "无法创建普通文件%s"
+
+#~ msgid "cannot lseek %s"
+#~ msgstr "无法 lseek %s"
+
+#~ msgid "writing %s"
+#~ msgstr "写入 %s"
+
+#~ msgid "preserving times for %s"
+#~ msgstr "保留 %s 的时间"
+
+#~ msgid "closing %s"
+#~ msgstr "关闭 %s"
+
+#, fuzzy
+#~ msgid "%s: try to overwrite %s, overriding mode %04lo (%s)? "
+#~ msgstr "%s：是否覆盖 %s，而不理会权限模式 %04lo？"
+
+#~ msgid "%s: overwrite %s? "
+#~ msgstr "%s：是否覆盖%s? "
+
+#~ msgid " (backup: %s)"
+#~ msgstr " (备份：%s)"
+
+#~ msgid "omitting directory %s"
+#~ msgstr "略过目录 %s"
+
+#~ msgid "warning: source file %s specified more than once"
+#~ msgstr "警告：指定来源文件 %s 多于一次"
+
+#~ msgid "%s and %s are the same file"
+#~ msgstr "%s 及 %s 为同一文件"
+
+#~ msgid "cannot overwrite non-directory %s with directory %s"
+#~ msgstr "无法以目录 %2$s 来覆盖非目录 %1$s"
+
+#~ msgid "will not overwrite just-created %s with %s"
+#~ msgstr "不会以 %2$s 覆盖刚创建的 %1$s"
+
+#~ msgid "cannot overwrite directory %s with non-directory"
+#~ msgstr "无法以非目录来覆盖目录 %s"
+
+#~ msgid "cannot move directory onto non-directory: %s -> %s"
+#~ msgstr "无法将目录移动至非目录：%s -> %s"
+
+#~ msgid "backing up %s would destroy source;  %s not moved"
+#~ msgstr "备份 %s 会破坏源文件；未移动 %s"
+
+#~ msgid "backing up %s would destroy source;  %s not copied"
+#~ msgstr "备份 %s 会破坏源文件；未复制 %s"
+
+#~ msgid "cannot backup %s"
+#~ msgstr "无法备份 %s"
+
+#, fuzzy
+#~ msgid "will not copy %s through just-created symlink %s"
+#~ msgstr "不会以 %2$s 覆盖刚创建的 %1$s"
+
+#~ msgid "cannot copy a directory, %s, into itself, %s"
+#~ msgstr "无法将目录 %s 复制到自己 %s"
+
+#~ msgid "will not create hard link %s to directory %s"
+#~ msgstr "不会创建指向目录 %2$s 的硬链接 %1$s"
+
+#~ msgid "cannot create hard link %s to %s"
+#~ msgstr "无法创建指向 %2$s 的硬链接 %1$s"
+
+#~ msgid "cannot move %s to a subdirectory of itself, %s"
+#~ msgstr "无法将目录 %s 移动至自身的子目录 %s 下"
+
+#~ msgid "cannot move %s to %s"
+#~ msgstr "无法将 %s 移动至 %s"
+
+#~ msgid "inter-device move failed: %s to %s; unable to remove target"
+#~ msgstr "无法进行跨设备的移动：%s 至 %s；无法删除目标"
+
+#, fuzzy
+#~ msgid "failed to set default file creation context to %s"
+#~ msgstr "无法取得 %s 的属性"
+
+#~ msgid "cannot copy cyclic symbolic link %s"
+#~ msgstr "无法复制循环的符号链接 %s"
+
+#~ msgid "%s: can make relative symbolic links only in current directory"
+#~ msgstr "%s：只能于当前目录中创建相对的符号链接"
+
+#~ msgid "cannot create symbolic link %s to %s"
+#~ msgstr "无法创建指向 %2$s 的符号链接 %1$s"
+
+#~ msgid "cannot create link %s"
+#~ msgstr "无法创建链接 %s"
+
+#~ msgid "cannot create fifo %s"
+#~ msgstr "无法创建先进先出文件 %s"
+
+#~ msgid "cannot create special file %s"
+#~ msgstr "无法创建特殊文件 %s"
+
+#~ msgid "cannot read symbolic link %s"
+#~ msgstr "无法读取符号链接 %s"
+
+#~ msgid "cannot create symbolic link %s"
+#~ msgstr "无法创建符号链接 %s"
+
+#~ msgid "%s has unknown file type"
+#~ msgstr "%s 的文件类型不详"
+
+#~ msgid "cannot un-backup %s"
+#~ msgstr "无法将 %s 的备份还原"
+
+#~ msgid "%s -> %s (unbackup)\n"
+#~ msgstr "%s -> %s (还原备份)\n"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [-T] SOURCE DEST\n"
+#~ "  or:  %s [OPTION]... SOURCE... DIRECTORY\n"
+#~ "  or:  %s [OPTION]... -t DIRECTORY SOURCE...\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... [-T] 源 目的\n"
+#~ "  或：%s [选项]... 源... 目录\n"
+#~ "  或：%s [选项]... -t 目录 源...\n"
+
+#~ msgid ""
+#~ "Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "将<源>文件复制至<目的>，或将多个<源>复制至<目录>。\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Mandatory arguments to long options are mandatory for short options too.\n"
+#~ msgstr "长选项必须用的参数在使用短选项时也是必需的。\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -a, --archive                same as -dpR\n"
+#~ "      --backup[=CONTROL]       make a backup of each existing destination "
+#~ "file\n"
+#~ "  -b                           like --backup but does not accept an "
+#~ "argument\n"
+#~ "      --copy-contents          copy contents of special files when "
+#~ "recursive\n"
+#~ "  -d                           same as --no-dereference --preserve=links\n"
+#~ msgstr ""
+#~ "  -a, --archive                等于 -dpPR\n"
+#~ "      --backup[=CONTROL]       为每个已存在的目的地文件创建备份文件\n"
+#~ "  -b                           类似 --backup，但不接受任何参数\n"
+#~ "      --copy-contents          当使用递归模式时复制特殊文件的内容\n"
+#~ "  -d                           等于 --no-dereference --preserve=link\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --force                  if an existing destination file cannot be\n"
+#~ "                                 opened, remove it and try again\n"
+#~ "  -i, --interactive            prompt before overwrite\n"
+#~ "  -H                           follow command-line symbolic links in "
+#~ "SOURCE\n"
+#~ msgstr ""
+#~ "  -f, --force                  如果无法打开已存在的文件，会删除该文件并"
+#~ "再\n"
+#~ "                                 尝试打开\n"
+#~ "  -i, --interactive            覆盖文件前需要确认\n"
+#~ "  -H                           使用命令列中的符号链接指示的真正目的地\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -l, --link                   link files instead of copying\n"
+#~ "  -L, --dereference            always follow symbolic links in SOURCE\n"
+#~ msgstr ""
+#~ "  -l, --link                   链接文件而不复制\n"
+#~ "  -L, --dereference            总是跟随符号链接\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -P, --no-dereference         never follow symbolic links in SOURCE\n"
+#~ msgstr "  -P, --no-dereference         从不跟随符号链接\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -p                           same as --preserve=mode,ownership,"
+#~ "timestamps\n"
+#~ "      --preserve[=ATTR_LIST]   preserve the specified attributes "
+#~ "(default:\n"
+#~ "                                 mode,ownership,timestamps), if possible\n"
+#~ "                                 additional attributes: context, links, "
+#~ "all\n"
+#~ msgstr ""
+#~ "  -p                           等于 --preserve=mode,ownership,timestamps\n"
+#~ "      --preserve[=ATTR_LIST]   若可能，保留指定的文件属性\n"
+#~ "                                 (默认值为：mode,ownership,timestamps)\n"
+#~ "                                 额外的属性有：links、all\n"
+
+#~ msgid ""
+#~ "      --no-preserve=ATTR_LIST  don't preserve the specified attributes\n"
+#~ "      --parents                use full source file name under DIRECTORY\n"
+#~ msgstr ""
+#~ "      --sno-preserve=ATTR_LIST  不保留指定的文件属性\n"
+#~ "      --parents                复制前先在<目录>创建来源文件路径中的所有目"
+#~ "录\n"
+
+#~ msgid ""
+#~ "  -R, -r, --recursive          copy directories recursively\n"
+#~ "      --remove-destination     remove each existing destination file "
+#~ "before\n"
+#~ "                                 attempting to open it (contrast with --"
+#~ "force)\n"
+#~ msgstr ""
+#~ "  -R, -r, --recursive          复制目录及目录内的所有项目\n"
+#~ "      --remove-destination     尝试打开目的地文件前先删除已存在的目的地\n"
+#~ "                               文件 (与 --force 选项作对比)\n"
+
+#~ msgid ""
+#~ "      --sparse=WHEN            control creation of sparse files\n"
+#~ "      --strip-trailing-slashes  remove any trailing slashes from each "
+#~ "SOURCE\n"
+#~ "                                 argument\n"
+#~ msgstr ""
+#~ "      --sparse=WHEN            控制创建 sparse 文件的方式\n"
+#~ "      --strip-trailing-slashes 删除参数中所有<源>文件/目录末端的斜杠\n"
+
+#~ msgid ""
+#~ "  -s, --symbolic-link          make symbolic links instead of copying\n"
+#~ "  -S, --suffix=SUFFIX          override the usual backup suffix\n"
+#~ "  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into "
+#~ "DIRECTORY\n"
+#~ "  -T, --no-target-directory    treat DEST as a normal file\n"
+#~ msgstr ""
+#~ "  -s, --symbolic-link          只创建符号链接而不是复制文件\n"
+#~ "  -S, --suffix=后缀            自行指定备份文件的<后缀>\n"
+#~ "  -t, --target-directory=目录  将所有参数指定的<源>文件/目录复制至<目录>\n"
+#~ "  -T, --no-target-directory    将目标当作普通文件\n"
+
+#~ msgid ""
+#~ "  -u, --update                 copy only when the SOURCE file is newer\n"
+#~ "                                 than the destination file or when the\n"
+#~ "                                 destination file is missing\n"
+#~ "  -v, --verbose                explain what is being done\n"
+#~ "  -x, --one-file-system        stay on this file system\n"
+#~ msgstr ""
+#~ "  -u, --update                 只在<源>文件比目的地文件新，或目的地文件\n"
+#~ "                                 不存在时才进行复制\n"
+#~ "  -v, --verbose                详细显示进行的步骤\n"
+#~ "  -x, --one-file-system        不会跨越文件系统进行操作\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "By default, sparse SOURCE files are detected by a crude heuristic and "
+#~ "the\n"
+#~ "corresponding DEST file is made sparse as well.  That is the behavior\n"
+#~ "selected by --sparse=auto.  Specify --sparse=always to create a sparse "
+#~ "DEST\n"
+#~ "file whenever the SOURCE file contains a long enough sequence of zero "
+#~ "bytes.\n"
+#~ "Use --sparse=never to inhibit creation of sparse files.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "默认使用模式中，<源>文件是否 sparse 文件会由一种粗略的方式决定，而且相应\n"
+#~ "的<目的地>文件也会是 sparse 文件。此方式等于使用 --sparse=auto 选项。指"
+#~ "定\n"
+#~ "--sparse=always 则只要<源>文件含有足够长的 0 字节都会产生 sparse 的\n"
+#~ "<目的地>文件。\n"
+#~ "使用 --sparse=never 会禁止产生 sparse 文件。\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "The backup suffix is `~', unless set with --suffix or "
+#~ "SIMPLE_BACKUP_SUFFIX.\n"
+#~ "The version control method may be selected via the --backup option or "
+#~ "through\n"
+#~ "the VERSION_CONTROL environment variable.  Here are the values:\n"
+#~ "\n"
+#~ msgstr ""
+#~ "备份文件的后缀为“~”，除非以 --suffix 选项或是 SIMPLE_BACKUP_SUFFIX\n"
+#~ "环境变量指定。版本控制的方式可透过 --backup 选项或 VERSION_CONTROL 环境\n"
+#~ "变量来选择。以下是可用的变量值：\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "  none, off       never make backups (even if --backup is given)\n"
+#~ "  numbered, t     make numbered backups\n"
+#~ "  existing, nil   numbered if numbered backups exist, simple otherwise\n"
+#~ "  simple, never   always make simple backups\n"
+#~ msgstr ""
+#~ "  none, off       不会进行备份 (即使使用了 --backup 选项)\n"
+#~ "  numbered, t     备份文件会加上数字\n"
+#~ "  existing, nil   若有数字的备份文件已经存在则使用数字，否则使用普通方式备"
+#~ "份\n"
+#~ "  simple, never   永远使用普通方式备份\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "As a special case, cp makes a backup of SOURCE when the force and backup\n"
+#~ "options are given and SOURCE and DEST are the same name for an existing,\n"
+#~ "regular file.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "有一个特别情况：如果同时指定 --force 和 --backup 选项，而且<源>和<目的地"
+#~ ">\n"
+#~ "是同一个已存在的普通文件的话，cp 会将<源>文件备份。\n"
+
+#~ msgid "failed to preserve times for %s"
+#~ msgstr "无法保留%s的时间"
+
+#~ msgid "failed to preserve permissions for %s"
+#~ msgstr "保留 %s 的权限失败"
+
+#~ msgid "cannot make directory %s"
+#~ msgstr "无法创建目录 %s"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s 存在但并非目录"
+
+#~ msgid "accessing %s"
+#~ msgstr "访问 %s"
+
+#~ msgid "missing file operand"
+#~ msgstr "缺少了文件操作数"
+
+#, fuzzy
+#~ msgid "missing destination file operand after %s"
+#~ msgstr "缺少了目的地文件"
+
+#~ msgid "target %s is not a directory"
+#~ msgstr "目标 %s 不是目录"
+
+#, fuzzy
+#~ msgid "with --parents, the destination must be a directory"
+#~ msgstr "当保留路径时，目的地必须是目录"
+
+#, fuzzy
+#~ msgid "the --reply option is deprecated; use -i or -f instead"
+#~ msgstr ""
+#~ "警告：--version-control (-V) 选项已经过时；将来的版本随时可能不再支持\n"
+#~ "此选项。请使用 --backup=%s。"
+
+#~ msgid "multiple target directories specified"
+#~ msgstr "指定了多个目标目录"
+
+#~ msgid "cannot make both hard and symbolic links"
+#~ msgstr "无法同时创建实际及符号链接"
+
+#~ msgid "backup type"
+#~ msgstr "备份方式"
+
+#~ msgid "input disappeared"
+#~ msgstr "输入消失"
+
+#~ msgid "%s: line number out of range"
+#~ msgstr "%s：行数超出范围"
+
+#~ msgid "%s: %s: line number out of range"
+#~ msgstr "%s：%s：行数超出范围"
+
+#~ msgid "%s: %s: match not found"
+#~ msgstr "%s：%s：无匹配"
+
+#, fuzzy
+#~ msgid "write error for %s"
+#~ msgstr "写入时发生错误"
+
+#, fuzzy
+#~ msgid "%s: invalid regular expression: %s"
+#~ msgstr "转换无效：%s"
+
+#, fuzzy
+#~ msgid "%s: invalid pattern"
+#~ msgstr "%s：文件类型无效"
+
+#, fuzzy
+#~ msgid "invalid format width"
+#~ msgstr "日期格式 %s 无效"
+
+#, fuzzy
+#~ msgid "invalid format precision"
+#~ msgstr "权限模式字符串无效：%s "
+
+#, fuzzy
+#~ msgid "invalid conversion specifier in suffix: %c"
+#~ msgstr "转换无效：%s"
+
+#, fuzzy
+#~ msgid "invalid conversion specifier in suffix: \\%.3o"
+#~ msgstr "转换无效：%s"
+
+#~ msgid "%s: invalid number"
+#~ msgstr "%s：无效数字"
+
+#~ msgid "Usage: %s [OPTION]... FILE PATTERN...\n"
+#~ msgstr "用法：%s [选项]... 文件 模式...\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Read standard input if FILE is -.  Each PATTERN may be:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "如果<文件>为 -，则读取标准输入。每个<模式>都可以是：\n"
+
+#, fuzzy
+#~ msgid "Usage: %s OPTION... [FILE]...\n"
+#~ msgstr "用法：%s [选项]... [文件]...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --fields=LIST       select only these fields;  also print any line\n"
+#~ "                            that contains no delimiter character, unless\n"
+#~ "                            the -s option is specified\n"
+#~ "  -n                      (ignored)\n"
+#~ msgstr ""
+#~ "  -w, --width=COLS           自行指定萤幕宽度而不使用目前的数值\n"
+#~ "  -x                         逐行列出项目而不是逐栏列出\n"
+#~ "  -X                         根据扩展名排序\n"
+#~ "  -1                         每行只列出一个文件\n"
+
+#, fuzzy
+#~ msgid "invalid byte or field list"
+#~ msgstr "日期格式 %s 无效"
+
+#, fuzzy
+#~ msgid "invalid range with no endpoint: -"
+#~ msgstr "无效的行宽：%s"
+
+#, fuzzy
+#~ msgid "invalid decreasing range"
+#~ msgstr "无效的行宽数值：%s"
+
+#, fuzzy
+#~ msgid "byte offset %s is too large"
+#~ msgstr "%s：文件过大"
+
+#, fuzzy
+#~ msgid "field number %s is too large"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "missing list of fields"
+#~ msgstr "缺少了目的地文件"
+
+#, fuzzy
+#~ msgid "missing list of positions"
+#~ msgstr "缺少了目的地文件"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [+FORMAT]\n"
+#~ "  or:  %s [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... [+格式]\n"
+#~ "  或：%s [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]\n"
+
+#~ msgid "multiple output formats specified"
+#~ msgstr "指定了多种输出格式"
+
+#, fuzzy
+#~ msgid "the options to specify dates for printing are mutually exclusive"
+#~ msgstr ""
+#~ "显示 dircolors 内部数据库的选项和选择 shell 语法的选项\n"
+#~ "是互相抵触的"
+
+#~ msgid "cannot set date"
+#~ msgstr "无法设定日期"
+
+#~ msgid "time %s is out of range"
+#~ msgstr "时间 %s 超出范围"
+
+#~ msgid "Filesystem    Type"
+#~ msgstr "文件系统      类型"
+
+#~ msgid "Filesystem        "
+#~ msgstr "文件系统          "
+
+#~ msgid "    Inodes   IUsed   IFree IUse%%"
+#~ msgstr "     Inode (I)已用 (I)可用 (I)已用%%"
+
+#~ msgid "    Size  Used Avail Use%%"
+#~ msgstr "    容量  已用 可用 已用%%"
+
+#~ msgid "     Size   Used  Avail Use%%"
+#~ msgstr "     容量   已用  可用 已用%%"
+
+#, fuzzy
+#~ msgid " %s-blocks      Used Available Capacity"
+#~ msgstr "   %4d-块        已用      可用 容量"
+
+#~ msgid " %4s-blocks      Used Available Use%%"
+#~ msgstr "   %4s-块        已用     可用 已用%%"
+
+#~ msgid " Mounted on\n"
+#~ msgstr " 挂载点\n"
+
+#~ msgid "cannot get current directory"
+#~ msgstr "无法获得当前目录"
+
+#~ msgid "cannot change to directory %s"
+#~ msgstr "无法进入目录 %s"
+
+#~ msgid "cannot stat current directory (now %s)"
+#~ msgstr "无法 stat 当前目录(现在是 %s)"
+
+#~ msgid "Usage: %s [OPTION]... [FILE]...\n"
+#~ msgstr "用法：%s [选项]... [文件]...\n"
+
+#~ msgid ""
+#~ "Show information about the file system on which each FILE resides,\n"
+#~ "or all file systems by default.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "显示每个<文件>所在的文件系统的信息，默认是显示所有文件系统。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -a, --all             include dummy file systems\n"
+#~ "  -B, --block-size=SIZE  use SIZE-byte blocks\n"
+#~ "  -h, --human-readable  print sizes in human readable format (e.g., 1K "
+#~ "234M 2G)\n"
+#~ "  -H, --si              likewise, but use powers of 1000 not 1024\n"
+#~ msgstr ""
+#~ "  -a, --all             包括大小为 0 个块的文件系统\n"
+#~ "  -B, --block-size=大小 块以指定<大小>的字节为单位\n"
+#~ "  -h, --human-readable  以容易理解的格式印出文件系统大小 (例如 1K 234M "
+#~ "2G)\n"
+#~ "  -H, --si              类似 -h，但取 1000 的次方而不是 1024\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -i, --inodes          list inode information instead of block usage\n"
+#~ "  -k                    like --block-size=1K\n"
+#~ "  -l, --local           limit listing to local file systems\n"
+#~ "      --no-sync         do not invoke sync before getting usage info "
+#~ "(default)\n"
+#~ msgstr ""
+#~ "  -i, --inodes          显示 inode 信息而非块使用量\n"
+#~ "  -k                    即 --block-size=1K\n"
+#~ "  -l, --local           只显示本机的文件系统\n"
+#~ "      --no-sync         取得使用量数据前不进行 sync 动作 (默认)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -P, --portability     use the POSIX output format\n"
+#~ "      --sync            invoke sync before getting usage info\n"
+#~ "  -t, --type=TYPE       limit listing to file systems of type TYPE\n"
+#~ "  -T, --print-type      print file system type\n"
+#~ "  -x, --exclude-type=TYPE   limit listing to file systems not of type "
+#~ "TYPE\n"
+#~ "  -v                    (ignored)\n"
+#~ msgstr ""
+#~ "  -P, --portability     使用 POSIX 输出格式\n"
+#~ "      --sync            取得使用量数据前先进行 sync 动作\n"
+#~ "  -t, --type=类型       只印出指定<类型>的文件系统信息\n"
+#~ "  -T, --print-type      印出文件系统类型\n"
+#~ "  -x, --exclude-type=类型   只印出不是指定<类型>的文件系统信息\n"
+#~ "  -v                    (此选项不作处理)\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "SIZE may be (or may be an integer optionally followed by) one of "
+#~ "following:\n"
+#~ "kB 1000, K 1024, MB 1000*1000, M 1024*1024, and so on for G, T, P, E, Z, "
+#~ "Y.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "[大小]可以是以下的单位(单位前可加上整数)：\n"
+#~ "kB 1000，K 1024，MB 1000000，M 1048576，还有 G、T、P、E、Z、Y。\n"
+
+#~ msgid "file system type %s both selected and excluded"
+#~ msgstr "不能同时选择和排除文件系统类型 %s"
+
+#~ msgid "Warning: "
+#~ msgstr "警告："
+
+#, fuzzy
+#~ msgid "cannot read table of mounted file systems"
+#~ msgstr "%s无法读取已挂上的文件系统的目录"
+
+#~ msgid "no file systems processed"
+#~ msgstr "未处理文件系统"
+
+#~ msgid "Usage: %s [OPTION]... [FILE]\n"
+#~ msgstr "用法：%s [选项]... [文件]\n"
+
+#~ msgid ""
+#~ "Output commands to set the LS_COLORS environment variable.\n"
+#~ "\n"
+#~ "Determine format of output:\n"
+#~ "  -b, --sh, --bourne-shell    output Bourne shell code to set LS_COLORS\n"
+#~ "  -c, --csh, --c-shell        output C shell code to set LS_COLORS\n"
+#~ "  -p, --print-database        output defaults\n"
+#~ msgstr ""
+#~ "输出用来设定 LS_COLORS 环境变量的命令。\n"
+#~ "\n"
+#~ "指定输出的规格：\n"
+#~ "  -b, --sh, --bourne-shell    输出设定 LS_COLORS 的 Bourne shell 命令\n"
+#~ "  -c, --csh, --c-shell        输出设定 LS_COLORS 的 C shell 命令\n"
+#~ "  -p, --print-database        输出默认的色彩设置\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "If FILE is specified, read it to determine which colors to use for which\n"
+#~ "file types and extensions.  Otherwise, a precompiled database is used.\n"
+#~ "For details on the format of these files, run `dircolors --print-"
+#~ "database'.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "如果指定<文件>，则读取该文件的数据来决定文件类型及扩展名相应的颜色。\n"
+#~ "否则，会使用一个默认的数据库。如要了解此文件格式的细节，请执行\n"
+#~ "“dircolors --print-database”。\n"
+
+#~ msgid "%s:%lu: invalid line;  missing second token"
+#~ msgstr "%s：%lu：此行无效；缺少了第二栏数据"
+
+#~ msgid "%s:%lu: unrecognized keyword %s"
+#~ msgstr "%s：%lu：无法识别的关键字 %s"
+
+#~ msgid "<internal>"
+#~ msgstr "<内部数据>"
+
+#~ msgid ""
+#~ "the options to output dircolors' internal database and\n"
+#~ "to select a shell syntax are mutually exclusive"
+#~ msgstr ""
+#~ "显示 dircolors 内部数据库的选项和选择 shell 语法的选项\n"
+#~ "是互相抵触的"
+
+#~ msgid "File operands cannot be combined with --print-database (-p)."
+#~ msgstr "文件操作数无法与 --print-database (-p) 组合使用。"
+
+#~ msgid "no SHELL environment variable, and no shell type option given"
+#~ msgstr "没有设定 SHELL 环境变量，也没有指定 shell 类型的选项"
+
+#~ msgid ""
+#~ "Usage: %s NAME\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 名称\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]...\n"
+#~ "  or:  %s [OPTION]... --files0-from=F\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... [文件]...\n"
+#~ "  或：%s [选项]... --files0-from=F\n"
+
+#~ msgid ""
+#~ "Summarize disk usage of each FILE, recursively for directories.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "总结每个<文件>的磁盘用量，目录则取总用量。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --files0-from=F   summarize disk usage of the NUL-terminated file\n"
+#~ "                          names specified in file F\n"
+#~ "  -H                    like --si, but also evokes a warning; will soon\n"
+#~ "                          change to be equivalent to --dereference-args (-"
+#~ "D)\n"
+#~ "  -h, --human-readable  print sizes in human readable format (e.g., 1K "
+#~ "234M 2G)\n"
+#~ "      --si              like -h, but use powers of 1000 not 1024\n"
+#~ msgstr ""
+#~ "  -h, --human-readable  以容易理解的格式印出文件大小 (例如 1K 234M 2G)\n"
+#~ "  -H, --si              类似 -h，但取 1000 的次方而不是 1024\n"
+#~ "  -k                    即 --block-size=1K\n"
+#~ "  -l, --count-links     连硬链接的大小也计算在内\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -L, --dereference     dereference all symbolic links\n"
+#~ "  -P, --no-dereference  don't follow any symbolic links (this is the "
+#~ "default)\n"
+#~ "  -0, --null            end each output line with 0 byte rather than "
+#~ "newline\n"
+#~ "  -S, --separate-dirs   do not include size of subdirectories\n"
+#~ "  -s, --summarize       display only a total for each argument\n"
+#~ msgstr ""
+#~ "  -L, --dereference     找出任何符号链接指示的真正目的地\n"
+#~ "  -S, --separate-dirs   不包括子目录的占用量\n"
+#~ "  -s, --summarize       只分别计算命令列中每个参数所占的总用量\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -x, --one-file-system  skip directories on different file systems\n"
+#~ "  -X FILE, --exclude-from=FILE  Exclude files that match any pattern in "
+#~ "FILE.\n"
+#~ "      --exclude=PATTERN  Exclude files that match PATTERN.\n"
+#~ "      --max-depth=N     print the total for a directory (or file, with --"
+#~ "all)\n"
+#~ "                          only if it is N or fewer levels below the "
+#~ "command\n"
+#~ "                          line argument;  --max-depth=0 is the same as\n"
+#~ "                          --summarize\n"
+#~ msgstr ""
+#~ "  -x, --one-file-system  略过属于其他文件系统的目录\n"
+#~ "  -X 文件, --exclude-from=文件  由<文件>读取应排除的文件的样式\n"
+#~ "      --exclude=PAT      排除符合指定<样式>的文件\n"
+#~ "      --max-depth=N      只显示参数指定的目录 N 层或以内的子目录的总用量\n"
+#~ "                         (若使用 --all 选项，也会显示文件的占用量)；\n"
+#~ "                         --max-depth=0 的效果等于 --summarize\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --time            show time of the last modification of any file in "
+#~ "the\n"
+#~ "                          directory, or any of its subdirectories\n"
+#~ "      --time=WORD       show time as WORD instead of modification time:\n"
+#~ "                          atime, access, use, ctime or status\n"
+#~ "      --time-style=STYLE  show times using style STYLE:\n"
+#~ "                          full-iso, long-iso, iso, +FORMAT\n"
+#~ "                          FORMAT is interpreted like `date'\n"
+#~ msgstr ""
+#~ "  -S                         根据文件大小排序\n"
+#~ "      --sort=WORD            以下是可选用的 WORD 和它们代表的相应选项：\n"
+#~ "                               extension -X       status   -c\n"
+#~ "                               none      -U       time     -t\n"
+#~ "                               size      -S       atime    -u\n"
+#~ "                               time      -t       access   -u\n"
+#~ "                               version   -v       use      -u\n"
+#~ "      --time=WORD            和 -l 同时使用时显示 WORD 所代表的时间而非修"
+#~ "改时\n"
+#~ "                             间：atime、access、use、ctime 或 status；加"
+#~ "上\n"
+#~ "                             --sort=time 选项时会以指定时间作为排序关键"
+#~ "字\n"
+
+#~ msgid "total"
+#~ msgstr "总计"
+
+#~ msgid "invalid maximum depth %s"
+#~ msgstr "目录最大深度 %s 无效"
+
+#~ msgid "the --megabytes option is deprecated; use -m instead"
+#~ msgstr "--megabytes 选项已被弃用；请换用 -m"
+
+#~ msgid "cannot both summarize and show all entries"
+#~ msgstr "不能只显示总用量，同时又显示每个项目"
+
+#~ msgid "warning: summarizing is the same as using --max-depth=0"
+#~ msgstr "警告：显示总用量等于使用 --max-depth=0"
+
+#, fuzzy
+#~ msgid "warning: summarizing conflicts with --max-depth=%lu"
+#~ msgstr "警告：显示总用量的选项和 --max-depth=%d 互相抵触"
+
+#~ msgid "cannot read file names from %s"
+#~ msgstr "无法从 %s 读取文件名"
+
+#~ msgid "invalid zero-length file name"
+#~ msgstr "无效零长度文件名"
+
+#~ msgid "Usage: %s [OPTION]... [STRING]...\n"
+#~ msgstr "用法：%s [选项]... [字符串]...\n"
+
+#~ msgid ""
+#~ "Echo the STRING(s) to standard output.\n"
+#~ "\n"
+#~ "  -n             do not output the trailing newline\n"
+#~ msgstr ""
+#~ "将[字符串]回显到标准输出。\n"
+#~ "\n"
+#~ "  -n             不输出为岁的换行\n"
+
+#~ msgid "Usage: %s [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]\n"
+#~ msgstr "用法：%s [选项]... [-] [名称=值]... [命令 [参数]...]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "A mere - implies -i.  If no COMMAND, print the resulting environment.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "单纯的 - 意味着 -i。如果没有命令，则打印结果环境。\n"
+
+#, fuzzy
+#~ msgid "tab stop is too large %s"
+#~ msgstr "%s：文件过大"
+
+#, fuzzy
+#~ msgid "tab size contains invalid character(s): %s"
+#~ msgstr "权限模式字符串 %2$s 中出现无效的字符 %1$s"
+
+#~ msgid "input line is too long"
+#~ msgstr "输入行太长"
+
+#~ msgid ""
+#~ "Usage: %s EXPRESSION\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 表达式\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid "syntax error"
+#~ msgstr "语法错误"
+
+#, fuzzy
+#~ msgid "error in regular expression matcher"
+#~ msgstr "转换无效：%s"
+
+#~ msgid "non-numeric argument"
+#~ msgstr "非数值参数"
+
+#~ msgid "division by zero"
+#~ msgstr "被零除"
+
+#~ msgid ""
+#~ "Usage: %s [NUMBER]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s [数值]...\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid "%s is too large"
+#~ msgstr "%s 太大"
+
+#~ msgid "%s is not a valid positive integer"
+#~ msgstr "%s 不是有效的正整数"
+
+#~ msgid "Usage: %s [-DIGITS] [OPTION]... [FILE]...\n"
+#~ msgstr "用法：%s [-DIGITS] [选项]... [文件]...\n"
+
+#~ msgid "invalid width: %s"
+#~ msgstr "无效的宽度：%s"
+
+#, fuzzy
+#~ msgid "invalid number of columns: %s"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "failed to get groups for user %s"
+#~ msgstr "无法更改 %s 的所属组为 %s\n"
+
+#, fuzzy
+#~ msgid "failed to get groups for the current process"
+#~ msgstr "无法更改 %s 的所属组为 %s\n"
+
+#, fuzzy
+#~ msgid "cannot find name for group ID %lu"
+#~ msgstr "无法更改%s的所有者及/或组"
+
+#~ msgid "Usage: %s [OPTION]... [USERNAME]\n"
+#~ msgstr "用法：%s [选项]... [用户名]\n"
+
+#~ msgid "%s: No such user"
+#~ msgstr "%s：无此用户"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "N may have a multiplier suffix:\n"
+#~ "b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+#~ "GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<块数目>和<字节>可以加上以下的单位：\n"
+#~ "xM=M，c=1，w=2，b=512，kB=1000，K=1024，MB=1000000，M=1048576，\n"
+#~ "GB=1000000000，G=1073741824，还有 T、P、E、Z、Y 如此类推。\n"
+#~ "每个<关键字>可以是：\n"
+
+#~ msgid "error reading %s"
+#~ msgstr "读入 %s 出错"
+
+#, fuzzy
+#~ msgid "%s: number of bytes is too large"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "%s: cannot lseek back to original position"
+#~ msgstr "无法创建 fifo 文件%s"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to offset %s"
+#~ msgstr "无法 lseek%s"
+
+#, fuzzy
+#~ msgid "cannot reposition file pointer for %s"
+#~ msgstr "无法取得 %s 的时间标记"
+
+#~ msgid "number of lines"
+#~ msgstr "行数"
+
+#~ msgid "number of bytes"
+#~ msgstr "字节数"
+
+#~ msgid "invalid number of lines"
+#~ msgstr "无效的行数"
+
+#~ msgid "invalid number of bytes"
+#~ msgstr "无效的字节数"
+
+#, fuzzy
+#~ msgid "invalid trailing option -- %c"
+#~ msgstr "%s：无效的选项 -- %c\n"
+
+#, fuzzy
+#~ msgid "cannot set name to %s"
+#~ msgstr "无法设定 %s 的时间标记"
+
+#~ msgid "cannot determine hostname"
+#~ msgstr "无法确定主机名"
+
+#, fuzzy
+#~ msgid "cannot print \"only\" of more than one choice"
+#~ msgstr "无法按多种方式拆分"
+
+#, fuzzy
+#~ msgid "cannot find name for user ID %lu"
+#~ msgstr "无法更改%s的所有者及/或组"
+
+#, fuzzy
+#~ msgid "warning: %s: failed to change context to %s"
+#~ msgstr "无法进入目录 %s"
+
+#~ msgid "the strip option may not be used when installing a directory"
+#~ msgstr "安装目录时不能用 strip 选项"
+
+#, fuzzy
+#~ msgid "target directory not allowed when installing a directory"
+#~ msgstr "安装目录时不能用 strip 选项"
+
+#~ msgid "invalid mode %s"
+#~ msgstr "无效模式 %s"
+
+#~ msgid "cannot change ownership of %s"
+#~ msgstr "无法更改 %s 的所有者"
+
+#~ msgid "cannot set time stamps for %s"
+#~ msgstr "无法设定 %s 的时间标记"
+
+#~ msgid "fork system call failed"
+#~ msgstr "fork 系统进程出现错误"
+
+#~ msgid "cannot run strip"
+#~ msgstr "无法执行 strip 命令"
+
+#, fuzzy
+#~ msgid "waiting for strip"
+#~ msgstr "正在写入 %s"
+
+#~ msgid "invalid user %s"
+#~ msgstr "无效的用户 %s"
+
+#~ msgid "invalid group %s"
+#~ msgstr "无效的组 %s"
+
+#~ msgid "creating directory %s"
+#~ msgstr "正在创建目录%s"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [-T] SOURCE DEST\n"
+#~ "  or:  %s [OPTION]... SOURCE... DIRECTORY\n"
+#~ "  or:  %s [OPTION]... -t DIRECTORY SOURCE...\n"
+#~ "  or:  %s [OPTION]... -d DIRECTORY...\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... [-T] 来源 目的地\n"
+#~ "  或：%s [选项]... 来源... 目录\n"
+#~ "  或：%s [选项]... -t 目录 来源...\n"
+#~ "  或：%s [选项]... -d 目录...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "In the first three forms, copy SOURCE to DEST or multiple SOURCE(s) to\n"
+#~ "the existing DIRECTORY, while setting permission modes and owner/group.\n"
+#~ "In the 4th form, create all components of the given DIRECTORY(ies).\n"
+#~ "\n"
+#~ msgstr ""
+#~ "在最初两种格式中，会将<源>复制至<目的地>或将多个<源>文件复制至已存在的\n"
+#~ "<目录>，同时设定权限模式及所有者/所属组。在第三种格式中，会创建所有\n"
+#~ "指定的目录及它们的主目录。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --backup[=CONTROL]  make a backup of each existing destination "
+#~ "file\n"
+#~ "  -b                  like --backup but does not accept an argument\n"
+#~ "  -c                  (ignored)\n"
+#~ "  -d, --directory     treat all arguments as directory names; create all\n"
+#~ "                        components of the specified directories\n"
+#~ msgstr ""
+#~ "      --backup[=CONTROL] 为每个已存在的目的地文件进行备份\n"
+#~ "  -b                  类似 --backup，但不接受任何参数\n"
+#~ "  -c                  (此选项不作处理)\n"
+#~ "  -d, --directory     所有参数都作为目录处理；而且会创建指定目录的所有主目"
+#~ "录\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -D                  create all leading components of DEST except the "
+#~ "last,\n"
+#~ "                        then copy SOURCE to DEST\n"
+#~ "  -g, --group=GROUP   set group ownership, instead of process' current "
+#~ "group\n"
+#~ "  -m, --mode=MODE     set permission mode (as in chmod), instead of rwxr-"
+#~ "xr-x\n"
+#~ "  -o, --owner=OWNER   set ownership (super-user only)\n"
+#~ msgstr ""
+#~ "  -D                  创建<目的地>前的所有主目录，然后将<源>复制至\n"
+#~ "                      <目的地>；在第一种使用格式中有用\n"
+#~ "  -g, --group=组      自行设定所属组，而不是进程目前的所属组\n"
+#~ "  -m, --mode=模式     自行设定权限模式 (像 chmod)，而不是 rwxr-xr-x\n"
+#~ "  -o, --owner=所有者  自行设定所有者 (只适用于超级用户)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -p, --preserve-timestamps   apply access/modification times of SOURCE "
+#~ "files\n"
+#~ "                        to corresponding destination files\n"
+#~ "  -s, --strip         strip symbol tables\n"
+#~ "  -S, --suffix=SUFFIX  override the usual backup suffix\n"
+#~ "  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into "
+#~ "DIRECTORY\n"
+#~ "  -T, --no-target-directory  treat DEST as a normal file\n"
+#~ "  -v, --verbose       print the name of each directory as it is created\n"
+#~ msgstr ""
+#~ "  -p, --preserve-timestamps   以<源>文件的访问/修改时间作为相应的目的\n"
+#~ "                      地文件的时间属性\n"
+#~ "  -s, --strip         用 strip 命令删除 symbol table，只适用于第一及第二"
+#~ "种\n"
+#~ "                      使用格式\n"
+#~ "  -S, --suffix=后缀   自行指定备份文件的<后缀>\n"
+#~ "  -v, --verbose       处理每个文件/目录时印出名称\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "The backup suffix is `~', unless set with --suffix or "
+#~ "SIMPLE_BACKUP_SUFFIX.\n"
+#~ "The version control method may be selected via the --backup option or "
+#~ "through\n"
+#~ "the VERSION_CONTROL environment variable.  Here are the values:\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "备份文件的后缀为“~”，除非以 --suffix 选项或是 SIMPLE_BACKUP_SUFFIX\n"
+#~ "环境变量指定。版本控制的方式可透过 --backup 选项或 VERSION_CONTROL 环境\n"
+#~ "变量来选择。以下是可用的变量值：\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "invalid field number: %s"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "invalid field specifier: %s"
+#~ msgstr "无效的 tab 字符定位值：%s"
+
+#, fuzzy
+#~ msgid "invalid file number in field spec: %s"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "multi-character tab %s"
+#~ msgstr "权限模式字符串 %2$s 中出现无效的字符 %1$s"
+
+#, fuzzy
+#~ msgid "%s: invalid signal"
+#~ msgstr "%s：文件类型无效"
+
+#, fuzzy
+#~ msgid "%s: invalid process id"
+#~ msgstr "%s：文件大小无效"
+
+#, fuzzy
+#~ msgid "invalid option -- %c"
+#~ msgstr "%s：无效的选项 -- %c\n"
+
+#~ msgid ""
+#~ "Usage: %s FILE1 FILE2\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 文件1 文件2\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid "cannot create link %s to %s"
+#~ msgstr "无法创建指向%2$s的链接%1$s"
+
+#~ msgid "%s: warning: making a hard link to a symbolic link is not portable"
+#~ msgstr "%s：警告：将硬链接指向符号链接是不通用的功能"
+
+#~ msgid "%s: hard link not allowed for directory"
+#~ msgstr "%s: 不允许将硬链接指向目录"
+
+#~ msgid "%s: cannot overwrite directory"
+#~ msgstr "%s：无法覆盖目录"
+
+#~ msgid "%s: replace %s? "
+#~ msgstr "%s：是否置换%s? "
+
+#~ msgid "creating symbolic link %s"
+#~ msgstr "创建符号链接 %s"
+
+#~ msgid "creating symbolic link %s -> %s"
+#~ msgstr "创建符号链接 %s -> %s"
+
+#~ msgid "creating hard link to %.0s%s"
+#~ msgstr "创建硬链接 %.0s%s"
+
+#~ msgid "creating hard link %s"
+#~ msgstr "创建硬链接 %s"
+
+#~ msgid "creating hard link %s => %s"
+#~ msgstr "创建硬链接 %s => %s"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [-T] TARGET LINK_NAME   (1st form)\n"
+#~ "  or:  %s [OPTION]... TARGET                  (2nd form)\n"
+#~ "  or:  %s [OPTION]... TARGET... DIRECTORY     (3rd form)\n"
+#~ "  or:  %s [OPTION]... -t DIRECTORY TARGET...  (4th form)\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... [-T] 目标 链接名称 (第一种格式)\n"
+#~ "  或：%s [选项]... 目标               (第二种格式)\n"
+#~ "  或：%s [选项]... 目标... 目录       (第三种格式)\n"
+#~ "  或：%s [选项]... -t 目录 目标...    (第四种格式)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "In the 1st form, create a link to TARGET with the name LINK_NAME.\n"
+#~ "In the 2nd form, create a link to TARGET in the current directory.\n"
+#~ "In the 3rd and 4th forms, create links to each TARGET in DIRECTORY.\n"
+#~ "Create hard links by default, symbolic links with --symbolic.\n"
+#~ "When creating hard links, each TARGET must exist.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "创建指向指定<目标>的链接，并可选择性指定<链接名>。\n"
+#~ "如果没有指定<链接名>，会在目前的目录中创建一个和<目标>名称一样的链接。\n"
+#~ "当使用第二种格式而<目标>多于一个时，最后的参数必须是目录；这样会在指定的\n"
+#~ "<目录>中分别创建指向每个<目标>的链接。默认会创建硬链接，若\n"
+#~ "使用 --symbolic 选项则创建符号链接。当创建硬链接时，每个<目标>都必须存\n"
+#~ "在。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --backup[=CONTROL]      make a backup of each existing destination "
+#~ "file\n"
+#~ "  -b                          like --backup but does not accept an "
+#~ "argument\n"
+#~ "  -d, -F, --directory         allow the superuser to attempt to hard "
+#~ "link\n"
+#~ "                                directories (note: will probably fail due "
+#~ "to\n"
+#~ "                                system restrictions, even for the "
+#~ "superuser)\n"
+#~ "  -f, --force                 remove existing destination files\n"
+#~ msgstr ""
+#~ "      --backup[=CONTROL]      为每个已存在的目的地文件创建备份文件\n"
+#~ "  -b                          类似 --backup，但不接受任何参数\n"
+#~ "  -d, -F, --directory         创建指向目录的硬链接 (只适用于超级用户)\n"
+#~ "  -f, --force                 强迫删除任何已存在的目的地文件\n"
+
+#~ msgid ""
+#~ "  -n, --no-dereference        treat destination that is a symlink to a\n"
+#~ "                                directory as if it were a normal file\n"
+#~ "  -i, --interactive           prompt whether to remove destinations\n"
+#~ "  -s, --symbolic              make symbolic links instead of hard links\n"
+#~ msgstr ""
+#~ "  -n, --no-dereference        如果目的地是一个链接至某目录的符号链接，会"
+#~ "将\n"
+#~ "                              该符号链接当作普通文件处理，先将该已存在的\n"
+#~ "                              链接备份或删除\n"
+#~ "  -i, --interactive           确认是否删除目的地文件\n"
+#~ "  -s, --symbolic              创建符号链接而不是硬链接\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -S, --suffix=SUFFIX         override the usual backup suffix\n"
+#~ "  -t, --target-directory=DIRECTORY  specify the DIRECTORY in which to "
+#~ "create\n"
+#~ "                                the links\n"
+#~ "  -T, --no-target-directory   treat LINK_NAME as a normal file\n"
+#~ "  -v, --verbose               print name of each linked file\n"
+#~ msgstr ""
+#~ "  -S, --suffix=后缀           自行指定备份文件的<后缀>\n"
+#~ "  -t, --target-directory=目录 在指定<目录>中创建链接\n"
+#~ "  -T, --no-target-directory   将链接名称当作普通文件\n"
+#~ "  -v, --verbose               链接前先列出每个文件的名称\n"
+
+#~ msgid "Cannot combine --target-directory and --no-target-directory"
+#~ msgstr "无法组合使用 --target-directory 和 --no-target-directory"
+
+#~ msgid "Usage: %s [OPTION]\n"
+#~ msgstr "用法：%s [选项]\n"
+
+#~ msgid ""
+#~ "Print the name of the current user.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "打印当前用户的名称。\n"
+#~ "\n"
+
+#~ msgid "no login name"
+#~ msgstr "无登录名"
+
+#~ msgid "%b %e  %Y"
+#~ msgstr "%Y-%m-%d"
+
+#~ msgid "%b %e %H:%M"
+#~ msgstr "%m-%d %H:%M"
+
+#~ msgid "ignoring invalid value of environment variable QUOTING_STYLE: %s"
+#~ msgstr "忽略无效的环境变量 QUOTING_STYLE 的变量值：%s"
+
+#~ msgid "ignoring invalid width in environment variable COLUMNS: %s"
+#~ msgstr "忽略无效的环境变量 COLUMNS 的宽度数值：%s"
+
+#~ msgid "ignoring invalid tab size in environment variable TABSIZE: %s"
+#~ msgstr "忽略无效的环境变量 TABSIZE 的 tab 字符定位值：%s"
+
+#~ msgid "invalid line width: %s"
+#~ msgstr "无效的行宽：%s"
+
+#~ msgid "invalid tab size: %s"
+#~ msgstr "无效的制表位大小：%s"
+
+#~ msgid "invalid time style format %s"
+#~ msgstr "无效的日期时间格式 %s"
+
+#~ msgid "unrecognized prefix: %s"
+#~ msgstr "无法识别的前缀：%s"
+
+#~ msgid "unparsable value for LS_COLORS environment variable"
+#~ msgstr "LS_COLORS 环境变量中存在无法分析的值"
+
+#~ msgid "cannot open directory %s"
+#~ msgstr "无法打开目录 %s"
+
+#~ msgid "cannot determine device and inode of %s"
+#~ msgstr "无法决定 %s 所在的设备及 inode"
+
+#~ msgid "%s: not listing already-listed directory"
+#~ msgstr "%s：不会再列出已经列出的目录"
+
+#~ msgid "closing directory %s"
+#~ msgstr "关闭目录 %s"
+
+#~ msgid "cannot compare file names %s and %s"
+#~ msgstr "无法比较文件名 %s 和 %s"
+
+#~ msgid ""
+#~ "List information about the FILEs (the current directory by default).\n"
+#~ "Sort entries alphabetically if none of -cftuvSUX nor --sort.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "列出<文件>的信息 (默认为目前的目录)。\n"
+#~ "如果不指定 -cftuvSUX 或 --sort 任何一个选项，则根据字母大小排序。\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "  -a, --all                  do not ignore entries starting with .\n"
+#~ "  -A, --almost-all           do not list implied . and ..\n"
+#~ "      --author               with -l, print the author of each file\n"
+#~ "  -b, --escape               print octal escapes for nongraphic "
+#~ "characters\n"
+#~ msgstr ""
+#~ "  -a, --all                  不隐藏任何以 . 字符开始的项目\n"
+#~ "  -A, --almost-all           列出除了 . 及 .. 以外的任何项目\n"
+#~ "      --author               和 -l 同时使用时列出每个文件的作者\n"
+#~ "  -b, --escape               以八进制溢出序列表示不可打印的字符\n"
+
+#~ msgid ""
+#~ "      --block-size=SIZE      use SIZE-byte blocks\n"
+#~ "  -B, --ignore-backups       do not list implied entries ending with ~\n"
+#~ "  -c                         with -lt: sort by, and show, ctime (time of "
+#~ "last\n"
+#~ "                               modification of file status information)\n"
+#~ "                               with -l: show ctime and sort by name\n"
+#~ "                               otherwise: sort by ctime\n"
+#~ msgstr ""
+#~ "      --block-size=大小      块以指定<大小>的字节为单位\n"
+#~ "  -B, --ignore-backups       不列出任何以 ~ 字符结束的项目\n"
+#~ "  -c                         配合 -lt：根据 ctime 排序及显示 ctime (文件\n"
+#~ "                               状态最后更改的时间)\n"
+#~ "                               配合 -l：显示 ctime 但根据名称排序\n"
+#~ "                               否则：根据 ctime 排序\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -C                         list entries by columns\n"
+#~ "      --color[=WHEN]         control whether color is used to distinguish "
+#~ "file\n"
+#~ "                               types.  WHEN may be `never', `always', or "
+#~ "`auto'\n"
+#~ "  -d, --directory            list directory entries instead of contents,\n"
+#~ "                               and do not dereference symbolic links\n"
+#~ "  -D, --dired                generate output designed for Emacs' dired "
+#~ "mode\n"
+#~ msgstr ""
+#~ "  -C                         每栏由上至下列出项目\n"
+#~ "      --color[=WHEN]         控制是否使用色彩分辨文件。WHEN 可以是\n"
+#~ "                               “never”、“always”或“auto”其中之一\n"
+#~ "  -d, --directory            当遇到目录时列出目录本身而非目录内的文件\n"
+#~ "  -D, --dired                产生适合 Emacs 的 dired 模式使用的结果\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f                         do not sort, enable -aU, disable -ls --"
+#~ "color\n"
+#~ "  -F, --classify             append indicator (one of */=>@|) to entries\n"
+#~ "      --file-type            likewise, except do not append `*'\n"
+#~ "      --format=WORD          across -x, commas -m, horizontal -x, long -"
+#~ "l,\n"
+#~ "                               single-column -1, verbose -l, vertical -C\n"
+#~ "      --full-time            like -l --time-style=full-iso\n"
+#~ msgstr ""
+#~ "  -f                         不进行排序，-aU 选项生效，-lst 选项失效\n"
+#~ "  -F, --classify             加上文件类型的指示符号 (*/=@| 其中一个)\n"
+#~ "      --format=关键字        across -x，commas -m，horizontal -x，long -"
+#~ "l，\n"
+#~ "                               single-column -1，verbose -l，vertical -C\n"
+#~ "      --full-time            即 -l --time-style=full-iso\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -G, --no-group             in a long listing, don't print group names\n"
+#~ "  -h, --human-readable       with -l, print sizes in human readable "
+#~ "format\n"
+#~ "                               (e.g., 1K 234M 2G)\n"
+#~ "      --si                   likewise, but use powers of 1000 not 1024\n"
+#~ msgstr ""
+#~ "  -a, --all             包括大小为 0 个块的文件系统\n"
+#~ "  -B, --block-size=大小 块以指定<大小>的字节为单位\n"
+#~ "  -h, --human-readable  以容易理解的格式印出文件系统大小 (例如 1K 234M "
+#~ "2G)\n"
+#~ "  -H, --si              类似 -h，但取 1000 的次方而不是 1024\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -H, --dereference-command-line\n"
+#~ "                             follow symbolic links listed on the command "
+#~ "line\n"
+#~ "      --dereference-command-line-symlink-to-dir\n"
+#~ "                             follow each command line symbolic link\n"
+#~ "                             that points to a directory\n"
+#~ "      --hide=PATTERN         do not list implied entries matching shell "
+#~ "PATTERN\n"
+#~ "                               (overridden by -a or -A)\n"
+#~ msgstr ""
+#~ "  -g                         类似 -l，但不列出所有者\n"
+#~ "  -G, --no-group             不列出任何有关组的信息\n"
+#~ "  -h, --human-readable       以容易理解的格式印出文件大小 (例如 1K 234M "
+#~ "2G)\n"
+#~ "      --si                   类似 -h，但取 1000 的次方而不是 1024\n"
+#~ "  -H, --dereference-command-line    使用命令列中的符号链接指示的真正目的"
+#~ "地\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --indicator-style=WORD  append indicator with style WORD to entry "
+#~ "names:\n"
+#~ "                               none (default), slash (-p),\n"
+#~ "                               file-type (--file-type), classify (-F)\n"
+#~ "  -i, --inode                print the index number of each file\n"
+#~ "  -I, --ignore=PATTERN       do not list implied entries matching shell "
+#~ "PATTERN\n"
+#~ "  -k                         like --block-size=1K\n"
+#~ msgstr ""
+#~ "      --indicator-style=方式 指定在每个项目名称后加上指示符号<方式>：\n"
+#~ "                               none (默认)，classify (-F)，file-type (-"
+#~ "p)\n"
+#~ "  -i, --inode                印出每个文件的 inode 号\n"
+#~ "  -I, --ignore=样式          不印出任何符合 shell 万用字符<样式>的项目\n"
+#~ "  -k                         即 --block-size=1K\n"
+
+#~ msgid ""
+#~ "  -l                         use a long listing format\n"
+#~ "  -L, --dereference          when showing file information for a "
+#~ "symbolic\n"
+#~ "                               link, show information for the file the "
+#~ "link\n"
+#~ "                               references rather than for the link "
+#~ "itself\n"
+#~ "  -m                         fill width with a comma separated list of "
+#~ "entries\n"
+#~ msgstr ""
+#~ "  -l                         使用较长格式列出信息\n"
+#~ "  -L, --dereference          当显示符号链接的文件信息时，显示符号链接所指"
+#~ "示\n"
+#~ "                               的对象而并非符号链接本身的信息\n"
+#~ "  -m                         所有项目以逗号分隔，并填满整行行宽\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -n, --numeric-uid-gid      like -l, but list numeric user and group "
+#~ "IDs\n"
+#~ "  -N, --literal              print raw entry names (don't treat e.g. "
+#~ "control\n"
+#~ "                               characters specially)\n"
+#~ "  -o                         like -l, but do not list group information\n"
+#~ "  -p, --indicator-style=slash\n"
+#~ "                             append / indicator to directories\n"
+#~ msgstr ""
+#~ "  -n, --numeric-uid-gid      类似 -l，但列出 UID 及 GID 号\n"
+#~ "  -N, --literal              印出未经处理的项目名称 (例如不特别处理控制字"
+#~ "符)\n"
+#~ "  -o                         类似 -l，但不列出有关组的信息\n"
+#~ "  -p, --file-type            加上文件类型的指示符号 (/=@| 其中一个)\n"
+
+#~ msgid ""
+#~ "  -q, --hide-control-chars   print ? instead of non graphic characters\n"
+#~ "      --show-control-chars   show non graphic characters as-is (default\n"
+#~ "                             unless program is `ls' and output is a "
+#~ "terminal)\n"
+#~ "  -Q, --quote-name           enclose entry names in double quotes\n"
+#~ "      --quoting-style=WORD   use quoting style WORD for entry names:\n"
+#~ "                               literal, locale, shell, shell-always, c, "
+#~ "escape\n"
+#~ msgstr ""
+#~ "  -q, --hide-control-chars   以 ? 字符代替无法打印的字符\n"
+#~ "      --show-control-chars   直接显示无法打印的字符 (这是默认方式，除非调"
+#~ "用\n"
+#~ "                               的程序名称是“ls”而且是在终端机画面输出结"
+#~ "果)\n"
+#~ "  -Q, --quote-name           将项目名称括上双引号\n"
+#~ "      --quoting-style=方式   使用指定的 quoting <方式>显示项目的名称：\n"
+#~ "                               literal、locale、shell、shell-always、c、"
+#~ "escape\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -r, --reverse              reverse order while sorting\n"
+#~ "  -R, --recursive            list subdirectories recursively\n"
+#~ "  -s, --size                 print the size of each file, in blocks\n"
+#~ msgstr ""
+#~ "  -r, --reverse              逆序排序\n"
+#~ "  -R, --recursive            递归列出所有子目录\n"
+#~ "  -s, --size                 和 -l 同时使用时以块为单位列出每个文件的大"
+#~ "小\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -S                         sort by file size\n"
+#~ "      --sort=WORD            sort by WORD instead of name: none -U,\n"
+#~ "                             extension -X, size -S, time -t, version -v\n"
+#~ "      --time=WORD            with -l, show time as WORD instead of "
+#~ "modification\n"
+#~ "                             time: atime -u, access -u, use -u, ctime -"
+#~ "c,\n"
+#~ "                             or status -c; use specified time as sort "
+#~ "key\n"
+#~ "                             if --sort=time\n"
+#~ msgstr ""
+#~ "  -S                         根据文件大小排序\n"
+#~ "      --sort=WORD            以下是可选用的 WORD 和它们代表的相应选项：\n"
+#~ "                               extension -X       status   -c\n"
+#~ "                               none      -U       time     -t\n"
+#~ "                               size      -S       atime    -u\n"
+#~ "                               time      -t       access   -u\n"
+#~ "                               version   -v       use      -u\n"
+#~ "      --time=WORD            和 -l 同时使用时显示 WORD 所代表的时间而非修"
+#~ "改时\n"
+#~ "                             间：atime、access、use、ctime 或 status；加"
+#~ "上\n"
+#~ "                             --sort=time 选项时会以指定时间作为排序关键"
+#~ "字\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --time-style=STYLE     with -l, show times using style STYLE:\n"
+#~ "                             full-iso, long-iso, iso, locale, +FORMAT.\n"
+#~ "                             FORMAT is interpreted like `date'; if FORMAT "
+#~ "is\n"
+#~ "                             FORMAT1<newline>FORMAT2, FORMAT1 applies to\n"
+#~ "                             non-recent files and FORMAT2 to recent "
+#~ "files;\n"
+#~ "                             if STYLE is prefixed with `posix-', STYLE\n"
+#~ "                             takes effect only outside the POSIX locale\n"
+#~ msgstr ""
+#~ "      --time-style=STYLE     和 -l 同时使用时根据 STYLE 代表的格式显示时"
+#~ "间：\n"
+#~ "                               full-iso、iso、locale、posix-iso、"
+#~ "+FORMAT。\n"
+#~ "                             FORMAT 即是“date”所用的时间格式；如果 "
+#~ "FORMAT\n"
+#~ "                             是 FORMAT1<新行>FORMAT2，FORMAT1 适用于较旧\n"
+#~ "                             的文件而 FORMAT2 适用于较新的文件；如果 "
+#~ "STYLE\n"
+#~ "                             以“posix-”开头，则 STYLE 仅在 POSIX 语系之"
+#~ "外\n"
+#~ "                             生效。\n"
+#~ "  -t                         根据修改时间排序\n"
+#~ "  -T, --tabsize=宽度         自行指定 tab 的<宽度>，而非 8 个字符\n"
+
+#~ msgid ""
+#~ "  -u                         with -lt: sort by, and show, access time\n"
+#~ "                               with -l: show access time and sort by "
+#~ "name\n"
+#~ "                               otherwise: sort by access time\n"
+#~ "  -U                         do not sort; list entries in directory "
+#~ "order\n"
+#~ "  -v                         sort by version\n"
+#~ msgstr ""
+#~ "  -u                         配合 -lt：显示访问时间而且依访问时间排序\n"
+#~ "                               配合 -l：显示访问时间但根据名称排序\n"
+#~ "                               否则：根据访问时间排序\n"
+#~ "  -U                         不进行排序；依文件系统原有的次序列出项目\n"
+#~ "  -v                         根据版本进行排序\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -w, --width=COLS           assume screen width instead of current "
+#~ "value\n"
+#~ "  -x                         list entries by lines instead of by columns\n"
+#~ "  -X                         sort alphabetically by entry extension\n"
+#~ "  -Z, --context              print any SELinux security context of each "
+#~ "file\n"
+#~ "  -1                         list one file per line\n"
+#~ msgstr ""
+#~ "  -w, --width=COLS           自行指定萤幕宽度而不使用目前的数值\n"
+#~ "  -x                         逐行列出项目而不是逐栏列出\n"
+#~ "  -X                         根据扩展名排序\n"
+#~ "  -1                         每行只列出一个文件\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "By default, color is not used to distinguish types of files.  That is\n"
+#~ "equivalent to using --color=none.  Using the --color option without the\n"
+#~ "optional WHEN argument is equivalent to using --color=always.  With\n"
+#~ "--color=auto, color codes are output only if standard output is "
+#~ "connected\n"
+#~ "to a terminal (tty).  The environment variable LS_COLORS can influence "
+#~ "the\n"
+#~ "colors, and can be set easily by the dircolors command.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "默认是不会使用色彩来区别文件的。此方式等于使用了 --color=none 选项。若使"
+#~ "用\n"
+#~ "--color 选项但不指定 WHEN 参数等于 --color=always。当使用 --color=auto "
+#~ "时，\n"
+#~ "只当输出至终端机画面 (tty) 时才会显示色彩。\n"
+
+#, fuzzy
+#~ msgid "  -b, --binary            read in binary mode\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  -B, --binary             使用二进制写入到控制台设备。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "%s: read error"
+#~ msgstr "%s：名称已更改为 %s"
+
+#~ msgid "Usage: %s [OPTION] DIRECTORY...\n"
+#~ msgstr "用法：%s [选项] 目录...\n"
+
+#~ msgid ""
+#~ "Create the DIRECTORY(ies), if they do not already exist.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "若目录不是已经存在则创建目录。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask\n"
+#~ "  -p, --parents     no error if existing, make parent directories as "
+#~ "needed\n"
+#~ "  -v, --verbose     print a message for each created directory\n"
+#~ "  -Z, --context=CTX  set the SELinux security context of each created\n"
+#~ "                      directory to CTX\n"
+#~ msgstr ""
+#~ "  -m, --mode=模式   设定权限<模式> (类似 chmod)，而不是 rwxrwxrwx 减 "
+#~ "umask\n"
+#~ "  -p, --parents     需要时创建上层目录，如目录早已存在则不当作错误\n"
+#~ "  -v, --verbose     每次创建新目录都显示信息\n"
+
+#~ msgid "created directory %s"
+#~ msgstr "已创建目录 %s"
+
+#~ msgid "Usage: %s [OPTION] NAME...\n"
+#~ msgstr "用法：%s [选项] 名称...\n"
+
+#~ msgid ""
+#~ "Create named pipes (FIFOs) with the given NAMEs.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "以指定的<名称>创建 named pipe (FIFO)。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -m, --mode=MODE   set file permission bits to MODE, not a=rw - umask\n"
+#~ msgstr ""
+#~ "  -m, --mode=模式   指定权限模式 (类似 chmod)，而不是 a=rw 减 umask\n"
+
+#~ msgid "invalid mode"
+#~ msgstr "权限模式无效"
+
+#~ msgid "Usage: %s [OPTION]... NAME TYPE [MAJOR MINOR]\n"
+#~ msgstr "用法：%s [选项]... 名称 类型 [MAJOR MINOR]\n"
+
+#~ msgid ""
+#~ "Create the special file NAME of the given TYPE.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "创建指定<类型>和<名称>的特殊文件。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "  b      create a block (buffered) special file\n"
+#~ "  c, u   create a character (unbuffered) special file\n"
+#~ "  p      create a FIFO\n"
+#~ msgstr ""
+#~ "\n"
+#~ "当<类型>为 p 时不可指定 MAJOR 及 MINOR，否则它们是必须指定的。\n"
+#~ "<类型>可以是：\n"
+#~ "\n"
+#~ "  b      创建(有缓冲的)区块特殊文件\n"
+#~ "  c, u   创建(没有缓冲的)字符特殊文件\n"
+#~ "  p      创建 FIFO 特殊文件\n"
+
+#, fuzzy
+#~ msgid "Special files require major and minor device numbers."
+#~ msgstr "创建区块特殊文件时，必需指定 major 和 minor 设备号"
+
+#, fuzzy
+#~ msgid "Fifos do not have major and minor device numbers."
+#~ msgstr "无效的 minor 设备号 %s"
+
+#~ msgid "block special files not supported"
+#~ msgstr "本系统不支持区块特殊文件"
+
+#~ msgid "character special files not supported"
+#~ msgstr "本系统不支持字符特殊文件"
+
+#~ msgid "invalid major device number %s"
+#~ msgstr "无效的 major 设备号 %s"
+
+#~ msgid "invalid minor device number %s"
+#~ msgstr "无效的 minor 设备号 %s"
+
+#~ msgid "invalid device %s %s"
+#~ msgstr "设备文件 %s %s 无效"
+
+#, fuzzy
+#~ msgid "invalid device type %s"
+#~ msgstr "设备文件 %s %s 无效"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [TEMPLATE]\n"
+#~ msgstr "用法：%s [选项]... [文件]\n"
+
+#, fuzzy
+#~ msgid "  -d, --directory  create a directory, not a file\n"
+#~ msgstr "安装目录时不能用 strip 选项"
+
+#, fuzzy
+#~ msgid "too many templates"
+#~ msgstr "重复行太多"
+
+#, fuzzy
+#~ msgid "failed to create directory via template %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "failed to create file via template %s"
+#~ msgstr "无法保留%s的时间"
+
+#~ msgid ""
+#~ "Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "将<源>名称重命名为<目的地>名称，或将<源>文件移动至<目录>。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --backup[=CONTROL]       make a backup of each existing destination "
+#~ "file\n"
+#~ "  -b                           like --backup but does not accept an "
+#~ "argument\n"
+#~ "  -f, --force                  do not prompt before overwriting\n"
+#~ "  -i, --interactive            prompt before overwrite\n"
+#~ msgstr ""
+#~ "      --backup[=CONTROL]       为每个已存在的目的地文件创建备份文件\n"
+#~ "  -b                           类似 --backup，但不接受任何参数\n"
+#~ "  -f, --force                  覆盖文件前不会进行确认，等于 --reply=yes\n"
+#~ "  -i, --interactive            覆盖文件前必须先确认，等于 --reply=query\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --strip-trailing-slashes  remove any trailing slashes from each "
+#~ "SOURCE\n"
+#~ "                                 argument\n"
+#~ "  -S, --suffix=SUFFIX          override the usual backup suffix\n"
+#~ msgstr ""
+#~ "      --reply={yes,no,query}   指定如何处理已存在的目的地文件\n"
+#~ "      --strip-trailing-slashes 删除参数中所有<源>文件/目录末端的斜杠\n"
+#~ "  -S, --suffix=后缀            自行指定备份文件的<后缀>\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -t, --target-directory=DIRECTORY  move all SOURCE arguments into "
+#~ "DIRECTORY\n"
+#~ "  -T, --no-target-directory    treat DEST as a normal file\n"
+#~ "  -u, --update                 move only when the SOURCE file is newer\n"
+#~ "                                 than the destination file or when the\n"
+#~ "                                 destination file is missing\n"
+#~ "  -v, --verbose                explain what is being done\n"
+#~ msgstr ""
+#~ "      --target-directory=目录  将所有参数指定的<源>文件/目录移动至<目录>\n"
+#~ "  -u, --update                 只在<源>文件比目的地文件新，或目的地文件\n"
+#~ "                                 不存在时才会移动\n"
+#~ "  -v, --verbose                详细显示进行的步骤\n"
+
+#~ msgid "Usage: %s [OPTION] [COMMAND [ARG]...]\n"
+#~ msgstr "用法：%s [选项] [命令 [参数]...]\n"
+
+#, fuzzy
+#~ msgid "invalid adjustment %s"
+#~ msgstr "%2$s 的参数 %1$s 无效"
+
+#, fuzzy
+#~ msgid "cannot get niceness"
+#~ msgstr "无法创建链接 %s"
+
+#, fuzzy
+#~ msgid "cannot set niceness"
+#~ msgstr "stat%s失败"
+
+#, fuzzy
+#~ msgid "line number overflow"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "invalid header numbering style: %s"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "invalid body numbering style: %s"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "invalid footer numbering style: %s"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "invalid starting line number: %s"
+#~ msgstr "无效的 major 设备号 %s"
+
+#, fuzzy
+#~ msgid "invalid line number increment: %s"
+#~ msgstr "无效的行宽数值：%s"
+
+#, fuzzy
+#~ msgid "invalid number of blank lines: %s"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "invalid line number field width: %s"
+#~ msgstr "无效的行宽数值：%s"
+
+#, fuzzy
+#~ msgid "invalid line numbering format: %s"
+#~ msgstr "无效的行宽数值：%s"
+
+#~ msgid ""
+#~ "Usage: %s COMMAND [ARG]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 命令 [参数]...\n"
+#~ "  或：%s 选项\n"
+
+#, fuzzy
+#~ msgid "ignoring input"
+#~ msgstr "忽略全部参数"
+
+#, fuzzy
+#~ msgid "failed to open %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "ignoring input and appending output to %s"
+#~ msgstr "正在更改 %s 的所属组"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]...\n"
+#~ "  or:  %s [-abcdfilosx]... [FILE] [[+]OFFSET[.][b]]\n"
+#~ "  or:  %s --traditional [OPTION]... [FILE] [[+]OFFSET[.][b] [+][LABEL][.]"
+#~ "[b]]\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... 组 文件...\n"
+#~ "  或：%s [选项]... --reference=参考文件 文件...\n"
+
+#, fuzzy
+#~ msgid "All arguments to long options are mandatory for short options.\n"
+#~ msgstr "长选项必须用的参数在使用短选项时也是必须的。\n"
+
+#, fuzzy
+#~ msgid "invalid type string %s"
+#~ msgstr "权限模式字符串无效：%s "
+
+#, fuzzy
+#~ msgid "invalid character `%c' in type string %s"
+#~ msgstr "权限模式字符串 %2$s 中出现无效的字符 %1$s"
+
+#, fuzzy
+#~ msgid "standard input is closed"
+#~ msgstr "标准输入"
+
+#~ msgid "Usage: %s [OPTION]... NAME...\n"
+#~ msgstr "用法：%s [选项]... 名称...\n"
+
+#, fuzzy
+#~ msgid "nonportable character %s in file name %s"
+#~ msgstr "权限模式字符串 %2$s 中出现无效的字符 %1$s"
+
+#~ msgid "empty file name"
+#~ msgstr "空文件名"
+
+#~ msgid "???\n"
+#~ msgstr "???\n"
+
+#~ msgid "Directory: "
+#~ msgstr "目录："
+
+#~ msgid "Shell: "
+#~ msgstr "Shell："
+
+#~ msgid "Usage: %s [OPTION]... [USER]...\n"
+#~ msgstr "用法：%s [选项]... [用户]...\n"
+
+#, fuzzy
+#~ msgid "Invalid page range %s"
+#~ msgstr "权限模式字符串无效：%s "
+
+#, fuzzy
+#~ msgid "`-l PAGE_LENGTH' invalid number of lines: %s"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "`-N NUMBER' invalid starting line number: %s"
+#~ msgstr "无效的 minor 设备号 %s"
+
+#, fuzzy
+#~ msgid "`-o MARGIN' invalid line offset: %s"
+#~ msgstr "无效的行宽数值：%s"
+
+#, fuzzy
+#~ msgid "`-w PAGE_WIDTH' invalid number of characters: %s"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "`-W PAGE_WIDTH' invalid number of characters: %s"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "Page number overflow"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "-t is implied if PAGE_LENGTH <= 10.  With no FILE, or when\n"
+#~ "FILE is -, read standard input.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "如果[文件]缺省，或者[文件]为 - ，则读取标准输入。\n"
+
+#~ msgid ""
+#~ "Usage: %s FORMAT [ARGUMENT]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 格式 [参数]...\n"
+#~ "  或：%s 选项\n"
+
+#, fuzzy
+#~ msgid "invalid field width: %s"
+#~ msgstr "无效的行宽数值：%s"
+
+#, fuzzy
+#~ msgid "invalid precision: %s"
+#~ msgstr "转换无效：%s"
+
+#, fuzzy
+#~ msgid "%.*s: invalid conversion specification"
+#~ msgstr "%s：文件大小无效"
+
+#, fuzzy
+#~ msgid "invalid gap width: %s"
+#~ msgstr "无效的行宽数值：%s"
+
+#~ msgid ""
+#~ "Print the full filename of the current working directory.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "打印当前工作目录的完整文件名。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "failed to chdir to %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "failed to stat %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "ignoring non-option arguments"
+#~ msgstr "忽略任何参数"
+
+#~ msgid "Usage: %s [OPTION]... FILE\n"
+#~ msgstr "用法：%s [选项]... 文件\n"
+
+#, fuzzy
+#~ msgid "FATAL: failed to close directory %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "FATAL: cannot open .. from %s"
+#~ msgstr "无法打开目录 %s"
+
+#, fuzzy
+#~ msgid "FATAL: directory %s changed dev/ino"
+#~ msgstr "%s 的 dev/ino 变了"
+
+#, fuzzy
+#~ msgid "FATAL: cannot enter directory %s"
+#~ msgstr "无法创建目录 %s"
+
+#~ msgid ""
+#~ "WARNING: Circular directory structure.\n"
+#~ "This almost certainly means that you have a corrupted file system.\n"
+#~ "NOTIFY YOUR SYSTEM MANAGER.\n"
+#~ "The following directory is part of the cycle:\n"
+#~ "  %s\n"
+#~ msgstr ""
+#~ " 警告：发现循环的目录架构。\n"
+#~ "这几乎可以肯定文件系统已经损坏。\n"
+#~ "** 请告诉系统管理员。**\n"
+#~ "以下的目录是循环的一部份：\n"
+#~ "  %s\n"
+
+#~ msgid "%s: descend into write-protected directory %s? "
+#~ msgstr "%s：是否进入有写保护的目录%s? "
+
+#~ msgid "%s: descend into directory %s? "
+#~ msgstr "%s：是否进入目录 %s? "
+
+#~ msgid "%s: remove write-protected %s %s? "
+#~ msgstr "%s：是否删除有写保护的 %s %s? "
+
+#~ msgid "%s: remove %s %s? "
+#~ msgstr "%s：是否删除 %s %s? "
+
+#~ msgid "removed directory: %s\n"
+#~ msgstr "已删除目录：%s\n"
+
+#, fuzzy
+#~ msgid "failed to close directory %s"
+#~ msgstr "无法保留%s的时间"
+
+#~ msgid "cannot remove directory %s"
+#~ msgstr "无法删除目录%s"
+
+#, fuzzy
+#~ msgid "cannot remove root directory %s"
+#~ msgstr "无法删除目录%s"
+
+#, fuzzy
+#~ msgid "cannot remove relative-named %s"
+#~ msgstr "无法删除目录%s"
+
+#~ msgid "cannot restore current working directory"
+#~ msgstr "无法恢复当前工作目录"
+
+#~ msgid "Try `%s ./%s' to remove the file %s.\n"
+#~ msgstr "请使用“%s ./%s”删除文件 %s。\n"
+
+#~ msgid "Usage: %s [OPTION]... FILE...\n"
+#~ msgstr "用法：%s [选项]... 文件...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --no-preserve-root  do not treat `/' specially\n"
+#~ "      --preserve-root   do not remove `/' (default)\n"
+#~ "  -r, -R, --recursive   remove directories and their contents "
+#~ "recursively\n"
+#~ "  -v, --verbose         explain what is being done\n"
+#~ msgstr ""
+#~ "      --no-preserve-root 不特殊对待“/”(默认值)\n"
+#~ "      --preserve-root   不允许在“/”上递归操作\n"
+#~ "  -r, -R, --recursive   递归删除目录及其内容\n"
+#~ "  -v, --verbose         详细显示进行的步骤\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "By default, rm does not remove directories.  Use the --recursive (-r or -"
+#~ "R)\n"
+#~ "option to remove each listed directory, too, along with all of its "
+#~ "contents.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "默认情况下，rm 不删除目录。使用 --recursive (-r 或 -R)选项可以删除每个列出"
+#~ "的\n"
+#~ "目录及其下面的内容。\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "To remove a file whose name starts with a `-', for example `-foo',\n"
+#~ "use one of these commands:\n"
+#~ "  %s -- -foo\n"
+#~ "\n"
+#~ "  %s ./-foo\n"
+#~ msgstr ""
+#~ "\n"
+#~ "要删除第一个字符为“-”的文件 (例如“-foo”)，请使用以下其中一种方法：\n"
+#~ "  %s -- -foo\n"
+#~ "\n"
+#~ "  %s ./-foo\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Note that if you use rm to remove a file, it is usually possible to "
+#~ "recover\n"
+#~ "the contents of that file.  If you want more assurance that the contents "
+#~ "are\n"
+#~ "truly unrecoverable, consider using shred.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "请注意，如果使用 rm 来删除文件，通常仍可以将该文件恢复原状。如果想保证\n"
+#~ "该文件的内容无法还原，请考虑使用 shred。\n"
+
+#, fuzzy
+#~ msgid "%s: remove all arguments? "
+#~ msgstr "%s：是否删除 %s %s? "
+
+#~ msgid "removing directory, %s"
+#~ msgstr "删除目录，%s"
+
+#, fuzzy
+#~ msgid "failed to remove directory %s"
+#~ msgstr "无法保留%s的时间"
+
+#~ msgid "Usage: %s [OPTION]... DIRECTORY...\n"
+#~ msgstr "用法：%s [选项]... 目录...\n"
+
+#~ msgid ""
+#~ "Remove the DIRECTORY(ies), if they are empty.\n"
+#~ "\n"
+#~ "      --ignore-fail-on-non-empty\n"
+#~ "                  ignore each failure that is solely because a directory\n"
+#~ "                  is non-empty\n"
+#~ msgstr ""
+#~ "如果<目录>没有数据则删除该目录。\n"
+#~ "\n"
+#~ "      --ignore-fail-on-non-empty\n"
+#~ "                  忽略任何因目录仍有数据而造成的错误\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -p, --parents   Remove DIRECTORY and its ancestors.  E.g., `rmdir -p a/"
+#~ "b/c' is\n"
+#~ "                  similar to `rmdir a/b/c a/b a'.\n"
+#~ "  -v, --verbose   output a diagnostic for every directory processed\n"
+#~ msgstr ""
+#~ "  -p, --parents   删除<目录>，然后尝试删除指定路径中的所有上层目录。例"
+#~ "如：\n"
+#~ "                  “rmdir -p a/b/c”的效果等于“rmdir a/b/c a/b a”。\n"
+#~ "  -v, --verbose   处理每个目录时都显示信息\n"
+
+#, fuzzy
+#~ msgid "failed to remove %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "failed to get current context"
+#~ msgstr "无法取得 %s 的属性"
+
+#, fuzzy
+#~ msgid "failed to compute a new context"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "failed to set new user %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "failed to set new type %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "failed to set new range %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid "failed to set new role %s"
+#~ msgstr "无法保留%s的时间"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... LAST\n"
+#~ "  or:  %s [OPTION]... FIRST LAST\n"
+#~ "  or:  %s [OPTION]... FIRST INCREMENT LAST\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... 来源 目的地\n"
+#~ "  或：%s [选项]... 来源... 目录\n"
+#~ "  或：%s [选项]... --target-directory=目录 来源...\n"
+
+#~ msgid "invalid floating point argument: %s"
+#~ msgstr "无效的浮点参数：%s"
+
+#, fuzzy
+#~ msgid "no %% directive in format string %s"
+#~ msgstr "无效的格式字符串：%s "
+
+#~ msgid "invalid format string: %s"
+#~ msgstr "无效的格式字符串：%s "
+
+#, fuzzy
+#~ msgid "format string may not be specified when printing equal width strings"
+#~ msgstr "安装目录时不能用 strip 选项"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s OPTION USER COMMAND [ARGUMENT]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 用户名 命令 [参数]...\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid "unknown user-ID: %s"
+#~ msgstr "未知的用户 ID：%s"
+
+#, fuzzy
+#~ msgid "failed to set supplemental group(s)"
+#~ msgstr "无法改变所属组至没有名称的组"
+
+#, fuzzy
+#~ msgid "cannot set group-ID to %lu"
+#~ msgstr "无法改变所属组至没有名称的组"
+
+#, fuzzy
+#~ msgid "cannot set user-ID to %lu"
+#~ msgstr "stat%s失败"
+
+#~ msgid "Usage: %s [OPTIONS] FILE [...]\n"
+#~ msgstr "用法：%s [选项] 文件 [...]\n"
+
+#~ msgid ""
+#~ "Overwrite the specified FILE(s) repeatedly, in order to make it harder\n"
+#~ "for even very expensive hardware probing to recover the data.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "重复覆盖<文件>，使得即使是昂贵的硬件探测仪器也难以将数据复原。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --force    change permissions to allow writing if necessary\n"
+#~ "  -n, --iterations=N  Overwrite N times instead of the default (%d)\n"
+#~ "      --random-source=FILE  get random bytes from FILE (default /dev/"
+#~ "urandom)\n"
+#~ "  -s, --size=N   shred this many bytes (suffixes like K, M, G accepted)\n"
+#~ msgstr ""
+#~ "  -f, --force    有需要时强迫程序可写入文件\n"
+#~ "  -n, --iterations=N  自行指定重复覆盖的次数 (默认为 %d 次)\n"
+#~ "  -s, --size=N   覆盖指定的字节数目 (可接受 K、M、G 等等的单位)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -u, --remove   truncate and remove file after overwriting\n"
+#~ "  -v, --verbose  show progress\n"
+#~ "  -x, --exact    do not round file sizes up to the next full block;\n"
+#~ "                   this is the default for non-regular files\n"
+#~ "  -z, --zero     add a final overwrite with zeros to hide shredding\n"
+#~ msgstr ""
+#~ "  -u, --remove   覆盖后会截断及删除该文件\n"
+#~ "  -v, --verbose  显示进度\n"
+#~ "  -x, --exact    不将文件大小增加至最接近的块大小\n"
+#~ "  -z, --zero     最后一次会使用 0 字节进行覆盖来隐藏覆盖动作\n"
+#~ "  -              覆盖标准输出的数据\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "If FILE is -, shred standard output.\n"
+#~ "\n"
+#~ "Delete FILE(s) if --remove (-u) is specified.  The default is not to "
+#~ "remove\n"
+#~ "the files because it is common to operate on device files like /dev/hda,\n"
+#~ "and those files usually should not be removed.  When operating on "
+#~ "regular\n"
+#~ "files, most people use the --remove option.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "如果加上 --remove (-u) 选项表示删除<文件>。默认的方式是不删除文件，因为\n"
+#~ "覆盖像 /dev/hda 等的设备文件是很普遍的，而这些文件通常不应删除。当覆盖\n"
+#~ "普通文件时，绝大多数人都会使用 --remove 选项。\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "CAUTION: Note that shred relies on a very important assumption:\n"
+#~ "that the file system overwrites data in place.  This is the traditional\n"
+#~ "way to do things, but many modern file system designs do not satisfy "
+#~ "this\n"
+#~ "assumption.  The following are examples of file systems on which shred "
+#~ "is\n"
+#~ "not effective, or is not guaranteed to be effective in all file system "
+#~ "modes:\n"
+#~ "\n"
+#~ msgstr ""
+#~ "警告：请注意使用 shred 时有一个很重要的条件：\n"
+#~ "文件系统会在原来的位置覆盖指定的数据。传统的文件系统符合此条件，但许多现"
+#~ "代\n"
+#~ "的文件系统都不符合条件。以下是会令 shred 无效的文件系统的例子：\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "* log-structured or journaled file systems, such as those supplied with\n"
+#~ "AIX and Solaris (and JFS, ReiserFS, XFS, Ext3, etc.)\n"
+#~ "\n"
+#~ "* file systems that write redundant data and carry on even if some "
+#~ "writes\n"
+#~ "fail, such as RAID-based file systems\n"
+#~ "\n"
+#~ "* file systems that make snapshots, such as Network Appliance's NFS "
+#~ "server\n"
+#~ "\n"
+#~ msgstr ""
+#~ "* 有纪录结构或是日志式文件系统，像 AIX 及 Solaris 使用的文件系统 (以及\n"
+#~ "   JFS、ReiserFS、XFS、Ext3 等等)\n"
+#~ "\n"
+#~ "* 会重复写入数据，及即使一部份写入动作失败后仍可继续的文件系统，像使用\n"
+#~ "   RAID 的文件系统\n"
+#~ "\n"
+#~ "* 会不时进行快照纪录的文件系统，像 Network Applicance 的 NFS 服务器\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "%s: fdatasync failed"
+#~ msgstr "strip 出现错误"
+
+#, fuzzy
+#~ msgid "%s: fsync failed"
+#~ msgstr "strip 出现错误"
+
+#~ msgid "%s: cannot rewind"
+#~ msgstr "%s：无法向后搜寻"
+
+#~ msgid "%s: pass %lu/%lu (%s)..."
+#~ msgstr "%1$s：%3$lu 次之第 %2$lu 次 (%4$s)..."
+
+#~ msgid "%s: error writing at offset %s"
+#~ msgstr "%s：在位置 %s 写入时出现错误 "
+
+#, fuzzy
+#~ msgid "%s: lseek failed"
+#~ msgstr "strip 出现错误"
+
+#~ msgid "%s: file too large"
+#~ msgstr "%s：文件过大"
+
+#~ msgid "%s: pass %lu/%lu (%s)...%s"
+#~ msgstr "%1$s：%3$lu 次之第 %2$lu 次 (%4$s)...%5$s"
+
+#~ msgid "%s: pass %lu/%lu (%s)...%s/%s %d%%"
+#~ msgstr "%1$s：%3$lu 次之第 %2$lu 次 (%4$s)...%5$s/%6$s %7$d%%"
+
+#, fuzzy
+#~ msgid "%s: fstat failed"
+#~ msgstr "strip 出现错误"
+
+#~ msgid "%s: invalid file type"
+#~ msgstr "%s：文件类型无效"
+
+#~ msgid "%s: file has negative size"
+#~ msgstr "%s：文件的大小为负数"
+
+#~ msgid "%s: error truncating"
+#~ msgstr "%s：截断文件时出现错误"
+
+#, fuzzy
+#~ msgid "%s: fcntl failed"
+#~ msgstr "strip 出现错误"
+
+#~ msgid "%s: cannot shred append-only file descriptor"
+#~ msgstr ""
+#~ "%s：不能将只可加上数据的文件描述符 (file descriptor) 进行 shred 动作"
+
+#~ msgid "%s: removing"
+#~ msgstr "%s：删除中"
+
+#~ msgid "%s: renamed to %s"
+#~ msgstr "%s：已重命名为 %s"
+
+#~ msgid "%s: failed to remove"
+#~ msgstr "%s：删除失败"
+
+#~ msgid "%s: removed"
+#~ msgstr "%s：已删除"
+
+#~ msgid "%s: failed to close"
+#~ msgstr "%s：关闭失败"
+
+#~ msgid "%s: failed to open for writing"
+#~ msgstr "%s：打开写入失败"
+
+#~ msgid "%s: invalid number of passes"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "multiple random sources specified"
+#~ msgstr "正在关闭输出文件 %s"
+
+#~ msgid "%s: invalid file size"
+#~ msgstr "%s：文件大小无效"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]\n"
+#~ "  or:  %s -e [OPTION]... [ARG]...\n"
+#~ "  or:  %s -i LO-HI [OPTION]...\n"
+#~ msgstr ""
+#~ "用法：%s [选项]... 来源 目的地\n"
+#~ "  或：%s [选项]... 来源... 目录\n"
+#~ "  或：%s [选项]... --target-directory=目录 来源...\n"
+
+#, fuzzy
+#~ msgid "multiple -i options specified"
+#~ msgstr "正在关闭输出文件 %s"
+
+#, fuzzy
+#~ msgid "invalid input range %s"
+#~ msgstr "无效的行宽数值：%s"
+
+#, fuzzy
+#~ msgid "invalid line count %s"
+#~ msgstr "无效的行宽：%s"
+
+#, fuzzy
+#~ msgid "multiple output files specified"
+#~ msgstr "正在关闭输出文件 %s"
+
+#, fuzzy
+#~ msgid "extra operand %s\n"
+#~ msgstr "额外的操作数 %s"
+
+#, fuzzy
+#~ msgid "invalid time interval %s"
+#~ msgstr "无效的日期时间格式 %s"
+
+#, fuzzy
+#~ msgid "cannot read realtime clock"
+#~ msgstr "无法创建链接%s"
+
+#~ msgid ""
+#~ "Ordering options:\n"
+#~ "\n"
+#~ msgstr ""
+#~ "顺序选项：\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "waiting for %s [-d]"
+#~ msgstr "正在写入 %s"
+
+#~ msgid "cannot create temporary file"
+#~ msgstr "无法创建临时文件"
+
+#~ msgid "open failed"
+#~ msgstr "打开失败"
+
+#, fuzzy
+#~ msgid "fflush failed"
+#~ msgstr "strip 出现错误"
+
+#~ msgid "close failed"
+#~ msgstr "关闭失败"
+
+#, fuzzy
+#~ msgid "dup2 failed"
+#~ msgstr "打开失败"
+
+#, fuzzy
+#~ msgid "couldn't create temporary file"
+#~ msgstr "无法创建临时文件"
+
+#, fuzzy
+#~ msgid "couldn't open temporary file"
+#~ msgstr "无法创建临时文件"
+
+#~ msgid "write failed"
+#~ msgstr "写入失败"
+
+#~ msgid "warning: cannot remove: %s"
+#~ msgstr "警告：无法删除：%s"
+
+#, fuzzy
+#~ msgid "stat failed"
+#~ msgstr "strip 出现错误"
+
+#~ msgid "read failed"
+#~ msgstr "读取失败"
+
+#~ msgid "standard error"
+#~ msgstr "标准错误"
+
+#, fuzzy
+#~ msgid "%s: invalid field specification %s"
+#~ msgstr "%s：文件大小无效"
+
+#, fuzzy
+#~ msgid "%s: invalid count at start of %s"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "invalid number after `-'"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "invalid number after `.'"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "stray character in field spec"
+#~ msgstr "字符特殊文件"
+
+#, fuzzy
+#~ msgid "multiple compress programs specified"
+#~ msgstr "指定了多种输出格式"
+
+#, fuzzy
+#~ msgid "invalid number at field start"
+#~ msgstr "无效的号码 %s"
+
+#~ msgid "field number is zero"
+#~ msgstr "字段编号为零"
+
+#~ msgid "character offset is zero"
+#~ msgstr "字符偏移为零"
+
+#, fuzzy
+#~ msgid "invalid number after `,'"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "extra operand %s not allowed with -%c"
+#~ msgstr "额外的操作数 %s"
+
+#~ msgid "Usage: %s [OPTION] [INPUT [PREFIX]]\n"
+#~ msgstr "用法：%s [选项] [输入 [前缀]]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "SIZE may have a multiplier suffix:\n"
+#~ "b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+#~ "GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<块数目>和<字节>可以加上以下的单位：\n"
+#~ "xM=M，c=1，w=2，b=512，kB=1000，K=1024，MB=1000000，M=1048576，\n"
+#~ "GB=1000000000，G=1073741824，还有 T、P、E、Z、Y 如此类推。\n"
+#~ "每个<关键字>可以是：\n"
+
+#~ msgid "creating file %s\n"
+#~ msgstr "创建文件 %s\n"
+
+#~ msgid "cannot split in more than one way"
+#~ msgstr "无法按多种方式拆分"
+
+#~ msgid "%s: invalid suffix length"
+#~ msgstr "%s：无效的后缀长度"
+
+#, fuzzy
+#~ msgid "%s: invalid number of bytes"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "%s: invalid number of lines"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "line count option -%s%c... is too large"
+#~ msgstr "%s：文件过大"
+
+#, fuzzy
+#~ msgid "invalid number of lines: 0"
+#~ msgstr "无效的号码 %s"
+
+#, fuzzy
+#~ msgid "warning: unrecognized escape `\\%c'"
+#~ msgstr "%s：无法识别的选项“%c%s”\n"
+
+#, fuzzy
+#~ msgid "%s: invalid directive"
+#~ msgstr "%s：文件类型无效"
+
+#, fuzzy
+#~ msgid "cannot read file system information for %s"
+#~ msgstr "无法创建 fifo 文件%s"
+
+#~ msgid "Usage: %s [OPTION] FILE...\n"
+#~ msgstr "用法：%s [选项] 文件...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "the options for verbose and stty-readable output styles are\n"
+#~ "mutually exclusive"
+#~ msgstr ""
+#~ "显示 dircolors 内部数据库的选项和选择 shell 语法的选项\n"
+#~ "是互相抵触的"
+
+#~ msgid "invalid argument %s"
+#~ msgstr "无效参数 %s"
+
+#~ msgid "missing argument to %s"
+#~ msgstr "缺少 %s 的参数"
+
+#, fuzzy
+#~ msgid "invalid line discipline %s"
+#~ msgstr "无效的 tab 字符定位值：%s"
+
+#~ msgid "invalid integer argument %s"
+#~ msgstr "无效的整数参数 %s"
+
+#~ msgid "Password:"
+#~ msgstr "密码："
+
+#, fuzzy
+#~ msgid "getpass: cannot open /dev/tty"
+#~ msgstr "无法打开目录%s"
+
+#, fuzzy
+#~ msgid "cannot set groups"
+#~ msgstr "stat%s失败"
+
+#, fuzzy
+#~ msgid "cannot set group id"
+#~ msgstr "无法改变所属组至没有名称的组"
+
+#, fuzzy
+#~ msgid "cannot set user id"
+#~ msgstr "stat%s失败"
+
+#~ msgid "Usage: %s [OPTION]... [-] [USER [ARG]...]\n"
+#~ msgstr "用法：%s [选项]... [-] [用户 [参数]...]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "A mere - implies -l.   If USER not given, assume root.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "单独的 - 代表 -l。如果未给出[用户]，则假定为 root。\n"
+
+#~ msgid "user %s does not exist"
+#~ msgstr "用户 %s 不存在"
+
+#~ msgid "incorrect password"
+#~ msgstr "密码不正确"
+
+#~ msgid "using restricted shell %s"
+#~ msgstr "使用被限制的 shell %s"
+
+#, fuzzy
+#~ msgid "warning: cannot change directory to %s"
+#~ msgstr "无法进入目录 %s"
+
+#~ msgid ""
+#~ "Force changed blocks to disk, update the super block.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "强迫将已更改的数据写入磁盘，并更新 super block。\n"
+#~ "\n"
+
+#~ msgid "ignoring all arguments"
+#~ msgstr "忽略全部参数"
+
+#~ msgid "      --help     display this help and exit\n"
+#~ msgstr "      --help     显示此帮助信息并退出\n"
+
+#~ msgid "      --version  output version information and exit\n"
+#~ msgstr "      --version  输出版本信息并退出\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to <%s>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "请向 <%s> 报告错误。\n"
+
+#, fuzzy
+#~ msgid "%s: seek failed"
+#~ msgstr "strip 出现错误"
+
+#~ msgid "record too large"
+#~ msgstr "记录太大"
+
+#~ msgid "cannot create temporary file %s"
+#~ msgstr "无法创建临时文件 %s"
+
+#~ msgid "cannot open %s for writing"
+#~ msgstr "无法打开 %s 写入"
+
+#~ msgid "%s: write error"
+#~ msgstr "%s：写入错误"
+
+#~ msgid "separator cannot be empty"
+#~ msgstr "分隔符不能为空"
+
+#, fuzzy
+#~ msgid "closing %s (fd=%d)"
+#~ msgstr "正在关闭%s"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to relative offset %s"
+#~ msgstr "无法创建 fifo 文件%s"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to end-relative offset %s"
+#~ msgstr "无法创建 fifo 文件%s"
+
+#, fuzzy
+#~ msgid "%s: cannot change nonblocking mode"
+#~ msgstr "无法更改为空组"
+
+#, fuzzy
+#~ msgid "%s: file truncated"
+#~ msgstr "%s：截断文件时出现错误"
+
+#, fuzzy
+#~ msgid "no files remaining"
+#~ msgstr "缺少了文件参数"
+
+#~ msgid "number in %s is too large"
+#~ msgstr "%s 中的数字太大"
+
+#, fuzzy
+#~ msgid "%s: invalid maximum number of unchanged stats between opens"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "%s: invalid PID"
+#~ msgstr "%s：文件大小无效"
+
+#, fuzzy
+#~ msgid "%s: invalid number of seconds"
+#~ msgstr "%s：覆盖次数无效"
+
+#, fuzzy
+#~ msgid "warning: --pid=PID is not supported on this system"
+#~ msgstr "此系统并不支持符号链接"
+
+#~ msgid "missing argument after %s"
+#~ msgstr "%s 后缺少参数"
+
+#, fuzzy
+#~ msgid "invalid integer %s"
+#~ msgstr "无效的整数 %s\n"
+
+#, fuzzy
+#~ msgid "unknown binary operator"
+#~ msgstr "未知的系统错误"
+
+#, fuzzy
+#~ msgid "%s: binary operator expected"
+#~ msgstr "未知的系统错误"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: test EXPRESSION\n"
+#~ "  or:  test\n"
+#~ "  or:  [ EXPRESSION ]\n"
+#~ "  or:  [ ]\n"
+#~ "  or:  [ OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 文件\n"
+#~ "  或：%s 选项\n"
+
+#, fuzzy
+#~ msgid "missing `]'"
+#~ msgstr "缺少操作数"
+
+#~ msgid "extra argument %s"
+#~ msgstr "额外参数 %s"
+
+#~ msgid "creating %s"
+#~ msgstr "创建 %s"
+
+#~ msgid "cannot touch %s"
+#~ msgstr "无法触碰 %s"
+
+#~ msgid "setting times of %s"
+#~ msgstr "设置 %s 的时间"
+
+#~ msgid ""
+#~ "  -a                     change only the access time\n"
+#~ "  -c, --no-create        do not create any files\n"
+#~ "  -d, --date=STRING      parse STRING and use it instead of current time\n"
+#~ "  -f                     (ignored)\n"
+#~ "  -m                     change only the modification time\n"
+#~ msgstr ""
+#~ "  -a                     只更改访问时间\n"
+#~ "  -c, --no-create        不创建任何文件\n"
+#~ "  -d, --date=字符串        使用<字符串>表示的时间而不是目前的时间\n"
+#~ "  -f                     (此选项不作处理)\n"
+#~ "  -m                     只更改修改时间\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -r, --reference=FILE   use this file's times instead of current time\n"
+#~ "  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current "
+#~ "time\n"
+#~ "  --time=WORD            change the specified time:\n"
+#~ "                           WORD is access, atime, or use: equivalent to -"
+#~ "a\n"
+#~ "                           WORD is modify or mtime: equivalent to -m\n"
+#~ msgstr ""
+#~ "  -r, --reference=文件   使用指定<文件>的时间属性而非目前的时间\n"
+#~ "  -t STAMP               使用 [[CC]YY]MMDDhhmm[.ss] 格式的时间而非目前的时"
+#~ "间\n"
+#~ "  --time=WORD            使用 WORD 指定的时间：access、atime、use 都等于 -"
+#~ "a\n"
+#~ "                           选项的效果，而 modify、mtime 等于 -m 选项的效"
+#~ "果\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Note that the -d and -t options accept different time-date formats.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "请注意，-d 和 -t 选项可接受不同的时间/日期格式。\n"
+
+#~ msgid "cannot specify times from more than one source"
+#~ msgstr "无法由多于一种的来源来指定时间"
+
+#, fuzzy
+#~ msgid ""
+#~ "warning: `touch %s' is obsolete; use `touch -t %04ld%02d%02d%02d%02d.%02d'"
+#~ msgstr ""
+#~ "警告：“touch %s”已经过时；请使用“touch -t %04d%02d%02d%02d%02d.%02d”"
+
+#~ msgid "Usage: %s [OPTION]... SET1 [SET2]\n"
+#~ msgstr "用法：%s [选项]... 集合1 [集合2]\n"
+
+#, fuzzy
+#~ msgid "warning: an unescaped backslash at end of string is not portable"
+#~ msgstr "%s：警告：将硬链接指向符号链接是不通用的功能"
+
+#, fuzzy
+#~ msgid "invalid character class %s"
+#~ msgstr "权限模式字符串 %2$s 中出现无效的字符 %1$s"
+
+#, fuzzy
+#~ msgid "too many characters in set"
+#~ msgstr "字符特殊文件"
+
+#~ msgid ""
+#~ "Usage: %s [ignored command line arguments]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s [忽略的命令行开关]\n"
+#~ "  或：%s 选项\n"
+
+#, fuzzy
+#~ msgid "%s: input contains an odd number of tokens"
+#~ msgstr "%s：覆盖次数无效"
+
+#~ msgid "%s: input contains a loop:"
+#~ msgstr "%s：输入包含循环："
+
+#~ msgid "Usage: %s [OPTION]...\n"
+#~ msgstr "用法：%s [选项]...\n"
+
+#, fuzzy
+#~ msgid "tab stop value is too large"
+#~ msgstr "%s：文件过大"
+
+#~ msgid "Usage: %s [OPTION]... [INPUT [OUTPUT]]\n"
+#~ msgstr "用法：%s [选项]... [输入 [输出]]\n"
+
+#~ msgid "too many repeated lines"
+#~ msgstr "重复行太多"
+
+#, fuzzy
+#~ msgid "invalid number of fields to skip"
+#~ msgstr "%s：覆盖次数无效"
+
+#~ msgid "invalid number of bytes to skip"
+#~ msgstr "要跳过的字节数无效"
+
+#~ msgid "invalid number of bytes to compare"
+#~ msgstr "要比较的字节数无效"
+
+#~ msgid "printing all duplicated lines and repeat counts is meaningless"
+#~ msgstr "打印所有重复行和重复计数毫无意义"
+
+#~ msgid ""
+#~ "Usage: %s FILE\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s 文件\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid ""
+#~ "Call the unlink function to remove the specified FILE.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "调用 unlink 函数以便删除指定的[文件]。\n"
+#~ "\n"
+
+#~ msgid "cannot unlink %s"
+#~ msgstr "无法解除 %s 的链接"
+
+#~ msgid "couldn't get boot time"
+#~ msgstr "无法获得启动时间"
+
+#~ msgid "???? days ??:??,  "
+#~ msgstr "???? 天 ??:??，"
+
+#~ msgid "%ld day"
+#~ msgid_plural "%ld days"
+#~ msgstr[0] "%ld 天"
+
+#~ msgid "%lu user"
+#~ msgid_plural "%lu users"
+#~ msgstr[0] "%lu 个用户"
+
+#~ msgid ",  load average: %.2f"
+#~ msgstr "，平均负载：%.2f"
+
+#~ msgid "Usage: %s [OPTION]... [ FILE ]\n"
+#~ msgstr "用法：%s [选项]... [文件]\n"
+
+#~ msgid ""
+#~ "Print the current time, the length of time the system has been up,\n"
+#~ "the number of users on the system, and the average number of jobs\n"
+#~ "in the run queue over the last 1, 5 and 15 minutes.\n"
+#~ "If FILE is not specified, use %s.  %s as FILE is common.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "打印当前时间、系统已经运行的时间、系统的用户数、以及刚才一分钟、五\n"
+#~ "分钟、十五分钟内运行队列中的平均任务数。\n"
+#~ "如果未指定[文件]，则使用 %s。%s 作为文件很常见。\n"
+#~ "\n"
+
+#~ msgid "Usage: %s [OPTION]... [ FILE | ARG1 ARG2 ]\n"
+#~ msgstr "用法：%s [选项]... [文件|参数1 参数2]\n"
+
+#~ msgid "  -l, --login       print system login processes\n"
+#~ msgstr "  -l, --login       打印系统登录进程\n"
+
+#~ msgid ""
+#~ "Print the user name associated with the current effective user ID.\n"
+#~ "Same as id -un.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "打印与当前生效的用户 ID 关联的用户名。\n"
+#~ "与 id -un 相同。\n"
+#~ "\n"
+
+#~ msgid "%s: cannot find name for user ID %lu\n"
+#~ msgstr "%s：找不到 ID %lu 的用户名\n"
+
+#~ msgid ""
+#~ "Usage: %s [STRING]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "用法：%s [字符串]...\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid ""
+#~ "Repeatedly output a line with all specified STRING(s), or `y'.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "重复输出一行指定的<字符串>，或者重复“y”。\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION] NUMBER[SUFFIX] COMMAND [ARG]...\n"
+#~ "  or:  %s [OPTION]\n"
+#~ msgstr ""
+#~ "用法：%s 用户名 命令 [参数]...\n"
+#~ "  或：%s 选项\n"
+
+#~ msgid "block size"
+#~ msgstr "块大小"
+
+#~ msgid ""
+#~ "\n"
+#~ "This is free software.  You may redistribute copies of it under the terms "
+#~ "of\n"
+#~ "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
+#~ "There is NO WARRANTY, to the extent permitted by law.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "这是自由软件。您可以按照 GNU GPL 协议 <http://www.gnu.org/licenses/gpl."
+#~ "html> 的条款再发布此软件的副本，但我们无法保证相关法律不对这一情形进行限"
+#~ "制。\n"
+#~ "\n"
+
+#~ msgid "symbolic links are not supported on this system"
+#~ msgstr "此系统并不支持符号链接"
+
+#, fuzzy
+#~ msgid "unrecognized operand %s=%s"
+#~ msgstr "无法识别的选项 %s=%s"
+
+#~ msgid "the --kilobytes option is deprecated; use -k instead"
+#~ msgstr "--kilobytes 选项已经被弃用，请使用 -k"
+
+#, fuzzy
+#~ msgid "cannot print only user and only group"
+#~ msgstr "不可同时省略用户和所属组"
+
+#, fuzzy
+#~ msgid "cannot get supplemental group list"
+#~ msgstr "无法改变所属组至没有名称的组"
+
+#~ msgid "strip failed"
+#~ msgstr "strip 出现错误"
+
+#~ msgid "fifo files not supported"
+#~ msgstr "不支持 FIFO 文件"
+
+#, fuzzy
+#~ msgid "skip argument"
+#~ msgstr "缺少了文件参数"
+
+#, fuzzy
+#~ msgid "limit argument"
+#~ msgstr "有效的参数为："
+
+#, fuzzy
+#~ msgid "page range"
+#~ msgstr "权限模式字符串无效：%s "
+
+#, fuzzy
+#~ msgid "the --copyright option is deprecated; use --version instead"
+#~ msgstr ""
+#~ "警告：--version-control (-V) 选项已经过时；将来的版本随时可能不再支持\n"
+#~ "此选项。请使用 --backup=%s。"
+
+#~ msgid "cannot remove `.' or `..'"
+#~ msgstr "无法删除“.”或“..”"
+
+#~ msgid "sort size"
+#~ msgstr "排序大小"
+
+#~ msgid ""
+#~ "Update the access and modification times of each FILE to the current "
+#~ "time.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "将每个<文件>的访问及修改时间都更新为目前时间。\n"
+#~ "\n"
+
+#~ msgid "Warning: -i will be removed in a future release;   use -u instead"
+#~ msgstr "警告：-i 即将在未来的版本删除；请换用 -u"

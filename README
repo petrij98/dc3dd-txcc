@@ -1,0 +1,92 @@
+dc3dd 7.2.640
+DCCI 
+2012-10-09
+
+Issues:
+-------
+When imaging to a device with verification under Mac OS X, verification
+can fail due to automatic mounting of the target device. One solution is
+to use Disk Arbitrator in conjunction with dc3dd on OS X.    
+
+New Features:
+-------------
+Log output may be sent to multiple job logs and hash logs. Simply specify
+log=LOG and/or hlog=LOG more than once.
+
+Verification of an image restored to a device larger than the image is now
+supported. Specify hof=DEVICE to hash only the bytes dc3dd writes to the
+device. Specify fhod=DEVICE to hash both the bytes dc3dd writes to the
+device and all the bytes that follow, up to the end of the device.   
+
+Specifying hof=DEVICE will now default to phod=DEVICE behavior (hash only 
+the bytes output by dc3dd, not the full device).
+
+Building dc3dd:
+---------------
+dc3dd is distributed as source code and must be compiled before use.
+The default configuration can be built and installed to /usr/local/bin
+with the following commands:
+
+$ tar zxvf dc3dd-7.2.640.tar.gz
+$ cd dc3dd-7.2.640
+$ ./configure
+$ make
+$ sudo make install
+
+Note that autoconf-1.10.1 and gperf may need to be installed prior to
+execution of the above commands.
+
+dc3dd can be customized at compile-time with various options.
+The available options are as follows, and can be verified after
+compilation using the --flags command line option: 
+
+-DDEFAULT_HASH_MD5
+(equivalent to hash=md5 command-line option)
+
+-DDEFAULT_HASH_SHA1
+(equivalent to hash=sha1 command-line option)
+
+-DDEFAULT_HASH_SHA256
+(equivalent to hash=sha256 command-line option)
+
+-DDEFAULT_HASH_SHA512
+(equivalent to hash=sha512 command-line option)
+
+-DDEFAULT_OUTPUT_FILE_SIZE=BYTES
+(equivalent to ofsz=BYTES command-line option)
+
+-DDEFAULT_VERBOSE_REPORTING
+(equivalent to verb=on command-line option)
+
+-DDEFAULT_COMPACT_REPORTING
+(equivalent to nwspc=on command-line option)
+
+-DDEFAULT_DECIMAL_BYTES_REPORTING
+(equivalent to dbr=on command-line option)
+
+--enable-hpadco
+Enable checking ATA/SATA drives for hidden areas
+No command-line equivalent, cannot be overridden.
+
+These options are enabled by including them in the CFLAGS argument to
+configure. For example, to enable MD5 hashing and default output file
+size:
+
+$ ./configure CFLAGS="-O2 -DDEFAULT_HASH_MD5 
+-DDEFAULT_OUTPUT_FILE_SIZE=1900M"
+
+The program can be statically linked by adding "-static" to the CFLAGS
+compile options:
+
+$ ./configure CFLAGS="-O2 -static"
+
+Portability Notes:
+------------------
+Mac OS X:
+To enable error recovery, use /dev/rdisk* instead of /dev/disk*
+
+Windows:
+dc3dd can be compiled using Cygwin, but bad sectors can put the program
+into an infinite loop due to bugs in Cygwin.
+
+Please send all correspondence to: dc3dd@dc3.mil

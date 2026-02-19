@@ -1,0 +1,117 @@
+dc3dd NEWS
+
+* Noteworthy changes in release 7.0.0 (2009-09)
+
+** New Features
+
+   Verification hashes
+   Simplified command line
+   Can mix split and unsplit outputs
+   User-defined sector size
+   Display/logging enhancements
+   More compiled in options support
+
+* Noteworthy changes in release 6.12.5 (2009-05)
+
+** New Features
+
+   Added multiple outputs
+
+* Noteworthy changes in release 6.12.4 (2009-04)
+
+** New Features
+
+   Added HPA/DCO detection capability
+
+   Added multithreading for hashing and disk I/O to increase throughput
+
+** Notes
+
+   Removed obs option, and conv ascii,ebcdic,ibm,block,unblock,lcase,swab options
+
+   Removed hashconv option and set behavior to hashconv=after
+
+* Noteworthy changes in release 6.12.3 (2009-03-17)
+
+** New features
+
+   Startup message now includes version number
+
+   Hashes always printed to console, even when hashlog/log enabled
+
+   Update blockbench.pl for OS X compatibility
+
+
+** Bug Fixes
+
+   Fix crash when verifying against an empty file
+
+   Fix error in hashwindow feature - string buffer was too small,
+   causing incorrect hashes to be displayed on OS X.
+
+
+* Noteworthy changes in release 6.12.2 (2008-11-03)
+
+** New Features
+
+   Add wipe=DEVICE operator to automatically wipe DEVICE with zeros
+
+
+** Bug Fixes
+
+   Fix bug causing incorrect hashes to be displayed in some cases when reading
+   from standard input or using `ifjoin'. Output data was not affected.
+
+
+* Noteworthy changes in release 6.12.1 (2008-09-17)
+
+** New Features
+
+   Additional logging: compile options, command line options, start time,
+   end time, and termination reason are now printed and logged.
+
+   Dynamic block size mode for faster/better error recovery
+
+   Automatically sizeprobe output device instead of input when applicable
+
+   Report progress and error positions using absolute sector addresses,
+   regardless of block size/skip/seek/etc.
+
+   count/skip/seek options take sector counts as input
+
+   If interrupted, print hash of data transferred so far
+
+   Add support for joining/verifying split files
+
+
+** Bug Fixes
+
+   Updated base package to Coreutils version 6.12
+
+   Show correct completion percentage when count is specified
+
+   Check that split value is legal on startup, instead of mysteriously failing during the run
+
+   Removed unused coreutils modules to fix static linking on Solaris 9
+
+
+
+* Noteworthy changes in release 6.10 (RBF DATE)
+
+** New Features
+
+   Added support for compiling in default modes for hashing, hashconv,
+   progress, progress count, and sizeprobe flags using the configure
+   script.
+
+** Bug Fixes
+
+   Updated base package to Coreutils version 6.10
+
+
+
+* Noteworthy changes in release 6.9.91 (2008-02-01)
+
+** New programs
+
+   dc3dd first release

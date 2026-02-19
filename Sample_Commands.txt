@@ -1,0 +1,39 @@
+Examples:
+--------
+Imaging a device to a single output file with generation of md5 and sha1
+hashes of the device:
+
+$ ./dc3dd if=/dev/sda of=suspect.img hash=md5 hash=sha1 log=suspect.txt
+
+Imaging a device to a set of CD-sized output files with generation of 
+md5 and and sha1 hashes of the device:
+
+$ ./dc3dd if=/dev/sda ofs=suspect.img.000 ofsz=650M hash=md5 hash=sha1
+log=suspect.txt
+
+Imaging a device to both a single output file and to a set of CD-sized
+output files with generation of md5 and sha1 hashes of the device:
+
+$ ./dc3dd if=/dev/sda of=suspect.img of=suspect.img ofs=suspect.img.000
+ofsz=650M hash=md5 hash=sha1 log=suspect.txt
+
+Imaging a device to both a single output file and to a set of CD-sized
+output files with generation of md5 and sha1 hashes of the device
+and md5 and sha1 hashes of the outputs:
+
+$ ./dc3dd if=/dev/sda of=suspect.img hof=suspect.img hofs=suspect.img.000
+ofsz=650M hash=md5 hash=sha1 log=suspect.txt
+
+Restoring a set of image files to a device with verification hashes of 
+only the bytes dc3dd writes to the device:
+$ ./dc3dd ifs=suspect.img.000 hof=/dev/sdb hash=md5 hash=sha1 log=suspect-restore.txt
+
+Restoring a set of image files to a device with verification hashes of 
+both the bytes dc3dd writes to the device and the entire device:
+$ ./dc3dd ifs=suspect.img.000 fhod=/dev/sdb hash=md5 hash=sha1 log=suspect-restore.txt
+
+Wiping a drive:
+$ ./dc3dd wipe=/dev/sdb log=wipe.txt
+
+Wiping a drive with verification:
+$ ./dc3dd hwipe=/dev/sdb hash=md5 hash=sha1 log=wipe.txt

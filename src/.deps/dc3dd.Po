@@ -1,0 +1,189 @@
+dc3dd.o: dc3dd.c ../lib/config.h /usr/include/sys/types.h \
+ /usr/include/_ansi.h /usr/include/newlib.h \
+ /usr/include/_newlib_version.h /usr/include/sys/config.h \
+ /usr/include/machine/ieeefp.h /usr/include/sys/features.h \
+ /usr/include/cygwin/config.h /usr/include/sys/cdefs.h \
+ /usr/include/machine/_default_types.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stddef.h \
+ /usr/include/machine/_types.h /usr/include/sys/_types.h \
+ /usr/include/sys/_stdint.h /usr/include/machine/endian.h \
+ /usr/include/machine/_endian.h /usr/include/bits/endian.h \
+ /usr/include/sys/select.h /usr/include/sys/_sigset.h \
+ /usr/include/sys/_timeval.h /usr/include/sys/timespec.h \
+ /usr/include/sys/_timespec.h /usr/include/sys/_pthreadtypes.h \
+ /usr/include/sys/cpuset.h /usr/include/machine/types.h \
+ /usr/include/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/wordsize.h /usr/include/sys/sysmacros.h \
+ /usr/include/signal.h /usr/include/_ansi.h /usr/include/sys/signal.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/sys/_intsup.h /usr/include/cygwin/signal.h \
+ /usr/include/sys/ucontext.h ../lib/getopt.h ../lib/stdlib.h \
+ /usr/include/stdlib.h /usr/include/sys/reent.h /usr/include/sys/lock.h \
+ /usr/include/machine/stdlib.h ../lib/alloca.h \
+ /usr/include/cygwin/stdlib.h /usr/include/cygwin/wait.h \
+ /usr/include/sys/_locale.h ../lib/unistd.h /usr/include/unistd.h \
+ /usr/include/sys/unistd.h ../lib/stdio.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stdarg.h \
+ /usr/include/sys/stdio.h /usr/include/ctype.h /usr/include/pthread.h \
+ /usr/include/sched.h /usr/include/sys/sched.h ../lib/time.h \
+ /usr/include/time.h /usr/include/machine/time.h \
+ /usr/include/cygwin/time.h system.h ../lib/sys/stat.h \
+ /usr/include/sys/stat.h /usr/include/cygwin/stat.h \
+ /usr/include/sys/param.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/features.h \
+ /usr/include/cygwin/limits.h ../lib/pathmax.h ../lib/configmake.h \
+ /usr/include/sys/time.h /usr/include/machine/_time.h ../lib/string.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/sys/string.h \
+ /usr/include/errno.h /usr/include/sys/errno.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stdbool.h ../lib/exitfail.h \
+ ../lib/fcntl.h /usr/include/fcntl.h /usr/include/sys/fcntl.h \
+ /usr/include/sys/_default_fcntl.h /usr/include/dirent.h \
+ /usr/include/sys/dirent.h ../lib/stat-macros.h ../lib/timespec.h \
+ ../lib/inttypes.h /usr/include/inttypes.h /usr/include/locale.h \
+ ../lib/gettext.h /usr/include/libintl.h ../lib/xalloc.h ../lib/verify.h \
+ ../lib/unlocked-io.h ../lib/same-inode.h ../lib/dirname.h \
+ ../lib/openat.h ../lib/closein.h ../lib/closeout.h ../lib/version-etc.h \
+ ../lib/propername.h ../lib/intprops.h ../lib/error.h ../lib/gethrxtime.h \
+ ../lib/xtime.h ../lib/human.h ../lib/xstrtol.h ../lib/long-options.h \
+ ../lib/quote.h ../lib/quotearg.h ../lib/xtime.h ../lib/md5.h \
+ ../lib/sha1.h ../lib/sha256.h ../lib/sha512.h ../lib/u64.h \
+ /usr/include/sys/ioctl.h /usr/include/sys/termios.h \
+ /usr/include/cygwin/fs.h /usr/include/asm/socket.h \
+ /usr/include/cygwin/if.h /usr/include/cygwin/socket.h \
+ /usr/include/cygwin/sockios.h /usr/include/sys/uio.h \
+ /usr/include/cygwin/_ucred.h /usr/include/cygwin/_socketflags.h
+../lib/config.h:
+/usr/include/sys/types.h:
+/usr/include/_ansi.h:
+/usr/include/newlib.h:
+/usr/include/_newlib_version.h:
+/usr/include/sys/config.h:
+/usr/include/machine/ieeefp.h:
+/usr/include/sys/features.h:
+/usr/include/cygwin/config.h:
+/usr/include/sys/cdefs.h:
+/usr/include/machine/_default_types.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stddef.h:
+/usr/include/machine/_types.h:
+/usr/include/sys/_types.h:
+/usr/include/sys/_stdint.h:
+/usr/include/machine/endian.h:
+/usr/include/machine/_endian.h:
+/usr/include/bits/endian.h:
+/usr/include/sys/select.h:
+/usr/include/sys/_sigset.h:
+/usr/include/sys/_timeval.h:
+/usr/include/sys/timespec.h:
+/usr/include/sys/_timespec.h:
+/usr/include/sys/_pthreadtypes.h:
+/usr/include/sys/cpuset.h:
+/usr/include/machine/types.h:
+/usr/include/endian.h:
+/usr/include/bits/byteswap.h:
+/usr/include/bits/wordsize.h:
+/usr/include/sys/sysmacros.h:
+/usr/include/signal.h:
+/usr/include/_ansi.h:
+/usr/include/sys/signal.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stdint.h:
+/usr/include/stdint.h:
+/usr/include/sys/_intsup.h:
+/usr/include/cygwin/signal.h:
+/usr/include/sys/ucontext.h:
+../lib/getopt.h:
+../lib/stdlib.h:
+/usr/include/stdlib.h:
+/usr/include/sys/reent.h:
+/usr/include/sys/lock.h:
+/usr/include/machine/stdlib.h:
+../lib/alloca.h:
+/usr/include/cygwin/stdlib.h:
+/usr/include/cygwin/wait.h:
+/usr/include/sys/_locale.h:
+../lib/unistd.h:
+/usr/include/unistd.h:
+/usr/include/sys/unistd.h:
+../lib/stdio.h:
+/usr/include/stdio.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stdarg.h:
+/usr/include/sys/stdio.h:
+/usr/include/ctype.h:
+/usr/include/pthread.h:
+/usr/include/sched.h:
+/usr/include/sys/sched.h:
+../lib/time.h:
+/usr/include/time.h:
+/usr/include/machine/time.h:
+/usr/include/cygwin/time.h:
+system.h:
+../lib/sys/stat.h:
+/usr/include/sys/stat.h:
+/usr/include/cygwin/stat.h:
+/usr/include/sys/param.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/limits.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/syslimits.h:
+/usr/include/limits.h:
+/usr/include/features.h:
+/usr/include/cygwin/limits.h:
+../lib/pathmax.h:
+../lib/configmake.h:
+/usr/include/sys/time.h:
+/usr/include/machine/_time.h:
+../lib/string.h:
+/usr/include/string.h:
+/usr/include/strings.h:
+/usr/include/sys/string.h:
+/usr/include/errno.h:
+/usr/include/sys/errno.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stdbool.h:
+../lib/exitfail.h:
+../lib/fcntl.h:
+/usr/include/fcntl.h:
+/usr/include/sys/fcntl.h:
+/usr/include/sys/_default_fcntl.h:
+/usr/include/dirent.h:
+/usr/include/sys/dirent.h:
+../lib/stat-macros.h:
+../lib/timespec.h:
+../lib/inttypes.h:
+/usr/include/inttypes.h:
+/usr/include/locale.h:
+../lib/gettext.h:
+/usr/include/libintl.h:
+../lib/xalloc.h:
+../lib/verify.h:
+../lib/unlocked-io.h:
+../lib/same-inode.h:
+../lib/dirname.h:
+../lib/openat.h:
+../lib/closein.h:
+../lib/closeout.h:
+../lib/version-etc.h:
+../lib/propername.h:
+../lib/intprops.h:
+../lib/error.h:
+../lib/gethrxtime.h:
+../lib/xtime.h:
+../lib/human.h:
+../lib/xstrtol.h:
+../lib/long-options.h:
+../lib/quote.h:
+../lib/quotearg.h:
+../lib/xtime.h:
+../lib/md5.h:
+../lib/sha1.h:
+../lib/sha256.h:
+../lib/sha512.h:
+../lib/u64.h:
+/usr/include/sys/ioctl.h:
+/usr/include/sys/termios.h:
+/usr/include/cygwin/fs.h:
+/usr/include/asm/socket.h:
+/usr/include/cygwin/if.h:
+/usr/include/cygwin/socket.h:
+/usr/include/cygwin/sockios.h:
+/usr/include/sys/uio.h:
+/usr/include/cygwin/_ucred.h:
+/usr/include/cygwin/_socketflags.h:

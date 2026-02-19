@@ -1,0 +1,4817 @@
+# Norwegian messages for GNU textutils (bokmål dialect)
+# Copyright (C) 1996 Free Software Foundation, Inc.
+# Eivind Tagseth <eivindt@multinet.no>, 1996, 1997, 1999.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU textutils 2.0.20\n"
+"Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
+"POT-Creation-Date: 2009-04-07 16:11-0400\n"
+"PO-Revision-Date: 2002-01-27 21:35+0100\n"
+"Last-Translator: Eivind Tagseth <eivindt@multinet.no>\n"
+"Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
+"Language: no\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:59
+msgid "Paul Rubin"
+msgstr ""
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:60
+#, fuzzy
+msgid "David MacKenzie"
+msgstr "Paul Rubin og David MacKenzie"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:61
+msgid "Stuart Kemp"
+msgstr ""
+
+#: src/dc3dd.c:523
+#, fuzzy
+msgid "Could not allocate space for thread"
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:538 src/dc3dd.c:546
+msgid "Unable to allocate space for thread buffer"
+msgstr ""
+
+#: src/dc3dd.c:556
+msgid "Unable to allocate space for lock/signals"
+msgstr ""
+
+#: src/dc3dd.c:714
+#, c-format
+msgid "Unknown hash algorithm %s"
+msgstr ""
+
+#: src/dc3dd.c:730
+msgid "Unable to allocate space for hashes"
+msgstr ""
+
+#: src/dc3dd.c:771 src/dc3dd.c:777 src/dc3dd.c:781
+msgid "Unable to allocate space for threads"
+msgstr ""
+
+#: src/dc3dd.c:1090
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Prøv med «%s --help» for mer informasjon.\n"
+
+#: src/dc3dd.c:1094
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPERAND]...\n"
+"  or:  %s OPTION\n"
+msgstr ""
+"Bruk:  %s [FIL]...\n"
+"eller: %s [FLAGG]\n"
+
+#: src/dc3dd.c:1099
+msgid ""
+"Copy a file, converting and formatting according to the operands.\n"
+"\n"
+"  bs=BYTES          force ibs=BYTES and obs=BYTES\n"
+"  conv=CONVS        convert the file as per the comma separated symbol list\n"
+"  count=SECTORS     copy only SECTORS input sectors\n"
+"  ibs=BYTES         read BYTES bytes at a time (must be a multiple of input "
+"sector size)\n"
+msgstr ""
+
+#: src/dc3dd.c:1107
+msgid ""
+"  if=FILE           read from FILE instead of stdin\n"
+"  ifjoin=BASE.FMT   read from split files with name BASE and splitformat "
+"FMT\n"
+"  iflag=FLAGS       read as per the comma separated symbol list\n"
+"  pattern=HEX       write HEX to every byte of the output\n"
+"  textpattern=TEXT  write the string TEXT repeatedly to the output\n"
+"  obs=BYTES         write BYTES bytes at a time\n"
+"  of=FILE           write to FILE instead of stdout\n"
+"  of:=COMMAND       pipe output to the given command\n"
+"  oflag=FLAGS       write as per the comma separated symbol list\n"
+"  wipe=FILE         wipe device FILE with zeros (or specify pattern/"
+"textpattern)\n"
+"  seek=SECTORS      skip SECTORS input sectors at start of output\n"
+"  skip=SECTORS      skip SECTORS input sectors at start of input\n"
+"  status=noxfer     suppress transfer statistics\n"
+msgstr ""
+
+#: src/dc3dd.c:1122
+msgid ""
+"  split=BYTES       split the output into pieces of size BYTES\n"
+"  splitformat=FMT   create extensions for split pieces using FMT\n"
+"                    Extensions can be numerical starting at zero,\n"
+"                    numerical starting at one, or alphabetical.\n"
+"                    These options are selected by using a series of\n"
+"                    zeros, ones, or a's, respectively. The number\n"
+"                    of characters used indicates the desired length of\n"
+"                    the extensions. For example, splitformat=1111\n"
+"                    indicates four character numerical extensions\n"
+"                    starting with 0001.\n"
+"  progress=on       displays a progress meter\n"
+"  progresscount=NUM  number of blocks processed between each progress "
+"update\n"
+"  sizeprobe=on      estimates size of input file for use with status\n"
+"  hash=ALGORITHM    computes ALGORITHM hashes of the input data\n"
+msgstr ""
+
+#: src/dc3dd.c:1142
+msgid ""
+"  hashwindow=BYTES  number of bytes for piecewise hashing\n"
+"  hashlog=FILE      appends piecewise hashes to the log file\n"
+"  errlog=FILE       appends errors to the log file\n"
+"  log=FILE          appends hashes and errors to the same file\n"
+"  errors=group      group read errors together\n"
+msgstr ""
+
+#: src/dc3dd.c:1149
+msgid ""
+"  vf=FILE           verify the input against FILE\n"
+"  vfjoin=BASE.FMT   verify the input against split files with name BASE and "
+"splitformat FMT\n"
+"  verifylog=FILE    write the results of the verify to the given file\n"
+msgstr ""
+
+#: src/dc3dd.c:1155
+msgid ""
+"\n"
+"ALGORITHM can be a comma separated list of md5, sha1, sha256, and sha512\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1160
+msgid ""
+"\n"
+"BLOCKS and BYTES may be followed by the following multiplicative suffixes:\n"
+"xM M, c 1, w 2, b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+"GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+"\n"
+"Each CONV symbol may be:\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1169
+msgid ""
+"  nocreat   do not create the output file\n"
+"  excl      fail if the output file already exists\n"
+"  notrunc   do not truncate the output file\n"
+msgstr ""
+
+#: src/dc3dd.c:1174
+msgid ""
+"  noerror   continue after read errors\n"
+"  sync      pad every input block with NULs to ibs-size; when used\n"
+"            with block or unblock, pad with spaces rather than NULs\n"
+"  fdatasync  physically write output file data before finishing\n"
+"  fsync     likewise, but also write metadata\n"
+msgstr ""
+
+#: src/dc3dd.c:1181
+msgid ""
+"\n"
+"Each FLAG symbol may be:\n"
+"\n"
+"  append    append mode (makes sense only for output; conv=notrunc "
+"suggested)\n"
+msgstr ""
+
+#: src/dc3dd.c:1188
+msgid "  direct    use direct I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1190
+#, fuzzy
+msgid "  directory fail unless a directory\n"
+msgstr "%s eksisterer men er ikke en katalog"
+
+#: src/dc3dd.c:1192
+msgid "  dsync     use synchronized I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1194
+msgid "  sync      likewise, but also for metadata\n"
+msgstr ""
+
+#: src/dc3dd.c:1196
+msgid "  nonblock  use non-blocking I/O\n"
+msgstr ""
+
+#: src/dc3dd.c:1198
+msgid "  noatime   do not update access time\n"
+msgstr ""
+
+#: src/dc3dd.c:1200
+msgid "  noctty    do not assign controlling terminal from file\n"
+msgstr ""
+
+#: src/dc3dd.c:1203
+msgid "  nofollow  do not follow symlinks\n"
+msgstr ""
+
+#: src/dc3dd.c:1205
+msgid "  nolinks   fail if multiply-linked\n"
+msgstr ""
+
+#: src/dc3dd.c:1207
+msgid "  binary    use binary I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1209
+msgid "  text      use text I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1213
+#, c-format
+msgid ""
+"\n"
+"Sending a %s signal to a running `dd' process makes it\n"
+"print I/O statistics to standard error and then resume copying.\n"
+"\n"
+"  $ dd if=/dev/zero of=/dev/null& pid=$!\n"
+"  $ kill -%s $pid; sleep 1; kill $pid\n"
+"  18335302+0 sectors in\n"
+"  18335302+0 sectors out\n"
+"  9387674624 bytes (9.4 GB) copied, 34.6279 seconds, 271 MB/s\n"
+"\n"
+"Options are:\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1266
+msgid "Unknown system error"
+msgstr "Ukjent systemfeil"
+
+#: src/dc3dd.c:1953 src/dc3dd.c:1960
+#, c-format
+msgid ""
+"%<PRIuMAX>+%<PRIuMAX> sectors in\n"
+"%<PRIuMAX>+%<PRIuMAX> sectors out\n"
+msgstr ""
+
+#: src/dc3dd.c:1971
+#, c-format
+msgid "\n"
+msgstr ""
+
+#: src/dc3dd.c:1999 src/dc3dd.c:2007
+#, c-format
+msgid "%<PRIuMAX> byte (%s) %s"
+msgid_plural "%<PRIuMAX> bytes (%s) %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/dc3dd.c:2041
+msgid "Infinity B"
+msgstr ""
+
+#. TRANSLATORS: The two instances of "s" in this string are the SI
+#. symbol "s" (meaning second), and should not be translated.
+#.
+#. This format used to be:
+#.
+#. ngettext (", %g second, %s/s\n", ", %g seconds, %s/s\n", delta_s == 1)
+#.
+#. but that was incorrect for languages like Polish.  To fix this
+#. bug we now use SI symbols even though they're a bit more
+#. confusing in English.
+#: src/dc3dd.c:2054
+#, c-format
+msgid ", %g s, %s/s        "
+msgstr ""
+
+#: src/dc3dd.c:2057
+#, c-format
+msgid ", %g s, %s/s\n"
+msgstr ""
+
+#: src/dc3dd.c:2139
+#, fuzzy, c-format
+msgid "closing input file %s"
+msgstr "lager filen «%s»\n"
+
+#: src/dc3dd.c:2146
+#, c-format
+msgid "closing output file %s"
+msgstr ""
+
+#: src/dc3dd.c:2399
+msgid "Unable to allocate filename"
+msgstr ""
+
+#: src/dc3dd.c:2428
+msgid "Split extensions exhausted"
+msgstr ""
+
+#: src/dc3dd.c:2449 src/dc3dd.c:2698 src/dc3dd.c:2705 src/dc3dd.c:2713
+#: src/dc3dd.c:2809 src/dc3dd.c:3919 src/dc3dd.c:3970 src/dc3dd.c:3985
+#: src/dc3dd.c:3996
+#, fuzzy, c-format
+msgid "opening %s"
+msgstr "feil ved lesing av %s"
+
+#: src/dc3dd.c:2462
+msgid "Unable to allocate memory"
+msgstr ""
+
+#: src/dc3dd.c:2478 src/dc3dd.c:2484
+#, fuzzy
+msgid "Verify FAILED"
+msgstr "FEIL"
+
+#: src/dc3dd.c:2672 src/dc3dd.c:2908
+#, fuzzy, c-format
+msgid "unrecognized operand %s"
+msgstr "ukjent flagg «-%c»"
+
+#: src/dc3dd.c:2682 src/dc3dd.c:2689 src/dc3dd.c:2829 src/dc3dd.c:2962
+#, fuzzy, c-format
+msgid "illegal pattern %s"
+msgstr "ugyldig bredde: «%s»"
+
+#: src/dc3dd.c:2748
+msgid "It is pitch dark here. You are likely to be eaten by a grue."
+msgstr ""
+
+#: src/dc3dd.c:2753
+#, fuzzy, c-format
+msgid "Illegal split format %s"
+msgstr "ugyldig argument %s for %s"
+
+#: src/dc3dd.c:2768
+#, c-format
+msgid "Illegal ifjoin format %s - missing extension"
+msgstr ""
+
+#: src/dc3dd.c:2773
+#, fuzzy, c-format
+msgid "Illegal ifjoin format %s"
+msgstr "ugyldig argument %s for %s"
+
+#: src/dc3dd.c:2793
+#, c-format
+msgid "Illegal vfjoin format %s - missing extension"
+msgstr ""
+
+#: src/dc3dd.c:2798
+#, fuzzy, c-format
+msgid "Illegal vfjoin format %s"
+msgstr "ugyldig argument %s for %s"
+
+#: src/dc3dd.c:2813
+#, c-format
+msgid "%s not implemented yet"
+msgstr ""
+
+#: src/dc3dd.c:2847
+#, fuzzy
+msgid "invalid conversion"
+msgstr "ugyldig breddespesifikasjon «%s»"
+
+#: src/dc3dd.c:2850
+#, fuzzy
+msgid "invalid input flag"
+msgstr "ugyldig tall i feltstart"
+
+#: src/dc3dd.c:2853
+#, fuzzy
+msgid "invalid output flag"
+msgstr "ugyldig gruppe"
+
+#: src/dc3dd.c:2856
+#, fuzzy
+msgid "invalid status flag"
+msgstr "ugyldig bruker"
+
+#: src/dc3dd.c:2913
+#, fuzzy, c-format
+msgid "invalid number %s"
+msgstr "ugyldig antall"
+
+#: src/dc3dd.c:2938
+#, fuzzy
+msgid "cannot combine excl and nocreat"
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:2941
+#, fuzzy
+msgid "cannot combine if= and ifjoin="
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:2944
+#, fuzzy
+msgid "cannot combine vf= and vfjoin="
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:2947
+#, c-format
+msgid "error: split size must be a multiple of block size (currently %zd)"
+msgstr ""
+
+#: src/dc3dd.c:2950
+#, fuzzy
+msgid "cannot combine if= and wipe="
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:2953
+#, fuzzy
+msgid "cannot combine wipe= and ifjoin="
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:2955
+#, fuzzy
+msgid "cannot combine wipe= and vfjoin="
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:3116
+#, c-format
+msgid ""
+"warning: working around lseek kernel bug for file (%s)\n"
+"  of mt_type=0x%0lx -- see <sys/mtio.h> for the list of types"
+msgstr ""
+
+#: src/dc3dd.c:3165
+#, fuzzy, c-format
+msgid "skip: reading %s"
+msgstr "feil ved lesing av %s"
+
+#: src/dc3dd.c:3173 src/dc3dd.c:3237
+#, fuzzy, c-format
+msgid "%s: cannot seek"
+msgstr "%s: kan ikke søke til posisjon %s%s"
+
+#: src/dc3dd.c:3210
+#, c-format
+msgid "offset overflow while reading file %s"
+msgstr ""
+
+#: src/dc3dd.c:3228
+#, fuzzy
+msgid "advance: warning: invalid file offset after failed read"
+msgstr "advarsel: ugyldig bredde %lu; bruker %d istedet"
+
+#: src/dc3dd.c:3233
+msgid "cannot work around kernel bug after all"
+msgstr ""
+
+#: src/dc3dd.c:3291
+#, fuzzy, c-format
+msgid "setting flags for %s"
+msgstr "kan ikke endre rettigheter til %s"
+
+#: src/dc3dd.c:3303
+#, c-format
+msgid "Recorded %<PRIuMAX> %s from sector %<PRIuMAX> through %<PRIuMAX>"
+msgstr ""
+
+#: src/dc3dd.c:3337 src/dc3dd.c:3814
+#, fuzzy, c-format
+msgid "reading %s at sector %jd"
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:3339
+#, fuzzy, c-format
+msgid "reading %s at sectors %jd-%jd"
+msgstr "kan ikke opprette katalog %s"
+
+#: src/dc3dd.c:3428 src/dc3dd.c:4155
+#, fuzzy, c-format
+msgid "writing to %s"
+msgstr "feil ved skriving til %s"
+
+#: src/dc3dd.c:3490
+#, c-format
+msgid "fdatasync failed for %s"
+msgstr ""
+
+#: src/dc3dd.c:3500
+#, c-format
+msgid "fsync failed for %s"
+msgstr ""
+
+#: src/dc3dd.c:3907
+msgid "standard input"
+msgstr "standard inn"
+
+#: src/dc3dd.c:3938
+msgid "standard output"
+msgstr "standard ut"
+
+#: src/dc3dd.c:4016
+#, c-format
+msgid ""
+"offset too large: cannot truncate to a length of seek=%<PRIuMAX> (%lu-byte) "
+"sectors"
+msgstr ""
+
+#: src/dc3dd.c:4031
+#, c-format
+msgid "cannot fstat %s"
+msgstr ""
+
+#: src/dc3dd.c:4037
+#, c-format
+msgid "truncating at %<PRIuMAX> bytes in output file %s"
+msgstr ""
+
+#: src/dc3dd.c:4131
+msgid "Verify PASSED"
+msgstr ""
+
+#, fuzzy
+#~ msgid "cannot combine block and unblock"
+#~ msgstr "kan ikke utelate både bruker og gruppe"
+
+#, fuzzy
+#~ msgid "cannot combine lcase and ucase"
+#~ msgstr "Strengene som ble sammenlignet var «%s» og «%s»."
+
+#, fuzzy
+#~ msgid "rewind: warning: invalid file offset after failed read"
+#~ msgstr "advarsel: ugyldig bredde %lu; bruker %d istedet"
+
+#~ msgid "error writing %s"
+#~ msgstr "feil ved skriving til %s"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "ugyldig argument %s for %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "flertydig argument %s for %s"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Gyldige argument er:"
+
+#, fuzzy
+#~ msgid "error closing file"
+#~ msgstr "lager filen «%s»\n"
+
+#~ msgid "write error"
+#~ msgstr "feil ved skriving"
+
+#, fuzzy
+#~ msgid "preserving permissions for %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "cannot stat %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "regular file"
+#~ msgstr "feil ved lesing"
+
+#, fuzzy
+#~ msgid "block special file"
+#~ msgstr "blokkstørrelse"
+
+#, fuzzy
+#~ msgid "character special file"
+#~ msgstr "tegn-posisjon er null"
+
+#, fuzzy
+#~ msgid "weird file"
+#~ msgstr "feil ved lesing"
+
+#, fuzzy
+#~ msgid "ai_family not supported"
+#~ msgstr "blokkstørrelse"
+
+#, fuzzy
+#~ msgid "ai_socktype not supported"
+#~ msgstr "blokkstørrelse"
+
+#, fuzzy
+#~ msgid "System error"
+#~ msgstr "feil ved skriving"
+
+#, fuzzy
+#~ msgid "Unknown error"
+#~ msgstr "Ukjent systemfeil"
+
+#~ msgid "%s: option `%s' is ambiguous\n"
+#~ msgstr "%s: flagget «%s» er flertydig\n"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s: flagget «--%s» trenger et argument\n"
+
+#~ msgid "%s: option `%c%s' doesn't allow an argument\n"
+#~ msgstr "%s: flagget «%c%s» trenger et argument\n"
+
+#~ msgid "%s: option `%s' requires an argument\n"
+#~ msgstr "%s: flagget «%s» trenger et argument\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s: ukjent flagg «--%s»\n"
+
+#~ msgid "%s: unrecognized option `%c%s'\n"
+#~ msgstr "%s: ukjent flagg «%c%s»\n"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: ukjent flagg -- %c\n"
+
+#~ msgid "%s: invalid option -- %c\n"
+#~ msgstr "%s: ukjent flagg -- %c\n"
+
+#~ msgid "%s: option requires an argument -- %c\n"
+#~ msgstr "%s: flagget trenger et argument -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s: flagget «-W %s» er flertydig\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: flagget «-W %s» tillater ikke et argument\n"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid "memory exhausted"
+#~ msgstr "virtuelt minne oppbrukt"
+
+#, fuzzy
+#~ msgid "unable to record current working directory"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid "`"
+#~ msgstr "«"
+
+#~ msgid "'"
+#~ msgstr "»"
+
+#, fuzzy
+#~ msgid "%s: end of file"
+#~ msgstr "%s: lesefeil"
+
+#, fuzzy
+#~ msgid "Invalid regular expression"
+#~ msgstr "%s: ugyldig regulært uttrykk: %s"
+
+#, fuzzy
+#~ msgid "Invalid character class name"
+#~ msgstr "ugyldig tegn-klasse «%s»"
+
+#, fuzzy
+#~ msgid "Memory exhausted"
+#~ msgstr "virtuelt minne oppbrukt"
+
+#, fuzzy
+#~ msgid "Invalid preceding regular expression"
+#~ msgstr "%s: ugyldig regulært uttrykk: %s"
+
+#, fuzzy
+#~ msgid "Premature end of regular expression"
+#~ msgstr "feil i søk med regulært uttrykk"
+
+#, fuzzy
+#~ msgid "Regular expression too big"
+#~ msgstr "feil i søk med regulært uttrykk"
+
+#, fuzzy
+#~ msgid "No previous regular expression"
+#~ msgstr "feil i søk med regulært uttrykk"
+
+#, fuzzy
+#~ msgid "^[yY]"
+#~ msgstr "^[jJ]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[nN]"
+
+#, fuzzy
+#~ msgid "setting permissions for %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "iconv function not usable"
+#~ msgstr "kan ikke skrive ut U+%04X: iconv-funksjonen er ikke brukbar"
+
+#, fuzzy
+#~ msgid "iconv function not available"
+#~ msgstr "kan ikke skrive ut U+%04X: iconv-funksjon er ikke tilgjengelig"
+
+#, fuzzy
+#~ msgid "character out of range"
+#~ msgstr "U+%04X: tegn utenfor tillatte verdier"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "kan ikke konvertere U+%04X til lokalt tegnsett"
+
+#, fuzzy
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "kan ikke konvertere U+%04X til lokalt tegnsett"
+
+#~ msgid "invalid user"
+#~ msgstr "ugyldig bruker"
+
+#~ msgid "invalid group"
+#~ msgstr "ugyldig gruppe"
+
+#, fuzzy
+#~ msgid "invalid spec"
+#~ msgstr "ugyldig bruker"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Skrevet av %s.\n"
+
+#, fuzzy
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Skrevet av %s.\n"
+
+#, fuzzy
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Skrevet av %s.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr "Skrevet av %s.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr "Skrevet av %s.\n"
+
+#, fuzzy
+#~ msgid "invalid argument: %s"
+#~ msgstr "ugyldig argument %s for %s"
+
+#~ msgid "string comparison failed"
+#~ msgstr "strengsammenligning feilet"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Sett LC_ALL='C' for å omgå problemet."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Strengene som ble sammenlignet var «%s» og «%s»."
+
+#, fuzzy
+#~ msgid "string transformation failed"
+#~ msgstr "strengsammenligning feilet"
+
+#, fuzzy
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "ugyldig argument %s for %s"
+
+#, fuzzy
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "ugyldig linjenummer-økning: «%s»"
+
+#, fuzzy
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "%s: tall «%.*s» for stort"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --help            Display this help and exit.\n"
+#~ "      --version         Output version information and exit.\n"
+#~ msgstr "      --version  vis programversjon og avslutt\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Når ingen FIL eller når FIL er -, les fra standard inn.\n"
+
+#~ msgid "read error"
+#~ msgstr "lesefeil"
+
+#, fuzzy
+#~ msgid "invalid input"
+#~ msgstr "ugyldig antall"
+
+#, fuzzy
+#~ msgid "invalid wrap size: %s"
+#~ msgstr "ugyldig type-streng «%s»"
+
+#, fuzzy
+#~ msgid "extra operand %s"
+#~ msgstr "ekstra operator «%s»"
+
+#, fuzzy
+#~ msgid "closing standard input"
+#~ msgstr "standard inn"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s NAME [SUFFIX]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "missing operand"
+#~ msgstr "%s: heltall forventet etter «%c»"
+
+#, fuzzy
+#~ msgid "Richard M. Stallman"
+#~ msgstr "Torbjorn Granlund og Richard M. Stallman"
+
+#~ msgid "Usage: %s [OPTION] [FILE]...\n"
+#~ msgstr "Bruk: %s [FLAGG] [FIL]...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Concatenate FILE(s), or standard input, to standard output.\n"
+#~ "\n"
+#~ "  -A, --show-all           equivalent to -vET\n"
+#~ "  -b, --number-nonblank    number nonempty output lines\n"
+#~ "  -e                       equivalent to -vE\n"
+#~ "  -E, --show-ends          display $ at end of each line\n"
+#~ "  -n, --number             number all output lines\n"
+#~ "  -s, --squeeze-blank      suppress repeated empty output lines\n"
+#~ msgstr ""
+#~ "Føy sammen FIL(er) eller standard inn til standard ut.\n"
+#~ "\n"
+#~ "  -A, --show-all           samme som -vET\n"
+#~ "  -b, --number-nonblank    nummerer ikke-blanke ut-linjer\n"
+#~ "  -e                       samme som -vE\n"
+#~ "  -E, --show-ends          skriv $ på slutten av hver linje\n"
+#~ "  -n, --number             nummerer alle ut-linjer\n"
+#~ "  -s, --squeeze-blank      aldri mer enn én blank linje\n"
+
+#~ msgid ""
+#~ "  -t                       equivalent to -vT\n"
+#~ "  -T, --show-tabs          display TAB characters as ^I\n"
+#~ "  -u                       (ignored)\n"
+#~ "  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB\n"
+#~ msgstr ""
+#~ "  -t                       samme som -vT\n"
+#~ "  -T, --show-tabs          vis tabulatortegn som ^I\n"
+#~ "  -u                       (ignorert)\n"
+#~ "  -v, --show-nonprinting   bruk ^ og M-notasjon, unntatt for LFD og TAB\n"
+
+#, fuzzy
+#~ msgid "cannot do ioctl on %s"
+#~ msgstr "kan ikke utføre ioctl på «%s»"
+
+#~ msgid "%s: input file is output file"
+#~ msgstr "%s: innfil er utfil"
+
+#, fuzzy
+#~ msgid "Jim Meyering"
+#~ msgstr "Mike Haertel og Paul Eggert"
+
+#, fuzzy
+#~ msgid "failed to create security context: %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "failed to get security context of %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "failed to change context of %s to %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "cannot read directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "changing security context of %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "fts_read failed"
+#~ msgstr "feil ved lesing"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... CONTEXT FILE...\n"
+#~ "  or:  %s [OPTION]... [-u USER] [-r ROLE] [-l RANGE] [-t TYPE] FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "Bruk:      %s [FLAGG]... [FIL]...\n"
+#~ "  eller:   %s --traditional [FIL] [[+]POSISJON [[+]MERKE]]\n"
+
+#, fuzzy
+#~ msgid "missing operand after %s"
+#~ msgstr "%s: heltall forventet etter «%c»"
+
+#, fuzzy
+#~ msgid "invalid context: %s"
+#~ msgstr "ugyldig breddespesifikasjon «%s»"
+
+#, fuzzy
+#~ msgid "invalid group: %s"
+#~ msgstr "ugyldig gruppe"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... GROUP FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "Bruk:      %s [FLAGG]... [FIL]...\n"
+#~ "  eller:   %s --traditional [FIL] [[+]POSISJON [[+]MERKE]]\n"
+
+#, fuzzy
+#~ msgid "cannot operate on dangling symlink %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "changing permissions of %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "%s: new permissions are %s, not %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "invalid mode: %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "no change to ownership of %s\n"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "failed to change ownership of %s to %s\n"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "failed to change ownership of %s\n"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "cannot dereference %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "changing group of %s"
+#~ msgstr "kan ikke endre eier og/eller gruppe for %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [OWNER][:[GROUP]] FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "Bruk:      %s [FLAGG]... [FIL]...\n"
+#~ "  eller:   %s --traditional [FIL] [[+]POSISJON [[+]MERKE]]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s NEWROOT [COMMAND...]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "cannot change root directory to %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot chdir to root directory"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot run command %s"
+#~ msgstr "kan ikke utføre ioctl på «%s»"
+
+#~ msgid "%s: file too long"
+#~ msgstr "%s: fil for lang"
+
+#~ msgid ""
+#~ "Usage: %s [FILE]...\n"
+#~ "  or:  %s [OPTION]\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#~ msgid ""
+#~ "Print CRC checksum and byte counts of each FILE.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv CRC-sjekksum og oktett-antall for hver FIL.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "Richard Stallman"
+#~ msgstr "Richard Stallman og David MacKenzie"
+
+#~ msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
+#~ msgstr "Bruk: %s [FLAGG]... FIL1 FIL2\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "  -1              suppress lines unique to FILE1\n"
+#~ "  -2              suppress lines unique to FILE2\n"
+#~ "  -3              suppress lines that appear in both files\n"
+#~ msgstr ""
+#~ "Sammenlign de sorterte filene VENSTREFIL og HØYREFIL linje for linje.\n"
+#~ "\n"
+#~ "  -1              se bort fra linjer som bare finnes i den venstre filen\n"
+#~ "  -2              se bort fra linjer som bare finnes i den høyre filen\n"
+#~ "  -3              se bort fra linjer som finnes i begge filer\n"
+
+#, fuzzy
+#~ msgid "clearing permissions for %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "failed to set the security context of %s to %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "cannot remove %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot create regular file %s"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#, fuzzy
+#~ msgid "cannot lseek %s"
+#~ msgstr "%s: kan ikke søke til posisjon %s%s"
+
+#, fuzzy
+#~ msgid "writing %s"
+#~ msgstr "feil ved skriving til %s"
+
+#, fuzzy
+#~ msgid "closing %s"
+#~ msgstr "lukker %s (fd=%d)"
+
+#, fuzzy
+#~ msgid "omitting directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot overwrite non-directory %s with directory %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot overwrite directory %s with non-directory"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot move directory onto non-directory: %s -> %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot copy a directory, %s, into itself, %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "will not create hard link %s to directory %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot create hard link %s to %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot move %s to a subdirectory of itself, %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot move %s to %s"
+#~ msgstr "kan ikke utføre ioctl på «%s»"
+
+#, fuzzy
+#~ msgid "cannot create symbolic link %s to %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot create link %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot create fifo %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot create special file %s"
+#~ msgstr "tegn-posisjon er null"
+
+#, fuzzy
+#~ msgid "cannot read symbolic link %s"
+#~ msgstr "kan ikke utføre ioctl på «%s»"
+
+#, fuzzy
+#~ msgid "cannot create symbolic link %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [-T] SOURCE DEST\n"
+#~ "  or:  %s [OPTION]... SOURCE... DIRECTORY\n"
+#~ "  or:  %s [OPTION]... -t DIRECTORY SOURCE...\n"
+#~ msgstr ""
+#~ "Bruk : %s [FLAGG]... [INN]... (uten -G)\n"
+#~ "eller: %s -G [FLAGG]... [INN [UT]]\n"
+
+#~ msgid ""
+#~ "Mandatory arguments to long options are mandatory for short options too.\n"
+#~ msgstr ""
+#~ "Obligatoriske argmenter til lange flagg er obligatoriske også for korte.\n"
+
+#, fuzzy
+#~ msgid "failed to preserve permissions for %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "cannot make directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s eksisterer men er ikke en katalog"
+
+#, fuzzy
+#~ msgid "missing file operand"
+#~ msgstr "hopp over argument"
+
+#, fuzzy
+#~ msgid "missing destination file operand after %s"
+#~ msgstr "feltliste mangler"
+
+#, fuzzy
+#~ msgid "target %s is not a directory"
+#~ msgstr "%s eksisterer men er ikke en katalog"
+
+#~ msgid "input disappeared"
+#~ msgstr "input forsvant"
+
+#~ msgid "%s: line number out of range"
+#~ msgstr "%s: linjenummer utenfor tillatte verdier"
+
+#, fuzzy
+#~ msgid "%s: %s: line number out of range"
+#~ msgstr "%s: «%s»: linjenummer utenfor tillatte verdier"
+
+#, fuzzy
+#~ msgid " on repetition %s\n"
+#~ msgstr " ved %d. repetisjon\n"
+
+#, fuzzy
+#~ msgid "%s: %s: match not found"
+#~ msgstr "%s: «%s»: ingen treff funnet"
+
+#~ msgid "error in regular expression search"
+#~ msgstr "feil i søk med regulært uttrykk"
+
+#, fuzzy
+#~ msgid "write error for %s"
+#~ msgstr "skrivefeil for «%s»"
+
+#, fuzzy
+#~ msgid "%s: integer expected after delimiter"
+#~ msgstr "%s: heltall forventet etter «%c»"
+
+#~ msgid "%s: `}' is required in repeat count"
+#~ msgstr "%s: «}» er nødvendig i gjentagelsesantall"
+
+#~ msgid "%s}: integer required between `{' and `}'"
+#~ msgstr "%s}: heltall kreves mellom «{» og «}»"
+
+#, fuzzy
+#~ msgid "%s: closing delimiter `%c' missing"
+#~ msgstr "%s: avsluttende skilletegn «%c» mangler"
+
+#~ msgid "%s: invalid regular expression: %s"
+#~ msgstr "%s: ugyldig regulært uttrykk: %s"
+
+#~ msgid "%s: invalid pattern"
+#~ msgstr "%s: ugyldig mønster"
+
+#~ msgid "%s: line number must be greater than zero"
+#~ msgstr "%s: linjenummeret må være større enn null"
+
+#, fuzzy
+#~ msgid "line number %s is smaller than preceding line number, %s"
+#~ msgstr "linjenummer «%s» er mindre enn foregående linjenummer, %s"
+
+#, fuzzy
+#~ msgid "warning: line number %s is the same as preceding line number"
+#~ msgstr "advarsel: linjenummer «%s» er det samme som foregående"
+
+#, fuzzy
+#~ msgid "invalid format width"
+#~ msgstr "ugyldig argument %s for %s"
+
+#, fuzzy
+#~ msgid "invalid format precision"
+#~ msgstr "ugyldig type-streng «%s»"
+
+#~ msgid "missing conversion specifier in suffix"
+#~ msgstr "manglende konverteringsspesifikator i suffiks"
+
+#~ msgid "invalid conversion specifier in suffix: %c"
+#~ msgstr "ugyldig konvertingsspesifikator i suffiks: %c"
+
+#~ msgid "invalid conversion specifier in suffix: \\%.3o"
+#~ msgstr "ugyldig konverteringsspesifikator i suffiks: \\%.3o"
+
+#~ msgid "too many %% conversion specifications in suffix"
+#~ msgstr "for mange %%-konverteringsspesifikasjoner i suffiks"
+
+#~ msgid "missing %% conversion specification in suffix"
+#~ msgstr "manglende %%-konverteringsspesifikasjon i suffiks"
+
+#~ msgid "%s: invalid number"
+#~ msgstr "%s: ugyldig nummer"
+
+#~ msgid "Usage: %s [OPTION]... FILE PATTERN...\n"
+#~ msgstr "Bruk: %s [FLAGG]... FIL MØNSTER...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Output pieces of FILE separated by PATTERN(s) to files `xx00', "
+#~ "`xx01', ...,\n"
+#~ "and output byte counts of each piece to standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv ut deler av FIL skilt av MØNSTER til filene «xx01», «xx02», ...\n"
+#~ "og skriv ut antall oktetter for hver del til standard ut.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -b, --suffix-format=FORMAT  use sprintf FORMAT instead of %02d\n"
+#~ "  -f, --prefix=PREFIX        use PREFIX instead of `xx'\n"
+#~ "  -k, --keep-files           do not remove output files on errors\n"
+#~ msgstr ""
+#~ "  -b, --suffix-format=FORMAT bruk sprintf-FORMAT isteden for %d\n"
+#~ "  -f, --prefix=PREFIX        bruk PREFIX isteden for «xx»\n"
+#~ "  -k, --keep-files           ikke fjern utfiler ved feil\n"
+
+#~ msgid ""
+#~ "  -n, --digits=DIGITS        use specified number of digits instead of 2\n"
+#~ "  -s, --quiet, --silent      do not print counts of output file sizes\n"
+#~ "  -z, --elide-empty-files    remove empty output files\n"
+#~ msgstr ""
+#~ "  -n, --digits=SIFFER        bruk spesifisert antall siffer isteden for "
+#~ "2\n"
+#~ "  -s, --quiet, --silent      ikke skriv ut utfil-størrelser\n"
+#~ "  -z, --elide-empty-files    fjern tomme ut-filer\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Read standard input if FILE is -.  Each PATTERN may be:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Les standard inn hvis FIL er -.  Hvert MØNSTER må være:\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "  INTEGER            copy up to but not including specified line number\n"
+#~ "  /REGEXP/[OFFSET]   copy up to but not including a matching line\n"
+#~ "  %REGEXP%[OFFSET]   skip to, but not including a matching line\n"
+#~ "  {INTEGER}          repeat the previous pattern specified number of "
+#~ "times\n"
+#~ "  {*}                repeat the previous pattern as many times as "
+#~ "possible\n"
+#~ "\n"
+#~ "A line OFFSET is a required `+' or `-' followed by a positive integer.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  HELTALL            kopiér opp til, men ikke inkludert spesifisert "
+#~ "linjenummer\n"
+#~ "  /REGEXP/[POSISJON] kopiér opp til, men ikke inkludert passende linje\n"
+#~ "  %REGEXP%[POSISJON] hopp over fram til, men ikke inkludert passende "
+#~ "linje\n"
+#~ "  {HELTALL}          gjenta forrige mønster spesifisert antall ganger\n"
+#~ "  {*}                gjenta forrige mønster så mange ganger som mulig\n"
+#~ "\n"
+#~ "En linje-POSISJON er en «+» eller «-» fulgt av et positivt heltall.\n"
+
+#, fuzzy
+#~ msgid "Usage: %s OPTION... [FILE]...\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#~ msgid ""
+#~ "Print selected parts of lines from each FILE to standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv ut valgte deler av linjer fra hver FIL til standard ut.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -b, --bytes=LIST        select only these bytes\n"
+#~ "  -c, --characters=LIST   select only these characters\n"
+#~ "  -d, --delimiter=DELIM   use DELIM instead of TAB for field delimiter\n"
+#~ msgstr ""
+#~ "  -b, --bytes=LISTE       skriv bare ut disse oktettene\n"
+#~ "  -c, --characters=LISTE  skriv bare ut disse tegnene\n"
+#~ "  -d, --delimiter=SKILLE  bruk SKILLE isteden for TAB som skilletegn\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --fields=LIST       select only these fields;  also print any line\n"
+#~ "                            that contains no delimiter character, unless\n"
+#~ "                            the -s option is specified\n"
+#~ "  -n                      (ignored)\n"
+#~ msgstr ""
+#~ "  -f, --fields=LISTE      skriv bare ut disse feltene.  Skriv også ut\n"
+#~ "                            linjer som ikke inneholder noen skilletegn,\n"
+#~ "                            med mindre flagget -s er spesifisert\n"
+#~ "  -n                      (ignorert)\n"
+
+#~ msgid ""
+#~ "  -s, --only-delimited    do not print lines not containing delimiters\n"
+#~ "      --output-delimiter=STRING  use STRING as the output delimiter\n"
+#~ "                            the default is to use the input delimiter\n"
+#~ msgstr ""
+#~ "  -s, --only-delimited    skriv ikke ut linjer som ikke inneholder "
+#~ "skilletegn\n"
+#~ "      --output-delimiter=STRENG  bruk STRENG som ut-skilletegn\n"
+#~ "                            forvalgt er å bruke inn-skilletegnet\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Each range is one of:\n"
+#~ "\n"
+#~ "  N     N'th byte, character or field, counted from 1\n"
+#~ "  N-    from N'th byte, character or field, to end of line\n"
+#~ "  N-M   from N'th to M'th (included) byte, character or field\n"
+#~ "  -M    from first to M'th (included) byte, character or field\n"
+#~ "\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Bruk en og bare en av -b, -c eller -f.  Hver LISTE er bygd opp av\n"
+#~ "et område, eller flere områder skilt av komma.  Hver område er en av:\n"
+#~ "\n"
+#~ "  N     N'te oktett, tegn eller felt, telt fra 1\n"
+#~ "  N-    fra N'te oktett, tegn eller felt, til slutten av linjen\n"
+#~ "  N-M   fra N'te til M'te (inklusive) oktett, tegn eller felt\n"
+#~ "  -M    fra første til M'te (inklusive) oktett, tegn eller felt\n"
+#~ "\n"
+#~ "Uten FIL, eller når FIL er -, leses fra standard inn.\n"
+
+#~ msgid "invalid byte or field list"
+#~ msgstr "ugyldig byte- eller felt-liste"
+
+#, fuzzy
+#~ msgid "invalid range with no endpoint: -"
+#~ msgstr "ugyldig breddespesifikasjon «%s»"
+
+#, fuzzy
+#~ msgid "invalid decreasing range"
+#~ msgstr "ugyldig type-streng «%s»"
+
+#, fuzzy
+#~ msgid "byte offset %s is too large"
+#~ msgstr "%s er for stor"
+
+#, fuzzy
+#~ msgid "field number %s is too large"
+#~ msgstr "felt-nummer er null"
+
+#~ msgid "only one type of list may be specified"
+#~ msgstr "bare en liste-type kan spesifiseres"
+
+#~ msgid "the delimiter must be a single character"
+#~ msgstr "skilletegnet må være ett enkelt tegn"
+
+#~ msgid "you must specify a list of bytes, characters, or fields"
+#~ msgstr "du må spesifisere en liste av bytes, tegn eller felt"
+
+#, fuzzy
+#~ msgid "an input delimiter may be specified only when operating on fields"
+#~ msgstr "et skilletegn kan bare spesifiseres når en opererer med felt"
+
+#~ msgid ""
+#~ "suppressing non-delimited lines makes sense\n"
+#~ "\tonly when operating on fields"
+#~ msgstr ""
+#~ "fjerning av linjer uten skilletegn er meningsløst dersom en ikke "
+#~ "opererer\n"
+#~ "\tmed felt"
+
+#~ msgid "missing list of fields"
+#~ msgstr "feltliste mangler"
+
+#~ msgid "missing list of positions"
+#~ msgstr "posisjonsliste mangler"
+
+#, fuzzy
+#~ msgid "the options to specify dates for printing are mutually exclusive"
+#~ msgstr "flaggene --string og --check kan ikke brukes samtidig"
+
+#, fuzzy
+#~ msgid "time %s is out of range"
+#~ msgstr "%s: linjenummer utenfor tillatte verdier"
+
+#, fuzzy
+#~ msgid "cannot get current directory"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot change to directory %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot stat current directory (now %s)"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid "Usage: %s [OPTION]... [FILE]...\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "cannot read table of mounted file systems"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [FILE]\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "%s:%lu: invalid line;  missing second token"
+#~ msgstr "%s: ugyldig antall sekunder"
+
+#, fuzzy
+#~ msgid "%s:%lu: unrecognized keyword %s"
+#~ msgstr "%s: ukjent flagg «%c%s»\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s NAME\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]...\n"
+#~ "  or:  %s [OPTION]... --files0-from=F\n"
+#~ msgstr ""
+#~ "Bruk:      %s [FLAGG]... [FIL]...\n"
+#~ "  eller:   %s --traditional [FIL] [[+]POSISJON [[+]MERKE]]\n"
+
+#~ msgid "total"
+#~ msgstr "totalt"
+
+#, fuzzy
+#~ msgid "invalid maximum depth %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "cannot read file names from %s"
+#~ msgstr "Strengene som ble sammenlignet var «%s» og «%s»."
+
+#, fuzzy
+#~ msgid "invalid zero-length file name"
+#~ msgstr "ugyldig gruppe"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [STRING]...\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "Richard Mlynarik"
+#~ msgstr "Richard Stallman og David MacKenzie"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#~ msgid ""
+#~ "Convert tabs in each FILE to spaces, writing to standard output.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Konverter tabulatorer i hver FIL til mellomrom, skriv til standard ut.\n"
+#~ "Dersom ingen FIL er spesifisert, eller FIL er -, leses det fra standard "
+#~ "inn.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -i, --initial       do not convert tabs after non blanks\n"
+#~ "  -t, --tabs=NUMBER   have tabs NUMBER characters apart, not 8\n"
+#~ msgstr ""
+#~ "  -i, --initial       ikke konverter tabulatorer etter ikke-blanke tegn\n"
+#~ "  -t, --tabs=TALL     ha tabulatorer TALL tegn fra hverandre, ikke 8\n"
+
+#~ msgid ""
+#~ "  -t, --tabs=LIST     use comma separated list of explicit tab positions\n"
+#~ msgstr ""
+#~ "  -t, --tabs=LISTE    bruk komma-separert LISTE med tab-posisjoner\n"
+
+#, fuzzy
+#~ msgid "tab stop is too large %s"
+#~ msgstr "%s er for stor"
+
+#, fuzzy
+#~ msgid "tab size contains invalid character(s): %s"
+#~ msgstr "tabulatorstørrelse inneholder et ugyldig tegn"
+
+#~ msgid "tab size cannot be 0"
+#~ msgstr "tabulatorstørrelse kan ikke være 0"
+
+#~ msgid "tab sizes must be ascending"
+#~ msgstr "tabulatorstørrelser må være stigende"
+
+#, fuzzy
+#~ msgid "input line is too long"
+#~ msgstr "%s: fil for lang"
+
+#, fuzzy
+#~ msgid "Mike Parker"
+#~ msgstr "Mike Haertel og Paul Eggert"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s EXPRESSION\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "syntax error"
+#~ msgstr "standard feilkanal"
+
+#, fuzzy
+#~ msgid "error in regular expression matcher"
+#~ msgstr "feil i søk med regulært uttrykk"
+
+#, fuzzy
+#~ msgid "non-numeric argument"
+#~ msgstr "begrens argument"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [NUMBER]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#~ msgid "%s is too large"
+#~ msgstr "%s er for stor"
+
+#, fuzzy
+#~ msgid "%s is not a valid positive integer"
+#~ msgstr "%s: ugyldig mønster"
+
+#~ msgid "Usage: %s [-DIGITS] [OPTION]... [FILE]...\n"
+#~ msgstr "Bruk: %s [-SIFFER] [FLAGG]... [FIL]...\n"
+
+#~ msgid ""
+#~ "Reformat each paragraph in the FILE(s), writing to standard output.\n"
+#~ "If no FILE or if FILE is `-', read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Omformattér hvert avsnitt i FILEN(e), skriv til standard ut.\n"
+#~ "Dersom ingen FIL er spesifisert, eller FIL er -, leses det fra standard "
+#~ "inn.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -c, --crown-margin        preserve indentation of first two lines\n"
+#~ "  -p, --prefix=STRING       reformat only lines beginning with STRING,\n"
+#~ "                              reattaching the prefix to reformatted "
+#~ "lines\n"
+#~ "  -s, --split-only          split long lines, but do not refill\n"
+#~ msgstr ""
+#~ "  -c, --crown-margin        behold innrykket til de første to linjene\n"
+#~ "  -p, --prefix=STRENG       sett kun sammen linjer som har STRENG som\n"
+#~ "                            forstavelse\n"
+#~ "  -s, --split-only          del opp lange linjer, men ikke fyll opp\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -t, --tagged-paragraph    indentation of first line different from "
+#~ "second\n"
+#~ "  -u, --uniform-spacing     one space between words, two after sentences\n"
+#~ "  -w, --width=WIDTH         maximum line width (default of 75 columns)\n"
+#~ msgstr ""
+#~ "  -t, --tagged-paragraph    innrykket til første linje er forskjellig fra "
+#~ "neste\n"
+#~ "  -u, --uniform-spacing     ett mellomrom mellom ord, to etter setninger\n"
+#~ "  -w, --width=TALL          maksimal linjelengde (ellers 75 kolonner)\n"
+
+#, fuzzy
+#~ msgid "invalid width: %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#~ msgid ""
+#~ "Wrap input lines in each FILE (standard input by default), writing to\n"
+#~ "standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Brekk om linjene i hver FIL (standard inn), skriv til standard ut\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "  -b, --bytes         count bytes rather than columns\n"
+#~ "  -s, --spaces        break at spaces\n"
+#~ "  -w, --width=WIDTH   use WIDTH columns instead of 80\n"
+#~ msgstr ""
+#~ "  -b, --bytes         tell bytes istedet for kolonner\n"
+#~ "  -s, --spaces        brekk om ved mellomrom\n"
+#~ "  -w, --width=BREDDE  bruk BREDDE kolonner istedet for 80\n"
+
+#, fuzzy
+#~ msgid "invalid number of columns: %s"
+#~ msgstr "ugyldig antall kolonner: «%s»"
+
+#, fuzzy
+#~ msgid "failed to get groups for user %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "cannot find name for group ID %lu"
+#~ msgstr "kan ikke endre eier og/eller gruppe for %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [USERNAME]\n"
+#~ msgstr "Bruk: %s [FLAGG]... SETT1 [SETT2]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Print the first 10 lines of each FILE to standard output.\n"
+#~ "With more than one FILE, precede each with a header giving the file "
+#~ "name.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv de første 10 linjene av hver FIL til standard ut.\n"
+#~ "Med mer enn en FIL er angitt, skriv ut filnavnet før hver FIL.\n"
+#~ "Dersom ingen FIL er spesifisert, eller FIL er -, leses det fra standard "
+#~ "inn.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "  -q, --quiet, --silent    never print headers giving file names\n"
+#~ "  -v, --verbose            always print headers giving file names\n"
+#~ msgstr ""
+#~ "  -q, --quiet, --silent    ikke skriv ut filnavnene først\n"
+#~ "  -v, --verbose            skriv alltid filnavnene først\n"
+
+#~ msgid "error reading %s"
+#~ msgstr "feil ved lesing av %s"
+
+#, fuzzy
+#~ msgid "%s: number of bytes is too large"
+#~ msgstr "ugyldig antall oktetter å sammenligne"
+
+#, fuzzy
+#~ msgid "%s: cannot lseek back to original position"
+#~ msgstr "%s: kan ikke søke til relativ posisjon %s%s"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to offset %s"
+#~ msgstr "%s: kan ikke søke til posisjon %s%s"
+
+#, fuzzy
+#~ msgid "cannot reposition file pointer for %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid "%s: %s is so large that it is not representable"
+#~ msgstr "%s: %s er så stor at den ikke kan representeres"
+
+#~ msgid "number of lines"
+#~ msgstr "antall linjer"
+
+#~ msgid "number of bytes"
+#~ msgstr "antall bytes"
+
+#~ msgid "invalid number of lines"
+#~ msgstr "ugyldig antall linjer"
+
+#~ msgid "invalid number of bytes"
+#~ msgstr "ugyldig antall bytes"
+
+#, fuzzy
+#~ msgid "invalid trailing option -- %c"
+#~ msgstr "%s: ukjent flagg -- %c\n"
+
+#, fuzzy
+#~ msgid "cannot set name to %s"
+#~ msgstr "kan ikke utføre ioctl på «%s»"
+
+#, fuzzy
+#~ msgid "cannot print \"only\" of more than one choice"
+#~ msgstr "kan ikke dele opp på mer enn én måte"
+
+#, fuzzy
+#~ msgid "cannot find name for user ID %lu"
+#~ msgstr "kan ikke endre eier og/eller gruppe for %s"
+
+#, fuzzy
+#~ msgid "warning: %s: failed to change context to %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "target directory not allowed when installing a directory"
+#~ msgstr "%s eksisterer men er ikke en katalog"
+
+#, fuzzy
+#~ msgid "invalid mode %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "cannot change ownership of %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "cannot set time stamps for %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "fork system call failed"
+#~ msgstr "blokkstørrelse"
+
+#, fuzzy
+#~ msgid "waiting for strip"
+#~ msgstr "feil ved skriving til %s"
+
+#, fuzzy
+#~ msgid "invalid user %s"
+#~ msgstr "ugyldig bruker"
+
+#, fuzzy
+#~ msgid "invalid group %s"
+#~ msgstr "ugyldig gruppe"
+
+#, fuzzy
+#~ msgid "creating directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [-T] SOURCE DEST\n"
+#~ "  or:  %s [OPTION]... SOURCE... DIRECTORY\n"
+#~ "  or:  %s [OPTION]... -t DIRECTORY SOURCE...\n"
+#~ "  or:  %s [OPTION]... -d DIRECTORY...\n"
+#~ msgstr ""
+#~ "Bruk : %s [FLAGG]... [INN]... (uten -G)\n"
+#~ "eller: %s -G [FLAGG]... [INN [UT]]\n"
+
+#, fuzzy
+#~ msgid "Mike Haertel"
+#~ msgstr "Mike Haertel og Paul Eggert"
+
+#, fuzzy
+#~ msgid ""
+#~ "For each pair of input lines with identical join fields, write a line to\n"
+#~ "standard output.  The default join field is the first, delimited\n"
+#~ "by whitespace.  When FILE1 or FILE2 (not both) is -, read standard "
+#~ "input.\n"
+#~ "\n"
+#~ "  -a FILENUM        print unpairable lines coming from file FILENUM, "
+#~ "where\n"
+#~ "                      FILENUM is 1 or 2, corresponding to FILE1 or FILE2\n"
+#~ "  -e EMPTY          replace missing input fields with EMPTY\n"
+#~ msgstr ""
+#~ "For hvert par av inn-linjer med like sammenføyningsfelt, skriv en linje "
+#~ "til\n"
+#~ "standard ut. Det forvalgte sammenføyningsfeltet er det første\n"
+#~ "feltet, avgrenset av «blanke» tegn. Dersom FIL1 eller FIL2 (ikke begge)\n"
+#~ "er -, leses det fra standard inn.\n"
+#~ "\n"
+#~ "  -a SIDE           skriv ut linjer som ikke kan parres som fra fil SIDE\n"
+#~ "  -e TOM            erstatt manglende inn-felt med TOM\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -i, --ignore-case  ignore differences in case when comparing fields\n"
+#~ "  -j FIELD          equivalent to `-1 FIELD -2 FIELD'\n"
+#~ "  -o FORMAT         obey FORMAT while constructing output line\n"
+#~ "  -t CHAR           use CHAR as input and output field separator\n"
+#~ msgstr ""
+#~ "  -i, --ignore-case ignorer forskjeller i store/små bokstaver ved\n"
+#~ "                    sammenligning av felt\n"
+#~ "  -j FELT           (avleggs) samme som «-1 FELT -2 FELT»\n"
+#~ "  -j1 FELT          (avleggs) samme som «-1 FELT»\n"
+#~ "  -j2 FELT          (avleggs) samme som «-2 FELT»\n"
+#~ "  -o FORMAT         følg FORMAT når utlinjen lages\n"
+#~ "  -t TEGN           bruk TEGN som feltseparator for inn og ut\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -v FILENUM        like -a FILENUM, but suppress joined output lines\n"
+#~ "  -1 FIELD          join on this FIELD of file 1\n"
+#~ "  -2 FIELD          join on this FIELD of file 2\n"
+#~ "  --check-order     check that the input is correctly sorted, even\n"
+#~ "                      if all input lines are pairable\n"
+#~ "  --nocheck-order   do not check that the input is correctly sorted\n"
+#~ msgstr ""
+#~ "  -v SIDE           som -a SIDE, men dropp sammenføyde ut-linjer\n"
+#~ "  -1 FELT           sammenføy ved dette FELTet fra fil 1\n"
+#~ "  -2 FELT           sammenføy ved dette FELTet fra fil 2\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Unless -t CHAR is given, leading blanks separate fields and are ignored,\n"
+#~ "else fields are separated by CHAR.  Any FIELD is a field number counted\n"
+#~ "from 1.  FORMAT is one or more comma or blank separated specifications,\n"
+#~ "each being `FILENUM.FIELD' or `0'.  Default FORMAT outputs the join "
+#~ "field,\n"
+#~ "the remaining fields from FILE1, the remaining fields from FILE2, all\n"
+#~ "separated by CHAR.\n"
+#~ "\n"
+#~ "Important: FILE1 and FILE2 must be sorted on the join fields.\n"
+#~ "E.g., use `sort -k 1b,1' if `join' has no options.\n"
+#~ "If the input is not sorted and some lines cannot be joined, a\n"
+#~ "warning message will be given.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Dersom -t TEGN ikke er angitt, er «ledende blanke» feltseparator, og "
+#~ "ignoreres,\n"
+#~ "ellers er felt skilt av TEGN. Hvert FELT er et feltnummer telt fra 1.\n"
+#~ "FORMAT er en eller flere komma- eller blank-separerte spesifikasjoner, "
+#~ "der\n"
+#~ "hver er «SIDE.FELT» eller «0». Det forvalgte FORMATet skriver ut\n"
+#~ "sammenføyningsfeltet, resten av feltene fra FIL1 og resten av feltene "
+#~ "fra\n"
+#~ "FIL2, alle skilt med TEGN.\n"
+
+#, fuzzy
+#~ msgid "invalid field number: %s"
+#~ msgstr "ugyldig felt-nummer: «%s»"
+
+#, fuzzy
+#~ msgid "invalid field specifier: %s"
+#~ msgstr "ugyldig felt-spesifikator: «%s»"
+
+#, fuzzy
+#~ msgid "invalid file number in field spec: %s"
+#~ msgstr "ugyldig filnummer i felt-spesifikator: «%s»"
+
+#, fuzzy
+#~ msgid "multi-character tab %s"
+#~ msgstr "flertegnstabulator «%s»"
+
+#~ msgid "both files cannot be standard input"
+#~ msgstr "begge filene kan ikke være standard inn"
+
+#, fuzzy
+#~ msgid "%s: invalid signal"
+#~ msgstr "%s: ugyldig prosess-id"
+
+#, fuzzy
+#~ msgid "%s: invalid process id"
+#~ msgstr "%s: ugyldig mønster"
+
+#, fuzzy
+#~ msgid "invalid option -- %c"
+#~ msgstr "%s: ukjent flagg -- %c\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s FILE1 FILE2\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "cannot create link %s to %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "%s: cannot overwrite directory"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "creating symbolic link %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "creating symbolic link %s -> %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "creating hard link to %.0s%s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "creating hard link %s"
+#~ msgstr "lager filen «%s»\n"
+
+#, fuzzy
+#~ msgid "creating hard link %s => %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "Cannot combine --target-directory and --no-target-directory"
+#~ msgstr "%s eksisterer men er ikke en katalog"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]\n"
+#~ msgstr "Bruk: %s [FLAGG] [FIL]...\n"
+
+#, fuzzy
+#~ msgid "no login name"
+#~ msgstr "%s: ugyldig nummer"
+
+#, fuzzy
+#~ msgid "%b %e  %Y"
+#~ msgstr "%b %e %H:%M %Y"
+
+#, fuzzy
+#~ msgid "%b %e %H:%M"
+#~ msgstr "%b %e %H:%M %Y"
+
+#, fuzzy
+#~ msgid "invalid line width: %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "invalid tab size: %s"
+#~ msgstr "ugyldig type-streng «%s»"
+
+#, fuzzy
+#~ msgid "invalid time style format %s"
+#~ msgstr "ugyldig argument %s for %s"
+
+#, fuzzy
+#~ msgid "unrecognized prefix: %s"
+#~ msgstr "ukjent flagg «-%c»"
+
+#, fuzzy
+#~ msgid "cannot open directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot determine device and inode of %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "%s: not listing already-listed directory"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "closing directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot compare file names %s and %s"
+#~ msgstr "Strengene som ble sammenlignet var «%s» og «%s»."
+
+#, fuzzy
+#~ msgid ""
+#~ "  -w, --width=COLS           assume screen width instead of current "
+#~ "value\n"
+#~ "  -x                         list entries by lines instead of by columns\n"
+#~ "  -X                         sort alphabetically by entry extension\n"
+#~ "  -Z, --context              print any SELinux security context of each "
+#~ "file\n"
+#~ "  -1                         list one file per line\n"
+#~ msgstr ""
+#~ "  -f, --fields=LISTE      skriv bare ut disse feltene.  Skriv også ut\n"
+#~ "                            linjer som ikke inneholder noen skilletegn,\n"
+#~ "                            med mindre flagget -s er spesifisert\n"
+#~ "  -n                      (ignorert)\n"
+
+#, fuzzy
+#~ msgid "Ulrich Drepper"
+#~ msgstr "Ulrich Drepper og Scott Miller"
+
+#, fuzzy
+#~ msgid "David Madore"
+#~ msgstr "Paul Rubin og David MacKenzie"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION] [FILE]...\n"
+#~ "Print or check %s (%d-bit) checksums.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FLAGG] [FIL]...\n"
+#~ "eller: %s [FLAGG] --check [FIL]\n"
+#~ "Skriv eller sjekk %s-sjekksummer (%d-bit).\n"
+#~ "Dersom ingen FIL er spesifisert eller FIL er -, leses det fra standard "
+#~ "inn.\n"
+
+#, fuzzy
+#~ msgid "  -b, --binary            read in binary mode\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  -B, --binary             skriv binært til konsollenheten.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "The following two options are useful only when verifying checksums:\n"
+#~ "      --status            don't output anything, status code shows "
+#~ "success\n"
+#~ "  -w, --warn              warn about improperly formatted checksum lines\n"
+#~ "\n"
+#~ msgstr ""
+#~ "De følgende to flaggene brukes kun ved sjekking av sjekksummer:\n"
+#~ "      --status          ikke skriv ut noe, statuskode angir resultat\n"
+#~ "  -w, --warn            advar mot feilformatterte MD5-sjekksum-linjer\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "The sums are computed as described in %s.  When checking, the input\n"
+#~ "should be a former output of this program.  The default mode is to print\n"
+#~ "a line with checksum, a character indicating type (`*' for binary, ` ' "
+#~ "for\n"
+#~ "text), and name for each FILE.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Summene blir beregnet som beskrevet i %s. Ved sjekking skal\n"
+#~ "inndata være tidligere utdata fra dette programmet.  Forvalgt \n"
+#~ "modus er å skrive ut en linje med sjekksum, et tegn som indikerer\n"
+#~ "type («*» for binær, « » for tekst), og navnet til hver FIL\n"
+
+#, fuzzy
+#~ msgid "%s: too many checksum lines"
+#~ msgstr "%s: ingen riktig formatterte %s-sjekksumlinjer funnet"
+
+#, fuzzy
+#~ msgid "%s: %<PRIuMAX>: improperly formatted %s checksum line"
+#~ msgstr "%s: %lu: ukorrekt formattert %s-sjekksumlinje"
+
+#~ msgid "%s: FAILED open or read\n"
+#~ msgstr "%s: FEIL ved åpning eller lesing\n"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "%s: read error"
+#~ msgstr "%s: lesefeil"
+
+#~ msgid "%s: no properly formatted %s checksum lines found"
+#~ msgstr "%s: ingen riktig formatterte %s-sjekksumlinjer funnet"
+
+#, fuzzy
+#~ msgid "WARNING: %<PRIuMAX> of %<PRIuMAX> listed file could not be read"
+#~ msgid_plural ""
+#~ "WARNING: %<PRIuMAX> of %<PRIuMAX> listed files could not be read"
+#~ msgstr[0] "ADVARSEL: %d av %d oppførte %s kunne ikke leses"
+#~ msgstr[1] "ADVARSEL: %d av %d oppførte %s kunne ikke leses"
+
+#, fuzzy
+#~ msgid "WARNING: %<PRIuMAX> of %<PRIuMAX> computed checksum did NOT match"
+#~ msgid_plural ""
+#~ "WARNING: %<PRIuMAX> of %<PRIuMAX> computed checksums did NOT match"
+#~ msgstr[0] "ADVARSEL: %d av %d beregnede %s stemte IKKE overens"
+#~ msgstr[1] "ADVARSEL: %d av %d beregnede %s stemte IKKE overens"
+
+#~ msgid ""
+#~ "the --binary and --text options are meaningless when verifying checksums"
+#~ msgstr ""
+#~ "flaggene --binary og --text er meningsløse ved verifisering av sjekksummer"
+
+#~ msgid "the --status option is meaningful only when verifying checksums"
+#~ msgstr "flagget --status har bare betydning ved sjekking av sjekksummer"
+
+#~ msgid "the --warn option is meaningful only when verifying checksums"
+#~ msgstr "flagget --warn har bare betydning ved sjekking av sjekksummer"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION] DIRECTORY...\n"
+#~ msgstr "Bruk: %s [FLAGG] [FIL]...\n"
+
+#, fuzzy
+#~ msgid "created directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION] NAME...\n"
+#~ msgstr "Bruk: %s [FLAGG] [FIL]...\n"
+
+#, fuzzy
+#~ msgid "invalid mode"
+#~ msgstr "ugyldig antall"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... NAME TYPE [MAJOR MINOR]\n"
+#~ msgstr "Bruk: %s [FLAGG]... SETT1 [SETT2]\n"
+
+#, fuzzy
+#~ msgid "Special files require major and minor device numbers."
+#~ msgstr "ugyldig startlinjenummer: «%s»"
+
+#, fuzzy
+#~ msgid "Fifos do not have major and minor device numbers."
+#~ msgstr "ugyldig startlinjenummer: «%s»"
+
+#, fuzzy
+#~ msgid "block special files not supported"
+#~ msgstr "blokkstørrelse"
+
+#, fuzzy
+#~ msgid "character special files not supported"
+#~ msgstr "tegn-posisjon er null"
+
+#, fuzzy
+#~ msgid "invalid major device number %s"
+#~ msgstr "ugyldig startlinjenummer: «%s»"
+
+#, fuzzy
+#~ msgid "invalid minor device number %s"
+#~ msgstr "ugyldig startlinjenummer: «%s»"
+
+#, fuzzy
+#~ msgid "invalid device %s %s"
+#~ msgstr "ugyldig argument %s for %s"
+
+#, fuzzy
+#~ msgid "invalid device type %s"
+#~ msgstr "ugyldig argument %s for %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [TEMPLATE]\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "too many templates"
+#~ msgstr "for mange argumenter"
+
+#, fuzzy
+#~ msgid "failed to create directory via template %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION] [COMMAND [ARG]...]\n"
+#~ msgstr "Bruk: %s [FLAGG] [FIL]...\n"
+
+#, fuzzy
+#~ msgid "invalid adjustment %s"
+#~ msgstr "ugyldig argument %s for %s"
+
+#, fuzzy
+#~ msgid "cannot get niceness"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#, fuzzy
+#~ msgid "cannot set niceness"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid ""
+#~ "Write each FILE to standard output, with line numbers added.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv hver fil til standard ut, med linjenummer lagt til.\n"
+#~ "Dersom ingen FIL er spesifisert, eller FIL er -, leses det fra standard "
+#~ "inn.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "  -b, --body-numbering=STYLE      use STYLE for numbering body lines\n"
+#~ "  -d, --section-delimiter=CC      use CC for separating logical pages\n"
+#~ "  -f, --footer-numbering=STYLE    use STYLE for numbering footer lines\n"
+#~ msgstr ""
+#~ "  -b, --body-numbering=STIL       bruk STIL for nummerering\n"
+#~ "  -d, --section-delimiter=CC      bruk CC for å skille logiske sider\n"
+#~ "  -f, --footer-numbering=STIL     bruk STIL for å nummerere bunntekst\n"
+
+#~ msgid ""
+#~ "  -h, --header-numbering=STYLE    use STYLE for numbering header lines\n"
+#~ "  -i, --page-increment=NUMBER     line number increment at each line\n"
+#~ "  -l, --join-blank-lines=NUMBER   group of NUMBER empty lines counted as "
+#~ "one\n"
+#~ "  -n, --number-format=FORMAT      insert line numbers according to "
+#~ "FORMAT\n"
+#~ "  -p, --no-renumber               do not reset line numbers at logical "
+#~ "pages\n"
+#~ "  -s, --number-separator=STRING   add STRING after (possible) line "
+#~ "number\n"
+#~ msgstr ""
+#~ "  -h, --header-numbering=STIL     bruk STIL for å nummerere topptekst\n"
+#~ "  -i, --page-increment=ANTALL     linjenummerøkning for hver linje\n"
+#~ "  -l, --join-blank-lines=ANTALL   ANTALL tomme linjer som teller som en\n"
+#~ "  -n, --number-format=FORMAT      sett inn linjenummer etter FORMAT\n"
+#~ "  -p, --no-renumber               ikke begynn linjenumre på nytt ved "
+#~ "logiske\n"
+#~ "                                  sider\n"
+#~ "  -s, --number-separator=STRENG   legg til STRENG etter (mulig) "
+#~ "linjenummer\n"
+
+#~ msgid ""
+#~ "  -v, --first-page=NUMBER         first line number on each logical page\n"
+#~ "  -w, --number-width=NUMBER       use NUMBER columns for line numbers\n"
+#~ msgstr ""
+#~ "  -v, --first-page=ANTALL         første linjenummer på hver logiske "
+#~ "side\n"
+#~ "  -w, --number-width=ANTALL       bruk ANTALL kolonner for "
+#~ "linjenummerering\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "By default, selects -v1 -i1 -l1 -sTAB -w6 -nrn -hn -bt -fn.  CC are\n"
+#~ "two delimiter characters for separating logical pages, a missing\n"
+#~ "second character implies :.  Type \\\\ for \\.  STYLE is one of:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Forvalgt er -v1 -i1 -l1 -sTAB -w6 -nrn -hn -bt -fn.  CC er\n"
+#~ "to skilletegn for å skille logiske sider, et manglende andretegn\n"
+#~ "impliserer «:». Bruk \\\\ for \\. STIL er en av:\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "  a         number all lines\n"
+#~ "  t         number only nonempty lines\n"
+#~ "  n         number no lines\n"
+#~ "  pBRE      number only lines that contain a match for the basic regular\n"
+#~ "            expression, BRE\n"
+#~ "\n"
+#~ "FORMAT is one of:\n"
+#~ "\n"
+#~ "  ln   left justified, no leading zeros\n"
+#~ "  rn   right justified, no leading zeros\n"
+#~ "  rz   right justified, leading zeros\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  a         nummerer alle linjer\n"
+#~ "  t         nummerer bare ikke-tomme linjer\n"
+#~ "  n         nummerer ingen linjer\n"
+#~ "  pREGEXP   nummerer bare linjer som passer REGEXP\n"
+#~ "\n"
+#~ "FORMAT er et av følgende:\n"
+#~ "\n"
+#~ "  ln   venstrejustert, ingen ledende nuller\n"
+#~ "  rn   høyrejustert, ingen ledende nuller\n"
+#~ "  rz   høyrejustert, ledende nuller\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "line number overflow"
+#~ msgstr "felt-nummer er null"
+
+#, fuzzy
+#~ msgid "invalid header numbering style: %s"
+#~ msgstr "ugyldig felt-nummer: «%s»"
+
+#, fuzzy
+#~ msgid "invalid body numbering style: %s"
+#~ msgstr "ugyldig antall"
+
+#, fuzzy
+#~ msgid "invalid footer numbering style: %s"
+#~ msgstr "ugyldig filnummer i felt-spesifikator: «%s»"
+
+#, fuzzy
+#~ msgid "invalid starting line number: %s"
+#~ msgstr "ugyldig startlinjenummer: «%s»"
+
+#, fuzzy
+#~ msgid "invalid line number increment: %s"
+#~ msgstr "ugyldig linjenummer-økning: «%s»"
+
+#, fuzzy
+#~ msgid "invalid number of blank lines: %s"
+#~ msgstr "ugyldig antall blanke linjer: «%s»"
+
+#, fuzzy
+#~ msgid "invalid line number field width: %s"
+#~ msgstr "ugyldig linjenummer-feltbredde: «%s»"
+
+#, fuzzy
+#~ msgid "invalid line numbering format: %s"
+#~ msgstr "ugyldig linjenummer-økning: «%s»"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s COMMAND [ARG]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "ignoring input"
+#~ msgstr "for mange argumenter"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]...\n"
+#~ "  or:  %s [-abcdfilosx]... [FILE] [[+]OFFSET[.][b]]\n"
+#~ "  or:  %s --traditional [OPTION]... [FILE] [[+]OFFSET[.][b] [+][LABEL][.]"
+#~ "[b]]\n"
+#~ msgstr ""
+#~ "Bruk:      %s [FLAGG]... [FIL]...\n"
+#~ "  eller:   %s --traditional [FIL] [[+]POSISJON [[+]MERKE]]\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Write an unambiguous representation, octal bytes by default,\n"
+#~ "of FILE to standard output.  With more than one FILE argument,\n"
+#~ "concatenate them in the listed order to form the input.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Skriv en entydig representasjon, oktale bytes forvalgt, av FIL\n"
+#~ "til standard ut. Dersom ingen FIL er spesifisert, eller FIL er -,\n"
+#~ "leses det fra standard inn.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "All arguments to long options are mandatory for short options.\n"
+#~ msgstr ""
+#~ "Obligatoriske argmenter til lange flagg er obligatoriske også for korte.\n"
+
+#~ msgid ""
+#~ "  -A, --address-radix=RADIX   decide how file offsets are printed\n"
+#~ "  -j, --skip-bytes=BYTES      skip BYTES input bytes first\n"
+#~ msgstr ""
+#~ "  -A, --address-radix=RADIX   bestem hvordan filoffset'er skrives\n"
+#~ "  -j, --skip-bytes=BYTES      hopp over første BYTES fra hver fil\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -N, --read-bytes=BYTES      limit dump to BYTES input bytes\n"
+#~ "  -S, --strings[=BYTES]       output strings of at least BYTES graphic "
+#~ "chars\n"
+#~ "  -t, --format=TYPE           select output format or formats\n"
+#~ "  -v, --output-duplicates     do not use * to mark line suppression\n"
+#~ "  -w, --width[=BYTES]         output BYTES bytes per output line\n"
+#~ "      --traditional           accept arguments in traditional form\n"
+#~ msgstr ""
+#~ "  -N, --read-bytes=BYTES      begrens oppgaven til første BYTES fra hver "
+#~ "fil\n"
+#~ "  -s, --strings[=BYTES]       skriv ut strenger med minst BYTES grafiske "
+#~ "tegn\n"
+#~ "  -t, --format=TYPE           velg utformat(er)\n"
+#~ "  -v, --output-duplicates     ikke bruk * for å markere linjefjerning\n"
+#~ "  -w, --width[=BYTES]         skriv BYTES bytes per utlinje\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Traditional format specifications may be intermixed; they accumulate:\n"
+#~ "  -a   same as -t a,  select named characters, ignoring high-order bit\n"
+#~ "  -b   same as -t o1, select octal bytes\n"
+#~ "  -c   same as -t c,  select ASCII characters or backslash escapes\n"
+#~ "  -d   same as -t u2, select unsigned decimal 2-byte units\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Før-POSIX-argumenter kan blandes, de er:\n"
+#~ "  -a   samme som -t a,  velg navngitte tegn\n"
+#~ "  -b   samme som -t oC, velg oktalbytes\n"
+#~ "  -c   samme som -t c,  velg ASCII-tegn eller backslash-notasjon\n"
+#~ "  -d   samme som -t u2, velg korte desimaler uten fortegn\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f   same as -t fF, select floats\n"
+#~ "  -i   same as -t dI, select decimal ints\n"
+#~ "  -l   same as -t dL, select decimal longs\n"
+#~ "  -o   same as -t o2, select octal 2-byte units\n"
+#~ "  -s   same as -t d2, select decimal 2-byte units\n"
+#~ "  -x   same as -t x2, select hexadecimal 2-byte units\n"
+#~ msgstr ""
+#~ "  -f   samme som -t fF, velg flyttall\n"
+#~ "  -h   samme som -t x2, velg korte hexadesimale\n"
+#~ "  -i   samme som -t d2, velg korte desimaler\n"
+#~ "  -l   samme som -t d4, velg lange desimaler\n"
+#~ "  -o   samme som -t o2, velg korte oktaler\n"
+#~ "  -x   samme som -t x2, velg korte hexadesimaler\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "If first and second call formats both apply, the second format is "
+#~ "assumed\n"
+#~ "if the last operand begins with + or (if there are 2 operands) a digit.\n"
+#~ "An OFFSET operand means -j OFFSET.  LABEL is the pseudo-address\n"
+#~ "at first byte printed, incremented when dump is progressing.\n"
+#~ "For OFFSET and LABEL, a 0x or 0X prefix indicates hexadecimal;\n"
+#~ "suffixes may be . for octal and b for multiply by 512.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "For eldre syntaks («second call format»), betyr POSISJON -j POSISJON. \n"
+#~ "MERKE er pseudoadressen til den første uskrevne byten, som økes mens\n"
+#~ "utskriften pågår. For POSISJON og MERKE, indikerer en 0x- eller \n"
+#~ "0X-forstavelse hexadesimalt tallformat.  Endelser kan være . for oktal,\n"
+#~ "og b for blokker på 512 bytes.\n"
+#~ "\n"
+#~ "TYPE er laget av en eller flere av følgende:\n"
+#~ "\n"
+#~ "  a            et navngitt tegn\n"
+#~ "  c            ASCII-tegn eller backslash-notasjon\n"
+
+#~ msgid ""
+#~ "  d[SIZE]    signed decimal, SIZE bytes per integer\n"
+#~ "  f[SIZE]    floating point, SIZE bytes per integer\n"
+#~ "  o[SIZE]    octal, SIZE bytes per integer\n"
+#~ "  u[SIZE]    unsigned decimal, SIZE bytes per integer\n"
+#~ "  x[SIZE]    hexadecimal, SIZE bytes per integer\n"
+#~ msgstr ""
+#~ "  d[STØRRELSE] desimal med fortegn, STØRRELSE bytes per tall\n"
+#~ "  f[STØRRELSE] flyttall, STØRRELSE bytes per tall\n"
+#~ "  o[STØRRELSE] oktal, STØRRELSE bytes per tall\n"
+#~ "  u[STØRRELSE] desimal uten fortegn, STØRRELSE bytes per tall\n"
+#~ "  x[STØRRELSE] hexadesimal, STØRRELSE bytes per tall\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "SIZE is a number.  For TYPE in doux, SIZE may also be C for\n"
+#~ "sizeof(char), S for sizeof(short), I for sizeof(int) or L for\n"
+#~ "sizeof(long).  If TYPE is f, SIZE may also be F for sizeof(float), D\n"
+#~ "for sizeof(double) or L for sizeof(long double).\n"
+#~ msgstr ""
+#~ "\n"
+#~ "STØRRELSE er et tall. For TYPE lik d, o, u eller x, kan STØRRELSE også "
+#~ "være\n"
+#~ "C for sizeof(char), S for sizeof(short), I for sizeof(int) eller L for \n"
+#~ "sizeof(long).  Når TYPE er f, kan STØRRELSE være F for sizeof(float), \n"
+#~ "D for sizeof(double) eller L for sizeof(long double).\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "RADIX is d for decimal, o for octal, x for hexadecimal or n for none.\n"
+#~ "BYTES is hexadecimal with 0x or 0X prefix, and may have a multiplier "
+#~ "suffix:\n"
+#~ "b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+#~ "GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+#~ "Adding a z suffix to any type displays printable characters at the end of "
+#~ "each\n"
+#~ "output line.  "
+#~ msgstr ""
+#~ "\n"
+#~ "RADIX er d for desimal, o for oktal, x for hexadesimal eller n for "
+#~ "ingen.\n"
+#~ "BYTES er hexadesimal med 0x- eller 0X-prefix, multipliseres med 512\n"
+#~ "med endelse b, med 1024 med endelse k og med 1048576 med endelse m. \n"
+#~ "En z-endelse for en hvilken som helst type viser skrivbare tegn til "
+#~ "slutten\n"
+#~ "av hver linje av utskriften.  "
+
+#, fuzzy
+#~ msgid ""
+#~ "--string without a number implies 3.  --width without a number\n"
+#~ "implies 32.  By default, od uses -A o -t d2 -w16.\n"
+#~ msgstr ""
+#~ "-s uten et tall impliserer 3. -w uten et tall impliserer 32.\n"
+#~ "Forvalgt er at od bruker -A o -t d2 -w 16.\n"
+
+#, fuzzy
+#~ msgid "invalid type string %s"
+#~ msgstr "ugyldig type-streng «%s»"
+
+#, fuzzy
+#~ msgid ""
+#~ "invalid type string %s;\n"
+#~ "this system doesn't provide a %lu-byte integral type"
+#~ msgstr ""
+#~ "ugyldig type-streng «%s»;\n"
+#~ "dette systemet støtter ikke en %lu-byte heltallstype"
+
+#, fuzzy
+#~ msgid ""
+#~ "invalid type string %s;\n"
+#~ "this system doesn't provide a %lu-byte floating point type"
+#~ msgstr ""
+#~ "ugyldig type-streng «%s»;\n"
+#~ "dette systemet støtter ikke en %lu-byte flyttallstype"
+
+#, fuzzy
+#~ msgid "invalid character `%c' in type string %s"
+#~ msgstr "ugyldig tegn «%c» i type-streng «%s»"
+
+#~ msgid "cannot skip past end of combined input"
+#~ msgstr "kan ikke hoppe til bak slutten av kombinert inndata"
+
+#~ msgid ""
+#~ "invalid output address radix `%c'; it must be one character from [doxn]"
+#~ msgstr "ugyldig ut-adresse radix «%c»; det må være ett av tegnene [doxn]"
+
+#~ msgid "no type may be specified when dumping strings"
+#~ msgstr "ingen type kan spesifiseres ved dumping av strenger"
+
+#, fuzzy
+#~ msgid "Compatibility mode supports at most one file."
+#~ msgstr "kompatibilitetsmodus støtter maksimum tre argumenter"
+
+#~ msgid "warning: invalid width %lu; using %d instead"
+#~ msgstr "advarsel: ugyldig bredde %lu; bruker %d istedet"
+
+#~ msgid "%d: fmt=\"%s\" width=%d\n"
+#~ msgstr "%d: fmt=\"%s\" bredde=%d\n"
+
+#~ msgid "standard input is closed"
+#~ msgstr "standard inn er lukket"
+
+#~ msgid ""
+#~ "Write lines consisting of the sequentially corresponding lines from\n"
+#~ "each FILE, separated by TABs, to standard output.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv linjer som består av de sekvensielt tilsvarende linjene fra hver\n"
+#~ "FIL separert med tabulatorer til standard ut.\n"
+#~ "Dersom ingen FIL er spesifisert, eller FIL er -, leses det fra standard "
+#~ "inn.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "  -d, --delimiters=LIST   reuse characters from LIST instead of TABs\n"
+#~ "  -s, --serial            paste one file at a time instead of in "
+#~ "parallel\n"
+#~ msgstr ""
+#~ "  -d, --delimiters=LISTE  bruk tegn fra LISTE istedet for tabulatorer\n"
+#~ "  -s, --serial            ta en fil om gangen i steder for i parallell\n"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... NAME...\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "nonportable character %s in file name %s"
+#~ msgstr "ugyldig tegn «%c» i type-streng «%s»"
+
+#, fuzzy
+#~ msgid "Joseph Arceneaux"
+#~ msgstr "Jay Lepreau og David MacKenzie"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [USER]...\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "no username specified; at least one must be specified when using -l"
+#~ msgstr "ingen filer kan spesifiseres når flagget --string brukes"
+
+#, fuzzy
+#~ msgid "Roland Huebner"
+#~ msgstr "Pete TerMaat og Roland Huebner"
+
+#~ msgid "`--pages=FIRST_PAGE[:LAST_PAGE]' missing argument"
+#~ msgstr "«--pages=FØRSTE_SIZE[:SISTE_SIDE]» mangler argument"
+
+#, fuzzy
+#~ msgid "Invalid page range %s"
+#~ msgstr "ugyldig type-streng «%s»"
+
+#, fuzzy
+#~ msgid "`-l PAGE_LENGTH' invalid number of lines: %s"
+#~ msgstr "«-l SIDE_LENGDE» igyldig antall linjer: «%s»"
+
+#, fuzzy
+#~ msgid "`-N NUMBER' invalid starting line number: %s"
+#~ msgstr "«-N TALL» ugyldig start-linjenummer: «%s»"
+
+#, fuzzy
+#~ msgid "`-o MARGIN' invalid line offset: %s"
+#~ msgstr "«-o MARG» ugyldig linje-offset: «%s»"
+
+#, fuzzy
+#~ msgid "`-w PAGE_WIDTH' invalid number of characters: %s"
+#~ msgstr "«-w SIDE_BREDDE» igyldig antall tegn: «%s»"
+
+#, fuzzy
+#~ msgid "`-W PAGE_WIDTH' invalid number of characters: %s"
+#~ msgstr "«-W SIDE_BREDDE» ugyldig antall tegn: «%s»"
+
+#~ msgid "Cannot specify number of columns when printing in parallel."
+#~ msgstr "Kan ikke spesifisere antall kolonner når det skrives i parallell."
+
+#~ msgid "Cannot specify both printing across and printing in parallel."
+#~ msgstr "Kan ikke spesifisere både skriving i kryss og skriving i parallell"
+
+#, fuzzy
+#~ msgid "`-%c' extra characters or invalid number in the argument: %s"
+#~ msgstr "«-%c» ekstra tegn eller ugyldig tall i argumentet: «%s»"
+
+#~ msgid "page width too narrow"
+#~ msgstr "sidebredde for smal"
+
+#, fuzzy
+#~ msgid "Page number overflow"
+#~ msgstr "felt-nummer er null"
+
+#, fuzzy
+#~ msgid ""
+#~ "Paginate or columnate FILE(s) for printing.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Paginér eller kolumnér FIL(er) for utskrift.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  +FIRST_PAGE[:LAST_PAGE], --pages=FIRST_PAGE[:LAST_PAGE]\n"
+#~ "                    begin [stop] printing with page FIRST_[LAST_]PAGE\n"
+#~ "  -COLUMN, --columns=COLUMN\n"
+#~ "                    output COLUMN columns and print columns down,\n"
+#~ "                    unless -a is used. Balance number of lines in the\n"
+#~ "                    columns on each page.\n"
+#~ msgstr ""
+#~ "  +FØRSTE_SIDE[:SISTE_SIDE], --pages=FØRSTE_SIDE[:SISTE_SIDE]\n"
+#~ "                    begynn [stopp] utskrift med side FØRSTE_[SISTE_]SIDE\n"
+#~ "  -KOLONNE, --columns=COLONNE\n"
+#~ "                    lag KOLONNE-kolonners utskrift og skriv kolonner "
+#~ "nedover,\n"
+#~ "                    med mindre -a brukes.  Balansér antall linjer i\n"
+#~ "                    kolonnene på hver side\n"
+
+#~ msgid ""
+#~ "  -a, --across      print columns across rather than down, used together\n"
+#~ "                    with -COLUMN\n"
+#~ "  -c, --show-control-chars\n"
+#~ "                    use hat notation (^G) and octal backslash notation\n"
+#~ "  -d, --double-space\n"
+#~ "                    double space the output\n"
+#~ msgstr ""
+#~ "  -a, --across      skriv kolonner på tvers isteden for nedover, brukes "
+#~ "sammen\n"
+#~ "                    med -KOLONNE\n"
+#~ "  -c, --show-control-chars\n"
+#~ "                    bruk hatt-notasjon (^G) og oktal backslah-notasjon\n"
+#~ "  -d, --double-space\n"
+#~ "                    bruk dobbel linjeavstand\n"
+
+#~ msgid ""
+#~ "  -D, --date-format=FORMAT\n"
+#~ "                    use FORMAT for the header date\n"
+#~ "  -e[CHAR[WIDTH]], --expand-tabs[=CHAR[WIDTH]]\n"
+#~ "                    expand input CHARs (TABs) to tab WIDTH (8)\n"
+#~ "  -F, -f, --form-feed\n"
+#~ "                    use form feeds instead of newlines to separate pages\n"
+#~ "                    (by a 3-line page header with -F or a 5-line header\n"
+#~ "                    and trailer without -F)\n"
+#~ msgstr ""
+#~ "  -D, --date-format=FORMAT\n"
+#~ "                    bruk FORMAT for topptekst-dato\n"
+#~ "  -e[TEGN[BREDDE]], --expand-tabs[=TEGN[BREDDE]]\n"
+#~ "                    ekspander inn-TEGN (TAB) til tabulator-BREDDE (8)\n"
+#~ "  -F, -f, --form-feed\n"
+#~ "                    bruk sideskift isteden for linjeskift for å separere\n"
+#~ "                    sider. (ved en 3-linjers topptekst med -F eller en\n"
+#~ "                    5-linjers topptekst og bunntekst uten -F)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -h HEADER, --header=HEADER\n"
+#~ "                    use a centered HEADER instead of filename in page "
+#~ "header,\n"
+#~ "                    -h \"\" prints a blank line, don't use -h\"\"\n"
+#~ "  -i[CHAR[WIDTH]], --output-tabs[=CHAR[WIDTH]]\n"
+#~ "                    replace spaces with CHARs (TABs) to tab WIDTH (8)\n"
+#~ "  -J, --join-lines  merge full lines, turns off -W line truncation, no "
+#~ "column\n"
+#~ "                    alignment, --sep-string[=STRING] sets separators\n"
+#~ msgstr ""
+#~ "  -h TOPPTEKST, --header=TOPPTEKST\n"
+#~ "                    bruk en sentrert TOPPTEKST isteden for filnavn i\n"
+#~ "                    toppteksten. -h \"\" skriver en blank linje, ikke "
+#~ "bruk\n"
+#~ "                    -h\"\"\n"
+#~ "  -i[TEGN[BREDDE], --output-tabs[=TEGN[BREDDE]]\n"
+#~ "                    erstatt mellomrom med TEGN (TAB) til tabulator-BREDDE"
+#~ "(8)\n"
+#~ "  -J, --join-lines  flett sammen hele linjer.  Skrur av -W-linje-"
+#~ "trunkering,\n"
+#~ "                    ingen kolonnejustering, -S[STRENG] setter skilletegn\n"
+
+#~ msgid ""
+#~ "  -l PAGE_LENGTH, --length=PAGE_LENGTH\n"
+#~ "                    set the page length to PAGE_LENGTH (66) lines\n"
+#~ "                    (default number of lines of text 56, and with -F 63)\n"
+#~ "  -m, --merge       print all files in parallel, one in each column,\n"
+#~ "                    truncate lines, but join lines of full length with -"
+#~ "J\n"
+#~ msgstr ""
+#~ "  -l SIDE_LENDGE, --length=SIDE_LENDGE\n"
+#~ "                    setter sidelengden til SIDE_LENDGE (66) linjer\n"
+#~ "                    (forvalgt antall linjer med tekst er 56, og med -F "
+#~ "63)\n"
+#~ "  -m, --merge       skriv alle filer i parallell, en i hver kolonne,\n"
+#~ "                    trunker linjer, men flett sammen hele linjer med -J\n"
+
+#~ msgid ""
+#~ "  -n[SEP[DIGITS]], --number-lines[=SEP[DIGITS]]\n"
+#~ "                    number lines, use DIGITS (5) digits, then SEP (TAB),\n"
+#~ "                    default counting starts with 1st line of input file\n"
+#~ "  -N NUMBER, --first-line-number=NUMBER\n"
+#~ "                    start counting with NUMBER at 1st line of first\n"
+#~ "                    page printed (see +FIRST_PAGE)\n"
+#~ msgstr ""
+#~ "  -n[SKILL[SIFFER]], --number-linjes[=SKILL[SIFFER]]\n"
+#~ "                    antall linjer, bruk SIFFER (5) siffer, så SKILL "
+#~ "(TAB),\n"
+#~ "                    forvalgt starter telling med første linje av innfil\n"
+#~ "  -N NUMMER, --first-linje-number=NUMMER\n"
+#~ "                    start telling med NUMMER ved første linje av første\n"
+#~ "                    side skrevet ut (se +FØRSTE_SIDE)\n"
+
+#~ msgid ""
+#~ "  -o MARGIN, --indent=MARGIN\n"
+#~ "                    offset each line with MARGIN (zero) spaces, do not\n"
+#~ "                    affect -w or -W, MARGIN will be added to PAGE_WIDTH\n"
+#~ "  -r, --no-file-warnings\n"
+#~ "                    omit warning when a file cannot be opened\n"
+#~ msgstr ""
+#~ "  -o MARG, --indent=MARG\n"
+#~ "                    posisjonér hver linje med MARG (0) mellomrom,\n"
+#~ "                    påvirker ikke -w eller -W. MARG vil adderes til "
+#~ "SIDE_BREDDE\n"
+#~ "  -r, --no-file-warnings\n"
+#~ "                    ikke advar når fil ikke kan åpnes\n"
+
+#~ msgid ""
+#~ "  -s[CHAR],--separator[=CHAR]\n"
+#~ "                    separate columns by a single character, default for "
+#~ "CHAR\n"
+#~ "                    is the <TAB> character without -w and 'no char' with -"
+#~ "w\n"
+#~ "                    -s[CHAR] turns off line truncation of all 3 column\n"
+#~ "                    options (-COLUMN|-a -COLUMN|-m) except -w is set\n"
+#~ msgstr ""
+#~ "  -s[TEGN], --separator[=CHAR]\n"
+#~ "                    skill kolonner med et enkelt tegn, forvalgt TEGNS\n"
+#~ "                    er TAB-tegnet med -w og ingen tegn ved -W\n"
+#~ "                    -s[TEGN] skrur av linjetrunkering av alle 3 kolonne-\n"
+#~ "                    flaggene (-KOLONNE|-a -KOLONNE|-m) hvis ikke -w er "
+#~ "satt\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "                    separate columns by STRING,\n"
+#~ "                    without -S: Default separator <TAB> with -J and "
+#~ "<space>\n"
+#~ "                    otherwise (same as -S\" \"), no effect on column "
+#~ "options\n"
+#~ "  -t, --omit-header  omit page headers and trailers\n"
+#~ msgstr ""
+#~ "  -S[STRENG], --sep-string[=STRENG]\n"
+#~ "                    skill kolonner med en STRENG.  Ikke bruk -S \"STRENG"
+#~ "\".\n"
+#~ "                    Bare -S: Ikke noe skilletegn (samme som -S\"\").\n"
+#~ "                    Uten -S: Fovalgt skilletegn TAB med -J og SPACE\n"
+#~ "                    ellers (samme som -S\" \"), ingen effekt på kolonne-"
+#~ "flagg\n"
+#~ "  -t, --omit-header ikke ta med topptekst og bunntekst\n"
+
+#~ msgid ""
+#~ "  -T, --omit-pagination\n"
+#~ "                    omit page headers and trailers, eliminate any "
+#~ "pagination\n"
+#~ "                    by form feeds set in input files\n"
+#~ "  -v, --show-nonprinting\n"
+#~ "                    use octal backslash notation\n"
+#~ "  -w PAGE_WIDTH, --width=PAGE_WIDTH\n"
+#~ "                    set page width to PAGE_WIDTH (72) characters for\n"
+#~ "                    multiple text-column output only, -s[char] turns off "
+#~ "(72)\n"
+#~ msgstr ""
+#~ "  -T, --omit-pagination\n"
+#~ "                    ikke ta med topp- og bunntekst, eliminer evt. "
+#~ "paginering\n"
+#~ "                    av sideskift satt i inn-filer\n"
+#~ "  -v, --show-non-printing\n"
+#~ "                    bruk backslash-notasjon\n"
+#~ "  -w SIDEBREDDE, --with=SIDEBREDDE\n"
+#~ "                    sett sidebredde til SIDEBREDDE (72) tegn for\n"
+#~ "                    flerkolonners tekstutskrift. -s[tegn] skrur av (72)\n"
+
+#~ msgid ""
+#~ "  -W PAGE_WIDTH, --page-width=PAGE_WIDTH\n"
+#~ "                    set page width to PAGE_WIDTH (72) characters always,\n"
+#~ "                    truncate lines, except -J option is set, no "
+#~ "interference\n"
+#~ "                    with -S or -s\n"
+#~ msgstr ""
+#~ "  -W SIDEBREDDE, --page-width=SIDEBREDDE\n"
+#~ "                    sett sidebredde til SIDEBREDDE (72) tegn\n"
+#~ "                    trunkér linjer hvis ikke -J er satt.  Ingen "
+#~ "påvirkning\n"
+#~ "                    med -S eller -s\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "-t is implied if PAGE_LENGTH <= 10.  With no FILE, or when\n"
+#~ "FILE is -, read standard input.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "-T impliseres av -l nn når nn <= 10 eller <= 3 med -F.  Dersom FIL ikke\n"
+#~ "er oppgitt, eller når FIL er -, leses det fra standard inn.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s FORMAT [ARGUMENT]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "invalid universal character name \\%c%0*x"
+#~ msgstr "ugyldig tegn-klasse «%s»"
+
+#, fuzzy
+#~ msgid "invalid field width: %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "invalid precision: %s"
+#~ msgstr "ugyldig breddespesifikasjon «%s»"
+
+#, fuzzy
+#~ msgid "%.*s: invalid conversion specification"
+#~ msgstr "%s: ugyldig feltspesifikasjon «%s»"
+
+#, fuzzy
+#~ msgid "%s (for regexp %s)"
+#~ msgstr "%s (for regexp «%s»)"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [INPUT]...   (without -G)\n"
+#~ "  or:  %s -G [OPTION]... [INPUT [OUTPUT]]\n"
+#~ msgstr ""
+#~ "Bruk : %s [FLAGG]... [INN]... (uten -G)\n"
+#~ "eller: %s -G [FLAGG]... [INN [UT]]\n"
+
+#~ msgid ""
+#~ "Output a permuted index, including context, of the words in the input "
+#~ "files.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv ut en permutert indeks, inkludert kontekst, av ordene i innfilene\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -A, --auto-reference           output automatically generated "
+#~ "references\n"
+#~ "  -G, --traditional              behave more like System V `ptx'\n"
+#~ "  -F, --flag-truncation=STRING   use STRING for flagging line "
+#~ "truncations\n"
+#~ msgstr ""
+#~ "  -A, --auto-reference           skriv ut automatisk genererte "
+#~ "referanser\n"
+#~ "  -C, --copyright                vis Copyright og kopieringsbetingelser\n"
+#~ "  -G, --traditional              vær mer som System Vs «ptx»\n"
+#~ "  -F, --flag-truncation=STRENG   bruk STRENG for å markere "
+#~ "linjetrunkering\n"
+
+#~ msgid ""
+#~ "  -M, --macro-name=STRING        macro name to use instead of `xx'\n"
+#~ "  -O, --format=roff              generate output as roff directives\n"
+#~ "  -R, --right-side-refs          put references at right, not counted in -"
+#~ "w\n"
+#~ "  -S, --sentence-regexp=REGEXP   for end of lines or end of sentences\n"
+#~ "  -T, --format=tex               generate output as TeX directives\n"
+#~ msgstr ""
+#~ "  -M, --macro-name=STRENG        makronavn å bruke istedenfor «xx»\n"
+#~ "  -O, --format=roff              generer utskrift som roff-direktiver\n"
+#~ "  -R, --right-side-refs          plassér referansene på høyre side, ikke\n"
+#~ "                                 telt med i -w\n"
+#~ "  -S, --sentence-regexp=REGEXP   for slutten av linjer eller slutten av\n"
+#~ "                                 setninger\n"
+#~ "  -T, --format=tex               generer utskrift som TeX-direktiver\n"
+
+#~ msgid ""
+#~ "  -W, --word-regexp=REGEXP       use REGEXP to match each keyword\n"
+#~ "  -b, --break-file=FILE          word break characters in this FILE\n"
+#~ "  -f, --ignore-case              fold lower case to upper case for "
+#~ "sorting\n"
+#~ "  -g, --gap-size=NUMBER          gap size in columns between output "
+#~ "fields\n"
+#~ "  -i, --ignore-file=FILE         read ignore word list from FILE\n"
+#~ "  -o, --only-file=FILE           read only word list from this FILE\n"
+#~ msgstr ""
+#~ "  -W, --word-regexp=REGEXP       bruk REGEXP for å treffe hvert "
+#~ "nøkkelord\n"
+#~ "  -b, --break-file=FIL           tegn for orddeling i denne FILen\n"
+#~ "  -f, --ignore-case              gjør om små bokstaver til store for "
+#~ "sortering\n"
+#~ "  -g, --gap-size=TALL            størrelse på mellomrom mellom spalter i "
+#~ "utfelt\n"
+#~ "  -i, --ignore-file=FIL          les liste over ord som skal ignoreres "
+#~ "fra FIL\n"
+#~ "  -o, --only-file=FIL            les liste over ord som *ikke* skal "
+#~ "ignoreres\n"
+#~ "                                 fra FIL\n"
+
+#~ msgid ""
+#~ "  -r, --references               first field of each line is a reference\n"
+#~ "  -t, --typeset-mode               - not implemented -\n"
+#~ "  -w, --width=NUMBER             output width in columns, reference "
+#~ "excluded\n"
+#~ msgstr ""
+#~ "  -r, --references               første felt av hver linje er en "
+#~ "referanse\n"
+#~ "  -t, --typeset-mode               - ikke implementert -\n"
+#~ "  -w, --width=BREDDE             utskriftbredde for spalter, eksklusive\n"
+#~ "                                 referanser\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "With no FILE or if FILE is -, read Standard Input.  `-F /' by default.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Ved ingen FIL eller hvis FIL er -, leses det fra standard inn.  «-F /» "
+#~ "er\n"
+#~ "forvalgt.\n"
+
+#, fuzzy
+#~ msgid "invalid gap width: %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "failed to chdir to %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "failed to stat %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "ignoring non-option arguments"
+#~ msgstr "for mange ikke-flagg-argumenter"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... FILE\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "FATAL: failed to close directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "FATAL: cannot open .. from %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "FATAL: cannot enter directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "%s: descend into write-protected directory %s? "
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "%s: descend into directory %s? "
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "removed directory: %s\n"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "failed to close directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot remove directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "FATAL: cannot return to .. from %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot remove root directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot remove relative-named %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot restore current working directory"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... FILE...\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "%s: remove all arguments? "
+#~ msgstr "for mange argumenter"
+
+#, fuzzy
+#~ msgid "removing directory, %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "failed to remove directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... DIRECTORY...\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "failed to remove %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "no command specified"
+#~ msgstr "kun ett argument kan spesifiseres"
+
+#, fuzzy
+#~ msgid "failed to set new user %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "failed to set new type %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "failed to set new range %s"
+#~ msgstr "%s: linjenummer utenfor tillatte verdier"
+
+#, fuzzy
+#~ msgid "failed to set new role %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "unable to set security context %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... LAST\n"
+#~ "  or:  %s [OPTION]... FIRST LAST\n"
+#~ "  or:  %s [OPTION]... FIRST INCREMENT LAST\n"
+#~ msgstr ""
+#~ "Bruk : %s [FLAGG]... [INN]... (uten -G)\n"
+#~ "eller: %s -G [FLAGG]... [INN [UT]]\n"
+
+#, fuzzy
+#~ msgid "invalid floating point argument: %s"
+#~ msgstr "ugyldig startlinjenummer: «%s»"
+
+#, fuzzy
+#~ msgid "no %% directive in format string %s"
+#~ msgstr "ugyldig type-streng «%s»"
+
+#, fuzzy
+#~ msgid "too many %% directives in format string %s"
+#~ msgstr "for mange %%-konverteringsspesifikasjoner i suffiks"
+
+#, fuzzy
+#~ msgid "invalid format string: %s"
+#~ msgstr "ugyldig type-streng «%s»"
+
+#, fuzzy
+#~ msgid "format string may not be specified when printing equal width strings"
+#~ msgstr "ingen type kan spesifiseres ved dumping av strenger"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s OPTION USER COMMAND [ARGUMENT]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "cannot set group-ID to %lu"
+#~ msgstr "kan ikke utelate både bruker og gruppe"
+
+#, fuzzy
+#~ msgid "cannot set user-ID to %lu"
+#~ msgstr "kan ikke utelate både bruker og gruppe"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTIONS] FILE [...]\n"
+#~ msgstr "Bruk: %s [FLAGG] [FIL]...\n"
+
+#, fuzzy
+#~ msgid "%s: fdatasync failed"
+#~ msgstr "stat feilet"
+
+#, fuzzy
+#~ msgid "%s: error writing at offset %s"
+#~ msgstr "feil ved skriving til %s"
+
+#, fuzzy
+#~ msgid "%s: lseek failed"
+#~ msgstr "feil ved lukking av fil"
+
+#, fuzzy
+#~ msgid "%s: file too large"
+#~ msgstr "%s: fil for lang"
+
+#, fuzzy
+#~ msgid "%s: fstat failed"
+#~ msgstr "stat feilet"
+
+#, fuzzy
+#~ msgid "%s: invalid file type"
+#~ msgstr "%s: ugyldig antall linjer"
+
+#, fuzzy
+#~ msgid "%s: error truncating"
+#~ msgstr "%s: fil trunkert"
+
+#, fuzzy
+#~ msgid "%s: fcntl failed"
+#~ msgstr "stat feilet"
+
+#, fuzzy
+#~ msgid "%s: renamed to %s"
+#~ msgstr "%s: lesefeil"
+
+#, fuzzy
+#~ msgid "%s: failed to remove"
+#~ msgstr "%s: fil for lang"
+
+#, fuzzy
+#~ msgid "%s: failed to close"
+#~ msgstr "%s: fil for lang"
+
+#, fuzzy
+#~ msgid "%s: failed to open for writing"
+#~ msgstr "%s: fil for lang"
+
+#, fuzzy
+#~ msgid "%s: invalid number of passes"
+#~ msgstr "%s: ugyldig antall sekunder"
+
+#, fuzzy
+#~ msgid "%s: invalid file size"
+#~ msgstr "%s: ugyldig antall linjer"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]\n"
+#~ "  or:  %s -e [OPTION]... [ARG]...\n"
+#~ "  or:  %s -i LO-HI [OPTION]...\n"
+#~ msgstr ""
+#~ "Bruk : %s [FLAGG]... [INN]... (uten -G)\n"
+#~ "eller: %s -G [FLAGG]... [INN [UT]]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Write a random permutation of the input lines to standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv ut valgte deler av linjer fra hver FIL til standard ut.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "invalid input range %s"
+#~ msgstr "ugyldig antall"
+
+#, fuzzy
+#~ msgid "invalid line count %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "extra operand %s\n"
+#~ msgstr "ekstra operator «%s»"
+
+#, fuzzy
+#~ msgid "invalid time interval %s"
+#~ msgstr "ugyldig felt-nummer: «%s»"
+
+#, fuzzy
+#~ msgid ""
+#~ "Write sorted concatenation of all FILE(s) to standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv en sortert konkatenering av alle FIL(er) til standard ut.\n"
+#~ "\n"
+#~ "Sorteringsflagg:\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -b, --ignore-leading-blanks  ignore leading blanks\n"
+#~ "  -d, --dictionary-order      consider only blanks and alphanumeric "
+#~ "characters\n"
+#~ "  -f, --ignore-case           fold lower case to upper case characters\n"
+#~ msgstr ""
+#~ "  -b, --ignore-leading-blanks ignorer ledende blanke\n"
+#~ "  -d, --dictionary-order      behandle bare blanke og alfanumeriske tegn\n"
+#~ "  -f, --ignore-case           konverter små bokstaver til store\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -g, --general-numeric-sort  compare according to general numerical "
+#~ "value\n"
+#~ "  -i, --ignore-nonprinting    consider only printable characters\n"
+#~ "  -M, --month-sort            compare (unknown) < `JAN' < ... < `DEC'\n"
+#~ "  -n, --numeric-sort          compare according to string numerical "
+#~ "value\n"
+#~ "  -R, --random-sort           sort by random hash of keys\n"
+#~ "      --random-source=FILE    get random bytes from FILE (default /dev/"
+#~ "urandom)\n"
+#~ "      --sort=WORD             sort according to WORD:\n"
+#~ "                                general-numeric -g, month -M, numeric -"
+#~ "n,\n"
+#~ "                                random -R\n"
+#~ "  -r, --reverse               reverse the result of comparisons\n"
+#~ "\n"
+#~ msgstr ""
+#~ "  -g, --general-numeric-sort  sammenlign i henhold til vanlige "
+#~ "nummériske\n"
+#~ "                              verdier\n"
+#~ "  -i, --ignore-nonprinting    behandle bare skrivbare tegn\n"
+#~ "  -M, --month-sort            sammenlign (ukjent) < 'JAN' < ... < 'DEC'\n"
+#~ "  -n, --numeric-sort          sammenlign i henhold til nummériske "
+#~ "verdier\n"
+#~ "  -r, --reverse               reversér resultatet av sammenligningene\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -o, --output=FILE         write result to FILE instead of standard "
+#~ "output\n"
+#~ "  -s, --stable              stabilize sort by disabling last-resort "
+#~ "comparison\n"
+#~ "  -S, --buffer-size=SIZE    use SIZE for main memory buffer\n"
+#~ msgstr ""
+#~ "Andre flagg:\n"
+#~ "\n"
+#~ "  -c, --check               sjekk om inndata er sortert; ikke sortér\n"
+#~ "  -k, --key=POS1[,POS2]     start en nøkkel ved POS1, avslutt ved POS2 "
+#~ "(fra 1)\n"
+#~ "  -m, --merge               flett sammen allerede sorterte filer; ikke "
+#~ "sortér\n"
+#~ "  -o, --output=FIL          skriv resultater til FIL isteden for standard "
+#~ "ut\n"
+#~ "  -s, --stable              stabiliser sortering ved å slå av siste-"
+#~ "utvei-\n"
+#~ "                            sammenligning\n"
+#~ "  -S, --buffer-size=STØRR   bruk STØRRelse stort minne-buffer\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -t, --field-separator=SEP  use SEP instead of non-blank to blank "
+#~ "transition\n"
+#~ "  -T, --temporary-directory=DIR  use DIR for temporaries, not $TMPDIR or "
+#~ "%s;\n"
+#~ "                              multiple options specify multiple "
+#~ "directories\n"
+#~ "  -u, --unique              with -c, check for strict ordering;\n"
+#~ "                              without -c, output only the first of an "
+#~ "equal run\n"
+#~ msgstr ""
+#~ "  -t, --field-separator=SKILL bruk SKILL isteden for ikke- til -tomrom-"
+#~ "overgang\n"
+#~ "  -T, --temporary-directory=KAT bruk KATalog for midlertidige filer, "
+#~ "ikke\n"
+#~ "                              $TMPDIR eller %s.  Kan gjentas for å\n"
+#~ "                              spesifisere flere kataloger\n"
+#~ "  -u, --unique              med -c: sjekk for streng sortering\n"
+#~ "                              ellers, bare skriv ut det første av to "
+#~ "like\n"
+
+#~ msgid "  -z, --zero-terminated     end lines with 0 byte, not newline\n"
+#~ msgstr ""
+#~ "  -z, --zero-terminated     avslutt linjer med en 0-oktett, ikke "
+#~ "linjeskift\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "POS is F[.C][OPTS], where F is the field number and C the character "
+#~ "position\n"
+#~ "in the field; both are origin 1.  If neither -t nor -b is in effect, "
+#~ "characters\n"
+#~ "in a field are counted from the beginning of the preceding whitespace.  "
+#~ "OPTS is\n"
+#~ "one or more single-letter ordering options, which override global "
+#~ "ordering\n"
+#~ "options for that key.  If no key is given, use the entire line as the "
+#~ "key.\n"
+#~ "\n"
+#~ "SIZE may be followed by the following multiplicative suffixes:\n"
+#~ msgstr ""
+#~ "\n"
+#~ "POS er F[.C][OPTS], hvor F er feltnummeret og C er tegnposisjonen\n"
+#~ "i feltet.  OPTS er en eller flere enbokstav-sorteringflagg, som\n"
+#~ "overstyrer globale sorteringsflagg for den nøkkelen.  Hvis ingen nøkkel\n"
+#~ "er oppgitt, bruk hele linjen som nøkkel.\n"
+#~ "\n"
+#~ "STØRRELSE kan være fulgt av de følgende multiplikator-endelsene:\n"
+
+#~ msgid ""
+#~ "% 1% of memory, b 1, K 1024 (default), and so on for M, G, T, P, E, Z, "
+#~ "Y.\n"
+#~ "\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ "*** WARNING ***\n"
+#~ "The locale specified by the environment affects sort order.\n"
+#~ "Set LC_ALL=C to get the traditional sort order that uses\n"
+#~ "native byte values.\n"
+#~ msgstr ""
+#~ "% 1% av minne, b 1, K 1024 (forvalgt) og så videre for M, G, T, P, E, Z, "
+#~ "Y.\n"
+#~ "\n"
+#~ "Dersom ingen FIL er oppgitt eller FIL er -, leses det fra standard inn.\n"
+#~ "\n"
+#~ "*** ADVARSEL ***\n"
+#~ "Lokalet spesifisert av miljøet påvirker sorteringsrekkefølge.\n"
+#~ "Sett LC_ALL=C for å få den tradisjonelle sorteringsrekkefølgen som\n"
+#~ "bruker negative oktett-verdier.\n"
+
+#, fuzzy
+#~ msgid "waiting for %s [-d]"
+#~ msgstr "feil ved skriving til %s"
+
+#~ msgid "cannot create temporary file"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#~ msgid "open failed"
+#~ msgstr "åpning av fil feilet"
+
+#, fuzzy
+#~ msgid "fflush failed"
+#~ msgstr "feil ved lukking av fil"
+
+#~ msgid "close failed"
+#~ msgstr "feil ved lukking av fil"
+
+#, fuzzy
+#~ msgid "dup2 failed"
+#~ msgstr "åpning av fil feilet"
+
+#, fuzzy
+#~ msgid "couldn't execute %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "couldn't create temporary file"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#, fuzzy
+#~ msgid "couldn't open temporary file"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#, fuzzy
+#~ msgid "couldn't execute %s -d"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid "write failed"
+#~ msgstr "feil ved skriving"
+
+#, fuzzy
+#~ msgid "warning: cannot remove: %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid "stat failed"
+#~ msgstr "stat feilet"
+
+#~ msgid "read failed"
+#~ msgstr "feil ved lesing"
+
+#~ msgid "%s: %s:%s: disorder: "
+#~ msgstr "%s: %s:%s: uorden: "
+
+#~ msgid "standard error"
+#~ msgstr "standard feilkanal"
+
+#, fuzzy
+#~ msgid "%s: invalid field specification %s"
+#~ msgstr "%s: ugyldig feltspesifikasjon «%s»"
+
+#, fuzzy
+#~ msgid "%s: invalid count at start of %s"
+#~ msgstr "%s: ugyldig tall på starten av «%s»"
+
+#~ msgid "invalid number after `-'"
+#~ msgstr "ugyldig tall etter «-»"
+
+#~ msgid "invalid number after `.'"
+#~ msgstr "ugyldig tall etter «.»"
+
+#~ msgid "stray character in field spec"
+#~ msgstr "ugyldig tegn i feltspesifikasjon"
+
+#~ msgid "invalid number at field start"
+#~ msgstr "ugyldig tall i feltstart"
+
+#~ msgid "field number is zero"
+#~ msgstr "felt-nummer er null"
+
+#~ msgid "character offset is zero"
+#~ msgstr "tegn-posisjon er null"
+
+#~ msgid "invalid number after `,'"
+#~ msgstr "ugyldig tall etter «,»"
+
+#, fuzzy
+#~ msgid "extra operand %s not allowed with -%c"
+#~ msgstr "ekstra operator «%s» ikke tillatt med -c"
+
+#~ msgid "Usage: %s [OPTION] [INPUT [PREFIX]]\n"
+#~ msgstr "Bruk: %s [FLAGG] [INPUT [PREFIKS]]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Output fixed-size pieces of INPUT to PREFIXaa, PREFIXab, ...; default\n"
+#~ "size is 1000 lines, and default PREFIX is `x'.  With no INPUT, or when "
+#~ "INPUT\n"
+#~ "is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv stykker av fast størrelse av INPUT til PREFIKSaa, PREFIKSab, ...;\n"
+#~ "Forvalgt PREFIKS er `x'. Dersom ingen INPUT er spesifisert, eller INPUT "
+#~ "er -,\n"
+#~ "leses det fra standard inn.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -a, --suffix-length=N   use suffixes of length N (default %d)\n"
+#~ "  -b, --bytes=SIZE        put SIZE bytes per output file\n"
+#~ "  -C, --line-bytes=SIZE   put at most SIZE bytes of lines per output "
+#~ "file\n"
+#~ "  -d, --numeric-suffixes  use numeric suffixes instead of alphabetic\n"
+#~ "  -l, --lines=NUMBER      put NUMBER lines per output file\n"
+#~ msgstr ""
+#~ "  -ANTALL                    samme som -l ANTALL\n"
+#~ "  -b, --bytes=STØRRELSE      skriv STØRRELSE bytes i hver utfil\n"
+#~ "  -C, --line-bytes=STØRRELSE skriv maksimum STØRRELSE bytes med linjer "
+#~ "per\n"
+#~ "                             utfil\n"
+#~ "  -l, --lines=ANTALL         skriv ANTALL linjer i hver utfil\n"
+#~ "      --verbose              skriv en diagnostikk til standard error "
+#~ "rett\n"
+#~ "                             før hver utfil åpnes\n"
+
+#, fuzzy
+#~ msgid "creating file %s\n"
+#~ msgstr "lager filen «%s»\n"
+
+#~ msgid "cannot split in more than one way"
+#~ msgstr "kan ikke dele opp på mer enn én måte"
+
+#, fuzzy
+#~ msgid "%s: invalid suffix length"
+#~ msgstr "%s: ugyldig antall linjer"
+
+#~ msgid "%s: invalid number of bytes"
+#~ msgstr "%s: ugyldig antall bytes"
+
+#~ msgid "%s: invalid number of lines"
+#~ msgstr "%s: ugyldig antall linjer"
+
+#, fuzzy
+#~ msgid "line count option -%s%c... is too large"
+#~ msgstr "%s: tall «%.*s» for stort"
+
+#, fuzzy
+#~ msgid "invalid number of lines: 0"
+#~ msgstr "ugyldig antall linjer"
+
+#, fuzzy
+#~ msgid "warning: unrecognized escape `\\%c'"
+#~ msgstr "%s: ukjent flagg «%c%s»\n"
+
+#, fuzzy
+#~ msgid "%s: invalid directive"
+#~ msgstr "%s: ugyldig mønster"
+
+#, fuzzy
+#~ msgid "warning: backslash at end of format"
+#~ msgstr "ugyldig backslash-beskyttelse ved slutten av streng"
+
+#, fuzzy
+#~ msgid "cannot read file system information for %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION] FILE...\n"
+#~ msgstr "Bruk: %s [FLAGG] [FIL]...\n"
+
+#, fuzzy
+#~ msgid "only one device may be specified"
+#~ msgstr "kun ett argument kan spesifiseres"
+
+#, fuzzy
+#~ msgid ""
+#~ "the options for verbose and stty-readable output styles are\n"
+#~ "mutually exclusive"
+#~ msgstr "flaggene --string og --check kan ikke brukes samtidig"
+
+#, fuzzy
+#~ msgid "invalid argument %s"
+#~ msgstr "ugyldig argument %s for %s"
+
+#, fuzzy
+#~ msgid "missing argument to %s"
+#~ msgstr "flertydig argument %s for %s"
+
+#, fuzzy
+#~ msgid "invalid line discipline %s"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "invalid integer argument %s"
+#~ msgstr "ugyldig linjenummer-økning: «%s»"
+
+#, fuzzy
+#~ msgid "cannot set groups"
+#~ msgstr "kan ikke utelate både bruker og gruppe"
+
+#, fuzzy
+#~ msgid "cannot set group id"
+#~ msgstr "kan ikke utelate både bruker og gruppe"
+
+#, fuzzy
+#~ msgid "cannot set user id"
+#~ msgstr "kan ikke utelate både bruker og gruppe"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [-] [USER [ARG]...]\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid "warning: cannot change directory to %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "Kayvan Aghaiepour"
+#~ msgstr "Kayvan Aghaiepour og David MacKenzie"
+
+#~ msgid ""
+#~ "Print checksum and block counts for each FILE.\n"
+#~ "\n"
+#~ "  -r              defeat -s, use BSD sum algorithm, use 1K blocks\n"
+#~ "  -s, --sysv      use System V sum algorithm, use 512 bytes blocks\n"
+#~ msgstr ""
+#~ "Skriv ut sjekksum og block-antall for hver FIL.\n"
+#~ "\n"
+#~ "  -r              bruk BSD-sum-algoritme, bruk 1K-blokker\n"
+#~ "  -s, --sysv      bruk SystemV-sum-algoritme, bruk 512 byte-blokker\n"
+
+#, fuzzy
+#~ msgid "ignoring all arguments"
+#~ msgstr "for mange argumenter"
+
+#~ msgid "      --help     display this help and exit\n"
+#~ msgstr "      --help     vis denne hjelpteksten og avslutt\n"
+
+#~ msgid "      --version  output version information and exit\n"
+#~ msgstr "      --version  vis programversjon og avslutt\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to <%s>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Rapportér feil til <bug-textutils@gnu.org>."
+
+#~ msgid ""
+#~ "Write each FILE to standard output, last line first.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv hver FIL til standard ut, siste linje først.\n"
+#~ "Dersom ingen FIL er spesifisert, eller FIL er -, leses det fra standard "
+#~ "inn.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -b, --before             attach the separator before instead of after\n"
+#~ "  -r, --regex              interpret the separator as a regular "
+#~ "expression\n"
+#~ "  -s, --separator=STRING   use STRING as the separator instead of "
+#~ "newline\n"
+#~ msgstr ""
+#~ "  -b, --before             føy til separator før istedet for etter\n"
+#~ "  -r, --regex              tolk separatoren som et regulært uttrykk\n"
+#~ "  -s, --separator=STRENG   bruk STRENG som separator istedet for "
+#~ "linjeskift\n"
+
+#, fuzzy
+#~ msgid "%s: seek failed"
+#~ msgstr "feil ved lukking av fil"
+
+#, fuzzy
+#~ msgid "record too large"
+#~ msgstr "%s: fil for lang"
+
+#, fuzzy
+#~ msgid "cannot create temporary file %s"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#, fuzzy
+#~ msgid "cannot open %s for writing"
+#~ msgstr "kan ikke utføre ioctl på «%s»"
+
+#, fuzzy
+#~ msgid "%s: write error"
+#~ msgstr "feil ved skriving"
+
+#~ msgid "separator cannot be empty"
+#~ msgstr "separatoren kan ikke være tom"
+
+#~ msgid ""
+#~ "Print the last %d lines of each FILE to standard output.\n"
+#~ "With more than one FILE, precede each with a header giving the file "
+#~ "name.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Skriv de siste %d linjene av hver FIL til standard ut.\n"
+#~ "Med mer enn én FIL, innled hver med en topptekst med filnavnet.\n"
+#~ "Med ingen FILer eller hvis FIL er -, les fra standard inn.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --retry              keep trying to open a file even if it is\n"
+#~ "                           inaccessible when tail starts or if it "
+#~ "becomes\n"
+#~ "                           inaccessible later; useful when following by "
+#~ "name,\n"
+#~ "                           i.e., with --follow=name\n"
+#~ "  -c, --bytes=N            output the last N bytes; alternatively, use +N "
+#~ "to\n"
+#~ "                           output bytes starting with the Nth of each "
+#~ "file\n"
+#~ msgstr ""
+#~ "      --retry              fortsett å prøv å åpne en fil, selv om den\n"
+#~ "                           er utilgjengelig når tail starter eller hvis "
+#~ "den\n"
+#~ "                           blir utilgjengelig senere -- bare nyttig med -"
+#~ "f\n"
+#~ "  -c, --bytes=N            skriv ut de siste N oktettene\n"
+
+#~ msgid ""
+#~ "  -f, --follow[={name|descriptor}]\n"
+#~ "                           output appended data as the file grows;\n"
+#~ "                           -f, --follow, and --follow=descriptor are\n"
+#~ "                           equivalent\n"
+#~ "  -F                       same as --follow=name --retry\n"
+#~ msgstr ""
+#~ "  -f, --follow[={name|descriptor}]\n"
+#~ "                           skriv ut mer data etter hvert som filen "
+#~ "vokser;\n"
+#~ "                           -f, --follow og --follow=descriptot er de "
+#~ "samme\n"
+#~ "  -F                       samme som --follow=name --retry\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -n, --lines=N            output the last N lines, instead of the last "
+#~ "%d;\n"
+#~ "                           or use +N to output lines starting with the "
+#~ "Nth\n"
+#~ "      --max-unchanged-stats=N\n"
+#~ "                           with --follow=name, reopen a FILE which has "
+#~ "not\n"
+#~ "                           changed size after N (default %d) iterations\n"
+#~ "                           to see if it has been unlinked or renamed\n"
+#~ "                           (this is the usual case of rotated log files)\n"
+#~ msgstr ""
+#~ "  -n, --lines=N            skriv ut de siste N linjene, isteden for de "
+#~ "siste %d\n"
+#~ "      --max-unchanged-stats=N\n"
+#~ "                           med --follow=name, åpne en FIL på nytt hvis "
+#~ "den\n"
+#~ "                           ikke har endret størrelse etter N (forvalgt "
+#~ "%d)\n"
+#~ "                           runder for å se om den har blitt fjernet "
+#~ "eller\n"
+#~ "                           skiftet navn\n"
+#~ "                           (dette er det vanlige tilfellet for roterte\n"
+#~ "                           logg-filer\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --pid=PID            with -f, terminate after process ID, PID dies\n"
+#~ "  -q, --quiet, --silent    never output headers giving file names\n"
+#~ "  -s, --sleep-interval=S   with -f, sleep for approximately S seconds\n"
+#~ "                           (default 1.0) between iterations.\n"
+#~ "  -v, --verbose            always output headers giving file names\n"
+#~ msgstr ""
+#~ "      --pid=PID            med -f, terminer etter at prosess PID dør\n"
+#~ "  -q, --quiet, --silent    ikke skriv ut topptekster med filnavn\n"
+#~ "  -s, --sleep-interval=S   med -f, hver runde varer circa S (forvalgt 1) "
+#~ "sekunder\n"
+#~ "  -v, --verbose            skriv alltid topptekster med filnavn\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "If the first character of N (the number of bytes or lines) is a `+',\n"
+#~ "print beginning with the Nth item from the start of each file, "
+#~ "otherwise,\n"
+#~ "print the last N items in the file.  N may have a multiplier suffix:\n"
+#~ "b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+#~ "GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Hvis det første tegnet av N (antall oktetter eller linjer) er en «+»,\n"
+#~ "begynn å skriv ut med det Nte elementet fra starten av hver linje, "
+#~ "ellers\n"
+#~ "skriv de siste N elementene i filen.  N kan ha multiplikatorendelse:\n"
+#~ "b for 512, k for 1024, m for 1048576 (1 Meg).  "
+
+#~ msgid ""
+#~ "With --follow (-f), tail defaults to following the file descriptor, "
+#~ "which\n"
+#~ "means that even if a tail'ed file is renamed, tail will continue to "
+#~ "track\n"
+#~ "its end.  "
+#~ msgstr ""
+#~ "Med --follow (-f), vil tail forvalgt følge fildeskriptoren, som betyr\n"
+#~ "at selv om den tail'ede filen skifter navn vil tail fortsatt følge den"
+
+#, fuzzy
+#~ msgid ""
+#~ "This default behavior is not desirable when you really want to\n"
+#~ "track the actual name of the file, not the file descriptor (e.g., log\n"
+#~ "rotation).  Use --follow=name in that case.  That causes tail to track "
+#~ "the\n"
+#~ "named file by reopening it periodically to see if it has been removed "
+#~ "and\n"
+#~ "recreated by some other program.\n"
+#~ msgstr ""
+#~ "Denne forvalgte oppførselen er ikke ønskelig når det du virkelige vil\n"
+#~ "gjøre er å følge selve filnavnet og ikke fildeskriptoren (f.eks. logg-\n"
+#~ "rotering).  Bruk --follow=name i det tilfellet.  Dette fører til at\n"
+#~ "tail følger den navngitte filen ved å gjenåpne filen periodisk for å se "
+#~ "om\n"
+#~ "den har blitt fjernet og gjenopprettet av et annet program.\n"
+
+#~ msgid "closing %s (fd=%d)"
+#~ msgstr "lukker %s (fd=%d)"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to relative offset %s"
+#~ msgstr "%s: kan ikke søke til relativ posisjon %s%s"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to end-relative offset %s"
+#~ msgstr "%s: kan ikke søke til posisjon %s%s relativ til slutten"
+
+#, fuzzy
+#~ msgid "%s has become inaccessible"
+#~ msgstr "«%s» har blitt utilgjengelig"
+
+#, fuzzy
+#~ msgid "%s has been replaced with an untailable file; giving up on this name"
+#~ msgstr ""
+#~ "«%s» har blitt erstattet av en ikke-tailbar fil; gir opp dette filnavnet"
+
+#, fuzzy
+#~ msgid "%s has become accessible"
+#~ msgstr "«%s» har blitt utilgjengelig"
+
+#, fuzzy
+#~ msgid "%s has appeared;  following end of new file"
+#~ msgstr "«%s» har blitt opprettet.  Følger etter slutten av ny fil"
+
+#, fuzzy
+#~ msgid "%s has been replaced;  following end of new file"
+#~ msgstr "«%s» har blitt erstattet.  Følger etter slutten av ny fil"
+
+#, fuzzy
+#~ msgid "%s: cannot change nonblocking mode"
+#~ msgstr "kan ikke endre eier og/eller gruppe for %s"
+
+#~ msgid "%s: file truncated"
+#~ msgstr "%s: fil trunkert"
+
+#~ msgid "no files remaining"
+#~ msgstr "ingen filer igjen"
+
+#~ msgid "%s: cannot follow end of this type of file; giving up on this name"
+#~ msgstr "%s: kan ikke følge slutten av en fil av denne typen; gir opp denne"
+
+#, fuzzy
+#~ msgid "number in %s is too large"
+#~ msgstr "%s er for stor"
+
+#~ msgid "%s: invalid maximum number of unchanged stats between opens"
+#~ msgstr ""
+#~ "%s: ugyldig maksimum antall av uendrete resultat av kall til stat() "
+#~ "mellom kall til open()"
+
+#~ msgid "%s: invalid PID"
+#~ msgstr "%s: ugyldig prosess-id"
+
+#~ msgid "%s: invalid number of seconds"
+#~ msgstr "%s: ugyldig antall sekunder"
+
+#, fuzzy
+#~ msgid "warning: --retry is useful mainly when following by name"
+#~ msgstr "advarsel:  --retry er nyttig kun når en følger ved navn"
+
+#~ msgid "warning: PID ignored; --pid=PID is useful only when following"
+#~ msgstr "advarsel: PID ignoreres; --pid=PID er bare nyttid når man følger"
+
+#~ msgid "warning: --pid=PID is not supported on this system"
+#~ msgstr "advarsel: --pid=PID er ikke støttet på dette systemet"
+
+#, fuzzy
+#~ msgid "cannot follow %s by name"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "If a FILE is -, copy again to standard output.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Når ingen FIL eller når FIL er -, les fra standard inn.\n"
+
+#, fuzzy
+#~ msgid "missing argument after %s"
+#~ msgstr "flertydig argument %s for %s"
+
+#, fuzzy
+#~ msgid "invalid integer %s"
+#~ msgstr "ugyldig antall"
+
+#, fuzzy
+#~ msgid "unknown binary operator"
+#~ msgstr "Ukjent systemfeil"
+
+#, fuzzy
+#~ msgid "%s: binary operator expected"
+#~ msgstr "Ukjent systemfeil"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: test EXPRESSION\n"
+#~ "  or:  test\n"
+#~ "  or:  [ EXPRESSION ]\n"
+#~ "  or:  [ ]\n"
+#~ "  or:  [ OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "extra argument %s"
+#~ msgstr "for mange argumenter"
+
+#, fuzzy
+#~ msgid "Jim Kingdon"
+#~ msgstr "Mike Haertel og Paul Eggert"
+
+#, fuzzy
+#~ msgid "creating %s"
+#~ msgstr "lager filen «%s»\n"
+
+#, fuzzy
+#~ msgid "cannot touch %s"
+#~ msgstr "kan ikke utføre ioctl på «%s»"
+
+#, fuzzy
+#~ msgid "cannot specify times from more than one source"
+#~ msgstr "kan ikke dele opp på mer enn én måte"
+
+#, fuzzy
+#~ msgid ""
+#~ "warning: `touch %s' is obsolete; use `touch -t %04ld%02d%02d%02d%02d.%02d'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#~ msgid "Usage: %s [OPTION]... SET1 [SET2]\n"
+#~ msgstr "Bruk: %s [FLAGG]... SETT1 [SETT2]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Translate, squeeze, and/or delete characters from standard input,\n"
+#~ "writing to standard output.\n"
+#~ "\n"
+#~ "  -c, -C, --complement    first complement SET1\n"
+#~ "  -d, --delete            delete characters in SET1, do not translate\n"
+#~ "  -s, --squeeze-repeats   replace each input sequence of a repeated "
+#~ "character\n"
+#~ "                            that is listed in SET1 with a single "
+#~ "occurrence\n"
+#~ "                            of that character\n"
+#~ "  -t, --truncate-set1     first truncate SET1 to length of SET2\n"
+#~ msgstr ""
+#~ "Oversett, klem sammen og/eller fjern tegn fra standard inn,\n"
+#~ "skriv ut til standard ut.\n"
+#~ "\n"
+#~ "  -c, --complement        først komplementer SETT1\n"
+#~ "  -d, --delete            slett tegn i SETT1, ikke oversett\n"
+#~ "  -s, --squeeze-repeats   erstatt rekke av tegn med ett\n"
+#~ "  -t, --truncate-set1     forkort først SETT1 til lengden til SETT2\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "SETs are specified as strings of characters.  Most represent themselves.\n"
+#~ "Interpreted sequences are:\n"
+#~ "\n"
+#~ "  \\NNN            character with octal value NNN (1 to 3 octal digits)\n"
+#~ "  \\\\              backslash\n"
+#~ "  \\a              audible BEL\n"
+#~ "  \\b              backspace\n"
+#~ "  \\f              form feed\n"
+#~ "  \\n              new line\n"
+#~ "  \\r              return\n"
+#~ "  \\t              horizontal tab\n"
+#~ msgstr ""
+#~ "\n"
+#~ "SETT er spesifisert med strenger av tegn.  De fleste tegnene står for "
+#~ "seg\n"
+#~ "selv.  Følgende sekvenser tolkes spesielt:\n"
+#~ "\n"
+#~ "  \\NNN            tegn med oktalverdi NNN (1 til 3 oktale siffer)\n"
+#~ "  \\\\              backslash\n"
+#~ "  \\a              beep\n"
+#~ "  \\b              backspace\n"
+#~ "  \\f              sideskift (FF)\n"
+#~ "  \\n              linjeskift (LF)\n"
+#~ "  \\r              vognretur (CR)\n"
+#~ "  \\t              horisontal tabulator\n"
+
+#~ msgid ""
+#~ "  \\v              vertical tab\n"
+#~ "  CHAR1-CHAR2     all characters from CHAR1 to CHAR2 in ascending order\n"
+#~ "  [CHAR*]         in SET2, copies of CHAR until length of SET1\n"
+#~ "  [CHAR*REPEAT]   REPEAT copies of CHAR, REPEAT octal if starting with 0\n"
+#~ "  [:alnum:]       all letters and digits\n"
+#~ "  [:alpha:]       all letters\n"
+#~ "  [:blank:]       all horizontal whitespace\n"
+#~ "  [:cntrl:]       all control characters\n"
+#~ "  [:digit:]       all digits\n"
+#~ msgstr ""
+#~ "  \\v              vertikal tabulator\n"
+#~ "  TEGN1-TEGN2     alle tegn fra TEGN1 til TEGN2, stigende\n"
+#~ "  [TEGN1-TEGN2]   samme som TEGN1-TEGN2, dersom begge sett bruker dette\n"
+#~ "  [TEGN*]         i SETT2, kopier av TEGN inntil samme lengde til SETT1\n"
+#~ "  [TEGN*ANT]      ANT kopier av TEGN, ANT er oktal, hvis det begynner med "
+#~ "0\n"
+#~ "  [:alnum:]       alle bokstaver og tall\n"
+#~ "  [:alpha:]       alle bokstaver\n"
+#~ "  [:blank:]       alle horisontale blanke tegn\n"
+#~ "  [:cntrl:]       alle kontrolltegn\n"
+#~ "  [:digit:]       alle siffer\n"
+
+#~ msgid ""
+#~ "  [:graph:]       all printable characters, not including space\n"
+#~ "  [:lower:]       all lower case letters\n"
+#~ "  [:print:]       all printable characters, including space\n"
+#~ "  [:punct:]       all punctuation characters\n"
+#~ "  [:space:]       all horizontal or vertical whitespace\n"
+#~ "  [:upper:]       all upper case letters\n"
+#~ "  [:xdigit:]      all hexadecimal digits\n"
+#~ "  [=CHAR=]        all characters which are equivalent to CHAR\n"
+#~ msgstr ""
+#~ "  [:graph:]       alle skrivbare tegn, unntatt blanke tegn\n"
+#~ "  [:lower:]       alle små bokstaver\n"
+#~ "  [:print:]       alle skrivbare tegn, inkludert blanke tegn\n"
+#~ "  [:punct:]       alle tegnsettingstegn\n"
+#~ "  [:space:]       alle horisontale og vertikale blanke tegn\n"
+#~ "  [:upper:]       alle store bokstaver\n"
+#~ "  [:xdigit:]      alle hexadesimale siffer\n"
+#~ "  [=TEGN=]        alle tegn som er like TEGN\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Translation occurs if -d is not given and both SET1 and SET2 appear.\n"
+#~ "-t may be used only when translating.  SET2 is extended to length of\n"
+#~ "SET1 by repeating its last character as necessary.  "
+#~ msgstr ""
+#~ "\n"
+#~ "Oversettelse skjer dersom -d ikke er gitt, og både SETT1 og SETT2 er "
+#~ "der.\n"
+#~ "-t kan bare bli brukt ved oversetting. SETT2 blir utvidet til lengden av\n"
+#~ "SETT1 ved å repetere dets siste tegn som nødvendig.  "
+
+#~ msgid ""
+#~ "Excess characters\n"
+#~ "of SET2 are ignored.  Only [:lower:] and [:upper:] are guaranteed to\n"
+#~ "expand in ascending order; used in SET2 while translating, they may\n"
+#~ "only be used in pairs to specify case conversion.  "
+#~ msgstr ""
+#~ "Tegn til overs i \n"
+#~ "SETT2 ignoreres.  Bare [:lower:] og [:upper:] er garantert å ekspandere "
+#~ "i\n"
+#~ "stigende rekkefølge; brukt i SETT2 ved oversetting kan de bare brukes i "
+#~ "par\n"
+#~ "for å angi oversetting fra store/små til små/store bokstaver."
+
+#~ msgid ""
+#~ "-s uses SET1 if not\n"
+#~ "translating nor deleting; else squeezing uses SET2 and occurs after\n"
+#~ "translation or deletion.\n"
+#~ msgstr ""
+#~ " \n"
+#~ "-s bruker SETT1 hvis det ikke er oversetting eller sletting; ellers "
+#~ "bruker \n"
+#~ "sammenklemming SETT2 og skjer etter oversetting eller sletting.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "warning: the ambiguous octal escape \\%c%c%c is being\n"
+#~ "\tinterpreted as the 2-byte sequence \\0%c%c, %c"
+#~ msgstr ""
+#~ "advarsel: den flertydige oktal-beskyttelsen \\%c%c%c blir tolket som \n"
+#~ "\t2-byte-sekvensen \\0%c%c, «%c»"
+
+#~ msgid "range-endpoints of `%s-%s' are in reverse collating sequence order"
+#~ msgstr "rekke-sluttpunkt i «%s-%s» er i omvendt sorteringsrekkefølge"
+
+#, fuzzy
+#~ msgid "invalid repeat count %s in [c*n] construct"
+#~ msgstr "ugyldig gjentagelsesteller «%s» i [c*n]-konstruksjon"
+
+#~ msgid "missing character class name `[::]'"
+#~ msgstr "mangler tegn-klassenavn «[::]»"
+
+#~ msgid "missing equivalence class character `[==]'"
+#~ msgstr "mangler ekvivalensklassetegn «[==]»"
+
+#, fuzzy
+#~ msgid "invalid character class %s"
+#~ msgstr "ugyldig tegn-klasse «%s»"
+
+#~ msgid "%s: equivalence class operand must be a single character"
+#~ msgstr "%s: ekvivalensklasseoperanden må være et enkelt tegn"
+
+#, fuzzy
+#~ msgid "too many characters in set"
+#~ msgstr "ugyldig tegn i feltspesifikasjon"
+
+#~ msgid "the [c*] repeat construct may not appear in string1"
+#~ msgstr "gjentagelseskonstruktet [c*] kan ikke opptre i streng1"
+
+#~ msgid "only one [c*] repeat construct may appear in string2"
+#~ msgstr "kun ett [c*] gjentagelseskonstrukt kan opptre i streng2"
+
+#~ msgid "[=c=] expressions may not appear in string2 when translating"
+#~ msgstr "[=c=]-uttrykk kan ikke opptre i streng2 under oversetting"
+
+#~ msgid "when not truncating set1, string2 must be non-empty"
+#~ msgstr "når sett1 ikke blir forkortet, kan ikke streng2 være tom"
+
+#~ msgid ""
+#~ "when translating with complemented character classes,\n"
+#~ "string2 must map all characters in the domain to one"
+#~ msgstr ""
+#~ "når det oversettes med komlementerte tegnklasser\n"
+#~ "må streng2 mappe alle tegn i domenet til én"
+
+#~ msgid ""
+#~ "when translating, the only character classes that may appear in\n"
+#~ "string2 are `upper' and `lower'"
+#~ msgstr ""
+#~ "ved oversetting er de eneste tegnklassene som kan være i streng2\n"
+#~ "«upper» og «lower»"
+
+#~ msgid "the [c*] construct may appear in string2 only when translating"
+#~ msgstr "[c*]-konstruktet kan bare opptre i streng2 ved oversetting"
+
+#, fuzzy
+#~ msgid "Two strings must be given when translating."
+#~ msgstr "to strenger må være gitt ved oversetting"
+
+#, fuzzy
+#~ msgid ""
+#~ "Only one string may be given when deleting without squeezing repeats."
+#~ msgstr ""
+#~ "kun én streng kan oppgis når det slettes uten sammenklemming av "
+#~ "gjentagelser"
+
+#~ msgid "misaligned [:upper:] and/or [:lower:] construct"
+#~ msgstr "feilplassert [:upper:]- og/eller [:lower:]-konstruksjon"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [ignored command line arguments]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION] [FILE]\n"
+#~ "Write totally ordered list consistent with the partial ordering in FILE.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Bruk: %s [FLAGG] [FIL]\n"
+#~ "Skriv en fullstendig sortert liste konsistent med den delvise "
+#~ "sorteringen\n"
+#~ "i FIL.  Hvis ingen FIL eller hvis FIL er -, leses fra standard inn.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "%s: input contains an odd number of tokens"
+#~ msgstr "%s: inndata inneholder en løkke:"
+
+#~ msgid "%s: input contains a loop:"
+#~ msgstr "%s: inndata inneholder en løkke:"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]...\n"
+#~ msgstr "Bruk: %s [FLAGG] [FIL]...\n"
+
+#, fuzzy
+#~ msgid "cannot get system name"
+#~ msgstr "kan ikke opprette midlertidig fil"
+
+#, fuzzy
+#~ msgid ""
+#~ "Convert blanks in each FILE to tabs, writing to standard output.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Konverter mellomrom i hver FIL til tabulatorer, skriv ut til standard "
+#~ "ut.\n"
+#~ "Dersom ingen FIL er spesifisert, eller FIL er -, leses det fra standard "
+#~ "inn.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -a, --all        convert all blanks, instead of just initial blanks\n"
+#~ "      --first-only  convert only leading sequences of blanks (overrides -"
+#~ "a)\n"
+#~ "  -t, --tabs=N     have tabs N characters apart instead of 8 (enables -"
+#~ "a)\n"
+#~ "  -t, --tabs=LIST  use comma separated LIST of tab positions (enables -"
+#~ "a)\n"
+#~ msgstr ""
+#~ "  -a, --all           konverter alle blanke tegn, istedet for bare "
+#~ "innledende\n"
+#~ "  -t, --tabs=ANTALL   ha tabulatorer ANTALL tegn fra hverandre istedet "
+#~ "for 8\n"
+#~ "  -t, --tabs=LISTE    bruk komma-separert LISTE med tabulatorposisjoner.\n"
+
+#, fuzzy
+#~ msgid "tab stop value is too large"
+#~ msgstr "%s er for stor"
+
+#~ msgid "Usage: %s [OPTION]... [INPUT [OUTPUT]]\n"
+#~ msgstr "Bruk: %s [FLAGG]... [INN [UT]]\n"
+
+#~ msgid ""
+#~ "Discard all but one of successive identical lines from INPUT (or\n"
+#~ "standard input), writing to OUTPUT (or standard output).\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Fjern alle bortsett fra én identiske linjer fra INN\n"
+#~ "(eller standard inn), og skriv til UT (eller standard ut).\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "  -c, --count           prefix lines by the number of occurrences\n"
+#~ "  -d, --repeated        only print duplicate lines\n"
+#~ msgstr ""
+#~ "  -c, --count           begynn linjer med antall forekomster\n"
+#~ "  -d, --repeated        skriv bare ut linjer det er flere av\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -D, --all-repeated[=delimit-method]  print all duplicate lines\n"
+#~ "                        delimit-method={none(default),prepend,separate}\n"
+#~ "                        Delimiting is done with blank lines.\n"
+#~ "  -f, --skip-fields=N   avoid comparing the first N fields\n"
+#~ "  -i, --ignore-case     ignore differences in case when comparing\n"
+#~ "  -s, --skip-chars=N    avoid comparing the first N characters\n"
+#~ "  -u, --unique          only print unique lines\n"
+#~ "  -z, --zero-terminated  end lines with 0 byte, not newline\n"
+#~ msgstr ""
+#~ "  -D, --all-repeated[=delimit-method] skriv alle linjer det er flere av\n"
+#~ "                        delimit-method={none(forvalgt),prepend,separate}\n"
+#~ "  -f, --skip-fields=N   ikke sammenlign de første N feltene\n"
+#~ "  -i, --ignore-case     ignorer forskjeller med store/små bokstaver\n"
+#~ "  -s, --skip-chars=N    ikke sammenlign de første N tegnene\n"
+#~ "  -u, --unique          skriv bare ut unike linjer\n"
+
+#, fuzzy
+#~ msgid "  -w, --check-chars=N   compare no more than N characters in lines\n"
+#~ msgstr ""
+#~ "  -w, --check-chars=N   ikke sammenlign mer enn N tegn per linje\n"
+#~ "  -N                    samme som -f N\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "A field is a run of blanks (usually spaces and/or TABs), then non-blank\n"
+#~ "characters.  Fields are skipped before chars.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Et felt er en rekke blanke tegn, så andre tegn.  Felt hoppes over før "
+#~ "tegn.\n"
+
+#, fuzzy
+#~ msgid "too many repeated lines"
+#~ msgstr "for mange argumenter"
+
+#~ msgid "invalid number of fields to skip"
+#~ msgstr "ugyldig antall felt å hoppe over"
+
+#~ msgid "invalid number of bytes to skip"
+#~ msgstr "ugyldig antall oktetter å hoppe over"
+
+#, fuzzy
+#~ msgid "invalid number of bytes to compare"
+#~ msgstr "ugyldig antall oktetter å sammenligne"
+
+#~ msgid "printing all duplicated lines and repeat counts is meaningless"
+#~ msgstr ""
+#~ "å skrive alle dupliserte linjer *og* gjentagelsesantall er meningsløst"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s FILE\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "cannot unlink %s"
+#~ msgstr "kan ikke utføre ioctl på «%s»"
+
+#, fuzzy
+#~ msgid "%lu user"
+#~ msgid_plural "%lu users"
+#~ msgstr[0] "ugyldig bruker"
+#~ msgstr[1] "ugyldig bruker"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [ FILE ]\n"
+#~ msgstr "Bruk: %s [FLAGG]... [FIL]...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Print newline, word, and byte counts for each FILE, and a total line if\n"
+#~ "more than one FILE is specified.  With no FILE, or when FILE is -,\n"
+#~ "read standard input.\n"
+#~ "  -c, --bytes            print the byte counts\n"
+#~ "  -m, --chars            print the character counts\n"
+#~ "  -l, --lines            print the newline counts\n"
+#~ msgstr ""
+#~ "Skriv ut antall linjer, ord og bytes for hver FIL, og en total-linje\n"
+#~ "dersom mer enn én FIL er spesifisert.  Dersom ingen FIL er spesifisert,\n"
+#~ "eller FIL er -, leses det fra standard inn.\n"
+#~ "  -c, --bytes            skriv ut antall oktetter\n"
+#~ "  -m, --chars            skriv ut antall tegn\n"
+#~ "  -l, --lines            skriv ut antall linjer.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --files0-from=F    read input from the files specified by\n"
+#~ "                           NUL-terminated names in file F\n"
+#~ "  -L, --max-line-length  print the length of the longest line\n"
+#~ "  -w, --words            print the word counts\n"
+#~ msgstr ""
+#~ "  -L, --max-line-length  skriv ut lengden av den lengste linjen.\n"
+#~ "  -w, --words            skriv ut antall ord\n"
+
+#, fuzzy
+#~ msgid "IDLE"
+#~ msgstr "FEIL"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [ FILE | ARG1 ARG2 ]\n"
+#~ msgstr "Bruk: %s [FLAGG]... FIL1 FIL2\n"
+
+#, fuzzy
+#~ msgid "%s: cannot find name for user ID %lu\n"
+#~ msgstr "kan ikke endre eier og/eller gruppe for %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [STRING]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION] NUMBER[SUFFIX] COMMAND [ARG]...\n"
+#~ "  or:  %s [OPTION]\n"
+#~ msgstr ""
+#~ "Bruk:  %s [FIL]...\n"
+#~ "eller: %s [FLAGG]\n"
+
+#, fuzzy
+#~ msgid "program error"
+#~ msgstr "lesefeil"
+
+#~ msgid "block size"
+#~ msgstr "blokkstørrelse"
+
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "kan ikke endre eier og/eller gruppe for %s"
+
+#, fuzzy
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "kan ikke finne login-gruppen til en numerisk bruker-ID"
+
+#~ msgid ""
+#~ "This is free software; see the source for copying conditions.  There is "
+#~ "NO\n"
+#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR "
+#~ "PURPOSE.\n"
+#~ msgstr ""
+#~ "Dette er fri programvare. Se kildekoden for kopieringsbetingelser.\n"
+#~ "Det er ingen garantier, ikke engang for SALGBARHET eller EGNETHET\n"
+#~ "TIL NOEN SPESIELL OPPGAVE.\n"
+
+#~ msgid "too few arguments"
+#~ msgstr "for få argumenter"
+
+#, fuzzy
+#~ msgid "closing standard output"
+#~ msgstr "standard ut"
+
+#, fuzzy
+#~ msgid "invalid group number %s"
+#~ msgstr "ugyldig antall"
+
+#~ msgid "Usage: %s [OPTION]... LEFT_FILE RIGHT_FILE\n"
+#~ msgstr "Bruk: %s [FLAGG]... VENSTRE_FIL HØYRE_FIL\n"
+
+#, fuzzy
+#~ msgid "cannot overwrite directory %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "Torbjorn Granlund, David MacKenzie, and Jim Meyering"
+#~ msgstr "David Ihnat, David MacKenzie og Jim Meyering"
+
+#, fuzzy
+#~ msgid "missing file arguments"
+#~ msgstr "for få argumenter"
+
+#, fuzzy
+#~ msgid "%s: specified target is not a directory"
+#~ msgstr "%s eksisterer men er ikke en katalog"
+
+#, fuzzy
+#~ msgid "symbolic links are not supported on this system"
+#~ msgstr "advarsel: --pid=PID er ikke støttet på dette systemet"
+
+#~ msgid "Stuart Kemp and David MacKenzie"
+#~ msgstr "Stuart Kemp og David MacKenzie"
+
+#~ msgid "%s: `+' or `-' expected after delimeter"
+#~ msgstr "%s: «+» eller «-» ventet etter skilletegn"
+
+#~ msgid "David Ihnat, David MacKenzie, and Jim Meyering"
+#~ msgstr "David Ihnat, David MacKenzie og Jim Meyering"
+
+#, fuzzy
+#~ msgid "too many non-option arguments: %s%s"
+#~ msgstr "for mange ikke-flagg-argumenter"
+
+#, fuzzy
+#~ msgid ""
+#~ "a format string may not be specified when using the --rfc-822 (-R) option"
+#~ msgstr "ingen filer kan spesifiseres når flagget --string brukes"
+
+#, fuzzy
+#~ msgid "cannot get time of day"
+#~ msgstr "kan ikke dele opp på mer enn én måte"
+
+#, fuzzy
+#~ msgid "Paul Rubin, David MacKenzie, and Stuart Kemp"
+#~ msgstr "Paul Rubin og David MacKenzie"
+
+#, fuzzy
+#~ msgid "unrecognized option %s=%s"
+#~ msgstr "ukjent flagg «-%c»"
+
+#, fuzzy
+#~ msgid "David MacKenzie and Jim Meyering"
+#~ msgstr "David Ihnat, David MacKenzie og Jim Meyering"
+
+#, fuzzy
+#~ msgid "`-LIST' option is obsolete; use `-t LIST'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#~ msgid ""
+#~ "\n"
+#~ "In -wNUMBER, the letter `w' may be omitted.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Ved -wTALL kan «w» utelates.\n"
+
+#, fuzzy
+#~ msgid "`%s' option is obsolete; use `%s'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#~ msgid ""
+#~ "  -c, --bytes=SIZE         print first SIZE bytes\n"
+#~ "  -n, --lines=NUMBER       print first NUMBER lines instead of first 10\n"
+#~ msgstr ""
+#~ "  -c, --bytes=STØRRELSE    skriv ut første STØRRELSE bytes\n"
+#~ "  -n, --lines=ANTALL       skriv ut første ANTALL tegn istedet for 10\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "SIZE may have a multiplier suffix: b for 512, k for 1K, m for 1 Meg.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "STØRRELSE kan ha en multiplikatorendelse: b for 512, k for 1K eller\n"
+#~ " m for 1 Meg.\n"
+
+#~ msgid "unrecognized option `-%c'"
+#~ msgstr "ukjent flagg «-%c»"
+
+#, fuzzy
+#~ msgid "`-%s' option is obsolete; use `-%c %.*s%.*s%s'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#, fuzzy
+#~ msgid "Arnold Robbins and David MacKenzie"
+#~ msgstr "Paul Rubin og David MacKenzie"
+
+#, fuzzy
+#~ msgid "cannot print only user and only group"
+#~ msgstr "kan ikke utelate både bruker og gruppe"
+
+#, fuzzy
+#~ msgid "%s is a directory"
+#~ msgstr "%s eksisterer men er ikke en katalog"
+
+#, fuzzy
+#~ msgid "cannot obtain time stamps for %s"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "strip failed"
+#~ msgstr "stat feilet"
+
+#~ msgid "invalid field number for file 1: `%s'"
+#~ msgstr "ugyldig feltnummer for fil 1: «%s»"
+
+#~ msgid "invalid field number for file 2: `%s'"
+#~ msgstr "ugyldig feltnummer for fil 2: «%s»"
+
+#~ msgid "too many non-option arguments"
+#~ msgstr "for mange ikke-flagg-argumenter"
+
+#~ msgid "too few non-option arguments"
+#~ msgstr "for få ikke-flagg-argumenter"
+
+#, fuzzy
+#~ msgid "Mike Parker and David MacKenzie"
+#~ msgstr "Scott Bartram og David MacKenzie"
+
+#~ msgid ""
+#~ "\n"
+#~ "  -b, --binary            read files in binary mode (default on DOS/"
+#~ "Windows)\n"
+#~ "  -c, --check             check %s sums against given list\n"
+#~ "  -t, --text              read files in text mode (default)\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  -b, --binary          les filene i binærmodus (forvalg i DOS/Windows)\n"
+#~ "  -c, --check           sjekk %s-summene mot angitt liste\n"
+#~ "  -t, --text            les filene i tekstmodus (forvalgt)\n"
+#~ "\n"
+
+#~ msgid "file"
+#~ msgstr "fil"
+
+#~ msgid "files"
+#~ msgstr "filer"
+
+#~ msgid "checksum"
+#~ msgstr "sjekksum"
+
+#~ msgid "checksums"
+#~ msgstr "sjekksummer"
+
+#~ msgid "the --string and --check options are mutually exclusive"
+#~ msgstr "flaggene --string og --check kan ikke brukes samtidig"
+
+#~ msgid "no files may be specified when using --string"
+#~ msgstr "ingen filer kan spesifiseres når flagget --string brukes"
+
+#~ msgid "only one argument may be specified when using --check"
+#~ msgstr "kun ett argument kan spesifiseres ved bruk av --check"
+
+#, fuzzy
+#~ msgid "cannot set permissions of directory %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "cannot set permissions of fifo %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "wrong number of arguments"
+#~ msgstr "for få argumenter"
+
+#, fuzzy
+#~ msgid "cannot set permissions of %s"
+#~ msgstr "kan ikke endre rettigheter til %s"
+
+#, fuzzy
+#~ msgid "Mike Parker, David MacKenzie, and Jim Meyering"
+#~ msgstr "David Ihnat, David MacKenzie og Jim Meyering"
+
+#, fuzzy
+#~ msgid "invalid option `%s'"
+#~ msgstr "ugyldig breddespesifikasjon «%s»"
+
+#, fuzzy
+#~ msgid "invalid priority `%s'"
+#~ msgstr "ugyldig bredde: «%s»"
+
+#, fuzzy
+#~ msgid "cannot get priority"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#, fuzzy
+#~ msgid "cannot set priority"
+#~ msgstr "kan ikke opprette katalog %s"
+
+#~ msgid "Scott Bartram and David MacKenzie"
+#~ msgstr "Scott Bartram og David MacKenzie"
+
+#~ msgid "old-style offset"
+#~ msgstr "posisjon på gammel stil"
+
+#~ msgid "skip argument"
+#~ msgstr "hopp over argument"
+
+#~ msgid "limit argument"
+#~ msgstr "begrens argument"
+
+#~ msgid "minimum string length"
+#~ msgstr "minimal strenglengde"
+
+#~ msgid "width specification"
+#~ msgstr "breddespesifikasjon"
+
+#~ msgid "invalid second operand in compatibility mode `%s'"
+#~ msgstr "ugyldig andre-operand i kompatibilitetsmodus «%s»"
+
+#~ msgid "in compatibility mode, the last two arguments must be offsets"
+#~ msgstr "i kompatibilitetsmodus må de siste to argumentene være posisjoner"
+
+#~ msgid "David M. Ihnat and David MacKenzie"
+#~ msgstr "David M. Ihnat og David MacKenzie"
+
+#, fuzzy
+#~ msgid "path `%s' contains nonportable character `%c'"
+#~ msgstr "tabulatorstørrelse inneholder et ugyldig tegn"
+
+#, fuzzy
+#~ msgid "`%s' is not a directory"
+#~ msgstr "%s eksisterer men er ikke en katalog"
+
+#~ msgid "`--pages' invalid range of page numbers: `%s'"
+#~ msgstr "«--pages» ugyldig område med sidenummer: «%s»"
+
+#~ msgid "`--pages' invalid starting page number: `%s'"
+#~ msgstr "«--pages» ugyldig start-sidenummer: «%s»"
+
+#~ msgid "`--pages' invalid ending page number: `%s'"
+#~ msgstr "«--pages» ugyldig slutt-sidenummer: «%s»"
+
+#~ msgid "`--pages' starting page number is larger than ending page number"
+#~ msgstr "«--pages» start-sidenummeret er større enn slutt-sidenummeret"
+
+#~ msgid "`--columns=COLUMN' invalid number of columns: `%s'"
+#~ msgstr "«--columns=SPALTER» ugyldig antall kolonner: «%s»"
+
+#~ msgid "%b %e %H:%M %Y"
+#~ msgstr "%b %e %H:%M %Y"
+
+#~ msgid "starting page number larger than total number of pages: `%d'"
+#~ msgstr "start-sidenummeret er større enn totalt antall sider: «%d»"
+
+#~ msgid "Page %d"
+#~ msgstr "Side %d"
+
+#, fuzzy
+#~ msgid "David MacKenzie and Richard Mlynarik"
+#~ msgstr "David Ihnat, David MacKenzie og Jim Meyering"
+
+#, fuzzy
+#~ msgid "\\%c: invalid escape"
+#~ msgstr "%s: ugyldig mønster"
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify\n"
+#~ "it under the terms of the GNU General Public License as published by\n"
+#~ "the Free Software Foundation; either version 2, or (at your option)\n"
+#~ "any later version.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Dette programmet er fri programvare.  Du kan redistribueret det og/eller\n"
+#~ "modifisere det under betingelsene gitt av GNU General Public License som\n"
+#~ "distribuert av Free Software Foundation; enten versjon 2, eller (om du "
+#~ "vil)\n"
+#~ "en hvilken som helst senere versjon.\n"
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful,\n"
+#~ "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+#~ "GNU General Public License for more details.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Dette programmet er distribuert i ønsket om at det vil være nyttig,\n"
+#~ "men UTEN NOEN GARANTI, til og med uten noen implisert garanti om\n"
+#~ "SALGBARHET eller EGNETHET TIL NOEN SPESIELL BRUK.  Se GNU General\n"
+#~ "Public License for mer detaljer.\n"
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License\n"
+#~ "along with this program; if not, write to the Free Software Foundation,\n"
+#~ "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+#~ msgstr ""
+#~ "Du skulle ha mottatt en kopi av GNU General Public License\n"
+#~ "sammen med dette programmet.  Hvis ikke, skriv til Free Software "
+#~ "Foundation,\n"
+#~ "Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.\n"
+
+#, fuzzy
+#~ msgid "cannot chdir from %s to .."
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#, fuzzy
+#~ msgid "cannot chdir from %s to %s"
+#~ msgstr "kan ikke skifte til katalog, %s"
+
+#~ msgid "sort size"
+#~ msgstr "sorteringsstørrelse"
+
+#, fuzzy
+#~ msgid "`-%d' option is obsolete; use `-l %d'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#~ msgid "Jay Lepreau and David MacKenzie"
+#~ msgstr "Jay Lepreau og David MacKenzie"
+
+#~ msgid "stdin: read error"
+#~ msgstr "stdin: lesefeil"
+
+#~ msgid "%c: invalid suffix character in obsolescent option"
+#~ msgstr "%c: ugyldig suffiks-tegn i avleggs flagg"
+
+#~ msgid ""
+#~ "too many arguments;  When using tail's obsolescent option syntax (%s)\n"
+#~ "there may be no more than one file argument.  Use the equivalent -n or -"
+#~ "c\n"
+#~ "option instead."
+#~ msgstr ""
+#~ "for mange argumenter.  Når tails gamle flagg-syntaks brukes (%s)\n"
+#~ "kan det ikke være mer enn ett filargument.  Bruk det tilsvarende -n "
+#~ "eller\n"
+#~ "-c-flagget isteden."
+
+#~ msgid ""
+#~ "Warning: it is not portable to use two or more file arguments with\n"
+#~ "tail's obsolescent option syntax (%s).  Use the equivalent -n or -c\n"
+#~ "option instead."
+#~ msgstr ""
+#~ "Advarsel: det er ikke portabelt å bruke to eller flere filargumenter med\n"
+#~ "tails gamle falggsyntaks (%s).  Bruk det tilsvarende -n eller -c-\n"
+#~ "flagget isteden."
+
+#, fuzzy
+#~ msgid "`%s' option is obsolete; use `%s-%c %.*s'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#~ msgid "%s: is so large that it is not representable"
+#~ msgstr "%s: er så stor at den ikke kan representeres"
+
+#~ msgid "%s is larger than the maximum file size on this system"
+#~ msgstr "%s er større enn den maksimale filstørrelsen på dette systemet"
+
+#~ msgid "%s: invalid maximum number of consecutive size changes"
+#~ msgstr "%s: ugyldig maksimum antall etterfølgende endringer i størrelse"
+
+#, fuzzy
+#~ msgid "Mike Parker, Richard M. Stallman, and David MacKenzie"
+#~ msgstr "Richard Stallman og David MacKenzie"
+
+#, fuzzy
+#~ msgid "too many arguments\n"
+#~ msgstr "for mange argumenter"
+
+#, fuzzy
+#~ msgid "file arguments missing"
+#~ msgstr "for få argumenter"
+
+#~ msgid "invalid backslash escape `\\%c'"
+#~ msgstr "ugyldig backslash-beskyttelse «\\%c»"
+
+#~ msgid "two strings must be given when both deleting and squeezing repeats"
+#~ msgstr ""
+#~ "to strenger må være gitt ved både sletting og sammenklemming av "
+#~ "gjentagelser"
+
+#~ msgid "at least one string must be given when squeezing repeats"
+#~ msgstr "minst en streng må være gitt ved sammenklemming av gjentagelser"
+
+#~ msgid ""
+#~ "invalid identity mapping;  when translating, any [:lower:] or [:upper:]\n"
+#~ "construct in string1 must be aligned with a corresponding construct\n"
+#~ "([:upper:] or [:lower:], respectively) in string2"
+#~ msgstr ""
+#~ "ugyldig identidetsmapping; ved oversetting må evt. [:lower:]- eller\n"
+#~ "[:upper:]-konstruksjoner i streng1 være plassert i henhold til en\n"
+#~ "tilsvarende konstruksjon (henholdsvis [:upper:] eller [:lower:]) i\n"
+#~ "streng2"
+
+#~ msgid "only one argument may be specified"
+#~ msgstr "kun ett argument kan spesifiseres"
+
+#, fuzzy
+#~ msgid "`-LIST' option is obsolete; use `--first-only -t LIST'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+# c-format
+#, fuzzy
+#~ msgid "`-%lu' option is obsolete; use `-f %lu'"
+#~ msgstr "advarsel: «uniq %s» er avleggs; bruk «uniq -s %s» istedet"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "(obsolete) Instead of -t NUMBER or -t LIST, -NUMBER or -LIST may be "
+#~ "used.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Istedet for -t TALL eller -t LISTE kan -TALL eller -LISTE brukes.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "(obsolete)  If -VALUE is used as first OPTION, same as -c VALUE when one "
+#~ "of\n"
+#~ "multipliers bkm follows concatenated, else same as -n VALUE.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "STØRRELSE kan ha en multiplikator-endelse: b for 512, k for 1K, m for "
+#~ "1Meg.\n"
+#~ "Hvis -VERDI brukes som første FLAGG, leses det som -c VERDI hvis en av\n"
+#~ "multiplikatorene bkm er bakerst, ellers leses -n VERDI.\n"
+
+#, fuzzy
+#~ msgid "warning: `od -s' is obsolete; use `od --strings'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#, fuzzy
+#~ msgid "warning: `od -w' is obsolete; use `od --width'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#, fuzzy
+#~ msgid "warning: `pr -S' is obsolete; use `pr --sep-string'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#~ msgid ""
+#~ "  +POS1 [-POS2]             start a key at POS1, end it before POS2 "
+#~ "(origin 0)\n"
+#~ "                              Warning: this option is obsolete\n"
+#~ msgstr ""
+#~ "  +POS1 [-POS2]             start en nøkkel ved POS1, avslutt før POS2 "
+#~ "(fra 0)\n"
+#~ "                              Advarsel: dette flagget er avleggs\n"
+
+#, fuzzy
+#~ msgid "warning: `sort -y' is obsolete; omit `-y'"
+#~ msgstr "advarsel: «sort %s» er avleggs; bruk «sort -k»"
+
+#~ msgid ""
+#~ "A first OPTION of -VALUE\n"
+#~ "is treated like -n VALUE unless VALUE has one of the [bkm] suffix\n"
+#~ "multipliers, in which case it is treated like -c VALUE.\n"
+#~ msgstr ""
+#~ "Et første FLAGG som -VERDI\n"
+#~ "behandles som -n VERDI med mindre VERDI har en av [bkm]-endingene,\n"
+#~ "isåfall behandles det som -v VERDI.\n"
+
+#~ msgid ""
+#~ "A first option of +VALUE is treated like -+VALUE, but this usage is "
+#~ "obsolete\n"
+#~ "and support for it will be withdrawn.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Et første flagg som +VERDI behandles som -+VERDI, men denne anvendelsen "
+#~ "er\n"
+#~ "avleggs og støtte for den vil bli trukket tilbake.\n"
+
+#~ msgid "warning: `tail %s' is obsolete; use -n or -c instead"
+#~ msgstr "advarsel: «tail %s» er avleggs; bruker -n eller -c istedet"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -N                    (obsolete) same as -f N\n"
+#~ "  +N                    (obsolete) same as -s N\n"
+#~ msgstr ""
+#~ "  +N                    samme som -s N (avleggs, vil bli tilbaketrukket)\n"
+
+# c-format
+#~ msgid "warning: `uniq %s' is obsolete; use `uniq -s %s' instead"
+#~ msgstr "advarsel: «uniq %s» er avleggs; bruk «uniq -s %s» istedet"

@@ -1,0 +1,5 @@
+c-ctype.o: c-ctype.c config.h c-ctype.h \
+ /usr/lib/gcc/x86_64-pc-cygwin/13/include/stdbool.h
+config.h:
+c-ctype.h:
+/usr/lib/gcc/x86_64-pc-cygwin/13/include/stdbool.h:

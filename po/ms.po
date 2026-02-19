@@ -1,0 +1,4164 @@
+# Terjemahan coreutils untuk Bahasa Melayu.
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# Hasbullah Bin Pit <sebol@ikhlas.com>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  coreutils 5.0.90\n"
+"Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
+"POT-Creation-Date: 2009-04-07 16:11-0400\n"
+"PO-Revision-Date: 2003-08-10 16:00+0800\n"
+"Last-Translator: Hasbullah Bin Pit <sebol@ikhlas.com>\n"
+"Language-Team: Malay <translation-team-ms@lists.sourceforge.net>\n"
+"Language: ms\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:59
+msgid "Paul Rubin"
+msgstr ""
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:60
+#, fuzzy
+msgid "David MacKenzie"
+msgstr "Mike Parker and David MacKenzie"
+
+#. This is a proper name. See the gettext manual, section Names.
+#: src/dc3dd.c:61
+msgid "Stuart Kemp"
+msgstr ""
+
+#: src/dc3dd.c:523
+#, fuzzy
+msgid "Could not allocate space for thread"
+msgstr "tak dapat mencipta direktori %s"
+
+#: src/dc3dd.c:538 src/dc3dd.c:546
+msgid "Unable to allocate space for thread buffer"
+msgstr ""
+
+#: src/dc3dd.c:556
+msgid "Unable to allocate space for lock/signals"
+msgstr ""
+
+#: src/dc3dd.c:714
+#, c-format
+msgid "Unknown hash algorithm %s"
+msgstr ""
+
+#: src/dc3dd.c:730
+msgid "Unable to allocate space for hashes"
+msgstr ""
+
+#: src/dc3dd.c:771 src/dc3dd.c:777 src/dc3dd.c:781
+msgid "Unable to allocate space for threads"
+msgstr ""
+
+#: src/dc3dd.c:1090
+#, c-format
+msgid "Try `%s --help' for more information.\n"
+msgstr "Cuba `%s --help' untuk maklumat lanjut .\n"
+
+#: src/dc3dd.c:1094
+#, fuzzy, c-format
+msgid ""
+"Usage: %s [OPERAND]...\n"
+"  or:  %s OPTION\n"
+msgstr ""
+"Pengunaan: %s [NOMBOR]...\n"
+"    atau: %s OPSYEN\n"
+
+#: src/dc3dd.c:1099
+#, fuzzy
+msgid ""
+"Copy a file, converting and formatting according to the operands.\n"
+"\n"
+"  bs=BYTES          force ibs=BYTES and obs=BYTES\n"
+"  conv=CONVS        convert the file as per the comma separated symbol list\n"
+"  count=SECTORS     copy only SECTORS input sectors\n"
+"  ibs=BYTES         read BYTES bytes at a time (must be a multiple of input "
+"sector size)\n"
+msgstr ""
+"Salin fail, menukar dan memformat mengikut opsyen.\n"
+"\n"
+"  bs=BAIT        paksa ibs=BAIT dan obs=BAIT\n"
+"  cbs=BAIT       tukar BAIT byte dalam satu masa\n"
+"  conv=KATAKUNCI tukar fail sebagai per senarai katakunci dipisahkan koma\n"
+"  count=BLOK     salin hanya  BLOK blok input\n"
+"  ibs=BAIT       baca BAIT bait dlm satu masa\n"
+
+#: src/dc3dd.c:1107
+msgid ""
+"  if=FILE           read from FILE instead of stdin\n"
+"  ifjoin=BASE.FMT   read from split files with name BASE and splitformat "
+"FMT\n"
+"  iflag=FLAGS       read as per the comma separated symbol list\n"
+"  pattern=HEX       write HEX to every byte of the output\n"
+"  textpattern=TEXT  write the string TEXT repeatedly to the output\n"
+"  obs=BYTES         write BYTES bytes at a time\n"
+"  of=FILE           write to FILE instead of stdout\n"
+"  of:=COMMAND       pipe output to the given command\n"
+"  oflag=FLAGS       write as per the comma separated symbol list\n"
+"  wipe=FILE         wipe device FILE with zeros (or specify pattern/"
+"textpattern)\n"
+"  seek=SECTORS      skip SECTORS input sectors at start of output\n"
+"  skip=SECTORS      skip SECTORS input sectors at start of input\n"
+"  status=noxfer     suppress transfer statistics\n"
+msgstr ""
+
+#: src/dc3dd.c:1122
+msgid ""
+"  split=BYTES       split the output into pieces of size BYTES\n"
+"  splitformat=FMT   create extensions for split pieces using FMT\n"
+"                    Extensions can be numerical starting at zero,\n"
+"                    numerical starting at one, or alphabetical.\n"
+"                    These options are selected by using a series of\n"
+"                    zeros, ones, or a's, respectively. The number\n"
+"                    of characters used indicates the desired length of\n"
+"                    the extensions. For example, splitformat=1111\n"
+"                    indicates four character numerical extensions\n"
+"                    starting with 0001.\n"
+"  progress=on       displays a progress meter\n"
+"  progresscount=NUM  number of blocks processed between each progress "
+"update\n"
+"  sizeprobe=on      estimates size of input file for use with status\n"
+"  hash=ALGORITHM    computes ALGORITHM hashes of the input data\n"
+msgstr ""
+
+#: src/dc3dd.c:1142
+msgid ""
+"  hashwindow=BYTES  number of bytes for piecewise hashing\n"
+"  hashlog=FILE      appends piecewise hashes to the log file\n"
+"  errlog=FILE       appends errors to the log file\n"
+"  log=FILE          appends hashes and errors to the same file\n"
+"  errors=group      group read errors together\n"
+msgstr ""
+
+#: src/dc3dd.c:1149
+msgid ""
+"  vf=FILE           verify the input against FILE\n"
+"  vfjoin=BASE.FMT   verify the input against split files with name BASE and "
+"splitformat FMT\n"
+"  verifylog=FILE    write the results of the verify to the given file\n"
+msgstr ""
+
+#: src/dc3dd.c:1155
+msgid ""
+"\n"
+"ALGORITHM can be a comma separated list of md5, sha1, sha256, and sha512\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1160
+msgid ""
+"\n"
+"BLOCKS and BYTES may be followed by the following multiplicative suffixes:\n"
+"xM M, c 1, w 2, b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+"GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+"\n"
+"Each CONV symbol may be:\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1169
+msgid ""
+"  nocreat   do not create the output file\n"
+"  excl      fail if the output file already exists\n"
+"  notrunc   do not truncate the output file\n"
+msgstr ""
+
+#: src/dc3dd.c:1174
+msgid ""
+"  noerror   continue after read errors\n"
+"  sync      pad every input block with NULs to ibs-size; when used\n"
+"            with block or unblock, pad with spaces rather than NULs\n"
+"  fdatasync  physically write output file data before finishing\n"
+"  fsync     likewise, but also write metadata\n"
+msgstr ""
+
+#: src/dc3dd.c:1181
+msgid ""
+"\n"
+"Each FLAG symbol may be:\n"
+"\n"
+"  append    append mode (makes sense only for output; conv=notrunc "
+"suggested)\n"
+msgstr ""
+
+#: src/dc3dd.c:1188
+msgid "  direct    use direct I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1190
+#, fuzzy
+msgid "  directory fail unless a directory\n"
+msgstr "%s: Direktori sasaran yang dinyatakan adalah bukan direktori"
+
+#: src/dc3dd.c:1192
+msgid "  dsync     use synchronized I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1194
+msgid "  sync      likewise, but also for metadata\n"
+msgstr ""
+
+#: src/dc3dd.c:1196
+msgid "  nonblock  use non-blocking I/O\n"
+msgstr ""
+
+#: src/dc3dd.c:1198
+msgid "  noatime   do not update access time\n"
+msgstr ""
+
+#: src/dc3dd.c:1200
+msgid "  noctty    do not assign controlling terminal from file\n"
+msgstr ""
+
+#: src/dc3dd.c:1203
+msgid "  nofollow  do not follow symlinks\n"
+msgstr ""
+
+#: src/dc3dd.c:1205
+msgid "  nolinks   fail if multiply-linked\n"
+msgstr ""
+
+#: src/dc3dd.c:1207
+msgid "  binary    use binary I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1209
+msgid "  text      use text I/O for data\n"
+msgstr ""
+
+#: src/dc3dd.c:1213
+#, c-format
+msgid ""
+"\n"
+"Sending a %s signal to a running `dd' process makes it\n"
+"print I/O statistics to standard error and then resume copying.\n"
+"\n"
+"  $ dd if=/dev/zero of=/dev/null& pid=$!\n"
+"  $ kill -%s $pid; sleep 1; kill $pid\n"
+"  18335302+0 sectors in\n"
+"  18335302+0 sectors out\n"
+"  9387674624 bytes (9.4 GB) copied, 34.6279 seconds, 271 MB/s\n"
+"\n"
+"Options are:\n"
+"\n"
+msgstr ""
+
+#: src/dc3dd.c:1266
+msgid "Unknown system error"
+msgstr "Ralat sistem yang tidak diketahui"
+
+#: src/dc3dd.c:1953 src/dc3dd.c:1960
+#, c-format
+msgid ""
+"%<PRIuMAX>+%<PRIuMAX> sectors in\n"
+"%<PRIuMAX>+%<PRIuMAX> sectors out\n"
+msgstr ""
+
+#: src/dc3dd.c:1971
+#, c-format
+msgid "\n"
+msgstr ""
+
+#: src/dc3dd.c:1999 src/dc3dd.c:2007
+#, c-format
+msgid "%<PRIuMAX> byte (%s) %s"
+msgid_plural "%<PRIuMAX> bytes (%s) %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/dc3dd.c:2041
+msgid "Infinity B"
+msgstr ""
+
+#. TRANSLATORS: The two instances of "s" in this string are the SI
+#. symbol "s" (meaning second), and should not be translated.
+#.
+#. This format used to be:
+#.
+#. ngettext (", %g second, %s/s\n", ", %g seconds, %s/s\n", delta_s == 1)
+#.
+#. but that was incorrect for languages like Polish.  To fix this
+#. bug we now use SI symbols even though they're a bit more
+#. confusing in English.
+#: src/dc3dd.c:2054
+#, c-format
+msgid ", %g s, %s/s        "
+msgstr ""
+
+#: src/dc3dd.c:2057
+#, c-format
+msgid ", %g s, %s/s\n"
+msgstr ""
+
+#: src/dc3dd.c:2139
+#, c-format
+msgid "closing input file %s"
+msgstr "menutup fail input %s"
+
+#: src/dc3dd.c:2146
+#, c-format
+msgid "closing output file %s"
+msgstr "menutup fail output %s"
+
+#: src/dc3dd.c:2399
+msgid "Unable to allocate filename"
+msgstr ""
+
+#: src/dc3dd.c:2428
+msgid "Split extensions exhausted"
+msgstr ""
+
+#: src/dc3dd.c:2449 src/dc3dd.c:2698 src/dc3dd.c:2705 src/dc3dd.c:2713
+#: src/dc3dd.c:2809 src/dc3dd.c:3919 src/dc3dd.c:3970 src/dc3dd.c:3985
+#: src/dc3dd.c:3996
+#, c-format
+msgid "opening %s"
+msgstr "Membuka %s"
+
+#: src/dc3dd.c:2462
+msgid "Unable to allocate memory"
+msgstr ""
+
+#: src/dc3dd.c:2478 src/dc3dd.c:2484
+#, fuzzy
+msgid "Verify FAILED"
+msgstr "GAGAL"
+
+#: src/dc3dd.c:2672 src/dc3dd.c:2908
+#, fuzzy, c-format
+msgid "unrecognized operand %s"
+msgstr "opsyen tidak dikenali %s"
+
+#: src/dc3dd.c:2682 src/dc3dd.c:2689 src/dc3dd.c:2829 src/dc3dd.c:2962
+#, fuzzy, c-format
+msgid "illegal pattern %s"
+msgstr "tarikh tak sah `%s'"
+
+#: src/dc3dd.c:2748
+msgid "It is pitch dark here. You are likely to be eaten by a grue."
+msgstr ""
+
+#: src/dc3dd.c:2753
+#, fuzzy, c-format
+msgid "Illegal split format %s"
+msgstr "format tarikh tidak sah %s"
+
+#: src/dc3dd.c:2768
+#, c-format
+msgid "Illegal ifjoin format %s - missing extension"
+msgstr ""
+
+#: src/dc3dd.c:2773
+#, fuzzy, c-format
+msgid "Illegal ifjoin format %s"
+msgstr "format tarikh tidak sah %s"
+
+#: src/dc3dd.c:2793
+#, c-format
+msgid "Illegal vfjoin format %s - missing extension"
+msgstr ""
+
+#: src/dc3dd.c:2798
+#, fuzzy, c-format
+msgid "Illegal vfjoin format %s"
+msgstr "format tarikh tidak sah %s"
+
+#: src/dc3dd.c:2813
+#, c-format
+msgid "%s not implemented yet"
+msgstr ""
+
+#: src/dc3dd.c:2847
+#, fuzzy
+msgid "invalid conversion"
+msgstr "penukaran tidak sah: %s"
+
+#: src/dc3dd.c:2850
+#, fuzzy
+msgid "invalid input flag"
+msgstr "nombor tidak sah %s"
+
+#: src/dc3dd.c:2853
+#, fuzzy
+msgid "invalid output flag"
+msgstr "kumpulan tidak sah"
+
+#: src/dc3dd.c:2856
+#, fuzzy
+msgid "invalid status flag"
+msgstr "pengguna tidak sah %s"
+
+#: src/dc3dd.c:2913
+#, c-format
+msgid "invalid number %s"
+msgstr "nombor tidak sah %s"
+
+#: src/dc3dd.c:2938
+#, fuzzy
+msgid "cannot combine excl and nocreat"
+msgstr "tak boleh gabungkan isyarat dengan -l atau -t"
+
+#: src/dc3dd.c:2941
+#, fuzzy
+msgid "cannot combine if= and ifjoin="
+msgstr "tak boleh gabungkan isyarat dengan -l atau -t"
+
+#: src/dc3dd.c:2944
+#, fuzzy
+msgid "cannot combine vf= and vfjoin="
+msgstr "tak boleh gabungkan isyarat dengan -l atau -t"
+
+#: src/dc3dd.c:2947
+#, c-format
+msgid "error: split size must be a multiple of block size (currently %zd)"
+msgstr ""
+
+#: src/dc3dd.c:2950
+#, fuzzy
+msgid "cannot combine if= and wipe="
+msgstr "tak boleh gabungkan isyarat dengan -l atau -t"
+
+#: src/dc3dd.c:2953
+#, fuzzy
+msgid "cannot combine wipe= and ifjoin="
+msgstr "tak boleh gabungkan isyarat dengan -l atau -t"
+
+#: src/dc3dd.c:2955
+#, fuzzy
+msgid "cannot combine wipe= and vfjoin="
+msgstr "tak boleh gabungkan isyarat dengan -l atau -t"
+
+#: src/dc3dd.c:3116
+#, c-format
+msgid ""
+"warning: working around lseek kernel bug for file (%s)\n"
+"  of mt_type=0x%0lx -- see <sys/mtio.h> for the list of types"
+msgstr ""
+
+#: src/dc3dd.c:3165
+#, fuzzy, c-format
+msgid "skip: reading %s"
+msgstr "membaca %s"
+
+#: src/dc3dd.c:3173 src/dc3dd.c:3237
+#, fuzzy, c-format
+msgid "%s: cannot seek"
+msgstr "%s: tak dapat buang"
+
+#: src/dc3dd.c:3210
+#, c-format
+msgid "offset overflow while reading file %s"
+msgstr ""
+
+#: src/dc3dd.c:3228
+msgid "advance: warning: invalid file offset after failed read"
+msgstr ""
+
+#: src/dc3dd.c:3233
+msgid "cannot work around kernel bug after all"
+msgstr ""
+
+#: src/dc3dd.c:3291
+#, fuzzy, c-format
+msgid "setting flags for %s"
+msgstr "menetapkan masa untuk %s"
+
+#: src/dc3dd.c:3303
+#, c-format
+msgid "Recorded %<PRIuMAX> %s from sector %<PRIuMAX> through %<PRIuMAX>"
+msgstr ""
+
+#: src/dc3dd.c:3337 src/dc3dd.c:3814
+#, fuzzy, c-format
+msgid "reading %s at sector %jd"
+msgstr "membaca direktori %s"
+
+#: src/dc3dd.c:3339
+#, fuzzy, c-format
+msgid "reading %s at sectors %jd-%jd"
+msgstr "membaca direktori %s"
+
+#: src/dc3dd.c:3428 src/dc3dd.c:4155
+#, c-format
+msgid "writing to %s"
+msgstr "Menulis  ke %s."
+
+#: src/dc3dd.c:3490
+#, c-format
+msgid "fdatasync failed for %s"
+msgstr ""
+
+#: src/dc3dd.c:3500
+#, fuzzy, c-format
+msgid "fsync failed for %s"
+msgstr "gagal mengekalkan masa bagi %s"
+
+#: src/dc3dd.c:3907
+msgid "standard input"
+msgstr "input piawai"
+
+#: src/dc3dd.c:3938
+msgid "standard output"
+msgstr "output standard"
+
+#: src/dc3dd.c:4016
+#, c-format
+msgid ""
+"offset too large: cannot truncate to a length of seek=%<PRIuMAX> (%lu-byte) "
+"sectors"
+msgstr ""
+
+#: src/dc3dd.c:4031
+#, c-format
+msgid "cannot fstat %s"
+msgstr "tak dapat fstat %s"
+
+#: src/dc3dd.c:4037
+#, c-format
+msgid "truncating at %<PRIuMAX> bytes in output file %s"
+msgstr ""
+
+#: src/dc3dd.c:4131
+msgid "Verify PASSED"
+msgstr ""
+
+#, fuzzy
+#~ msgid "cannot combine block and unblock"
+#~ msgstr "tak dapat omit kedua-dua pengguna dan kumpulan"
+
+#, fuzzy
+#~ msgid "cannot combine lcase and ucase"
+#~ msgstr "tak boleh banding nama fail %s dan %s"
+
+#, fuzzy
+#~ msgid "error writing %s"
+#~ msgstr "menulis %s"
+
+#~ msgid "invalid argument %s for %s"
+#~ msgstr "hujah tidak sah %s bagi %s"
+
+#~ msgid "ambiguous argument %s for %s"
+#~ msgstr "hujah ambiguous %s bagi %s"
+
+#~ msgid "Valid arguments are:"
+#~ msgstr "Hujah sah adalah:"
+
+#, fuzzy
+#~ msgid "error closing file"
+#~ msgstr "menutup fail input %s"
+
+#~ msgid "write error"
+#~ msgstr "ralat menulis"
+
+#, fuzzy
+#~ msgid "preserving permissions for %s"
+#~ msgstr "menetapkan keizinan pada %s"
+
+#~ msgid "cannot stat %s"
+#~ msgstr "tak dapat stat %s"
+
+#~ msgid "regular empty file"
+#~ msgstr "fail kosong biasa"
+
+#~ msgid "regular file"
+#~ msgstr "fail biasa"
+
+#~ msgid "directory"
+#~ msgstr "direktori"
+
+#~ msgid "block special file"
+#~ msgstr "fail istimewa blok"
+
+#~ msgid "character special file"
+#~ msgstr "fail istimewa aksara"
+
+#~ msgid "fifo"
+#~ msgstr "fifo"
+
+#~ msgid "symbolic link"
+#~ msgstr "pautan simbolik"
+
+#~ msgid "socket"
+#~ msgstr "soket"
+
+#~ msgid "message queue"
+#~ msgstr "giliran mesej"
+
+#~ msgid "shared memory object"
+#~ msgstr "objek memori terkongsi"
+
+#, fuzzy
+#~ msgid "typed memory object"
+#~ msgstr "objek memori terkongsi"
+
+#~ msgid "weird file"
+#~ msgstr "fail pelik"
+
+#, fuzzy
+#~ msgid "Address family for hostname not supported"
+#~ msgstr "fail fifo tidak disokong"
+
+#, fuzzy
+#~ msgid "ai_family not supported"
+#~ msgstr "fail fifo tidak disokong"
+
+#, fuzzy
+#~ msgid "ai_socktype not supported"
+#~ msgstr "fail fifo tidak disokong"
+
+#, fuzzy
+#~ msgid "System error"
+#~ msgstr "ralat menulis"
+
+#, fuzzy
+#~ msgid "Unknown error"
+#~ msgstr "Ralat sistem yang tidak diketahui"
+
+#~ msgid "%s: option `%s' is ambiguous\n"
+#~ msgstr "%s: opsyen `%s' adalah ambiguous\n"
+
+#~ msgid "%s: option `--%s' doesn't allow an argument\n"
+#~ msgstr "%s: opsyen `--%s' tidak mengizinkan hujah\n"
+
+#~ msgid "%s: option `%c%s' doesn't allow an argument\n"
+#~ msgstr "%s: opsyen `%c%s' tidak mengizinkan hujah\n"
+
+#~ msgid "%s: option `%s' requires an argument\n"
+#~ msgstr "%s: opsyen  `%s' memerlukan hujah\n"
+
+#~ msgid "%s: unrecognized option `--%s'\n"
+#~ msgstr "%s: opensyen tidak dikenali `--%s'\n"
+
+#~ msgid "%s: unrecognized option `%c%s'\n"
+#~ msgstr "%s: opensyen tidak dikenali `%c%s'\n"
+
+#~ msgid "%s: illegal option -- %c\n"
+#~ msgstr "%s: opsyen tidak dibenarkan -- %c\n"
+
+#~ msgid "%s: invalid option -- %c\n"
+#~ msgstr "%s: opsyen tidak sah -- %c\n"
+
+#~ msgid "%s: option requires an argument -- %c\n"
+#~ msgstr "%s: opsyen memerlukan hujah -- %c\n"
+
+#~ msgid "%s: option `-W %s' is ambiguous\n"
+#~ msgstr "%s: opsyen `-W %s' adalah ambiguous\n"
+
+#~ msgid "%s: option `-W %s' doesn't allow an argument\n"
+#~ msgstr "%s: opsyen `-W %s' tidak mengizinkan hujan\n"
+
+#~ msgid "cannot change permissions of %s"
+#~ msgstr "tak dapat menukar keizinan %s"
+
+#~ msgid "cannot create directory %s"
+#~ msgstr "tak dapat mencipta direktori %s"
+
+#~ msgid "memory exhausted"
+#~ msgstr "memori keletihan"
+
+#, fuzzy
+#~ msgid "unable to record current working directory"
+#~ msgstr "gagal untuk kembali ke direktori kerja pemulaan"
+
+#~ msgid "failed to return to initial working directory"
+#~ msgstr "gagal untuk kembali ke direktori kerja pemulaan"
+
+#~ msgid "`"
+#~ msgstr "`"
+
+#~ msgid "'"
+#~ msgstr "`"
+
+#, fuzzy
+#~ msgid "%s: end of file"
+#~ msgstr "fail istimewa blok"
+
+#, fuzzy
+#~ msgid "Invalid regular expression"
+#~ msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#, fuzzy
+#~ msgid "Invalid character class name"
+#~ msgstr "aksara tidak sah pada %s pada rentetan mod %s"
+
+#, fuzzy
+#~ msgid "Memory exhausted"
+#~ msgstr "memori keletihan"
+
+#, fuzzy
+#~ msgid "Invalid preceding regular expression"
+#~ msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#, fuzzy
+#~ msgid "Premature end of regular expression"
+#~ msgstr "ralat pada carian ungkapan biasa (regexp)"
+
+#, fuzzy
+#~ msgid "Regular expression too big"
+#~ msgstr "ralat pada carian ungkapan biasa (regexp)"
+
+#, fuzzy
+#~ msgid "No previous regular expression"
+#~ msgstr "ralat pada carian ungkapan biasa (regexp)"
+
+#~ msgid "^[yY]"
+#~ msgstr "^[yY]"
+
+#~ msgid "^[nN]"
+#~ msgstr "^[tT]"
+
+#~ msgid "setting permissions for %s"
+#~ msgstr "menetapkan keizinan pada %s"
+
+#~ msgid "iconv function not usable"
+#~ msgstr "fungsi iconv tak boleh digunakan"
+
+#~ msgid "iconv function not available"
+#~ msgstr "fungsi iconv tidak ada"
+
+#~ msgid "character out of range"
+#~ msgstr "aksara di luar julat"
+
+#~ msgid "cannot convert U+%04X to local character set"
+#~ msgstr "tak dapat menukar U+%04X ke set aksara lokal"
+
+#~ msgid "cannot convert U+%04X to local character set: %s"
+#~ msgstr "tak dapat menukar U+%04X ke set aksara lokal: %s"
+
+#~ msgid "invalid user"
+#~ msgstr "pengguna tidak sah"
+
+#~ msgid "invalid group"
+#~ msgstr "kumpulan tidak sah"
+
+#, fuzzy
+#~ msgid "invalid spec"
+#~ msgstr "pengguna tidak sah"
+
+#~ msgid "Written by %s.\n"
+#~ msgstr "Ditulis oleh %s.\n"
+
+#, fuzzy
+#~ msgid "Written by %s and %s.\n"
+#~ msgstr "Ditulis oleh %s.\n"
+
+#, fuzzy
+#~ msgid "Written by %s, %s, and %s.\n"
+#~ msgstr "Ditulis oleh %s.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "and %s.\n"
+#~ msgstr "Ditulis oleh %s.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Written by %s, %s, %s,\n"
+#~ "%s, and %s.\n"
+#~ msgstr "Ditulis oleh %s.\n"
+
+#, fuzzy
+#~ msgid "invalid argument: %s"
+#~ msgstr "hujah tidak sah %s bagi %s"
+
+#~ msgid "string comparison failed"
+#~ msgstr "perbandingan rentetan gagal"
+
+#~ msgid "Set LC_ALL='C' to work around the problem."
+#~ msgstr "Tetapkan LC_ALL='C' untuk mengatasi masalah."
+
+#~ msgid "The strings compared were %s and %s."
+#~ msgstr "Rentetan dibandingkan adalah %s dan %s."
+
+#, fuzzy
+#~ msgid "string transformation failed"
+#~ msgstr "perbandingan rentetan gagal"
+
+#, fuzzy
+#~ msgid "invalid %s%s argument `%s'"
+#~ msgstr "hujah tidak sah %s bagi %s"
+
+#, fuzzy
+#~ msgid "invalid suffix in %s%s argument `%s'"
+#~ msgstr "hujah tidak sah %s bagi %s"
+
+#, fuzzy
+#~ msgid "%s%s argument `%s' too large"
+#~ msgstr "%s adalah terlalu besar"
+
+#~ msgid ""
+#~ "\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Dengan tiada FAIL, atau bila FAIL adalah -, baca input piawai.\n"
+
+#~ msgid "read error"
+#~ msgstr "ralat membaca"
+
+#, fuzzy
+#~ msgid "invalid input"
+#~ msgstr "pengguna tidak sah"
+
+#, fuzzy
+#~ msgid "invalid wrap size: %s"
+#~ msgstr "saiz tab tidak sah: %s"
+
+#, fuzzy
+#~ msgid "extra operand %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#~ msgid "closing standard input"
+#~ msgstr "menutup input piawai"
+
+#~ msgid ""
+#~ "Usage: %s NAME [SUFFIX]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s NAMA [SUFFIKS]\n"
+#~ "    atau: %s OPSYEN\n"
+
+#~ msgid ""
+#~ "Print NAME with any leading directory components removed.\n"
+#~ "If specified, also remove a trailing SUFFIX.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cetak NAMA dengan komponen direktori awalan telah dibuang.\n"
+#~ "Jika dinyatakan, juga akan membuang DUFFIKS ekoran.\n"
+
+#, fuzzy
+#~ msgid "missing operand"
+#~ msgstr "kehilangan hujah fail"
+
+#, fuzzy
+#~ msgid "Richard M. Stallman"
+#~ msgstr "Torbjorn Granlund and Richard M. Stallman"
+
+#~ msgid "Usage: %s [OPTION] [FILE]...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN] [FAIL]...\n"
+
+#~ msgid ""
+#~ "  -t                       equivalent to -vT\n"
+#~ "  -T, --show-tabs          display TAB characters as ^I\n"
+#~ "  -u                       (ignored)\n"
+#~ "  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB\n"
+#~ msgstr ""
+#~ "  -t                       setara dengan -vT\n"
+#~ "  -T, --show-tabs          papar aksara TAB sebagai ^I\n"
+#~ "  -u                       (diabaikan)\n"
+#~ "  -v, --show-nonprinting   guna notasi  ^ and M- , kecuali bagi LFD dan "
+#~ "TAB\n"
+
+#, fuzzy
+#~ msgid "cannot do ioctl on %s"
+#~ msgstr "tak dapat ioctl pada  `%s'"
+
+#~ msgid "%s: input file is output file"
+#~ msgstr "%s: fail input adalah fail output"
+
+#, fuzzy
+#~ msgid "failed to create security context: %s"
+#~ msgstr "gagal mendapatkan atribut bagi %s"
+
+#, fuzzy
+#~ msgid "failed to get security context of %s"
+#~ msgstr "gagal mendapatkan atribut bagi %s"
+
+#, fuzzy
+#~ msgid "failed to change context of %s to %s"
+#~ msgstr "gagal menukar hakmilik %s ke %s\n"
+
+#~ msgid "cannot access %s"
+#~ msgstr "Tak dapat mengakses %s"
+
+#~ msgid "cannot read directory %s"
+#~ msgstr "tak dapat membaca direktori %s"
+
+#, fuzzy
+#~ msgid "changing security context of %s"
+#~ msgstr "menukar keizinan %s"
+
+#, fuzzy
+#~ msgid "fts_read failed"
+#~ msgstr "fail biasa"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... CONTEXT FILE...\n"
+#~ "  or:  %s [OPTION]... [-u USER] [-r ROLE] [-l RANGE] [-t TYPE] FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSYEN]... PEMILIK[:[KUMPULAN]] FAIL...\n"
+#~ "  atau:  %s [OPSYEN]... :KUMPULAN FAIL...\n"
+#~ "  atau:  %s [OPSYEN]... --reference=RFAIL FAIL...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Change the security context of each FILE to CONTEXT.\n"
+#~ "With --reference, change the security context of each FILE to that of "
+#~ "RFILE.\n"
+#~ "\n"
+#~ "  -c, --changes          like verbose but report only when a change is "
+#~ "made\n"
+#~ "  -h, --no-dereference   affect symbolic links instead of any referenced "
+#~ "file\n"
+#~ msgstr ""
+#~ "Tukar pemilik  dan/atau kumpulan bagi setiap FAIL ke PEMILIH dan/atau "
+#~ "KUMPULAN.\n"
+#~ "\n"
+#~ "  -c, --changes          seperti verbose tetapi lapor hanya bila "
+#~ "perubahan dilakukan\n"
+#~ "      --dereference      melibatkan rujukan bagi setiap pautan simbolik,\n"
+#~ "                         bukannya pautan smbolik itu sendiri.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --reference=RFILE  use RFILE's security context rather than "
+#~ "specifying\n"
+#~ "                         a CONTEXT value\n"
+#~ "  -R, --recursive        operate on files and directories recursively\n"
+#~ "  -v, --verbose          output a diagnostic for every file processed\n"
+#~ msgstr ""
+#~ "  -f, --silent, --quiet  sorok mesej ralat\n"
+#~ "      --reference=RFAIL  guna pemilik dan kumpulan RFAIL dan bukannya\n"
+#~ "                         nilai yg dinyatakan PEMILIK:KUMPULAN\n"
+#~ "  -R, --recursive        beroperasi pada fail dan direktori secara "
+#~ "rekursif\n"
+#~ "  -v, --verbose          output  diagnostik bagi setiap fail yg diproses\n"
+
+#, fuzzy
+#~ msgid "missing operand after %s"
+#~ msgstr "kehilangan hujah fail"
+
+#, fuzzy
+#~ msgid "invalid context: %s"
+#~ msgstr "penukaran tidak sah: %s"
+
+#~ msgid "failed to get attributes of %s"
+#~ msgstr "gagal mendapatkan atribut bagi %s"
+
+#, fuzzy
+#~ msgid "invalid group: %s"
+#~ msgstr "kumpulan tidak sah %s"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... GROUP FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPTION]... GROUP FILE...\n"
+#~ "      atau:  %s [OPTION]... --reference=RFILE FILE...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Change the group of each FILE to GROUP.\n"
+#~ "With --reference, change the group of each FILE to that of RFILE.\n"
+#~ "\n"
+#~ "  -c, --changes          like verbose but report only when a change is "
+#~ "made\n"
+#~ "      --dereference      affect the referent of each symbolic link (this "
+#~ "is\n"
+#~ "                         the default), rather than the symbolic link "
+#~ "itself\n"
+#~ msgstr ""
+#~ "Tukar keahlian kumpulan bagi setiap FAIL ke KUMPULAN.\n"
+#~ "\n"
+#~ "  -c, --changes          seperti verbose tetapi lapor hanya bila prubahan "
+#~ "dilakukan\n"
+#~ "      --dereference      meliputi rujukan bagi setiap pautan simbolik\n"
+#~ "                         bukannya pautan simbolik itu sendiri\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -h, --no-dereference   affect each symbolic link instead of any "
+#~ "referenced\n"
+#~ "                         file (useful only on systems that can change "
+#~ "the\n"
+#~ "                         ownership of a symlink)\n"
+#~ msgstr ""
+#~ "  -h, --no-dereference   meliputi pautan simbolik selain drpd sebarang "
+#~ "fail dirujuk\n"
+#~ "                         (hanya boleh pada sistem yang boleh menukar\n"
+#~ "                          pemilikan bagi pautan simbolik)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --silent, --quiet  suppress most error messages\n"
+#~ "      --reference=RFILE  use RFILE's group rather than specifying a\n"
+#~ "                         GROUP value\n"
+#~ "  -R, --recursive        operate on files and directories recursively\n"
+#~ "  -v, --verbose          output a diagnostic for every file processed\n"
+#~ "\n"
+#~ msgstr ""
+#~ "  -f, --silent, --quiet  sorok mesej ralat\n"
+#~ "      --reference=RFAIL  guna pemilik dan kumpulan RFAIL dan bukannya\n"
+#~ "                         nilai yg dinyatakan PEMILIK:KUMPULAN\n"
+#~ "  -R, --recursive        beroperasi pada fail dan direktori secara "
+#~ "rekursif\n"
+#~ "  -v, --verbose          output  diagnostik bagi setiap fail yg diproses\n"
+
+#~ msgid "getting new attributes of %s"
+#~ msgstr "mendapatkan atribut baru untuk %s"
+
+#~ msgid "neither symbolic link %s nor referent has been changed\n"
+#~ msgstr "kedua-duanya pautan simbolik %s dan rujukan telah berubah\n"
+
+#~ msgid "mode of %s changed to %04lo (%s)\n"
+#~ msgstr "mod %s berubah kepada %04lo (%s)\n"
+
+#~ msgid "failed to change mode of %s to %04lo (%s)\n"
+#~ msgstr "gagal menukar mod %s kepada %04lo (%s)\n"
+
+#~ msgid "mode of %s retained as %04lo (%s)\n"
+#~ msgstr "mod %s kekal sebagai %04lo (%s)\n"
+
+#, fuzzy
+#~ msgid "cannot operate on dangling symlink %s"
+#~ msgstr "tak dapat mencipta pautan simbolik %s"
+
+#~ msgid "changing permissions of %s"
+#~ msgstr "menukar keizinan %s"
+
+#, fuzzy
+#~ msgid "%s: new permissions are %s, not %s"
+#~ msgstr "menetapkan keizinan pada %s"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... MODE[,MODE]... FILE...\n"
+#~ "  or:  %s [OPTION]... OCTAL-MODE FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPTION]... MODE[,MODE]... FILE...\n"
+#~ "    atau:  %s [OPTION]... OCTAL-MODE FILE...\n"
+#~ "    atau:  %s [OPTION]... --reference=RFILE FILE...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --silent, --quiet   suppress most error messages\n"
+#~ "  -v, --verbose           output a diagnostic for every file processed\n"
+#~ "      --reference=RFILE   use RFILE's mode instead of MODE values\n"
+#~ "  -R, --recursive         change files and directories recursively\n"
+#~ msgstr ""
+#~ "  -f, --silent, --quiet  sorok mesej ralat\n"
+#~ "      --reference=RFAIL  guna pemilik dan kumpulan RFAIL dan bukannya\n"
+#~ "                         nilai yg dinyatakan PEMILIK:KUMPULAN\n"
+#~ "  -R, --recursive        beroperasi pada fail dan direktori secara "
+#~ "rekursif\n"
+#~ "  -v, --verbose          output  diagnostik bagi setiap fail yg diproses\n"
+
+#, fuzzy
+#~ msgid "invalid mode: %s"
+#~ msgstr "mod tak sah %s"
+
+#~ msgid "changed ownership of %s to %s\n"
+#~ msgstr "hakmilik %s telah bertukar ke %s\n"
+
+#~ msgid "changed group of %s to %s\n"
+#~ msgstr "kumpulan %s telah bertukar ke %s\n"
+
+#, fuzzy
+#~ msgid "no change to ownership of %s\n"
+#~ msgstr "tak dapat menukar keizinan %s"
+
+#~ msgid "failed to change ownership of %s to %s\n"
+#~ msgstr "gagal menukar hakmilik %s ke %s\n"
+
+#~ msgid "failed to change group of %s to %s\n"
+#~ msgstr "gagal menukar kumpulan %s ke %s\n"
+
+#, fuzzy
+#~ msgid "failed to change ownership of %s\n"
+#~ msgstr "gagal menukar hakmilik %s ke %s\n"
+
+#~ msgid "ownership of %s retained as %s\n"
+#~ msgstr "hakmilik %s kekal sebagai %s\n"
+
+#~ msgid "group of %s retained as %s\n"
+#~ msgstr "kumpulan %s kekal sebagai %s\n"
+
+#, fuzzy
+#~ msgid "ownership of %s retained\n"
+#~ msgstr "hakmilik %s kekal sebagai %s\n"
+
+#, fuzzy
+#~ msgid "cannot dereference %s"
+#~ msgstr "tak dapat membuang %s"
+
+#~ msgid "changing ownership of %s"
+#~ msgstr "penukaran hakmilik %s"
+
+#~ msgid "changing group of %s"
+#~ msgstr "penukaran kumpulan %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [OWNER][:[GROUP]] FILE...\n"
+#~ "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPTION]... GROUP FILE...\n"
+#~ "      atau:  %s [OPTION]... --reference=RFILE FILE...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Change the owner and/or group of each FILE to OWNER and/or GROUP.\n"
+#~ "With --reference, change the owner and group of each FILE to those of "
+#~ "RFILE.\n"
+#~ "\n"
+#~ "  -c, --changes          like verbose but report only when a change is "
+#~ "made\n"
+#~ "      --dereference      affect the referent of each symbolic link (this "
+#~ "is\n"
+#~ "                         the default), rather than the symbolic link "
+#~ "itself\n"
+#~ msgstr ""
+#~ "Tukar pemilik  dan/atau kumpulan bagi setiap FAIL ke PEMILIH dan/atau "
+#~ "KUMPULAN.\n"
+#~ "\n"
+#~ "  -c, --changes          seperti verbose tetapi lapor hanya bila "
+#~ "perubahan dilakukan\n"
+#~ "      --dereference      melibatkan rujukan bagi setiap pautan simbolik,\n"
+#~ "                         bukannya pautan smbolik itu sendiri.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --silent, --quiet  suppress most error messages\n"
+#~ "      --reference=RFILE  use RFILE's owner and group rather than\n"
+#~ "                         specifying OWNER:GROUP values\n"
+#~ "  -R, --recursive        operate on files and directories recursively\n"
+#~ "  -v, --verbose          output a diagnostic for every file processed\n"
+#~ "\n"
+#~ msgstr ""
+#~ "  -f, --silent, --quiet  sorok mesej ralat\n"
+#~ "      --reference=RFAIL  guna pemilik dan kumpulan RFAIL dan bukannya\n"
+#~ "                         nilai yg dinyatakan PEMILIK:KUMPULAN\n"
+#~ "  -R, --recursive        beroperasi pada fail dan direktori secara "
+#~ "rekursif\n"
+#~ "  -v, --verbose          output  diagnostik bagi setiap fail yg diproses\n"
+
+#~ msgid ""
+#~ "Usage: %s NEWROOT [COMMAND...]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s ROOTBARU [ARAHAN...]\n"
+#~ "    atau: %s OPSYEN\n"
+
+#~ msgid ""
+#~ "Run COMMAND with root directory set to NEWROOT.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Laksana ARAHAN dengan direktori root ditetapkan ke ROOTBARU.\n"
+#~ "\n"
+
+#~ msgid "cannot change root directory to %s"
+#~ msgstr "Gagal menukar direktori root ke %s "
+
+#~ msgid "cannot chdir to root directory"
+#~ msgstr "tak dapat chdir ke direktori root"
+
+#, fuzzy
+#~ msgid "cannot run command %s"
+#~ msgstr "takboleh nyahpaut %s"
+
+#~ msgid "%s: file too long"
+#~ msgstr "%s: fail terlalu panjang"
+
+#~ msgid ""
+#~ "Usage: %s [FILE]...\n"
+#~ "  or:  %s [OPTION]\n"
+#~ msgstr ""
+#~ "Pengunaan: %s [FAIL]...\n"
+#~ "    atau: %s [OPSYEN]\n"
+
+#, fuzzy
+#~ msgid "Richard Stallman"
+#~ msgstr "Richard Stallman dan David MacKenzie"
+
+#~ msgid "Usage: %s [OPTION]... FILE1 FILE2\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...FAIL1 FAIL2\n"
+
+#, fuzzy
+#~ msgid "clearing permissions for %s"
+#~ msgstr "menetapkan keizinan pada %s"
+
+#~ msgid "failed to preserve ownership for %s"
+#~ msgstr "gagal mengekalkan hakmilik bagi %s"
+
+#~ msgid "failed to lookup file %s"
+#~ msgstr "gagal mencari fail %s"
+
+#~ msgid "failed to preserve authorship for %s"
+#~ msgstr "gagal mengekalkan hakmilik bagi %s"
+
+#~ msgid "cannot open %s for reading"
+#~ msgstr "tak dapat buka %s untuk dibaca"
+
+#, fuzzy
+#~ msgid "failed to set the security context of %s to %s"
+#~ msgstr "gagal menukar kumpulan %s ke %s\n"
+
+#~ msgid "cannot remove %s"
+#~ msgstr "tak dapat membuang %s"
+
+#~ msgid "removed %s\n"
+#~ msgstr "%s dibuang \n"
+
+#~ msgid "cannot create regular file %s"
+#~ msgstr "tak dapat memcipta fail biasa %s"
+
+#~ msgid "cannot lseek %s"
+#~ msgstr "tak dapat lseek %s"
+
+#~ msgid "writing %s"
+#~ msgstr "menulis %s"
+
+#~ msgid "preserving times for %s"
+#~ msgstr "mengekalkan masa pada %s"
+
+#~ msgid "closing %s"
+#~ msgstr "menutup %s"
+
+#, fuzzy
+#~ msgid "%s: try to overwrite %s, overriding mode %04lo (%s)? "
+#~ msgstr "%s: menindih %s, menindih mod %04lo? "
+
+#~ msgid "%s: overwrite %s? "
+#~ msgstr "%s: tindih %s? "
+
+#~ msgid " (backup: %s)"
+#~ msgstr " (backup: %s)"
+
+#~ msgid "warning: source file %s specified more than once"
+#~ msgstr "Amaran: fail sumber %s dinyatakan lebih drpd sekali"
+
+#~ msgid "%s and %s are the same file"
+#~ msgstr "%s dan %s adalah fail yang sama"
+
+#~ msgid "cannot overwrite non-directory %s with directory %s"
+#~ msgstr "tak boleh menindih bukan-direktori %s dengan direktori %s"
+
+#~ msgid "will not overwrite just-created %s with %s"
+#~ msgstr "tak akan menindih baru-dicipta %s dengan %s"
+
+#~ msgid "cannot overwrite directory %s with non-directory"
+#~ msgstr "tak boleh menindih direktori %s dengan direktori"
+
+#~ msgid "cannot move directory onto non-directory: %s -> %s"
+#~ msgstr "tak dapat pindah direktori ke bukan-direktori: %s -> %s"
+
+#~ msgid "backing up %s would destroy source;  %s not moved"
+#~ msgstr "backup %s akan memusnahkan sumber; %s tidak dipindahkan"
+
+#~ msgid "backing up %s would destroy source;  %s not copied"
+#~ msgstr "backup %s akan memusnahkan sumber; %s tidak disalin"
+
+#~ msgid "cannot backup %s"
+#~ msgstr "tak dapat backup %s"
+
+#, fuzzy
+#~ msgid "will not copy %s through just-created symlink %s"
+#~ msgstr "tak akan menindih baru-dicipta %s dengan %s"
+
+#~ msgid "cannot copy a directory, %s, into itself, %s"
+#~ msgstr "tak dapat salin direktori, %s ke dirinya, %s"
+
+#~ msgid "will not create hard link %s to directory %s"
+#~ msgstr "tidak akan mencipta pautan keras %s ke direktori %s"
+
+#~ msgid "cannot create hard link %s to %s"
+#~ msgstr "tak dapat mencipta pautan keras %s ke %s"
+
+#~ msgid "cannot move %s to a subdirectory of itself, %s"
+#~ msgstr "tak dapat pindahkan %s ke subdirektori dirinya, %s"
+
+#~ msgid "cannot move %s to %s"
+#~ msgstr "tak dapat pindahkan %s ke %s"
+
+#~ msgid "inter-device move failed: %s to %s; unable to remove target"
+#~ msgstr "pindahan antara-peranti gagak: %s ke %s; tak dapat memindah sasaran"
+
+#, fuzzy
+#~ msgid "failed to set default file creation context to %s"
+#~ msgstr "gagal mendapatkan atribut bagi %s"
+
+#~ msgid "cannot copy cyclic symbolic link %s"
+#~ msgstr "tak boleh salin pautan simbolik cyclic %s"
+
+#~ msgid "%s: can make relative symbolic links only in current directory"
+#~ msgstr ""
+#~ "%s: hanya boleh membuat pautan simbolik relatif pada direktori semasa"
+
+#~ msgid "cannot create symbolic link %s to %s"
+#~ msgstr "tak dapat mencipta pautan simbolik %s ke %s"
+
+#~ msgid "cannot create link %s"
+#~ msgstr "tak boleh mencipta pautan %s"
+
+#~ msgid "cannot create fifo %s"
+#~ msgstr "tak boleh mencipta fifo %s"
+
+#~ msgid "cannot create special file %s"
+#~ msgstr "tak boleh mencipta fail istimewa %s"
+
+#~ msgid "cannot read symbolic link %s"
+#~ msgstr "tak dapat membaca pautan simbolik %s"
+
+#~ msgid "cannot create symbolic link %s"
+#~ msgstr "tak dapat mencipta pautan simbolik %s"
+
+#~ msgid "%s has unknown file type"
+#~ msgstr "%s mempunyai jenis fail yang tidak diketahui"
+
+#~ msgid "cannot un-backup %s"
+#~ msgstr "tak dapat nyahbackup %s"
+
+#~ msgid "%s -> %s (unbackup)\n"
+#~ msgstr "%s -> %s (nyahbackup)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [-T] SOURCE DEST\n"
+#~ "  or:  %s [OPTION]... SOURCE... DIRECTORY\n"
+#~ "  or:  %s [OPTION]... -t DIRECTORY SOURCE...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSYEN]... SUMBER DEST\n"
+#~ "   atau:  %s [OPSYEN]... SUMBER... DIREKTORI\n"
+#~ "   atau:  %s [OPSYEN]... --target-directory=DIREKTORI SUMBER...\n"
+
+#~ msgid ""
+#~ "Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Salin SUMBER ke DEST, atau banyak SUMBER ke DIREKTORI.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Mandatory arguments to long options are mandatory for short options too.\n"
+#~ msgstr ""
+#~ "Hujah mandatori kepada opsyen panjang andalah mandatori bagi opsyen "
+#~ "pendek juga.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -a, --archive                same as -dpR\n"
+#~ "      --backup[=CONTROL]       make a backup of each existing destination "
+#~ "file\n"
+#~ "  -b                           like --backup but does not accept an "
+#~ "argument\n"
+#~ "      --copy-contents          copy contents of special files when "
+#~ "recursive\n"
+#~ "  -d                           same as --no-dereference --preserve=links\n"
+#~ msgstr ""
+#~ "  -a, --archive                sama seperti -dpR\n"
+#~ "      --backup[=CONTROL]       buat backup bagi setiap fail destinasi\n"
+#~ "  -b                           seperti --backup tetapi tak menerima "
+#~ "hujah\n"
+#~ "      --copy-contents          salin kandungan bagi fail sitimewa bila "
+#~ "rekursif\n"
+#~ "  -d                           sama seperti --no-dereference --"
+#~ "preserve=link\n"
+
+#~ msgid "failed to preserve times for %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#~ msgid "failed to preserve permissions for %s"
+#~ msgstr "gagal mengekalkan  keizinan bagi %s"
+
+#~ msgid "cannot make directory %s"
+#~ msgstr "tak dapat cipta direktori %s"
+
+#~ msgid "%s exists but is not a directory"
+#~ msgstr "%s wujud tapi ianya bukan direktori"
+
+#~ msgid "accessing %s"
+#~ msgstr "mengakses %s"
+
+#, fuzzy
+#~ msgid "missing file operand"
+#~ msgstr "kehilangan hujah fail"
+
+#, fuzzy
+#~ msgid "missing destination file operand after %s"
+#~ msgstr "kehilangan fail destinasi"
+
+#, fuzzy
+#~ msgid "target %s is not a directory"
+#~ msgstr "Sasaran yang dinyatakan, %s adalah bukan direktori"
+
+#, fuzzy
+#~ msgid "with --parents, the destination must be a directory"
+#~ msgstr "bila mengekalkan path, destinasi mestilah direktori"
+
+#, fuzzy
+#~ msgid "multiple target directories specified"
+#~ msgstr "banyak opsyen -l or -t dinyatakan"
+
+#~ msgid "cannot make both hard and symbolic links"
+#~ msgstr "tak dapat buat kecua-dua pautan simbolik dan keras"
+
+#~ msgid "backup type"
+#~ msgstr "jenis backup"
+
+#~ msgid "input disappeared"
+#~ msgstr "input menghilang"
+
+#~ msgid "%s: line number out of range"
+#~ msgstr "%s: bilangan baris di luar julat"
+
+#, fuzzy
+#~ msgid "%s: %s: line number out of range"
+#~ msgstr "%s: `%s': bilangan baris di luar julat"
+
+#, fuzzy
+#~ msgid " on repetition %s\n"
+#~ msgstr " pada ulangan %d\n"
+
+#, fuzzy
+#~ msgid "%s: %s: match not found"
+#~ msgstr "%s: `%s': padanan tak dijumpai"
+
+#~ msgid "error in regular expression search"
+#~ msgstr "ralat pada carian ungkapan biasa (regexp)"
+
+#, fuzzy
+#~ msgid "write error for %s"
+#~ msgstr "ralat menulis bagi `%s'"
+
+#, fuzzy
+#~ msgid "%s: integer expected after delimiter"
+#~ msgstr "%s: integer dijangka selepas `%c'"
+
+#~ msgid "%s: `}' is required in repeat count"
+#~ msgstr "%s: `}'  diperluka untuk kiraan ulangan"
+
+#~ msgid "%s}: integer required between `{' and `}'"
+#~ msgstr "%s}: integer diperlukan diantara `{' dan `}'"
+
+#, fuzzy
+#~ msgid "%s: closing delimiter `%c' missing"
+#~ msgstr "%s: pemisah penutup `%c' hilang"
+
+#~ msgid "%s: invalid regular expression: %s"
+#~ msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#~ msgid "%s: invalid pattern"
+#~ msgstr "%s: corak tidak sah"
+
+#~ msgid "%s: line number must be greater than zero"
+#~ msgstr "%s: bilangan baris mesti lebih besar drpd sifar"
+
+#, fuzzy
+#~ msgid "invalid format width"
+#~ msgstr "format tarikh tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid format precision"
+#~ msgstr "penukaran tidak sah: %s"
+
+#~ msgid "invalid conversion specifier in suffix: %c"
+#~ msgstr "Pengspesifikasi penukaran tidak sah pada suffiks: %c"
+
+#~ msgid "invalid conversion specifier in suffix: \\%.3o"
+#~ msgstr "pengspesifikasi penukaran tidak sah pada suffiks: \\%.3o"
+
+#~ msgid "too many %% conversion specifications in suffix"
+#~ msgstr "terlalu banyak spesifikasi penukaran %% pada suffiks"
+
+#~ msgid "missing %% conversion specification in suffix"
+#~ msgstr "kehilangan spesifikasi penukaran %% pada suffiks"
+
+#~ msgid "%s: invalid number"
+#~ msgstr "%s: nombor tidak sah"
+
+#~ msgid "Usage: %s [OPTION]... FILE PATTERN...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]... FAIL CORAK...\n"
+
+#, fuzzy
+#~ msgid "Usage: %s OPTION... [FILE]...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#~ msgid ""
+#~ "Print selected parts of lines from each FILE to standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cetak bahagian ibaris dipilih drpd setiap FAIL ke output piawai.\n"
+#~ "\n"
+
+#~ msgid "invalid byte or field list"
+#~ msgstr "byte atau senarai medan tidak sah"
+
+#, fuzzy
+#~ msgid "invalid range with no endpoint: -"
+#~ msgstr "opsyen lebar tidak sah: `%s'"
+
+#, fuzzy
+#~ msgid "invalid decreasing range"
+#~ msgstr "rentetan mod tidak sah: %s"
+
+#, fuzzy
+#~ msgid "byte offset %s is too large"
+#~ msgstr "%s adalah terlalu besar"
+
+#, fuzzy
+#~ msgid "field number %s is too large"
+#~ msgstr "nombor tidak sah %s"
+
+#~ msgid "only one type of list may be specified"
+#~ msgstr "hanya satu jenis senarai boleh dinyatakan"
+
+#~ msgid "the delimiter must be a single character"
+#~ msgstr "pemisah mestilah aksara tunggal"
+
+#~ msgid "you must specify a list of bytes, characters, or fields"
+#~ msgstr "anda mesti nyatakan senarai byte, aksara, atau medan"
+
+#~ msgid "missing list of fields"
+#~ msgstr "kehilangan senarai medan"
+
+#~ msgid "missing list of positions"
+#~ msgstr "kehilangan senarai posisi"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [+FORMAT]\n"
+#~ "  or:  %s [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSYEN]... [+FORMAT]\n"
+#~ "  atau:  %s [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -r, --reference=FILE      display the last modification time of FILE\n"
+#~ "  -R, --rfc-2822            output date and time in RFC 2822 format.\n"
+#~ "                            Example: Mon, 07 Aug 2006 12:34:56 -0600\n"
+#~ msgstr ""
+#~ "  -r, --reference=FAIL      papar tarikh ubahsuai bagi FAIL\n"
+#~ "  -R, --rfc-822             output rentetan tarikh serasi RFC-822\n"
+#~ "  -s, --set=RENTETAN        tetapkan masa dihuraikan oleh RENTETAN\n"
+#~ "  -u, --utc, --universal    cetak atau tetapkan  Coordinated Universal "
+#~ "Time\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  %A   locale's full weekday name (e.g., Sunday)\n"
+#~ "  %b   locale's abbreviated month name (e.g., Jan)\n"
+#~ "  %B   locale's full month name (e.g., January)\n"
+#~ "  %c   locale's date and time (e.g., Thu Mar  3 23:05:25 2005)\n"
+#~ msgstr ""
+#~ "  %A   nama penuh hari kerja lokaliti, panjang berubah (Ahad..Sabtu)\n"
+#~ "  %b   nama singkatan bulan lokaliti (Jan..Dis)\n"
+#~ "  %B   nama penuh bulan lokaliti, panjang berubah (Januari..Disember)\n"
+#~ "  %c   tarikh dan masa lokaliti (Jum Dis 19 10:02:33 MYT 1975)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  %C   century; like %Y, except omit last two digits (e.g., 21)\n"
+#~ "  %d   day of month (e.g, 01)\n"
+#~ "  %D   date; same as %m/%d/%y\n"
+#~ "  %e   day of month, space padded; same as %_d\n"
+#~ msgstr ""
+#~ "  %C   abad (tahun dibahagi dengan 100 dan dibundarkan ke integer) "
+#~ "[00-99]\n"
+#~ "  %d   hari drpd bulan (01..31)\n"
+#~ "  %D   tarikh (bb/hh/tt)\n"
+#~ "  %e   hari drpd bulan, ruang kosong ditambah ( 1..31)\n"
+
+#~ msgid ""
+#~ "  %h   same as %b\n"
+#~ "  %H   hour (00..23)\n"
+#~ "  %I   hour (01..12)\n"
+#~ "  %j   day of year (001..366)\n"
+#~ msgstr ""
+#~ "  %h   sama sebagai %b\n"
+#~ "  %H   Jam (00..23)\n"
+#~ "  %I   jam (01..12)\n"
+#~ "  %j   hari dalam tahun (001..366)\n"
+
+#~ msgid ""
+#~ "  %k   hour ( 0..23)\n"
+#~ "  %l   hour ( 1..12)\n"
+#~ "  %m   month (01..12)\n"
+#~ "  %M   minute (00..59)\n"
+#~ msgstr ""
+#~ "  %k   jam ( 0..23)\n"
+#~ "  %l   jam ( 1..12)\n"
+#~ "  %m   bulan (01..12)\n"
+#~ "  %M   minit (00..59)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  %S   second (00..60)\n"
+#~ "  %t   a tab\n"
+#~ "  %T   time; same as %H:%M:%S\n"
+#~ "  %u   day of week (1..7); 1 is Monday\n"
+#~ msgstr ""
+#~ "  %S   saat (00..60); 60 adalah perlu untuk menyesuaikan 1 pusingan saat\n"
+#~ "  %t   tab mengufuk\n"
+#~ "  %T   masa, 24-jam (jj:mm:ss)\n"
+#~ "  %u   hari dalam minggu (1..7);  1 mewakili Isnin\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  %U   week number of year, with Sunday as first day of week (00..53)\n"
+#~ "  %V   ISO week number, with Monday as first day of week (01..53)\n"
+#~ "  %w   day of week (0..6); 0 is Sunday\n"
+#~ "  %W   week number of year, with Monday as first day of week (00..53)\n"
+#~ msgstr ""
+#~ "  %U   nombor minggu drpd tahun dengan Ahad sebagai hari pertama minggu "
+#~ "(00..53)\n"
+#~ "  %V   nombor minggu drpd tahun sengan Isnin sebagai hari pertama minggu "
+#~ "(01..53)\n"
+#~ "  %w   hari dlm minggu (0..6);  0 mewaliki Ahad\n"
+#~ "  %W   nombor minggu drpd tahun dengan Isnin sebagai hari pertama dlm "
+#~ "minggu (00..53)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  %x   locale's date representation (e.g., 12/31/99)\n"
+#~ "  %X   locale's time representation (e.g., 23:13:48)\n"
+#~ "  %y   last two digits of year (00..99)\n"
+#~ "  %Y   year\n"
+#~ msgstr ""
+#~ "  %x   perwakilan tarikh lokaliti (bb/hh/tt)\n"
+#~ "  %X   perwakilan masa lokaliti (%H:%M:%S)\n"
+#~ "  %y   dua digit akhir bagi tahun (00..99)\n"
+#~ "  %Y   tahun (1975...)\n"
+
+#, fuzzy
+#~ msgid "multiple output formats specified"
+#~ msgstr "banyak opsyen -l or -t dinyatakan"
+
+#~ msgid "the options to specify dates for printing are mutually exclusive"
+#~ msgstr "opseyn untuk menyatakan tarikh untuk dicetak adalah eksklusif"
+
+#~ msgid "the options to print and set the time may not be used together"
+#~ msgstr ""
+#~ "opsyen untuk mencetak dan menetapkan masa tak boleh digunakan bersama"
+
+#, fuzzy
+#~ msgid ""
+#~ "the argument %s lacks a leading `+';\n"
+#~ "When using an option to specify date(s), any non-option\n"
+#~ "argument must be a format string beginning with `+'."
+#~ msgstr ""
+#~ "hujah `%s' kekurangan awalan `+';\n"
+#~ "Bila menggunakan satu opsyen untuk menyatakan tarikh, sebarang\n"
+#~ "hujah bukan-opsyen mesti dalam rentetan format bermula dengan`+'."
+
+#~ msgid "cannot set date"
+#~ msgstr "tak dapat menetapkan tarikh"
+
+#, fuzzy
+#~ msgid "time %s is out of range"
+#~ msgstr "aksara di luar julat"
+
+#~ msgid "Filesystem    Type"
+#~ msgstr "Sistem fail   Jenis"
+
+#~ msgid "Filesystem        "
+#~ msgstr "Sistem fail       "
+
+#~ msgid "    Inodes   IUsed   IFree IUse%%"
+#~ msgstr "    Inod     IDiguna IBebas IGuna%%"
+
+#~ msgid "    Size  Used Avail Use%%"
+#~ msgstr "    Saiz Diguna Ada Guna%%"
+
+#~ msgid "     Size   Used  Avail Use%%"
+#~ msgstr "     Saiz  Diguna Ada   Guna%%"
+
+#, fuzzy
+#~ msgid " %s-blocks      Used Available Capacity"
+#~ msgstr " %4s-blok        Diguna Ada     Kapasiti"
+
+#~ msgid " %4s-blocks      Used Available Use%%"
+#~ msgstr " %4s-blok        Diguna Ada     Guna%%"
+
+#~ msgid " Mounted on\n"
+#~ msgstr " Dilekapkan pada\n"
+
+#, fuzzy
+#~ msgid "cannot get current directory"
+#~ msgstr "tak dapat mencipta direktori %s"
+
+#~ msgid "cannot change to directory %s"
+#~ msgstr "Gagal menukar direktori %s "
+
+#, fuzzy
+#~ msgid "cannot stat current directory (now %s)"
+#~ msgstr "tak dapat mencipta direktori %s"
+
+#~ msgid "Usage: %s [OPTION]... [FILE]...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -a, --all             include dummy file systems\n"
+#~ "  -B, --block-size=SIZE  use SIZE-byte blocks\n"
+#~ "  -h, --human-readable  print sizes in human readable format (e.g., 1K "
+#~ "234M 2G)\n"
+#~ "  -H, --si              likewise, but use powers of 1000 not 1024\n"
+#~ msgstr ""
+#~ "  -a, --all             termasuk sistemfail yang mempunyai 0 blok\n"
+#~ "  -B, --block-size=SIZE guna blok SIZE-byte\n"
+#~ "  -h, --human-readable  cetak saiz dalam format bolehdibaca manusia (e."
+#~ "g., 1K 234M 2G)\n"
+#~ "  -H, --si              sebaliknya, guna kuasa 1000 bukannya 1024\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -i, --inodes          list inode information instead of block usage\n"
+#~ "  -k                    like --block-size=1K\n"
+#~ "  -l, --local           limit listing to local file systems\n"
+#~ "      --no-sync         do not invoke sync before getting usage info "
+#~ "(default)\n"
+#~ msgstr ""
+#~ "  -i, --inodes          senarai maklimat inod selain drpd penggunaan "
+#~ "blok\n"
+#~ "  -k                    seperti --block-size=1K\n"
+#~ "  -l, --local           hadkan penyenaraian ke sistem fail lokal\n"
+#~ "      --no-sync         jangan panggil sync sebelum mendapat maklumat "
+#~ "penggunaan (default)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -P, --portability     use the POSIX output format\n"
+#~ "      --sync            invoke sync before getting usage info\n"
+#~ "  -t, --type=TYPE       limit listing to file systems of type TYPE\n"
+#~ "  -T, --print-type      print file system type\n"
+#~ "  -x, --exclude-type=TYPE   limit listing to file systems not of type "
+#~ "TYPE\n"
+#~ "  -v                    (ignored)\n"
+#~ msgstr ""
+#~ "  -P, --portability     menggunakan format output POSIX\n"
+#~ "      --sync            panggil sync sebelum mendapatkan maklumat "
+#~ "penggunaan\n"
+#~ "  -t, --type=JENIS      hadkan penyenaraian ke sistemfail jenis JENIS\n"
+#~ "  -T, --print-type      cetak jenis sistemfail\n"
+#~ "  -x, --exclude-type=TYPE   hadkan penyenaraian ke ke sistemfail bukan "
+#~ "jenis JENIS\n"
+#~ "  -v                    (diabaikan)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "SIZE may be (or may be an integer optionally followed by) one of "
+#~ "following:\n"
+#~ "kB 1000, K 1024, MB 1000*1000, M 1024*1024, and so on for G, T, P, E, Z, "
+#~ "Y.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "SAIZ boleh jadi (atau boleh jadi intege diikuti dengan berikut) satu drpd "
+#~ "berikut:\n"
+#~ "kB 1000, K 1024, MB 1,000,000, M 1,048,576, dan lagi bagi G, T, P, E, Z, "
+#~ "Y.\n"
+
+#~ msgid "Warning: "
+#~ msgstr "Amaran: "
+
+#, fuzzy
+#~ msgid "cannot read table of mounted file systems"
+#~ msgstr "%stak dapat membaca jadual sistemfail dilekapkan"
+
+#~ msgid "Usage: %s [OPTION]... [FILE]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#~ msgid ""
+#~ "Output commands to set the LS_COLORS environment variable.\n"
+#~ "\n"
+#~ "Determine format of output:\n"
+#~ "  -b, --sh, --bourne-shell    output Bourne shell code to set LS_COLORS\n"
+#~ "  -c, --csh, --c-shell        output C shell code to set LS_COLORS\n"
+#~ "  -p, --print-database        output defaults\n"
+#~ msgstr ""
+#~ "Arahan output untuk menetapkan persekitaran pembolehubah LS_COLORS.\n"
+#~ "\n"
+#~ "Tentukan format output:\n"
+#~ "  -b, --sh, --bourne-shell    kod output shell Bourne shell menetapkan "
+#~ "LS_COLORS\n"
+#~ "  -c, --csh, --c-shell        kod output shell C menetapkan LS_COLORS\n"
+#~ "  -p, --print-database        output default\n"
+
+#~ msgid "%s:%lu: unrecognized keyword %s"
+#~ msgstr "%s:%lu: katakunci tidak dikenali %s"
+
+#~ msgid "<internal>"
+#~ msgstr "<dalaman>"
+
+#~ msgid "no SHELL environment variable, and no shell type option given"
+#~ msgstr ""
+#~ "tiada pembolehubah persekitaran SHELL; dan tiada opsyen jenis shell diberi"
+
+#~ msgid ""
+#~ "Usage: %s NAME\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]...\n"
+#~ "  or:  %s [OPTION]... --files0-from=F\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPTION]... GROUP FILE...\n"
+#~ "      atau:  %s [OPTION]... --reference=RFILE FILE...\n"
+
+#~ msgid ""
+#~ "Summarize disk usage of each FILE, recursively for directories.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Ringkasan penggunaan cakera bagi setiap FAIL, rekursif bagi direktori.\n"
+#~ "\n"
+
+#~ msgid "total"
+#~ msgstr "jumlah"
+
+#~ msgid "invalid maximum depth %s"
+#~ msgstr "Kedalaman maksimum %s"
+
+#~ msgid "cannot both summarize and show all entries"
+#~ msgstr "tak dapat meringkaskan dan menunjukkan semua kemasukan"
+
+#~ msgid "warning: summarizing is the same as using --max-depth=0"
+#~ msgstr "amaran: peringkasan sama seperti menggunakan --max-depth=0"
+
+#, fuzzy
+#~ msgid "warning: summarizing conflicts with --max-depth=%lu"
+#~ msgstr "amaran: peringkasan konflik dengan --max-depth=%d"
+
+#, fuzzy
+#~ msgid "cannot read file names from %s"
+#~ msgstr "tak boleh banding nama fail %s dan %s"
+
+#, fuzzy
+#~ msgid "invalid zero-length file name"
+#~ msgstr "nama kumpulan tak dah %s"
+
+#~ msgid "Usage: %s [OPTION]... [STRING]...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[RENTETAN]...\n"
+
+#, fuzzy
+#~ msgid "Richard Mlynarik"
+#~ msgstr "Richard Mlynarik dan David MacKenzie"
+
+#~ msgid "Usage: %s [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]... [-] [NAMA=NILAI]...[ARAHAN [HUJAH]...]\n"
+
+#, fuzzy
+#~ msgid "tab stop is too large %s"
+#~ msgstr "%s adalah terlalu besar"
+
+#, fuzzy
+#~ msgid "input line is too long"
+#~ msgstr "%s: fail terlalu panjang"
+
+#~ msgid ""
+#~ "Usage: %s EXPRESSION\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s UNGKAPAN\n"
+#~ "    atau: %s OPSYEN\n"
+
+#~ msgid "syntax error"
+#~ msgstr "Ralat sintaks"
+
+#, fuzzy
+#~ msgid "error in regular expression matcher"
+#~ msgstr "ralat pada carian ungkapan biasa (regexp)"
+
+#~ msgid "non-numeric argument"
+#~ msgstr "hujah bukan-numerik"
+
+#~ msgid "division by zero"
+#~ msgstr "dibahagi dengan sifar"
+
+#~ msgid ""
+#~ "Usage: %s [NUMBER]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s [NOMBOR]...\n"
+#~ "    atau: %s OPSYEN\n"
+
+#~ msgid ""
+#~ "Print the prime factors of each NUMBER.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cetak faktor perdana bagi setiap NOMBOR.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Print the prime factors of all specified integer NUMBERs.  If no "
+#~ "arguments\n"
+#~ "are specified on the command line, they are read from standard input.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  Cetak faktor perdana bagi integer NOMBOR dinyatakan.  Jika tiada hujah\n"
+#~ "  dinyatakan pada arahan baris. ia ia akan dibaca drpd input piawai.\n"
+
+#~ msgid "%s is too large"
+#~ msgstr "%s adalah terlalu besar"
+
+#, fuzzy
+#~ msgid "%s is not a valid positive integer"
+#~ msgstr "`%s' adalah bukan integer positif yang sah"
+
+#~ msgid "Usage: %s [-DIGITS] [OPTION]... [FILE]...\n"
+#~ msgstr "Penggunaan: %s [-DIGIT][OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid "invalid width: %s"
+#~ msgstr "lebar tidak sah: `%s'"
+
+#~ msgid ""
+#~ "Wrap input lines in each FILE (standard input by default), writing to\n"
+#~ "standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Balut baris input pada setiap FAIL (pinput piawai secara default),\n"
+#~ " menulis keoutput piawai.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "invalid number of columns: %s"
+#~ msgstr "bilangan kolum tidak sah: `%s'"
+
+#, fuzzy
+#~ msgid "failed to get groups for user %s"
+#~ msgstr "gagal menukar kumpulan %s ke %s\n"
+
+#, fuzzy
+#~ msgid "failed to get groups for the current process"
+#~ msgstr "gagal menukar kumpulan %s ke %s\n"
+
+#, fuzzy
+#~ msgid "cannot find name for group ID %lu"
+#~ msgstr "tak dapat menjumpai nama atau ID kumpulan %u"
+
+#~ msgid "Usage: %s [OPTION]... [USERNAME]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[NAMAPENGGUNA]\n"
+
+#~ msgid "%s: No such user"
+#~ msgstr "%s: Tiada pengguna sebegitu"
+
+#~ msgid ""
+#~ "  -q, --quiet, --silent    never print headers giving file names\n"
+#~ "  -v, --verbose            always print headers giving file names\n"
+#~ msgstr ""
+#~ "  -q, --quiet, --silent    tidak cetak pengepala nama fail diberi\n"
+#~ "  -v, --verbose            sentiasa cetak pengepala nama fail diberi\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "N may have a multiplier suffix:\n"
+#~ "b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+#~ "GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "SAIZ boleh jadi (atau boleh jadi intege diikuti dengan berikut) satu drpd "
+#~ "berikut:\n"
+#~ "kB 1000, K 1024, MB 1,000,000, M 1,048,576, dan lagi bagi G, T, P, E, Z, "
+#~ "Y.\n"
+
+#, fuzzy
+#~ msgid "error reading %s"
+#~ msgstr "membaca %s"
+
+#, fuzzy
+#~ msgid "%s: number of bytes is too large"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "%s: cannot lseek back to original position"
+#~ msgstr "tak boleh mencipta fifo %s"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to offset %s"
+#~ msgstr "tak dapat lseek %s"
+
+#, fuzzy
+#~ msgid "cannot reposition file pointer for %s"
+#~ msgstr "tak memperolehi setem masa bagi %s"
+
+#~ msgid "%s: %s is so large that it is not representable"
+#~ msgstr "%s: %s adalah terlalu besar dan tak boleh diperwakilkan"
+
+#~ msgid "number of lines"
+#~ msgstr "bilangan baris"
+
+#~ msgid "number of bytes"
+#~ msgstr "bilangan byte"
+
+#~ msgid "invalid number of lines"
+#~ msgstr "bilangan baris tidak sah"
+
+#~ msgid "invalid number of bytes"
+#~ msgstr "bilangan byte tidak sah"
+
+#, fuzzy
+#~ msgid "invalid trailing option -- %c"
+#~ msgstr "opsyen tidak sah -- %c"
+
+#~ msgid ""
+#~ "Usage: %s\n"
+#~ "  or:  %s OPTION\n"
+#~ "Print the numeric identifier (in hexadecimal) for the current host.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Penggunaan: %s\n"
+#~ "  atau:  %s OPSYEN\n"
+#~ "Cetak pengcam numerik (dalam  heksadesimal) bagi hos semasa.\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "Usage: %s [NAME]\n"
+#~ "  or:  %s OPTION\n"
+#~ "Print or set the hostname of the current system.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [NAMA]\n"
+#~ "  atau:  %s OPSYEN\n"
+#~ "Cetak atau tetapkan namahos bagi sistem semasa.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "cannot set name to %s"
+#~ msgstr "Tak dapat tetapkan namahos ke `%s'"
+
+#~ msgid "cannot set hostname; this system lacks the functionality"
+#~ msgstr "tak dapat menetapkan namahos, sistem ini kekurangan fungsi"
+
+#~ msgid "cannot determine hostname"
+#~ msgstr "tak dapat menentukan namahos"
+
+#, fuzzy
+#~ msgid ""
+#~ "Print information for USERNAME, or the current user.\n"
+#~ "\n"
+#~ "  -a              ignore, for compatibility with other versions\n"
+#~ "  -Z, --context   print only the security context of the current user\n"
+#~ "  -g, --group     print only the effective group ID\n"
+#~ "  -G, --groups    print all group IDs\n"
+#~ "  -n, --name      print a name instead of a number, for -ugG\n"
+#~ "  -r, --real      print the real ID instead of the effective ID, with -"
+#~ "ugG\n"
+#~ "  -u, --user      print only the effective user ID\n"
+#~ msgstr ""
+#~ "Cetak maklumat bagu NAMAPENGGUNA, atau pengguna semasa.\n"
+#~ "\n"
+#~ "  -a              abai, bagi keserasian dengan versi lain\n"
+#~ "  -g, --group     cetak hanya ID kumpulan efektif\n"
+#~ "  -G, --groups    cetak semua ID kumpulan\n"
+#~ "  -n, --name      cetak nama selain drpd nombor, bagi -ugG\n"
+#~ "  -r, --real      cetak ID sebenar selain drpd ID efektif, dengan -ugG\n"
+#~ "  -u, --user      cetak hanya ID pengguna efektif\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "Without any OPTION, print some useful set of identified information.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Tanpa sebarang OPSYEN, cetak semua set berguna bagi maklumat yg "
+#~ "dikenalpasti.\n"
+
+#, fuzzy
+#~ msgid "cannot print \"only\" of more than one choice"
+#~ msgstr "tak boleh nyatakan masa lebih daripada satu sumber"
+
+#~ msgid "cannot print only names or real IDs in default format"
+#~ msgstr "tak dapat cetak hanya nama atau ID sebenar dlm format default"
+
+#, fuzzy
+#~ msgid "cannot find name for user ID %lu"
+#~ msgstr "tak dapat menjumpai nama bagi ID pengguna %u"
+
+#~ msgid " groups="
+#~ msgstr " kumpulan="
+
+#, fuzzy
+#~ msgid "warning: %s: failed to change context to %s"
+#~ msgstr "Gagal menukar direktori %s "
+
+#~ msgid "the strip option may not be used when installing a directory"
+#~ msgstr "opsyen dikikis tak boleh digunakan bila memasang direktori"
+
+#, fuzzy
+#~ msgid "target directory not allowed when installing a directory"
+#~ msgstr "opsyen dikikis tak boleh digunakan bila memasang direktori"
+
+#~ msgid "invalid mode %s"
+#~ msgstr "mod tak sah %s"
+
+#, fuzzy
+#~ msgid "cannot change ownership of %s"
+#~ msgstr "tak dapat menukar keizinan %s"
+
+#~ msgid "cannot set time stamps for %s"
+#~ msgstr "Tak dapat tetapkan setem masa bagi %s"
+
+#~ msgid "fork system call failed"
+#~ msgstr "panggilan sistem fork() gagal"
+
+#, fuzzy
+#~ msgid "waiting for strip"
+#~ msgstr "Menulis  ke %s."
+
+#~ msgid "invalid user %s"
+#~ msgstr "pengguna tidak sah %s"
+
+#~ msgid "invalid group %s"
+#~ msgstr "kumpulan tidak sah %s"
+
+#~ msgid "creating directory %s"
+#~ msgstr "mencipta direktori %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [-T] SOURCE DEST\n"
+#~ "  or:  %s [OPTION]... SOURCE... DIRECTORY\n"
+#~ "  or:  %s [OPTION]... -t DIRECTORY SOURCE...\n"
+#~ "  or:  %s [OPTION]... -d DIRECTORY...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSYEN]... SUMBER DEST\n"
+#~ "   atau:  %s [OPSYEN]... SUMBER... DIREKTORI\n"
+#~ "   atau:  %s [OPSYEN]... --target-directory=DIREKTORI SUMBER...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "In the first three forms, copy SOURCE to DEST or multiple SOURCE(s) to\n"
+#~ "the existing DIRECTORY, while setting permission modes and owner/group.\n"
+#~ "In the 4th form, create all components of the given DIRECTORY(ies).\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Dalam dua format pertama, salin SUMBER ke DEST atau banyak SUMBER ke\n"
+#~ "DIREKTORI sesia ada , sekaligus menetapkan mod keizinan dan pemilik/"
+#~ "kumpulan.\n"
+#~ "Pada format ke tiga, cipta semua komponen bagi DIREKTORI yg diberi.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --backup[=CONTROL]  make a backup of each existing destination "
+#~ "file\n"
+#~ "  -b                  like --backup but does not accept an argument\n"
+#~ "  -c                  (ignored)\n"
+#~ "  -d, --directory     treat all arguments as directory names; create all\n"
+#~ "                        components of the specified directories\n"
+#~ msgstr ""
+#~ "  -a, --archive                sama seperti -dpR\n"
+#~ "      --backup[=CONTROL]       buat backup bagi setiap fail destinasi\n"
+#~ "  -b                           seperti --backup tetapi tak menerima "
+#~ "hujah\n"
+#~ "      --copy-contents          salin kandungan bagi fail sitimewa bila "
+#~ "rekursif\n"
+#~ "  -d                           sama seperti --no-dereference --"
+#~ "preserve=link\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -D                  create all leading components of DEST except the "
+#~ "last,\n"
+#~ "                        then copy SOURCE to DEST\n"
+#~ "  -g, --group=GROUP   set group ownership, instead of process' current "
+#~ "group\n"
+#~ "  -m, --mode=MODE     set permission mode (as in chmod), instead of rwxr-"
+#~ "xr-x\n"
+#~ "  -o, --owner=OWNER   set ownership (super-user only)\n"
+#~ msgstr ""
+#~ "  -D                  cipta semua komponen awalanbagi DEST kecuali yg "
+#~ "terakhir,\n"
+#~ "                        kemudian salin SUMBER ke DEST;  berguna pada "
+#~ "format pertama\n"
+#~ "  -g, --group=KUMPULAN tetapkan pemilikan kumpulan, selain drpd kumpulan "
+#~ "bagi proses semasa\n"
+#~ "  -m, --mode=MOD       tetapkan mod keizinan (seperti dlm chmod), selain "
+#~ "drpd rwxr-xr-x\n"
+#~ "  -o, --owner=PEMILIK  tetapkan pemilikan (super-user sahaja)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -p, --preserve-timestamps   apply access/modification times of SOURCE "
+#~ "files\n"
+#~ "                        to corresponding destination files\n"
+#~ "  -s, --strip         strip symbol tables\n"
+#~ "  -S, --suffix=SUFFIX  override the usual backup suffix\n"
+#~ "  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into "
+#~ "DIRECTORY\n"
+#~ "  -T, --no-target-directory  treat DEST as a normal file\n"
+#~ "  -v, --verbose       print the name of each directory as it is created\n"
+#~ msgstr ""
+#~ "  -p, --preserve-timestamps terap masa akses/pengubahsuaian bagi fail "
+#~ "SUMBERn                        ke fail destinasi itu\n"
+#~ "  -s, --strip          strip jadual simbol, hanya untuk format pertama "
+#~ "dan kedua\n"
+#~ "  -S, --suffix=SUFFIKS tindih suffiks backup biasa\n"
+#~ "  -v, --verbose        cetak nama bagi setiap direktori bila ianya "
+#~ "diipta\n"
+
+#, fuzzy
+#~ msgid "invalid field number: %s"
+#~ msgstr "bilangan medan tidak sah: `%s'"
+
+#, fuzzy
+#~ msgid "invalid field specifier: %s"
+#~ msgstr "pengspesifikasi medan tidak sah: `%s'"
+
+#, fuzzy
+#~ msgid "invalid file number in field spec: %s"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "multi-character tab %s"
+#~ msgstr "aksara tidak sah pada %s pada rentetan mod %s"
+
+#~ msgid "both files cannot be standard input"
+#~ msgstr "kedua-dua fail tak boleh menjadi input piawai"
+
+#~ msgid ""
+#~ "Usage: %s [-s SIGNAL | -SIGNAL] PID...\n"
+#~ "  or:  %s -l [SIGNAL]...\n"
+#~ "  or:  %s -t [SIGNAL]...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [-s ISYARAT | -ISYARAT] PID...\n"
+#~ "  atau:  %s -l [ISYARAT]...\n"
+#~ "  atau:  %s -t [ISYARAT]...\n"
+
+#~ msgid ""
+#~ "Send signals to processes, or list signals.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Menghantar isyarat ke proses, atau senaraikan isyarat.\n"
+#~ "\n"
+
+#~ msgid "%s: invalid signal"
+#~ msgstr "%s: isyarat tidak sah"
+
+#~ msgid "%s: invalid process id"
+#~ msgstr "%s: id proses tidak sah"
+
+#~ msgid "invalid option -- %c"
+#~ msgstr "opsyen tidak sah -- %c"
+
+#~ msgid "%s: multiple signals specified"
+#~ msgstr "%s: banyak isyarat dinyatakan"
+
+#~ msgid "multiple -l or -t options specified"
+#~ msgstr "banyak opsyen -l or -t dinyatakan"
+
+#~ msgid "cannot combine signal with -l or -t"
+#~ msgstr "tak boleh gabungkan isyarat dengan -l atau -t"
+
+#~ msgid "no process ID specified"
+#~ msgstr "tiada ID proses dinyatakan"
+
+#~ msgid ""
+#~ "Usage: %s FILE1 FILE2\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Penggunaan: %s FAIL1 FAIL2\n"
+#~ "  atau:  %s OPSYEN\n"
+
+#~ msgid ""
+#~ "Call the link function to create a link named FILE2 to an existing "
+#~ "FILE1.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Panggil fungsi pautan untuk mencipta pautan bernama FAIL2 ke FILE1 sedia "
+#~ "ada.\n"
+#~ "\n"
+
+#~ msgid "cannot create link %s to %s"
+#~ msgstr "tak dapat mencipta pautan %s ke %s"
+
+#~ msgid "%s: warning: making a hard link to a symbolic link is not portable"
+#~ msgstr ""
+#~ "%s: amaran: membuat pautan keras ke pautan simbolik adalah tidak portable"
+
+#~ msgid "%s: hard link not allowed for directory"
+#~ msgstr "%s: pautan keras tidak diizinkan bagi direktori"
+
+#~ msgid "%s: cannot overwrite directory"
+#~ msgstr "%s: tak dapat menindih direktori"
+
+#~ msgid "%s: replace %s? "
+#~ msgstr "%s: mengganti %s? "
+
+#, fuzzy
+#~ msgid "creating symbolic link %s"
+#~ msgstr "cipta pautan simbolik %s ke %s"
+
+#, fuzzy
+#~ msgid "creating symbolic link %s -> %s"
+#~ msgstr "cipta pautan simbolik %s ke %s"
+
+#, fuzzy
+#~ msgid "creating hard link to %.0s%s"
+#~ msgstr "mencipta pautan keras %s ke %s"
+
+#, fuzzy
+#~ msgid "creating hard link %s"
+#~ msgstr "mencipta pautan keras %s ke %s"
+
+#, fuzzy
+#~ msgid "creating hard link %s => %s"
+#~ msgstr "mencipta pautan keras %s ke %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [-T] TARGET LINK_NAME   (1st form)\n"
+#~ "  or:  %s [OPTION]... TARGET                  (2nd form)\n"
+#~ "  or:  %s [OPTION]... TARGET... DIRECTORY     (3rd form)\n"
+#~ "  or:  %s [OPTION]... -t DIRECTORY TARGET...  (4th form)\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSYEN]... SUMBER DEST        (format pertama)\n"
+#~ "  atau:  %s [OPSYEN]... SUMBER... DIREKTORI   (format ke dua)\n"
+#~ "  atau:  %s -d [OPSYEN]... DIREKTORI...       (format ke tiga)\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --backup[=CONTROL]      make a backup of each existing destination "
+#~ "file\n"
+#~ "  -b                          like --backup but does not accept an "
+#~ "argument\n"
+#~ "  -d, -F, --directory         allow the superuser to attempt to hard "
+#~ "link\n"
+#~ "                                directories (note: will probably fail due "
+#~ "to\n"
+#~ "                                system restrictions, even for the "
+#~ "superuser)\n"
+#~ "  -f, --force                 remove existing destination files\n"
+#~ msgstr ""
+#~ "  -a, --archive                sama seperti -dpR\n"
+#~ "      --backup[=CONTROL]       buat backup bagi setiap fail destinasi\n"
+#~ "  -b                           seperti --backup tetapi tak menerima "
+#~ "hujah\n"
+#~ "      --copy-contents          salin kandungan bagi fail sitimewa bila "
+#~ "rekursif\n"
+#~ "  -d                           sama seperti --no-dereference --"
+#~ "preserve=link\n"
+
+#, fuzzy
+#~ msgid "Cannot combine --target-directory and --no-target-directory"
+#~ msgstr "%s: Direktori sasaran yang dinyatakan adalah bukan direktori"
+
+#~ msgid "Usage: %s [OPTION]\n"
+#~ msgstr "Pengunan: %s [OPSYEN]\n"
+
+#~ msgid ""
+#~ "Print the name of the current user.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cetak nama bagi pengguna semasa.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "no login name"
+#~ msgstr "%s: tiada nama logmasuk\n"
+
+#~ msgid "%b %e  %Y"
+#~ msgstr "%b %e  %Y"
+
+#~ msgid "%b %e %H:%M"
+#~ msgstr "%b %e %H:%M"
+
+#~ msgid "ignoring invalid value of environment variable QUOTING_STYLE: %s"
+#~ msgstr ""
+#~ "mengabai nilai pembolehubah persekitaran QUOTING_STYLE yang tidak sah: %s"
+
+#~ msgid "ignoring invalid width in environment variable COLUMNS: %s"
+#~ msgstr ""
+#~ "mengabai lebar yg. tak sah pada pembolehubah persekitaran COLUMNS: %s"
+
+#~ msgid "ignoring invalid tab size in environment variable TABSIZE: %s"
+#~ msgstr ""
+#~ "mengabai saiz tab yg. tak sah pada pembolehubah persekitaran TABSIZE: %s"
+
+#~ msgid "invalid line width: %s"
+#~ msgstr "lebar baris tidak sah: %s"
+
+#~ msgid "invalid tab size: %s"
+#~ msgstr "saiz tab tidak sah: %s"
+
+#~ msgid "invalid time style format %s"
+#~ msgstr "format gaya tarikh tidak sah %s"
+
+#~ msgid "unrecognized prefix: %s"
+#~ msgstr "prefix tidak dikenali: %s"
+
+#~ msgid "unparsable value for LS_COLORS environment variable"
+#~ msgstr "nilai pembolehubah persekitaran LS_COLORS tidak boleh dihantar"
+
+#~ msgid "cannot open directory %s"
+#~ msgstr "tak dapat membuka direktori %s"
+
+#~ msgid "cannot determine device and inode of %s"
+#~ msgstr "tak dapat menentukan peranti dan inod bagi %s"
+
+#, fuzzy
+#~ msgid "%s: not listing already-listed directory"
+#~ msgstr "tak dapat menyenaraikan direktori tersedia-tersenarai: %s"
+
+#, fuzzy
+#~ msgid "closing directory %s"
+#~ msgstr "mencipta direktori %s"
+
+#~ msgid "cannot compare file names %s and %s"
+#~ msgstr "tak boleh banding nama fail %s dan %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "List information about the FILEs (the current directory by default).\n"
+#~ "Sort entries alphabetically if none of -cftuvSUX nor --sort.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Senarai maklumat tentang FAIL (direktori semasa secara default).\n"
+#~ "Inih semasukan mengikut abjad jika tiada  -cftuSUX atau --sort.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -a, --all                  do not ignore entries starting with .\n"
+#~ "  -A, --almost-all           do not list implied . and ..\n"
+#~ "      --author               with -l, print the author of each file\n"
+#~ "  -b, --escape               print octal escapes for nongraphic "
+#~ "characters\n"
+#~ msgstr ""
+#~ "  -a, --all                  jangan sorok kemasukan bermula dengan .\n"
+#~ "  -A, --almost-all           jangan senarai  . dan ..\n"
+#~ "      --author               cetak penulis bagi setiap fail\n"
+#~ "  -b, --escape               cetak escape oktal bagi aksara bukangrafik\n"
+
+#~ msgid ""
+#~ "      --block-size=SIZE      use SIZE-byte blocks\n"
+#~ "  -B, --ignore-backups       do not list implied entries ending with ~\n"
+#~ "  -c                         with -lt: sort by, and show, ctime (time of "
+#~ "last\n"
+#~ "                               modification of file status information)\n"
+#~ "                               with -l: show ctime and sort by name\n"
+#~ "                               otherwise: sort by ctime\n"
+#~ msgstr ""
+#~ "      --block-size=SAIZ      guna blok SAIZ-byte\n"
+#~ "  -B, --ignore-backups       jangan senarai kemasukan berakhir dengan ~\n"
+#~ "  -c                         dengan -lt: isih dengan, dan papar, ctime "
+#~ "(masa\n"
+#~ "                               terkahir diubahsuai drpd maklumat status "
+#~ "fail)\n"
+#~ "                               dengan -l: papar ctime dan isih mengikut "
+#~ "nama\n"
+#~ "                               sebaliknya: isih mengikut ctime\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -C                         list entries by columns\n"
+#~ "      --color[=WHEN]         control whether color is used to distinguish "
+#~ "file\n"
+#~ "                               types.  WHEN may be `never', `always', or "
+#~ "`auto'\n"
+#~ "  -d, --directory            list directory entries instead of contents,\n"
+#~ "                               and do not dereference symbolic links\n"
+#~ "  -D, --dired                generate output designed for Emacs' dired "
+#~ "mode\n"
+#~ msgstr ""
+#~ "  -C                         senarai kemasukan mengikut kolum\n"
+#~ "      --color[=BILA]         kawal samada warna digunakan untuk "
+#~ "membezakan \n"
+#~ "                               jenis fail .  BILA boleh jadi `never', "
+#~ "`always', atau `auto'\n"
+#~ "  -d, --directory            senarai kemasukan direktori selain drpd "
+#~ "kandungannya\n"
+#~ "  -D, --dired                jana output direka untuk mod dired Emacs\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f                         do not sort, enable -aU, disable -ls --"
+#~ "color\n"
+#~ "  -F, --classify             append indicator (one of */=>@|) to entries\n"
+#~ "      --file-type            likewise, except do not append `*'\n"
+#~ "      --format=WORD          across -x, commas -m, horizontal -x, long -"
+#~ "l,\n"
+#~ "                               single-column -1, verbose -l, vertical -C\n"
+#~ "      --full-time            like -l --time-style=full-iso\n"
+#~ msgstr ""
+#~ "  -f                         jangan isih, hidupkan -aU, matikan -lst\n"
+#~ "  -F, --classify             tambah penunjuk (satu drpd */=@|) ke "
+#~ "kemasukan\n"
+#~ "      --format=PERKATAAN       rentas -x, koma -m, mengufuk -x, panjang -"
+#~ "l,\n"
+#~ "                               kolum-tunggal -1, verbose -l, menegak -C\n"
+#~ "      --full-time            seperti -l --time-style=full-iso\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -G, --no-group             in a long listing, don't print group names\n"
+#~ "  -h, --human-readable       with -l, print sizes in human readable "
+#~ "format\n"
+#~ "                               (e.g., 1K 234M 2G)\n"
+#~ "      --si                   likewise, but use powers of 1000 not 1024\n"
+#~ msgstr ""
+#~ "  -a, --all             termasuk sistemfail yang mempunyai 0 blok\n"
+#~ "  -B, --block-size=SIZE guna blok SIZE-byte\n"
+#~ "  -h, --human-readable  cetak saiz dalam format bolehdibaca manusia (e."
+#~ "g., 1K 234M 2G)\n"
+#~ "  -H, --si              sebaliknya, guna kuasa 1000 bukannya 1024\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -r, --reverse              reverse order while sorting\n"
+#~ "  -R, --recursive            list subdirectories recursively\n"
+#~ "  -s, --size                 print the size of each file, in blocks\n"
+#~ msgstr ""
+#~ "  -r, --reverse              turutan menyongsang ketika mengisih\n"
+#~ "  -R, --recursive            senarai subdirektori secara rekursif\n"
+#~ "  -s, --size                 cetak saiz bagi setiap fail, dalam blok\n"
+
+#, fuzzy
+#~ msgid "Ulrich Drepper"
+#~ msgstr "Ulrich Drepper dan Scott Miller"
+
+#, fuzzy
+#~ msgid "David Madore"
+#~ msgstr "Mike Parker and David MacKenzie"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION] [FILE]...\n"
+#~ "Print or check %s (%d-bit) checksums.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Dengan tiada FAIL, atau bila FAIL adalah -, baca input piawai.\n"
+
+#, fuzzy
+#~ msgid "  -b, --binary            read in binary mode\n"
+#~ msgstr ""
+#~ "\n"
+#~ "  -B, --binary             menggunakan penulisan binari ke peranti "
+#~ "okonsol.\n"
+#~ "\n"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "%s: read error"
+#~ msgstr "%s: ralat penulisan"
+
+#~ msgid "Usage: %s [OPTION] DIRECTORY...\n"
+#~ msgstr "Penggunaan; %s [OPSYEN] DIREKTORI...\n"
+
+#~ msgid ""
+#~ "Create the DIRECTORY(ies), if they do not already exist.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cipta DIREKTORI, jika ia belum wujud.\n"
+#~ "\n"
+
+#~ msgid "created directory %s"
+#~ msgstr "direktori %s dicipta"
+
+#~ msgid "Usage: %s [OPTION] NAME...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN] NAMA...\n"
+
+#~ msgid ""
+#~ "Create named pipes (FIFOs) with the given NAMEs.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cipta paip bernama (FIFO) dengan NAMA diberi.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -m, --mode=MODE   set file permission bits to MODE, not a=rw - umask\n"
+#~ msgstr ""
+#~ "  -m, --mode=MOD    tetapkan mod keizinan (seperti dlm chmod), bukan "
+#~ "umask a=rw\n"
+
+#~ msgid "invalid mode"
+#~ msgstr "mod tak sah"
+
+#~ msgid "Usage: %s [OPTION]... NAME TYPE [MAJOR MINOR]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]... NAMA JENIS [MAJOR MINOR]\n"
+
+#~ msgid ""
+#~ "Create the special file NAME of the given TYPE.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cipta NAMA fail istimewa bagi JENIS diberi.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "Special files require major and minor device numbers."
+#~ msgstr ""
+#~ "bila mencipta fail istimewa blok, nombor peranti major\n"
+#~ " dan minor mesti dinyatakan"
+
+#, fuzzy
+#~ msgid "Fifos do not have major and minor device numbers."
+#~ msgstr "nombor peranti minor tidak sah %s"
+
+#~ msgid "block special files not supported"
+#~ msgstr "fail istimewa blok tidak disokong"
+
+#~ msgid "character special files not supported"
+#~ msgstr "fail istimewa aksara tidak disokong"
+
+#~ msgid "invalid major device number %s"
+#~ msgstr "nombor peranti major tidak sah %s"
+
+#~ msgid "invalid minor device number %s"
+#~ msgstr "nombor peranti minor tidak sah %s"
+
+#~ msgid "invalid device %s %s"
+#~ msgstr "peranti tidak sah %s %s"
+
+#, fuzzy
+#~ msgid "invalid device type %s"
+#~ msgstr "peranti tidak sah %s %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [TEMPLATE]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid "too many templates"
+#~ msgstr "terlalu banyak hujah"
+
+#, fuzzy
+#~ msgid "failed to create directory via template %s"
+#~ msgstr "tak dapat mencipta direktori %s"
+
+#, fuzzy
+#~ msgid "failed to create file via template %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#~ msgid ""
+#~ "Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Tukarnama SUMBER ke DEST, atau pindahkan SUMBER ke DIREKTORI.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "      --backup[=CONTROL]       make a backup of each existing destination "
+#~ "file\n"
+#~ "  -b                           like --backup but does not accept an "
+#~ "argument\n"
+#~ "  -f, --force                  do not prompt before overwriting\n"
+#~ "  -i, --interactive            prompt before overwrite\n"
+#~ msgstr ""
+#~ "  -a, --archive                sama seperti -dpR\n"
+#~ "      --backup[=CONTROL]       buat backup bagi setiap fail destinasi\n"
+#~ "  -b                           seperti --backup tetapi tak menerima "
+#~ "hujah\n"
+#~ "      --copy-contents          salin kandungan bagi fail sitimewa bila "
+#~ "rekursif\n"
+#~ "  -d                           sama seperti --no-dereference --"
+#~ "preserve=link\n"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION] [COMMAND [ARG]...]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN] NAMA...\n"
+
+#, fuzzy
+#~ msgid "invalid adjustment %s"
+#~ msgstr "hujah tidak sah %s bagi %s"
+
+#~ msgid "a command must be given with an adjustment"
+#~ msgstr "arahan mesti diberi dengan satu penyesuaian"
+
+#, fuzzy
+#~ msgid "cannot get niceness"
+#~ msgstr "tak dapat perolehi nama sistem"
+
+#, fuzzy
+#~ msgid "cannot set niceness"
+#~ msgstr "tak dapat menetapkan tarikh"
+
+#, fuzzy
+#~ msgid "line number overflow"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid header numbering style: %s"
+#~ msgstr "bilangan medan tidak sah: `%s'"
+
+#, fuzzy
+#~ msgid "invalid body numbering style: %s"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid footer numbering style: %s"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid starting line number: %s"
+#~ msgstr "nombor baris permulaan tidak sah `%s'"
+
+#, fuzzy
+#~ msgid "invalid line number increment: %s"
+#~ msgstr "lebar baris tidak sah: %s"
+
+#, fuzzy
+#~ msgid "invalid number of blank lines: %s"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid line number field width: %s"
+#~ msgstr "lebar baris tidak sah: %s"
+
+#, fuzzy
+#~ msgid "invalid line numbering format: %s"
+#~ msgstr "lebar baris tidak sah: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s COMMAND [ARG]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#, fuzzy
+#~ msgid "ignoring input"
+#~ msgstr "mengabaikan segala hujah"
+
+#, fuzzy
+#~ msgid "failed to open %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid "ignoring input and appending output to %s"
+#~ msgstr "penukaran kumpulan %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]...\n"
+#~ "  or:  %s [-abcdfilosx]... [FILE] [[+]OFFSET[.][b]]\n"
+#~ "  or:  %s --traditional [OPTION]... [FILE] [[+]OFFSET[.][b] [+][LABEL][.]"
+#~ "[b]]\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPTION]... GROUP FILE...\n"
+#~ "      atau:  %s [OPTION]... --reference=RFILE FILE...\n"
+
+#, fuzzy
+#~ msgid "All arguments to long options are mandatory for short options.\n"
+#~ msgstr ""
+#~ "Hujah mandatori kepada opsyen panjang andalah mandatori bagi opsyen "
+#~ "pendek juga.\n"
+
+#, fuzzy
+#~ msgid "invalid type string %s"
+#~ msgstr "jenis rentetan m tidak sah `%s'"
+
+#, fuzzy
+#~ msgid "invalid character `%c' in type string %s"
+#~ msgstr "aksara tidak sah pada %s pada rentetan mod %s"
+
+#, fuzzy
+#~ msgid "standard input is closed"
+#~ msgstr "input piawai"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... NAME...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN] NAMA...\n"
+
+#, fuzzy
+#~ msgid "nonportable character %s in file name %s"
+#~ msgstr "aksara tidak sah pada %s pada rentetan mod %s"
+
+#, fuzzy
+#~ msgid "empty file name"
+#~ msgstr "fail kosong biasa"
+
+#, fuzzy
+#~ msgid "Joseph Arceneaux"
+#~ msgstr "Mike Parker and David MacKenzie"
+
+#, fuzzy
+#~ msgid "Directory: "
+#~ msgstr "direktori"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [USER]...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid "Invalid page range %s"
+#~ msgstr "jenis rentetan m tidak sah `%s'"
+
+#, fuzzy
+#~ msgid "`-l PAGE_LENGTH' invalid number of lines: %s"
+#~ msgstr "bilangan baris tidak sah"
+
+#, fuzzy
+#~ msgid "`-N NUMBER' invalid starting line number: %s"
+#~ msgstr "nombor peranti minor tidak sah %s"
+
+#, fuzzy
+#~ msgid "`-o MARGIN' invalid line offset: %s"
+#~ msgstr "lebar baris tidak sah: %s"
+
+#, fuzzy
+#~ msgid "`-w PAGE_WIDTH' invalid number of characters: %s"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "`-W PAGE_WIDTH' invalid number of characters: %s"
+#~ msgstr "nombor tidak sah %s"
+
+#~ msgid "page width too narrow"
+#~ msgstr "Lebar halaman terlalu sempit"
+
+#, fuzzy
+#~ msgid "Page number overflow"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "-t is implied if PAGE_LENGTH <= 10.  With no FILE, or when\n"
+#~ "FILE is -, read standard input.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Dengan tiada FAIL, atau bila FAIL adalah -, baca input piawai.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s FORMAT [ARGUMENT]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#~ msgid "invalid field width: %s"
+#~ msgstr "lebar medan tidak sah: %s"
+
+#, fuzzy
+#~ msgid "invalid precision: %s"
+#~ msgstr "penukaran tidak sah: %s"
+
+#, fuzzy
+#~ msgid "%.*s: invalid conversion specification"
+#~ msgstr "%s: fail saiz tidak sah"
+
+#, fuzzy
+#~ msgid "invalid gap width: %s"
+#~ msgstr "lebar tidak sah: `%s'"
+
+#, fuzzy
+#~ msgid "failed to chdir to %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid "failed to stat %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid "ignoring non-option arguments"
+#~ msgstr "mengabaikan segala hujah"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... FILE\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid "FATAL: failed to close directory %s"
+#~ msgstr "gagal mencari fail %s"
+
+#, fuzzy
+#~ msgid "FATAL: cannot open .. from %s"
+#~ msgstr "tak dapat membuka direktori %s"
+
+#, fuzzy
+#~ msgid "FATAL: cannot enter directory %s"
+#~ msgstr "tak dapat mencipta direktori %s"
+
+#, fuzzy
+#~ msgid "%s: descend into write-protected directory %s? "
+#~ msgstr "%s: buang direktori write-protected %s? "
+
+#~ msgid "%s: remove write-protected %s %s? "
+#~ msgstr "%s: buang write-protected %s %s? "
+
+#~ msgid "%s: remove %s %s? "
+#~ msgstr "%s: buang %s %s? "
+
+#~ msgid "removed directory: %s\n"
+#~ msgstr "direktori dibuang: %s\n"
+
+#, fuzzy
+#~ msgid "failed to close directory %s"
+#~ msgstr "gagal mencari fail %s"
+
+#~ msgid "cannot remove directory %s"
+#~ msgstr "tak dapat membuang direktori %s"
+
+#, fuzzy
+#~ msgid "cannot remove root directory %s"
+#~ msgstr "tak dapat membuang direktori %s"
+
+#, fuzzy
+#~ msgid "cannot remove relative-named %s"
+#~ msgstr "tak dapat membuang direktori %s"
+
+#, fuzzy
+#~ msgid "cannot restore current working directory"
+#~ msgstr "tak dapat mencipta direktori %s"
+
+#~ msgid "Usage: %s [OPTION]... FILE...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]... FAIL...\n"
+
+#, fuzzy
+#~ msgid "%s: remove all arguments? "
+#~ msgstr "%s: buang %s %s? "
+
+#~ msgid "removing directory, %s"
+#~ msgstr "membuang direktori, %s"
+
+#, fuzzy
+#~ msgid "failed to remove directory %s"
+#~ msgstr "tak dapat membuang direktori %s"
+
+#~ msgid "Usage: %s [OPTION]... DIRECTORY...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]... DIREKTORI...\n"
+
+#~ msgid ""
+#~ "Remove the DIRECTORY(ies), if they are empty.\n"
+#~ "\n"
+#~ "      --ignore-fail-on-non-empty\n"
+#~ "                  ignore each failure that is solely because a directory\n"
+#~ "                  is non-empty\n"
+#~ msgstr ""
+#~ "Buang  DIREKTORI, jika ianya kosong.\n"
+#~ "\n"
+#~ "      --ignore-fail-on-non-empty\n"
+#~ "                  abaikan setiap kegagalan yang hanya disebabkan oleh\n"
+#~ "                  direktori yang tidak kosong\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -p, --parents   Remove DIRECTORY and its ancestors.  E.g., `rmdir -p a/"
+#~ "b/c' is\n"
+#~ "                  similar to `rmdir a/b/c a/b a'.\n"
+#~ "  -v, --verbose   output a diagnostic for every directory processed\n"
+#~ msgstr ""
+#~ "  -p, --parents   buang DIRECTORY, dan cuba buang setiap komponen "
+#~ "direktori\n"
+#~ "                  bagi nama path itu.  E.g., `rmdir -p a/b/c' adalah\n"
+#~ "                  sama dengan  `rmdir a/b/c a/b a'.\n"
+#~ "  -v, --verbose   output  diagnostik bagi setiap direktori yg diproses\n"
+
+#, fuzzy
+#~ msgid "failed to remove %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid "failed to get current context"
+#~ msgstr "gagal mendapatkan atribut bagi %s"
+
+#, fuzzy
+#~ msgid "no command specified"
+#~ msgstr "tiada ID proses dinyatakan"
+
+#, fuzzy
+#~ msgid "failed to compute a new context"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid "failed to set new user %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid "failed to set new type %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid "failed to set new range %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid "failed to set new role %s"
+#~ msgstr "gagal mengekalkan masa bagi %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... LAST\n"
+#~ "  or:  %s [OPTION]... FIRST LAST\n"
+#~ "  or:  %s [OPTION]... FIRST INCREMENT LAST\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSYEN]... SUMBER DEST\n"
+#~ "   atau:  %s [OPSYEN]... SUMBER... DIREKTORI\n"
+#~ "   atau:  %s [OPSYEN]... --target-directory=DIREKTORI SUMBER...\n"
+
+#, fuzzy
+#~ msgid "invalid floating point argument: %s"
+#~ msgstr "format tarikh tidak sah %s"
+
+#, fuzzy
+#~ msgid "no %% directive in format string %s"
+#~ msgstr "rentetan mod tidak sah: %s"
+
+#, fuzzy
+#~ msgid "too many %% directives in format string %s"
+#~ msgstr "terlalu banyak spesifikasi penukaran %% pada suffiks"
+
+#, fuzzy
+#~ msgid "invalid format string: %s"
+#~ msgstr "rentetan mod tidak sah: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s OPTION USER COMMAND [ARGUMENT]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#, fuzzy
+#~ msgid "failed to set supplemental group(s)"
+#~ msgstr "tak dapat perolehi senarai kumpulan tambahan"
+
+#, fuzzy
+#~ msgid "cannot set group-ID to %lu"
+#~ msgstr "tak dapat menukar ke kumpulan null"
+
+#, fuzzy
+#~ msgid "cannot set user-ID to %lu"
+#~ msgstr "tak dapat stat %s"
+
+#~ msgid "Usage: %s [OPTIONS] FILE [...]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN] FAIL [...]\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -f, --force    change permissions to allow writing if necessary\n"
+#~ "  -n, --iterations=N  Overwrite N times instead of the default (%d)\n"
+#~ "      --random-source=FILE  get random bytes from FILE (default /dev/"
+#~ "urandom)\n"
+#~ "  -s, --size=N   shred this many bytes (suffixes like K, M, G accepted)\n"
+#~ msgstr ""
+#~ "  -f, --force    tukar keizinan supaya membolehkan menulisan jika perlu\n"
+#~ "  -n, --iterations=N  Tindih sebanyak  N kali selain drpd  default (%d)\n"
+#~ "  -s, --size=N   lunyai ia berapa byte (suffiks seperti K, M, G "
+#~ "diterima)\n"
+
+#, fuzzy
+#~ msgid "%s: fdatasync failed"
+#~ msgstr "fail istimewa blok"
+
+#, fuzzy
+#~ msgid "%s: fsync failed"
+#~ msgstr "fail istimewa blok"
+
+#, fuzzy
+#~ msgid "%s: lseek failed"
+#~ msgstr "fail istimewa blok"
+
+#, fuzzy
+#~ msgid "%s: fstat failed"
+#~ msgstr "stat gagal"
+
+#~ msgid "%s: invalid file type"
+#~ msgstr "%s: jenis fail tidak sah"
+
+#~ msgid "%s: file has negative size"
+#~ msgstr "%s: fail mempunya saiz negatif"
+
+#, fuzzy
+#~ msgid "%s: fcntl failed"
+#~ msgstr "fail istimewa blok"
+
+#~ msgid "%s: removing"
+#~ msgstr "%s: membuang"
+
+#~ msgid "%s: renamed to %s"
+#~ msgstr "%s: ditukarnama ke %s"
+
+#, fuzzy
+#~ msgid "%s: failed to remove"
+#~ msgstr "%s: fail terlalu panjang"
+
+#~ msgid "%s: removed"
+#~ msgstr "%s: dibuang"
+
+#, fuzzy
+#~ msgid "%s: failed to close"
+#~ msgstr "%s: fail terlalu panjang"
+
+#, fuzzy
+#~ msgid "%s: failed to open for writing"
+#~ msgstr "%s: fail terlalu panjang"
+
+#, fuzzy
+#~ msgid "multiple random sources specified"
+#~ msgstr "banyak opsyen -l or -t dinyatakan"
+
+#~ msgid "%s: invalid file size"
+#~ msgstr "%s: fail saiz tidak sah"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION]... [FILE]\n"
+#~ "  or:  %s -e [OPTION]... [ARG]...\n"
+#~ "  or:  %s -i LO-HI [OPTION]...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSYEN]... SUMBER DEST\n"
+#~ "   atau:  %s [OPSYEN]... SUMBER... DIREKTORI\n"
+#~ "   atau:  %s [OPSYEN]... --target-directory=DIREKTORI SUMBER...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Write a random permutation of the input lines to standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cetak bahagian ibaris dipilih drpd setiap FAIL ke output piawai.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "multiple -i options specified"
+#~ msgstr "banyak opsyen -l or -t dinyatakan"
+
+#, fuzzy
+#~ msgid "invalid input range %s"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid line count %s"
+#~ msgstr "lebar baris tidak sah: %s"
+
+#, fuzzy
+#~ msgid "multiple output files specified"
+#~ msgstr "banyak opsyen -l or -t dinyatakan"
+
+#, fuzzy
+#~ msgid "invalid time interval %s"
+#~ msgstr "format gaya tarikh tidak sah %s"
+
+#, fuzzy
+#~ msgid "cannot read realtime clock"
+#~ msgstr "tak boleh mencipta pautan %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Write sorted concatenation of all FILE(s) to standard output.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Cetak bahagian ibaris dipilih drpd setiap FAIL ke output piawai.\n"
+#~ "\n"
+
+#, fuzzy
+#~ msgid "waiting for %s [-d]"
+#~ msgstr "Menulis  ke %s."
+
+#, fuzzy
+#~ msgid "cannot create temporary file"
+#~ msgstr "tak dapat memcipta fail biasa %s"
+
+#~ msgid "open failed"
+#~ msgstr "pembukaan gagal"
+
+#, fuzzy
+#~ msgid "fflush failed"
+#~ msgstr "fail istimewa blok"
+
+#, fuzzy
+#~ msgid "close failed"
+#~ msgstr "fail istimewa blok"
+
+#, fuzzy
+#~ msgid "dup2 failed"
+#~ msgstr "pembukaan gagal"
+
+#, fuzzy
+#~ msgid "couldn't create temporary file"
+#~ msgstr "tak dapat memcipta fail biasa %s"
+
+#, fuzzy
+#~ msgid "couldn't open temporary file"
+#~ msgstr "tak dapat memcipta fail biasa %s"
+
+#, fuzzy
+#~ msgid "write failed"
+#~ msgstr "fail pelik"
+
+#, fuzzy
+#~ msgid "warning: cannot remove: %s"
+#~ msgstr "tak dapat membuang %s"
+
+#~ msgid "stat failed"
+#~ msgstr "stat gagal"
+
+#, fuzzy
+#~ msgid "read failed"
+#~ msgstr "fail biasa"
+
+#, fuzzy
+#~ msgid "standard error"
+#~ msgstr "output standard"
+
+#, fuzzy
+#~ msgid "%s: invalid field specification %s"
+#~ msgstr "%s: fail saiz tidak sah"
+
+#, fuzzy
+#~ msgid "%s: invalid count at start of %s"
+#~ msgstr "hujah tidak sah %s bagi %s"
+
+#, fuzzy
+#~ msgid "invalid number after `-'"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid number after `.'"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "stray character in field spec"
+#~ msgstr "fail istimewa aksara"
+
+#, fuzzy
+#~ msgid "multiple compress programs specified"
+#~ msgstr "banyak opsyen -l or -t dinyatakan"
+
+#, fuzzy
+#~ msgid "invalid number at field start"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "field number is zero"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "character offset is zero"
+#~ msgstr "fail istimewa aksara"
+
+#, fuzzy
+#~ msgid "invalid number after `,'"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION] [INPUT [PREFIX]]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "SIZE may have a multiplier suffix:\n"
+#~ "b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
+#~ "GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "SAIZ boleh jadi (atau boleh jadi intege diikuti dengan berikut) satu drpd "
+#~ "berikut:\n"
+#~ "kB 1000, K 1024, MB 1,000,000, M 1,048,576, dan lagi bagi G, T, P, E, Z, "
+#~ "Y.\n"
+
+#, fuzzy
+#~ msgid "creating file %s\n"
+#~ msgstr "mencipta %s"
+
+#, fuzzy
+#~ msgid "cannot split in more than one way"
+#~ msgstr "tak boleh nyatakan masa lebih daripada satu sumber"
+
+#, fuzzy
+#~ msgid "%s: invalid suffix length"
+#~ msgstr "%s: fail saiz tidak sah"
+
+#, fuzzy
+#~ msgid "%s: invalid number of bytes"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "%s: invalid number of lines"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid number of lines: 0"
+#~ msgstr "bilangan baris tidak sah"
+
+#, fuzzy
+#~ msgid "warning: unrecognized escape `\\%c'"
+#~ msgstr "%s: opensyen tidak dikenali `%c%s'\n"
+
+#, fuzzy
+#~ msgid "%s: invalid directive"
+#~ msgstr "%s: fail saiz tidak sah"
+
+#, fuzzy
+#~ msgid "warning: backslash at end of format"
+#~ msgstr "aksara tidak sah pada %s pada rentetan mod %s"
+
+#~ msgid "cannot read file system information for %s"
+#~ msgstr "tak dapat membaca maklumat sistem fail bagi %s"
+
+#~ msgid "Usage: %s [OPTION] FILE...\n"
+#~ msgstr "Penggunaan: %s [OPSYEN] FAIL...\n"
+
+#~ msgid "when specifying an output style, modes may not be set"
+#~ msgstr "bila menyatakan gaya output, mod tak boleh ditetapkan"
+
+#, fuzzy
+#~ msgid "invalid argument %s"
+#~ msgstr "hujah tidak sah %s bagi %s"
+
+#, fuzzy
+#~ msgid "missing argument to %s"
+#~ msgstr "kehilangan hujah fail"
+
+#, fuzzy
+#~ msgid "invalid line discipline %s"
+#~ msgstr "lebar baris tidak sah: %s"
+
+#~ msgid "new_mode: mode\n"
+#~ msgstr "new_mode: mod\n"
+
+#~ msgid "%s: no size information for this device"
+#~ msgstr "%s: tiada maklumat saiz bagi peranti ini"
+
+#, fuzzy
+#~ msgid "invalid integer argument %s"
+#~ msgstr "hujah tidak sah %s bagi %s"
+
+#~ msgid "Password:"
+#~ msgstr "Katalaluan:"
+
+#, fuzzy
+#~ msgid "getpass: cannot open /dev/tty"
+#~ msgstr "tak dapat membuka direktori %s"
+
+#, fuzzy
+#~ msgid "cannot set groups"
+#~ msgstr "tak dapat stat %s"
+
+#, fuzzy
+#~ msgid "cannot set group id"
+#~ msgstr "tak dapat menukar ke kumpulan null"
+
+#, fuzzy
+#~ msgid "cannot set user id"
+#~ msgstr "tak dapat stat %s"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [-] [USER [ARG]...]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#~ msgid "user %s does not exist"
+#~ msgstr "pengguna %s tidak wujud"
+
+#~ msgid "incorrect password"
+#~ msgstr "katalaluan salah"
+
+#, fuzzy
+#~ msgid "warning: cannot change directory to %s"
+#~ msgstr "Gagal menukar direktori %s "
+
+#, fuzzy
+#~ msgid "Kayvan Aghaiepour"
+#~ msgstr "Mike Parker and David MacKenzie"
+
+#~ msgid "ignoring all arguments"
+#~ msgstr "mengabaikan segala hujah"
+
+#~ msgid ""
+#~ "\n"
+#~ "Report bugs to <%s>.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Lapor pepijat ke <%s>.\n"
+
+#, fuzzy
+#~ msgid "%s: seek failed"
+#~ msgstr "fail istimewa blok"
+
+#, fuzzy
+#~ msgid "record too large"
+#~ msgstr "%s adalah terlalu besar"
+
+#, fuzzy
+#~ msgid "cannot create temporary file %s"
+#~ msgstr "tak dapat memcipta fail biasa %s"
+
+#, fuzzy
+#~ msgid "cannot open %s for writing"
+#~ msgstr "tak dapat buka %s untuk dibaca"
+
+#, fuzzy
+#~ msgid "%s: write error"
+#~ msgstr "ralat menulis"
+
+#~ msgid "separator cannot be empty"
+#~ msgstr "pemisah tak boleh kosong"
+
+#, fuzzy
+#~ msgid "closing %s (fd=%d)"
+#~ msgstr "menutup %s"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to relative offset %s"
+#~ msgstr "tak boleh mencipta fifo %s"
+
+#, fuzzy
+#~ msgid "%s: cannot seek to end-relative offset %s"
+#~ msgstr "tak boleh mencipta fifo %s"
+
+#, fuzzy
+#~ msgid "%s has become inaccessible"
+#~ msgstr "`%s' menjadi tidak boleh diakses"
+
+#, fuzzy
+#~ msgid "%s has become accessible"
+#~ msgstr "`%s' menjadi boleh diakses"
+
+#, fuzzy
+#~ msgid "%s: cannot change nonblocking mode"
+#~ msgstr "tak dapat menukar ke kumpulan null"
+
+#, fuzzy
+#~ msgid "no files remaining"
+#~ msgstr "kehilangan hujah fail"
+
+#, fuzzy
+#~ msgid "number in %s is too large"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "%s: invalid PID"
+#~ msgstr "%s: fail saiz tidak sah"
+
+#, fuzzy
+#~ msgid "%s: invalid number of seconds"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "warning: --pid=PID is not supported on this system"
+#~ msgstr "pautan simbolik tidak disokong pada sistem ini"
+
+#, fuzzy
+#~ msgid "cannot follow %s by name"
+#~ msgstr "tak dapat perolehi nama sistem"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "If a FILE is -, copy again to standard output.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Dengan tiada FAIL, atau bila FAIL adalah -, baca input piawai.\n"
+
+#, fuzzy
+#~ msgid "missing argument after %s"
+#~ msgstr "kehilangan hujah fail"
+
+#, fuzzy
+#~ msgid "invalid integer %s"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "')' expected"
+#~ msgstr "')' dijangka\n"
+
+#, fuzzy
+#~ msgid "')' expected, found %s"
+#~ msgstr "')' dijangka\n"
+
+#, fuzzy
+#~ msgid "%s: unary operator expected"
+#~ msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#, fuzzy
+#~ msgid "-nt does not accept -l"
+#~ msgstr "-nt tak boleh menerima -l\n"
+
+#, fuzzy
+#~ msgid "-ef does not accept -l"
+#~ msgstr "-ef tak boleh menerima -l\n"
+
+#, fuzzy
+#~ msgid "-ot does not accept -l"
+#~ msgstr "-ot tak boleh menerima -l\n"
+
+#, fuzzy
+#~ msgid "unknown binary operator"
+#~ msgstr "Ralat sistem yang tidak diketahui"
+
+#, fuzzy
+#~ msgid "%s: binary operator expected"
+#~ msgstr "%s: ungkapan biasa (regexp) tidak sah: %s"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: test EXPRESSION\n"
+#~ "  or:  test\n"
+#~ "  or:  [ EXPRESSION ]\n"
+#~ "  or:  [ ]\n"
+#~ "  or:  [ OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Exit with the status determined by EXPRESSION.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#, fuzzy
+#~ msgid "extra argument %s"
+#~ msgstr "terlalu banyak hujah"
+
+#~ msgid "creating %s"
+#~ msgstr "mencipta %s"
+
+#, fuzzy
+#~ msgid "cannot touch %s"
+#~ msgstr "tak dapat stat %s"
+
+#~ msgid "setting times of %s"
+#~ msgstr "menetapkan masa untuk %s"
+
+#~ msgid "cannot specify times from more than one source"
+#~ msgstr "tak boleh nyatakan masa lebih daripada satu sumber"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... SET1 [SET2]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid "warning: an unescaped backslash at end of string is not portable"
+#~ msgstr ""
+#~ "%s: amaran: membuat pautan keras ke pautan simbolik adalah tidak portable"
+
+#, fuzzy
+#~ msgid "invalid character class %s"
+#~ msgstr "aksara tidak sah pada %s pada rentetan mod %s"
+
+#, fuzzy
+#~ msgid "too many characters in set"
+#~ msgstr "fail istimewa aksara"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [ignored command line arguments]\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#, fuzzy
+#~ msgid "%s: input contains an odd number of tokens"
+#~ msgstr "nombor tidak sah %s"
+
+#~ msgid "Usage: %s [OPTION]...\n"
+#~ msgstr "Pengunaan: %s [OPSYEN]...\n"
+
+#~ msgid "not a tty"
+#~ msgstr "bukan satu tty"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -v, --kernel-version     print the kernel version\n"
+#~ "  -m, --machine            print the machine hardware name\n"
+#~ "  -p, --processor          print the processor type or \"unknown\"\n"
+#~ "  -i, --hardware-platform  print the hardware platform or \"unknown\"\n"
+#~ "  -o, --operating-system   print the operating system\n"
+#~ msgstr ""
+#~ "  -v, --kernel-version     cetak versi kernel\n"
+#~ "  -m, --machine            cetak nama perkakasan mesin\n"
+#~ "  -p, --processor          cetak jenis pemproses\n"
+#~ "  -i, --hardware-platform  cetak platform perkakasan\n"
+#~ "  -o, --operating-system   cetak sistem pengoperasian\n"
+
+#~ msgid "cannot get system name"
+#~ msgstr "tak dapat perolehi nama sistem"
+
+#, fuzzy
+#~ msgid ""
+#~ "Convert blanks in each FILE to tabs, writing to standard output.\n"
+#~ "With no FILE, or when FILE is -, read standard input.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "Dengan tiada FAIL, atau bila FAIL adalah -, baca input piawai.\n"
+
+#, fuzzy
+#~ msgid "tab stop value is too large"
+#~ msgstr "%s adalah terlalu besar"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [INPUT [OUTPUT]]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid "too many repeated lines"
+#~ msgstr "terlalu banyak hujah"
+
+#, fuzzy
+#~ msgid "invalid number of fields to skip"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid number of bytes to skip"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid number of bytes to compare"
+#~ msgstr "nombor tidak sah %s"
+
+#~ msgid ""
+#~ "Usage: %s FILE\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#~ msgid "cannot unlink %s"
+#~ msgstr "takboleh nyahpaut %s"
+
+#~ msgid "couldn't get boot time"
+#~ msgstr "tak dapat masa but"
+
+#~ msgid " %2d:%02d%s  up "
+#~ msgstr " %2d:%02d%s  naik "
+
+#~ msgid "am"
+#~ msgstr "am"
+
+#~ msgid "pm"
+#~ msgstr "pm"
+
+#, fuzzy
+#~ msgid "%lu user"
+#~ msgid_plural "%lu users"
+#~ msgstr[0] "pengguna tidak sah"
+#~ msgstr[1] "pengguna tidak sah"
+
+#~ msgid ",  load average: %.2f"
+#~ msgstr ",  purata muatan: %.2f"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [ FILE ]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#~ msgid " old "
+#~ msgstr " tua "
+
+#~ msgid "id="
+#~ msgstr "id="
+
+#~ msgid "term="
+#~ msgstr "term="
+
+#~ msgid "last="
+#~ msgstr "terkahir="
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "# users=%lu\n"
+#~ msgstr ""
+#~ "\n"
+#~ "# pengguna=%u\n"
+
+#~ msgid "NAME"
+#~ msgstr "NAMA"
+
+#~ msgid "LINE"
+#~ msgstr "BARIS"
+
+#~ msgid "TIME"
+#~ msgstr "MASA"
+
+#~ msgid "IDLE"
+#~ msgstr "LEKA"
+
+#~ msgid "PID"
+#~ msgstr "PID"
+
+#~ msgid "COMMENT"
+#~ msgstr "KOMEN"
+
+#~ msgid "EXIT"
+#~ msgstr "KELUAR"
+
+#, fuzzy
+#~ msgid "Usage: %s [OPTION]... [ FILE | ARG1 ARG2 ]\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...[FAIL]...\n"
+
+#, fuzzy
+#~ msgid "%s: cannot find name for user ID %lu\n"
+#~ msgstr "tak dapat menjumpai nama bagi ID pengguna %u"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [STRING]...\n"
+#~ "  or:  %s OPTION\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "Usage: %s [OPTION] NUMBER[SUFFIX] COMMAND [ARG]...\n"
+#~ "  or:  %s [OPTION]\n"
+#~ msgstr ""
+#~ "Pengunaan: %s FAIL\n"
+#~ "    atau: %s OPSYEN\n"
+
+#~ msgid "block size"
+#~ msgstr "saiz blok"
+
+#~ msgid "cannot change owner and/or group of %s"
+#~ msgstr "tak dapat menukar hakmilik dan/atau kumpulan %s"
+
+#~ msgid "cannot chdir to directory %s"
+#~ msgstr "tak dapat chdir ke direktori %s"
+
+#~ msgid "cannot get the login group of a numeric UID"
+#~ msgstr "tak boleh mendapatkan kumpulan logmasuk untuk UID numerik"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is free software; see the source for copying conditions.  There is "
+#~ "NO\n"
+#~ "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR "
+#~ "PURPOSE.\n"
+#~ msgstr ""
+#~ "Ini adalah perisian bebas; lihat sumber untuk keadaan menyalin.  Tiada\n"
+#~ "waranti; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR "
+#~ "PURPOSE.\n"
+
+#~ msgid "too few arguments"
+#~ msgstr "terlalu sedikit hujah"
+
+#~ msgid "closing standard output"
+#~ msgstr "menutup output piawai"
+
+#~ msgid "group number"
+#~ msgstr "nombor kumpulan"
+
+#~ msgid "invalid group number %s"
+#~ msgstr "nombor kumpulan tak sah %s"
+
+#~ msgid "Usage: %s [OPTION]... LEFT_FILE RIGHT_FILE\n"
+#~ msgstr "Penggunaan: %s [OPSYEN]...FAIL_KIRI FAIL_KANAN\n"
+
+#~ msgid "cannot overwrite directory %s"
+#~ msgstr "tak boleh menindih direktori %s"
+
+#~ msgid "Torbjorn Granlund, David MacKenzie, and Jim Meyering"
+#~ msgstr "Torbjorn Granlund, David MacKenzie, dan Jim Meyering"
+
+#~ msgid "%s: specified destination directory does not exist"
+#~ msgstr "%s: Direktori destinasi dinyatakan tidak wujud"
+
+#~ msgid "%s: specified target is not a directory"
+#~ msgstr "%s: Sasaran yang dinyatakan adalah bukan direktori"
+
+#~ msgid "copying multiple files, but last argument %s is not a directory"
+#~ msgstr ""
+#~ "menyalin banyak fail, tetapi hujah terakhir %s adalah bukan direktori"
+
+#~ msgid "symbolic links are not supported on this system"
+#~ msgstr "pautan simbolik tidak disokong pada sistem ini"
+
+#~ msgid "Stuart Kemp and David MacKenzie"
+#~ msgstr "Stuart Kemp dan David MacKenzie"
+
+#~ msgid "%s: `+' or `-' expected after delimeter"
+#~ msgstr "%s: `+' atau `-' dijangka selepas pemisah"
+
+#~ msgid "David Ihnat, David MacKenzie, and Jim Meyering"
+#~ msgstr "Torbjorn Granlund, David MacKenzie, dan Jim Meyering"
+
+#~ msgid ""
+#~ "Display the current time in the given FORMAT, or set the system date.\n"
+#~ "\n"
+#~ "  -d, --date=STRING         display time described by STRING, not `now'\n"
+#~ "  -f, --file=DATEFILE       like --date once for each line of DATEFILE\n"
+#~ "  -ITIMESPEC, --iso-8601[=TIMESPEC]  output date/time in ISO 8601 "
+#~ "format.\n"
+#~ "                            TIMESPEC=`date' for date only,\n"
+#~ "                            `hours', `minutes', or `seconds' for date "
+#~ "and\n"
+#~ "                            time to the indicated precision.\n"
+#~ "                            --iso-8601 without TIMESPEC defaults to "
+#~ "`date'.\n"
+#~ msgstr ""
+#~ "Papar masa semasa dalam FORMAT diberi, atau tetapkan tarikh sistem.\n"
+#~ "\n"
+#~ "  -d, --date=RENTETAN       papar masa diterangkan oleh RENTETAN, bukan "
+#~ "`now'\n"
+#~ "  -f, --file=DATEFILE       seperti --date sekali bagi setiap baris "
+#~ "DATEFILE\n"
+#~ "  -ITIMESPEC, --iso-8601[=TIMESPEC]  output tarikh/masa dalam format ISO "
+#~ "8601.\n"
+#~ "                            TIMESPEC=`date' untuk tarikh sahaja,\n"
+#~ "                           `hours', `minutes', atau `seconds' baru "
+#~ "tarikh \n"
+#~ "                            dan masa untuk menunjukkan kejituan.\n"
+#~ "                            --iso-8601 tanpa TIMESPEC default kepada "
+#~ "`date'.\n"
+
+#, fuzzy
+#~ msgid ""
+#~ "  %F   same as %Y-%m-%d\n"
+#~ "  %g   the 2-digit year corresponding to the %V week number\n"
+#~ "  %G   the 4-digit year corresponding to the %V week number\n"
+#~ msgstr ""
+#~ "  %F   sama sebagai  %Y-%m-%d\n"
+#~ "  %g   tahun 2-digit corresponding to the %V week number\n"
+#~ "  %G   tahun 4-digit corresponding to the %V week number\n"
+
+#~ msgid "too many non-option arguments: %s%s"
+#~ msgstr "terlalu banyak hujah bukan.opsyen: %s%s"
+
+#~ msgid ""
+#~ "a format string may not be specified when using the --rfc-822 (-R) option"
+#~ msgstr ""
+#~ "rentetan format tak boleh dinyatakan bila menggunakan opesyen --rfc-822 (-"
+#~ "R)"
+
+#~ msgid "undefined"
+#~ msgstr "tak tertakrif"
+
+#~ msgid "cannot get time of day"
+#~ msgstr "Tak dapat perolehi masa bagi hari"
+
+#~ msgid "Paul Rubin, David MacKenzie, and Stuart Kemp"
+#~ msgstr "Paul Rubin, David MacKenzie, and Stuart Kemp"
+
+#~ msgid "%s+%s records in\n"
+#~ msgstr "%s+%s rekod masuk\n"
+
+#~ msgid "%s+%s records out\n"
+#~ msgstr "%s+%s rekod keluar\n"
+
+#~ msgid "unrecognized option %s=%s"
+#~ msgstr "opsyen tidak dikenali %s=%s"
+
+#~ msgid "Torbjorn Granlund, David MacKenzie, Larry McVoy, and Paul Eggert"
+#~ msgstr "Torbjorn Granlund, David MacKenzie, Larry McVoy, and Paul Eggert"
+
+#~ msgid "David MacKenzie and Jim Meyering"
+#~ msgstr "David MacKenzie dan Jim Meyering"
+
+#~ msgid ""
+#~ "Torbjorn Granlund, David MacKenzie, Larry McVoy, Paul Eggert, and Jim "
+#~ "Meyering"
+#~ msgstr ""
+#~ "Torbjorn Granlund, David MacKenzie, Larry McVoy, Paul Eggert, and Jim "
+#~ "Meyering"
+
+#~ msgid "cannot change to parent of directory %s"
+#~ msgstr "Gagal menukar ke pangkal direktori %s"
+
+#~ msgid ""
+#~ "Usage: %s [ignored command line arguments]\n"
+#~ "  or:  %s OPTION\n"
+#~ "Exit with a status code indicating failure.\n"
+#~ "\n"
+#~ "These option names may not be abbreviated.\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [abaikan hujag arahan baris]\n"
+#~ "  atau:  %s OPSYEN\n"
+#~ "Keluar dengan kod status menunjukkan kegagalan.\n"
+#~ "\n"
+#~ "Nama opsyen ini tidak boleh menjadi satu singkatan.\n"
+#~ "\n"
+
+#~ msgid "`%s' option is obsolete; use `%s'"
+#~ msgstr "opsyen `%s' telah luput; guna `%s'"
+
+#~ msgid ""
+#~ "\n"
+#~ "N may have a multiplier suffix: b 512, k 1024, m 1024*1024.\n"
+#~ msgstr ""
+#~ "\n"
+#~ "N boleh mempunyai suffiks pengkali: b 512, k 1024, m 1024*1024.\n"
+
+#, fuzzy
+#~ msgid "%s: number of bytes is large"
+#~ msgstr "bilangan byte"
+
+#~ msgid "unrecognized option `-%c'"
+#~ msgstr "opsyen tidak dikenali `%c'"
+
+#~ msgid "`-%s' option is obsolete; use `-%c %.*s%.*s%s'"
+#~ msgstr "opsyen `-%s' sudah luput; guna `-%c %.*s%.*s%s'"
+
+#~ msgid "Arnold Robbins and David MacKenzie"
+#~ msgstr "Arnold Robbins dan David MacKenzie"
+
+#~ msgid "cannot print only user and only group"
+#~ msgstr "tak dapat cetak hanya pengguna dan hanya kumpulan"
+
+#~ msgid "cannot get supplemental group list"
+#~ msgstr "tak dapat perolehi senarai kumpulan tambahan"
+
+#~ msgid "installing multiple files, but last argument, %s is not a directory"
+#~ msgstr ""
+#~ "memasang pelbagai fail, tetapi hujah terakhir, %s adalah bukan direktori"
+
+#~ msgid "%s is a directory"
+#~ msgstr "%s adalah satu direktori"
+
+#~ msgid "cannot obtain time stamps for %s"
+#~ msgstr "tak memperolehi setem masa bagi %s"
+
+#, fuzzy
+#~ msgid "invalid field number for file 1: `%s'"
+#~ msgstr "nombor tidak sah %s"
+
+#, fuzzy
+#~ msgid "invalid field number for file 2: `%s'"
+#~ msgstr "nombor tidak sah %s"
+
+#~ msgid "too many non-option arguments"
+#~ msgstr "terlalu banyak hujah bukan-opsyen"
+
+#~ msgid "too few non-option arguments"
+#~ msgstr "terlalu sedikit hujah bukan-opsyen"
+
+#~ msgid "Mike Parker and David MacKenzie"
+#~ msgstr "Mike Parker and David MacKenzie"
+
+#~ msgid "%s: File exists"
+#~ msgstr "%s: Fail wujud"
+
+#~ msgid "create symbolic link %s to %s"
+#~ msgstr "cipta pautan simbolik %s ke %s"
+
+#~ msgid "create hard link %s to %s"
+#~ msgstr "cipta pautan keras %s ke %s"
+
+#~ msgid ""
+#~ "Usage: %s [OPTION]... TARGET [LINK_NAME]\n"
+#~ "  or:  %s [OPTION]... TARGET... DIRECTORY\n"
+#~ "  or:  %s [OPTION]... --target-directory=DIRECTORY TARGET...\n"
+#~ msgstr ""
+#~ "Penggunaan: %s [OPSYEN]... SASARAN [NAMA_PAUTAN]\n"
+#~ "  atau:  %s [OPSYEN]... SASARAN... DIREKTORI\n"
+#~ "  atau:  %s [OPSYEN]... --target-directory=DIREKTORI SASARAN...\n"
+
+#~ msgid "when making multiple links, last argument must be a directory"
+#~ msgstr "bila membuat banyak pautan, hujah terkahir mestilah direktori"
+
+#, fuzzy
+#~ msgid ""
+#~ "  -g                         like -l, but do not list owner\n"
+#~ "  -G, --no-group             inhibit display of group information\n"
+#~ "  -h, --human-readable  print sizes in human readable format (e.g., 1K "
+#~ "234M 2G)\n"
+#~ "      --si                   likewise, but use powers of 1000 not 1024\n"
+#~ "  -H, --dereference-command-line\n"
+#~ "                             follow symbolic links listed on the command "
+#~ "line\n"
+#~ "      --dereference-command-line-symlink-to-dir\n"
+#~ "                             follow each command line symbolic link\n"
+#~ "                               that points to a directory\n"
+#~ msgstr ""
+#~ "  -g                         seperti -l, tapi tak senaraikan pemilik\n"
+#~ "  -G, --no-group             tidak papar maklumat kumpulan\n"
+#~ "  -h, --human-readable  cetak saiz dlm format bolehdibaca manusia (e.g., "
+#~ "1K 234M 2G)\n"
+#~ "      --si                   sebaliknya, guna kuasaf 1000 bukan 1024\n"
+#~ "  -H, --dereference-command-line  ikut pautan simbolik pada arahan baris\n"
+
+#~ msgid "file"
+#~ msgstr "fail"
+
+#~ msgid "files"
+#~ msgstr "fail"
+
+#~ msgid "no files may be specified when using --string"
+#~ msgstr "tiada fail boleh dinyatakan bila menggunakan --string"
+
+#~ msgid "only one argument may be specified when using --check"
+#~ msgstr "hanya satu hujah boleh dinyatakan bila menggunakan --check"
+
+#~ msgid "cannot set permissions of directory %s"
+#~ msgstr "tak dapat menetapkan keizinan direktori %s"
+
+#~ msgid "cannot set permissions of fifo %s"
+#~ msgstr "tak dapat menetapkan keizinan bagi fifo %s"
+
+#~ msgid "wrong number of arguments"
+#~ msgstr "nombor hujah yang salah"
+
+#~ msgid "major and minor device numbers may not be specified for fifo files"
+#~ msgstr "nombor peranti major dan minor tak boleh dinyatakan pada fail fifo"
+
+#~ msgid "cannot set permissions of %s"
+#~ msgstr "tak dapat menetapkan keizinan bagi %s"
+
+#~ msgid "Mike Parker, David MacKenzie, and Jim Meyering"
+#~ msgstr "Mike Parker, David MacKenzie, dan Jim Meyering"
+
+#~ msgid "when moving multiple files, last argument must be a directory"
+#~ msgstr "bila memindah banyak fail, hujah terakhir mestilah direktori"
+
+#~ msgid "invalid option `%s'"
+#~ msgstr "opsyen tidak sah `%s'"
+
+#~ msgid "invalid priority `%s'"
+#~ msgstr "prioriti tidak sah `%s'"
+
+#, fuzzy
+#~ msgid "cannot get priority"
+#~ msgstr "Gagal menukar direktori %s "
+
+#, fuzzy
+#~ msgid "cannot set priority"
+#~ msgstr "tak dapat menetapkan keizinan bagi %s"
+
+#, fuzzy
+#~ msgid "Scott Bartram and David MacKenzie"
+#~ msgstr "Mike Parker and David MacKenzie"
+
+#, fuzzy
+#~ msgid "failed to redirect standard output"
+#~ msgstr "menutup output piawai"
+
+#~ msgid "skip argument"
+#~ msgstr "Langkah hujah"
+
+#~ msgid "limit argument"
+#~ msgstr "Had hujah"
+
+#, fuzzy
+#~ msgid "David M. Ihnat and David MacKenzie"
+#~ msgstr "Mike Parker and David MacKenzie"
+
+#, fuzzy
+#~ msgid "`%s' is not a directory"
+#~ msgstr "%s adalah satu direktori"
+
+#, fuzzy
+#~ msgid "`--pages' invalid range of page numbers: `%s'"
+#~ msgstr "nombor kumpulan tak sah %s"
+
+#, fuzzy
+#~ msgid "`--pages' invalid ending page number: `%s'"
+#~ msgstr "nombor kumpulan tak sah %s"
+
+#, fuzzy
+#~ msgid "%b %e %H:%M %Y"
+#~ msgstr "%b %e %H:%M"
+
+#~ msgid "Page %d"
+#~ msgstr "Halaman %d"
+
+#~ msgid "cannot chdir from %s to .."
+#~ msgstr "tak dapat chdir daripada %s ke ..."
+
+#~ msgid "cannot lstat `.' in %s"
+#~ msgstr "tak dapat lstat `.' pada %s"
+
+#~ msgid "cannot lstat %s"
+#~ msgstr "tak dapat lstat %s"
+
+#~ msgid "cannot chdir from %s to %s"
+#~ msgstr "tak dapat chdir drpd. %s ke %s"
+
+#~ msgid "cannot remove `.' or `..'"
+#~ msgstr "tak dapat membuang `.' atau `..'"
+
+#, fuzzy
+#~ msgid "Paul Rubin, David MacKenzie, Richard Stallman, and Jim Meyering"
+#~ msgstr "Torbjorn Granlund, David MacKenzie, dan Jim Meyering"
+
+#, fuzzy
+#~ msgid "sort size"
+#~ msgstr "saiz blok"
+
+#, fuzzy
+#~ msgid "*** invalid date/time ***"
+#~ msgstr "mod tak sah %s"
+
+#, fuzzy
+#~ msgid "Jay Lepreau and David MacKenzie"
+#~ msgstr "Mike Parker and David MacKenzie"
+
+#~ msgid "stdin: read error"
+#~ msgstr "stdin: ralat bacaan"
+
+#, fuzzy
+#~ msgid "Paul Rubin, David MacKenzie, Ian Lance Taylor, and Jim Meyering"
+#~ msgstr "Torbjorn Granlund, David MacKenzie, dan Jim Meyering"
+
+#, fuzzy
+#~ msgid "%c: invalid suffix character in obsolescent option"
+#~ msgstr "aksara tidak sah pada %s pada rentetan mod %s"
+
+#, fuzzy
+#~ msgid "Mike Parker, Richard M. Stallman, and David MacKenzie"
+#~ msgstr "Mike Parker and David MacKenzie"
+
+#~ msgid "before -lt"
+#~ msgstr "sebelum -lt"
+
+#~ msgid "after -lt"
+#~ msgstr "selepas -lt"
+
+#~ msgid "before -le"
+#~ msgstr "sebelum -le"
+
+#~ msgid "after -le"
+#~ msgstr "selepas -le"
+
+#~ msgid "before -gt"
+#~ msgstr "sebelum -gt"
+
+#~ msgid "after -gt"
+#~ msgstr "selepas -gt"
+
+#~ msgid "before -ge"
+#~ msgstr "sebelum -ge"
+
+#~ msgid "after -ge"
+#~ msgstr "selepas -ge"
+
+#~ msgid "before -ne"
+#~ msgstr "sebelum -ne"
+
+#~ msgid "after -ne"
+#~ msgstr "selepas -ne"
+
+#~ msgid "before -eq"
+#~ msgstr "sebelum -eq"
+
+#~ msgid "after -eq"
+#~ msgstr "selepas -eq"
+
+#~ msgid "after -t"
+#~ msgstr "selepas -t"
+
+#, fuzzy
+#~ msgid "too many arguments\n"
+#~ msgstr "terlalu banyak hujah"
+
+#~ msgid "file arguments missing"
+#~ msgstr "kehilangan hujah fail"
+
+#~ msgid "`-LIST' option is obsolete; use `--first-only -t LIST'"
+#~ msgstr "Opsyen `-LIST' sudah luput; guna `--first-only -t LIST'"
+
+#~ msgid "Warning: -i will be removed in a future release;   use -u instead"
+#~ msgstr ""
+#~ "Amaran: -i akan dibuang pada keluaran anda datang;   guna -u sebaliknya"
+
+#~ msgid "%s: cannot find username for UID %u\n"
+#~ msgstr "%s: tak dapat menjumpai namapengguna bagi UID %u\n"
